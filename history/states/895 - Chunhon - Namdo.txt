@@ -1,0 +1,33 @@
+state=
+{
+	id=895
+	name="STATE_895"
+	manpower = 1996950
+	
+	state_category = town
+	history=
+	{
+		owner = KOR
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			
+		}
+		victory_points = {
+			 11992 3
+		}
+
+		add_core_of = KOR
+		add_core_of = KND
+		
+		1949.9.2 = {
+			owner = KOR
+			add_core_of = KOR
+			add_core_of = KND
+		}
+
+	}
+	provinces={
+		11992 7204 7175
+	}
+}

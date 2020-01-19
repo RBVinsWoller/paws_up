@@ -1,0 +1,492 @@
+ideas = {
+head_of_government = {
+		generic_love_of_peple_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { love }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_byntar_commi_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { byntar_commi }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		generic_byntar_mao_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { byntar_mao }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		generic_byntar_trotskiy_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { byntar_trotskiy }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		generic_byntar_chuche_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { byntar_chuche }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_byntar_capitala_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { byntar_capitala }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_byntar_natii_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { byntar_natii }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_idological_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { idea_men }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}
+defence_minister = {
+		generic_Peace_maker_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { Peace_maker }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_War_maker_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { War_maker }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_organizovanuy_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { organizovanuy }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_Storonik_avia_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { Storonik_avia }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_nastavnik_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { nastavnik }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_fast_war_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { fast_war }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}
+
+building_minister = {
+		generic_jectkiy_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { jestkiy }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_militarityzat_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { militarityzat }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_agentura_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { agentura }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		generic_myakoy_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { myakiy }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+}
+
+	economic_minister = {
+		generic_war_industrialist_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { war_industrialist }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_stabilizat_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { stabilizat }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_captain_of_industry_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { captain_of_industry }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_quartermaster_general_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { quartermaster_general }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+diplomacy_minister = {
+		generic_works_horse_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { works_horse }
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_jawk_man_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { jawk }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_storonnik_konfrontazii_man_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = {jawk }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_torg_man_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { ideolog_comrad }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_neutrality_count_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { neutrality_count }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+}
+culture_minister = {
+		generic_antiwarprop = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { national_culture_advisor }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_millprop_head = {
+			
+			allowed = {
+				NOT = { OR = { tag = SOV tag = PRC } }
+
+			}
+			
+			available = {
+			}
+			
+			traits = { millprop }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+}
+
+}

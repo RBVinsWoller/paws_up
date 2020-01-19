@@ -1,0 +1,34 @@
+state={
+	id=900
+	name="STATE_900"
+	manpower = 302773
+	resources={
+		steel=10
+		aluminium=1
+	}
+	
+	state_category = large_city
+
+	history={
+		owner = KND
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = KND
+		add_core_of = KOR
+		
+		1945.9.2 = {
+			owner = KND
+			add_core_of = KND
+			add_core_of = KOR
+		}
+	}
+
+	provinces={
+		848 11958 9981
+	}
+	
+	
+}

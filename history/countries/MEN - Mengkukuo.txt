@@ -1,0 +1,56 @@
+﻿capital = 611
+
+oob = "MEN_1936"
+
+set_technology = {
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "MEN_1939"
+	set_technology = {
+	}
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+			banned = yes
+		}
+
+		fascism = {
+			popularity = 80
+		}
+		
+		communism = {
+			popularity = 0
+			banned = yes
+		}
+
+		neutrality = {
+			popularity = 20
+		}
+	}
+	
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Prince Demchugdongrub"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+	}
+}
+
+1939.1.1 = {
+}

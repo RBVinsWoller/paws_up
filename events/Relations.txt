@@ -1,0 +1,662 @@
+﻿add_namespace = pw.political
+
+country_event = {
+	id = pw.political.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pw.political.1"}
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+					}
+				}
+				
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = communism
+						has_government = maoism
+						has_government = trotskism
+						has_government = chucheism
+						has_government = fascism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = fascism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = communism
+						has_government = maoism
+						has_government = trotskism
+						has_government = chucheism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			every_country = {
+				limit = {
+					
+					OR = {
+						has_government = communism
+						has_government = chucheism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = maoism
+						has_government = trotskism
+						has_government = fascism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = maoism
+			}
+			every_country = {
+				limit = {
+					
+					OR = {
+						has_government = maoism
+						has_government = chucheism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = communism
+						has_government = trotskism
+						has_government = fascism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = trotskism
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = trotskism	
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = communism
+						has_government = maoism
+						has_government = chucheism
+						has_government = fascism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = chucheism
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = chucheism	
+						has_government = communism
+						has_government = maoism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = trotskism
+						has_government = fascism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = fascism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = communism
+						has_government = trotskism
+						has_government = chucheism
+						has_government = maoism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			set_country_flag = opinion_set_communism
+		}
+		if = {
+			limit = {
+				has_government = maoism
+			}
+			set_country_flag = opinion_set_maoism
+		}
+		if = {
+			limit = {
+				has_government = trotskism
+			}
+			set_country_flag = opinion_set_trotskism
+		}
+		if = {
+			limit = {
+				has_government = chucheism
+			}
+			set_country_flag = opinion_set_chucheism
+		}
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			set_country_flag = opinion_set_democratic
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			set_country_flag = opinion_set_fascism
+		}
+	}
+
+	option = {}
+}
+
+### Setting up Opinion Modifiers on Government Change ###
+country_event = {
+	id = pw.political.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kr.political.2"}
+
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				NOT = {
+					has_government = communism
+				}
+				has_country_flag = opinion_set_communism
+			}
+			AND = {
+				NOT = {
+					has_government = maoism
+				}
+				has_country_flag = opinion_set_maoism
+			}
+			AND = {
+				NOT = {
+					has_government = trotskism
+				}
+				has_country_flag = opinion_set_trotskism
+			}
+			AND = {
+				NOT = {
+					has_government = chucheism
+				}
+				has_country_flag = opinion_set_chucheism
+			}
+			AND = {
+				NOT = {
+					has_government = democratic
+				}
+				has_country_flag = opinion_set_democratic
+			}
+			AND = {
+				NOT = {
+					has_government = fascism
+				}
+				has_country_flag = opinion_set_fascism
+			}
+			AND = {
+				NOT = {
+					has_country_flag = opinion_set_communism
+				}
+				NOT = {
+					has_country_flag = opinion_set_maoism
+				}
+				NOT = {
+					has_country_flag = opinion_set_trotskism
+				}
+				NOT = {
+					has_country_flag = opinion_set_chucheism
+				}
+				NOT = {
+					has_country_flag = opinion_set_democratic
+				}
+				NOT = {
+					has_country_flag = opinion_set_fascism
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		clr_country_flag = opinion_set_communism
+		clr_country_flag = opinion_set_maoism
+		clr_country_flag = opinion_set_trotskism
+		clr_country_flag = opinion_set_chucheism
+		clr_country_flag = opinion_set_democratic
+		clr_country_flag = opinion_set_fascism
+		every_country = {
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = PW_similar_ideology
+			}
+			ROOT = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = PW_similar_ideology
+				}
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = PW_different_ideology
+			}
+			ROOT = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = PW_different_ideology
+				}
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = PW_same_ideology
+			}
+			ROOT = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = PW_same_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = communism
+				
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = communism
+						has_government = chucheism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = trotskism
+						has_government = fascism
+						has_government = maoism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = maoism
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = maoism
+						has_government = chucheism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = trotskism
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = trotskism
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = trotskism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = communism
+						has_government = fascism
+						has_government = maoism
+						has_government = chucheism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				has_government = chucheism
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = chucheism
+						has_government = communism
+						has_government = maoism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = fascism
+						has_government = democratic
+						has_government = trotskism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = fascism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						
+						has_government = communism
+						has_government = maoism
+						has_government = trotskism
+						has_government = chucheism
+						has_government = democratic
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						
+						has_government = communism
+						has_government = maoism
+						has_government = trotskism
+						has_government = chucheism
+						has_government = fascism
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = PW_different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			set_country_flag = opinion_set_communism
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			set_country_flag = opinion_set_fascism
+		}
+		if = {
+			limit = {
+				has_government = maoism
+			}
+			set_country_flag = opinion_set_maoism
+		}
+		if = {
+			limit = {
+				has_government = trotskism
+			}
+			set_country_flag = opinion_set_trotskism
+		}
+		if = {
+			limit = {
+				has_government = chucheism
+			}
+			set_country_flag = opinion_set_chucheism
+		}
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			set_country_flag = opinion_set_democratic
+		}
+
+	}
+
+	option = {}
+}

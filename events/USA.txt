@@ -1,0 +1,569 @@
+﻿###########################
+# USA Events
+###########################
+
+add_namespace = usa
+
+country_event = { #независимостьФРГ
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	picture = GFX_report_event_airplane_crash
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 1949.5.11
+		date < 1949.10.9
+		WGR = { exists = yes }
+    }
+	
+	option = {
+		name = usa.1.a
+		WGR = {
+			drop_cosmetic_tag = yes
+			create_country_leader = {
+				name = "Konrad Adenauer"
+				desc = "POLITICS_KONRAD_ADENAUER_DESC"
+				picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+				}
+			}
+			set_capital = 51
+		}
+		set_autonomy = { target = WGR autonomy_state = autonomy_free }
+		hidden_effect = { 
+			news_event = { id = news.4 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { #независимостьКореи
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = GFX_report_event_british_artillery
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 1948.8.3
+		date < 1949.10.9
+		KOR = { exists = yes }
+    }
+	
+	option = {
+		name = usa.2.a
+		KOR = {
+			set_cosmetic_tag = KOR_49
+			create_country_leader = {
+				name = "Syngman Rhee"
+				desc = ""
+				picture = "gfx/leaders/KOR/Portrait_Syngman_Rhee.dds"
+				expire = "1970.1.1"
+				ideology = conservatism
+				traits = {
+					#
+				}
+			}
+			remove_ideas = USAOP
+		}
+		set_autonomy = { target = KOR autonomy_state = autonomy_free }
+		hidden_effect = { 
+			news_event = { id = news.8 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { #выборы1952
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+	picture = GFX_report_event_bunker_01
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 1952.11.3
+    }
+	
+	option = {
+		name = usa.3.a
+		
+		create_country_leader = { 
+			name = "Dwight David Eisenhower" 
+			desc = "" 
+			picture = "gfx/leaders/USA/Portrait_USA_Edinhower.dds"
+			expire = "1969.9.11" 
+			ideology = conservatism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = Respublican
+		name = Respublican
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.10 } 
+		}
+		
+		ai_chance = { factor = 90 }
+		
+	}
+	
+	option = {
+		name = usa.3.b
+		
+		create_country_leader = { 
+			name = "Adlai Ewing Stevenson II" 
+			desc = "" 
+			picture = "gfx/leaders/USA/Portrait_USA_Stevenson.dds"
+			expire = "1965.10.14" 
+			ideology = liberalism
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.11 } 
+		}
+		
+		ai_chance = { factor = 10 }
+		
+	}
+}
+
+country_event = { #выборы1948
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	picture = GFX_report_event_bunker_01
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 1948.11.5
+		date < 1949.10.9
+    }
+	
+	option = {
+		name = usa.4.a
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = Democratic
+		name = Democratic
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.14 } 
+		}
+		
+		ai_chance = { factor = 90 }
+		
+	}
+	
+	option = {
+		name = usa.4.b
+		
+		create_country_leader = { 
+			name = "Thomas Edmund Dewey" 
+			desc = "" 
+			picture = "gfx/leaders/USA/Portrait_USA_Thomas_Edmund_Dewey.dds"
+			expire = "1971.9.11" 
+			ideology = conservatism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = Respublican
+		name = Respublican
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.15 } 
+		}
+		
+		ai_chance = { factor = 10 }
+		
+	}
+}
+
+country_event = { #Создание НАТО
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 1949.4.4
+		date < 1949.10.9
+    }
+	
+	option = {
+		name = usa.5.a
+		
+		create_faction = "NATO"
+		add_to_faction = USA
+		add_to_faction = CAN
+		add_to_faction = ICE
+		add_to_faction = ENG
+		add_to_faction = FRA
+		add_to_faction = BEL
+		add_to_faction = HOL
+		add_to_faction = LUX
+		add_to_faction = NOR
+		add_to_faction = DEN
+		add_to_faction = ITA
+		add_to_faction = POR
+		
+		hidden_effect = { 
+			news_event = { id = news.42 } 
+		}
+		
+		ai_chance = { factor = 100 }
+		
+	}
+	
+}
+
+country_event = { #Вступление Турции в НАТО
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 1952.2.11
+		TUR = { exists = yes } 
+		has_war = no
+    }
+	
+	option = {
+		name = usa.6.a
+
+		add_to_faction = TUR
+		
+		ai_chance = { factor = 100 }
+		
+	}
+	
+}
+
+country_event = { #Вступление Греции в НАТО
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 1952.2.13
+		GRE = { exists = yes } 
+		has_war = no
+    }
+	
+	option = {
+		name = usa.7.a
+
+		add_to_faction = GRE
+		
+		ai_chance = { factor = 100 }
+		
+	}
+	
+}
+
+country_event = { #выборы1956
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = GFX_report_event_bunker_01
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 1956.11.4
+    }
+	
+	option = {
+		name = usa.8.a
+		
+		create_country_leader = { 
+			name = "Dwight David Eisenhower" 
+			desc = "" 
+			picture = "gfx/leaders/USA/Portrait_USA_Edinhower.dds"
+			expire = "1969.9.11" 
+			ideology = conservatism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = Respublican
+		name = Respublican
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.10 } 
+		}
+		
+		ai_chance = { factor = 90 }
+		
+	}
+	
+	option = {
+		name = usa.8.b
+		
+		create_country_leader = { 
+			name = "Adlai Ewing Stevenson II" 
+			desc = "" 
+			picture = "gfx/leaders/USA/Portrait_USA_Stevenson.dds"
+			expire = "1965.10.14" 
+			ideology = liberalism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = Democratic
+		name = Democratic
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.11 } 
+		}
+		
+		ai_chance = { factor = 10 }
+		
+	}
+}
+
+country_event = { #выборы1960
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	picture = GFX_report_event_bunker_01
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 1960.11.2
+    }
+	
+	option = {
+		name = usa.9.a
+		
+		create_country_leader = { 
+			name = "Richard Nixon" 
+			desc = "" 
+			picture = "gfx/leaders/USA/Portrait_USA_Richard Nixon.dds"
+			expire = "1994.9.11" 
+			ideology = conservatism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = Respublican
+		name = Respublican
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.48 } 
+		}
+		
+		ai_chance = { factor = 10 }
+		
+	}
+	
+	option = {
+		name = usa.9.b
+		set_country_flag = KEN
+		create_country_leader = { 
+			name = "John F. Kennedy" 
+			desc = "" 
+			picture = "gfx/leaders/USA/Portrait_USA_John F. Kennedy.dds"
+			expire = "1980.10.14" 
+			ideology = liberalism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = Democratic
+		name = Democratic
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.49 } 
+		}
+		
+		ai_chance = { factor = 90 }
+		
+	}
+}
+
+country_event = { #Вступление ФРГ в НАТО
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 1955.5.9
+		WGR = { exists = yes } 
+		has_war = no
+    }
+	
+	option = {
+		name = usa.10.a
+
+		add_to_faction = WGR
+		
+		ai_chance = { factor = 100 }
+		
+	}
+	
+}
+
+country_event = { #отет на Чарли
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+	picture = GFX_report_event_generic_army
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.11.a
+		declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.95 } 
+		}
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = usa.11.b
+		WGR	= {
+			add_ideas = {
+				Nazi
+			}
+		}
+		744 = {
+			set_demilitarized_zone = yes
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.96 } 
+		}
+		ai_chance = { factor = 10 }
+		
+	}
+	
+	option = {
+		name = usa.11.c
+		
+		hidden_effect = { 
+			news_event = { id = news.97 } 
+		}
+		
+		add_political_power = -500
+		
+		ai_chance = { factor = 80 }
+		
+	}
+	
+}
+
+country_event = { #Покушение на Кенеди удачно 1963
+	id = usa.12
+	title = usa.12.t
+	desc = usa.12.d
+	picture = GFX_report_event_generic_rally
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 1963.11.11
+		has_country_leader = { name = "John F. Kennedy" }
+		has_country_flag = KEN
+    }
+	
+	
+	option = {
+		name = usa.12.a
+		
+		kill_country_leader = yes
+		
+		create_country_leader = { 
+			name = "Lyndon Baines Johnson" 
+			desc = "" 
+			picture = "gfx/leaders/USA/Portrait_USA_Johnson.dds"
+			expire = "1990.10.14" 
+			ideology = liberalism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = Democratic
+		name = Democratic
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.108 } 
+		}
+		
+	}
+}
+
+country_event = { #Покушение на Кенеди неудачно 1963
+	id = usa.13
+	title = usa.13.t
+	desc = usa.13.d
+	picture = GFX_report_event_generic_rally_3
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = USA
+		date > 2020.11.19
+		has_country_leader = { name = "John F. Kennedy" }
+		has_country_flag = KEN
+    }
+	
+	
+	option = {
+		name = usa.13.a
+		
+		
+		hidden_effect = { 
+			news_event = { id = news.109 } 
+		}
+		
+	}
+}

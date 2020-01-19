@@ -1,0 +1,294 @@
+﻿division_template = {
+	name = "Infantry Div."				
+	division_names_group = PRC_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Modelled on Chinese divisions
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		
+		
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "People army Div."				
+	division_names_group = PRC_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Modelled on Chinese divisions
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		
+		
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mountaineers"						
+	division_names_group = PRC_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Motorized" 			# Infanterie-Divisionen (mot)
+	division_names_group = PRC_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }			
+	}
+}
+
+division_template = {
+	name = "Tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = SOV_ARM_02
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        ptsausup_brigade = { x = 0 y = 0 }	
+	}
+}
+
+division_template = {
+	name = "Heavy tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = SOV_ARM_02
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {	
+	}
+}
+
+units = {
+	
+	
+	### Guard Brigades
+	division = {
+		name = "1-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "1-a People army division"
+		location = 4401
+		division_template = "People army Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "2-a People army division"
+		location = 4401
+		division_template = "People army Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "3-a People army division"
+		location = 4401
+		division_template = "People army Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "4-a People army division"
+		location = 4223
+		division_template = "People army Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "5-a People army division"
+		location = 12150
+		division_template = "People army Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "6-a People army division"
+		location = 9988
+		division_template = "People army Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "7-a People army division"
+		location = 4529
+		division_template = "People army Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "8-a People army division"
+		location = 1185
+		division_template = "People army Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "9-a People army division"
+		location = 7229
+		division_template = "People army Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "10-a People army division"
+		location = 7280
+		division_template = "People army Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "11-a People army division"
+		location = 12065
+		division_template = "People army Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "12-a People army division"
+		location = 12008
+		division_template = "People army Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "13-a People army division"
+		location = 12008
+		division_template = "People army Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "14-a People army division"
+		location = 10016
+		division_template = "People army Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "15-a People army division"
+		location = 10016
+		division_template = "People army Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_1 #нету
+		amount = 50000
+		producer = JAP
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_1 #Тип 24
+		amount = 10000
+		producer = PRC
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_1 #СВТ
+		amount = 200000
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_0 #Винтовка Моссина
+		amount = 300000
+		producer = SOV
+	}
+	
+	
+	add_equipment_to_stockpile = {
+		type = SOV_medium_tank_equipments_2 #Т-34
+		amount = 150
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_1 #Ха-Го
+		amount = 50
+		producer = JAP
+	}
+	
+	add_equipment_to_stockpile = {
+		type = pt_sau_equipment_1 #СУ-76
+		amount = 50
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1 #Грузовик ЗиС 5
+		amount = 200
+		producer = SOV
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment_1 #Супорт еквип
+		amount = 1000
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipments_2 #ЗиС-3 Артилерия
+		amount = 1000
+		producer = SOV
+	}
+}

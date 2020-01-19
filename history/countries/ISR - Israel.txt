@@ -1,0 +1,76 @@
+﻿capital = 554
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 5
+
+1939.1.1 = {
+
+    oob = "ISR_1946"
+	add_political_power = 1198
+	
+	set_technology = {
+	}
+}
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1947.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 50 
+	fascism = 9
+	chucheism = 3
+	maoism = 2
+	trotskism = 7
+	titoism = 1
+	liberal = 5
+	neutrality = 10
+	communism = 13
+}
+
+create_country_leader = {
+	name = "David Ben-Gurion"
+	desc = ""
+	picture = "gfx/leaders/ISR/David.dds"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Itzhak Gaster"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rudolf Szabó"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Shmuel Mikunis"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
+}

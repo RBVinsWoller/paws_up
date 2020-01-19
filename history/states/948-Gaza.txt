@@ -1,0 +1,35 @@
+
+state={
+	id=948
+	name="STATE_948" #gaza
+	manpower = 80000
+	
+	state_category = rural
+	resources={
+		tungsten=10
+	}
+	
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 3
+		}
+		victory_points = {
+			4088 1 
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+		
+		1948.1.1 = { 
+		    owner = ISR
+			add_core_of = ISR 
+		} 
+	}
+
+	provinces={
+		4088 
+	}
+}

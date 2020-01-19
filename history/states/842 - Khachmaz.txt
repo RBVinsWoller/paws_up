@@ -1,0 +1,25 @@
+
+state={
+	id=842
+	name="STATE_842"
+	manpower = 525700
+	
+	state_category = city
+	
+
+	history={
+											owner = AZR
+		        add_core_of = AZR
+		victory_points = {
+			4545 1 
+		}
+		buildings = {
+			infrastructure = 5
+		}
+		
+	}
+
+	provinces={
+		4545
+	}
+}

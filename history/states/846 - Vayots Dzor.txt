@@ -1,0 +1,21 @@
+
+state={
+	id=846
+	name="STATE_846"
+	manpower = 52324
+	
+	state_category = town
+
+	history={
+		victory_points = {
+			6642 1 
+		}
+																			owner = ARM
+		        add_core_of = ARM
+		
+	}
+
+	provinces={
+		6642
+	}
+}

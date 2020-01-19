@@ -1,0 +1,375 @@
+ideas = {
+	head_of_government = {
+		miho_kalinin = {
+			picture = GFX_idea_miho_kalinin
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			ai_will_do = {
+				factor = 2
+			}
+			traits = { love }
+		}
+		nikolay_svernik = {
+			picture = GFX_idea_nikolay_svernik
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { idea_men }
+		}
+		
+		kliment_voroshilovs = {
+			picture = GFX_idea_kliment_voroshilovs
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			ai_will_do = {
+				factor = 1
+			}
+
+			traits = { byntar_commi }
+		}
+		
+		alexand_keren = {
+			picture = GFX_idea_alexand_keren
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 0
+			}
+
+			traits = { byntar_capitala }
+		}
+		georgii_malenkov = {
+			picture = GFX_idea_georgii_malenkov
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { political_dancer }
+		}
+	}
+	defence_minister = {
+		niko_bulhanin = {
+			picture = GFX_idea_niko_bulhanin
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { Peace_maker }
+		}
+		georgiy_gukov = {
+			picture = GFX_idea_georgiy_gukov
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { War_maker }
+		}
+		jos_stalin = {
+			picture = GFX_idea_jos_stalin
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = {organizovanuy }
+		}
+		vasiliy_stalin = {
+			picture = GFX_idea_vasiliy_stalin
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = {Storonik_avia }
+		}
+		alexandr_vasilevskiy = {
+			picture = GFX_idea_alexandr_vasilevskiy
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { nastavnik }
+		}
+		andrey_grechko = {
+			picture = GFX_idea_andrey_grechko
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { fast_war }
+		}
+	
+	}
+	building_minister = {
+		lavrentiy_beriya = {
+			picture = GFX_idea_lavrentiy_beriya
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { jestkiy }
+		}
+		viktor_abakumov = {
+			picture = GFX_idea_viktor_abakumov
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { agentura }
+		}
+		sergey_kruglov = {
+			picture = GFX_idea_sergey_kruglov
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { militarityzat }
+		}
+		nikolay_schelokov = {
+			picture = GFX_idea_nikolay_schelokov
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { myakiy }
+		}
+	}
+	economic_minister = {
+		nikolay_voznisenkiy = {
+			picture = GFX_idea_nikolay_voznisenkiy
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { war_industrialist }
+		}
+		
+		nikolay_baybakov = {
+			picture = GFX_idea_nikolay_baybakov
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { stabilizat }
+		}
+		
+		alex_kosigin = {
+			picture = GFX_idea_alex_kosigin
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { captain_of_industry }
+		}
+		
+		kostya_gerasimov = {
+			picture = GFX_idea_kostya_gerasimov
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { quartermaster_general }
+		}
+		
+	}
+	
+	diplomacy_minister = {
+		vyach_molotov = {
+			picture = GFX_idea_vyach_molotov
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { works_horse }
+		}
+		
+		andrey_vishinskiy = {
+			picture = GFX_idea_andrey_vishinskiy
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { jawk }
+		}
+		
+		dmitriy_shepilov = {
+			picture = GFX_idea_dmitriy_shepilov
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { ideolog_comrad }
+		}
+		
+		andrey_gromiko = {
+			picture = GFX_idea_andrey_gromiko
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { neutrality_count }
+		}
+	
+	}
+	
+	culture_minister = {
+		miho_hrapchenko = {
+			picture = GFX_idea_miho_hrapchenko
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { millprop }
+		}
+		
+		katya_furceva = {
+			picture = GFX_idea_katya_furceva
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { antiwarprop }
+		}
+	
+	}
+}

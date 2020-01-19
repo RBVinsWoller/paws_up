@@ -1,0 +1,225 @@
+﻿
+add_namespace = rus
+
+country_event = {
+	id = rus.1
+	title = rus.1.t
+	desc = rus.1.d
+	picture = GFX_report_event_fascist_militia
+	
+	fire_only_once = no
+	
+	mean_time_to_happen = {
+		days = 80
+	}
+	
+	trigger = { 
+		tag = RUS
+		has_government = communism 
+		communism < 0.45
+		SOV = { exists = yes }
+		is_subject_of = SOV
+    }
+	
+	option = {
+		name = rus.1.a
+		
+		SOV = {
+			country_event = { days = 1 id = sov.12 }
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.71 } 
+		}
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = rus.2
+	title = rus.2.t
+	desc = rus.2.d
+	picture = GFX_report_event_dead_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rus.2.a
+		
+			set_politics = {
+
+				parties = {
+					democratic = { 
+						popularity = 5
+					}
+					
+					communism = {
+						popularity = 95
+					}		
+				}
+				ruling_party = communism
+				last_election = "1946.1.1"
+				election_frequency = 108
+				elections_allowed = no
+			}
+			
+		hidden_effect = { 
+			news_event = { id = news.72 } 
+		}
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = rus.3
+	title = rus.3.t
+	desc = rus.3.d
+	picture = GFX_report_event_degaulle_churchill
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rus.3.a
+		
+		hidden_effect = {
+			start_civil_war = {
+				ideology = democratic
+				size = 0.8
+			}
+			random_other_country = {
+				limit = {
+					original_tag = RUS
+					has_government = democratic
+				}
+				
+				set_equipment_fraction = 0.8
+			}
+			
+			set_equipment_fraction = 0.2
+		
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.73 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = rus.4
+	title = rus.4.t
+	desc = rus.4.d
+	picture = GFX_report_event_dead_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rus.4.a
+		
+		set_politics = {
+
+			parties = {
+				democratic = { 
+					popularity = 5
+				}
+				
+				communism = {
+					popularity = 95
+				}		
+			}
+			ruling_party = communism
+			last_election = "1946.1.1"
+			election_frequency = 108
+			elections_allowed = no
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.74 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = rus.5
+	title = rus.5.t
+	desc = rus.5.d
+	picture = GFX_report_event_fascist_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rus.5.a
+		
+		set_politics = {
+
+			parties = {
+				democratic = { 
+					popularity = 95
+				}
+				
+				communism = {
+					popularity = 5
+				}		
+			}
+			ruling_party = democratic
+			last_election = "1946.1.1"
+			election_frequency = 108
+			elections_allowed = no
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.75 } 
+		}
+		
+		set_autonomy = { target = RUS autonomy_state = autonomy_free  }
+		
+		drop_cosmetic_tag = yes
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = rus.6
+	title = rus.6.t
+	desc = rus.6.d
+	picture = GFX_report_event_fascist_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rus.6.a
+		
+		set_politics = {
+
+			parties = {
+				democratic = { 
+					popularity = 95
+				}
+				
+				communism = {
+					popularity = 5
+				}		
+			}
+			ruling_party = democratic
+			last_election = "1946.1.1"
+			election_frequency = 108
+			elections_allowed = no
+		}
+		
+		drop_cosmetic_tag = yes
+		
+		set_autonomy = { target = RUS autonomy_state = autonomy_free }
+		
+		hidden_effect = { 
+			news_event = { id = news.76 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=868
+	name="STATE_868" # Subotica
+	manpower = 312452
+	
+	state_category = large_town
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+		}
+		victory_points = {
+			9621 1
+		}
+		add_core_of = YUG
+		add_core_of = SER
+	}
+
+	provinces={
+		9621
+	}
+}

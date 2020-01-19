@@ -1,0 +1,21 @@
+
+state={
+	id=241
+	name="STATE_241" # Gomel
+	manpower = 1114592
+	
+	state_category = large_city
+
+	history={
+		victory_points = {
+			9288 10 
+		}
+			
+				owner = BLR
+		        add_core_of = BLR
+		}
+
+	provinces={
+		6344 6373 9288 9342 11355
+	}
+}

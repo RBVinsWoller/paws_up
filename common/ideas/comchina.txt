@@ -1,0 +1,290 @@
+ideas = {
+	head_of_government = {
+		mao_zedonger = {
+			picture = GFX_idea_mao_zedonger
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			ai_will_do = {
+				factor = 2
+			}
+			traits = { love }
+		}
+		lu_shaoci = {
+			picture = GFX_idea_lu_shaoci
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { idea_men }
+		}
+		
+		dun_biu = {
+			picture = GFX_idea_dun_biu
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			ai_will_do = {
+				factor = 1
+			}
+
+			traits = { byntar_commi }
+		}
+		
+		chan_kaishi = {
+			picture = GFX_idea_chan_kaishi
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 0
+			}
+
+			traits = { byntar_capitala }
+		}
+		zyan_cin = {
+			picture = GFX_idea_georgii_malenkov
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { political_dancer }
+		}
+	}
+	defence_minister = {
+		pen_dehuay = {
+			picture = GFX_idea_pen_dehuay
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { nastavnik }
+		}
+		lin_bao = {
+			picture = GFX_lin_bao
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { Peace_maker }
+		}
+		e_zinin = {
+			picture = GFX_idea_e_zinin
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { War_maker }
+		}
+	
+	}
+	building_minister = {
+		lo_juycin = {
+			picture = GFX_idea_lo_juycin
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { militarityzat }
+		}
+		se_fuji = {
+			picture = GFX_idea_se_fuji
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { jestkiy }
+		}
+		hua_gofen = {
+			picture = GFX_idea_hua_gofen
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { myakiy }
+		}
+	}
+	economic_minister = {
+		bo_ibo = {
+			picture = GFX_idea_bo_ibo
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { war_industrialist }
+		}
+		
+		den_siaping = {
+			picture = GFX_idea_den_siaping
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { captain_of_industry }
+		}
+		
+		li_sanyang = {
+			picture = GFX_idea_li_sanyang
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { stabilizat }
+		}
+		
+	}
+	
+	diplomacy_minister = {
+		jove_enlay = {
+			picture = GFX_idea_jove_enlay
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { works_horse }
+		}
+		
+		chen_i = {
+			picture = GFX_idea_chen_i
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { jawk }
+		}
+		
+		czi_pengfey = {
+			picture = GFX_idea_czi_pengfey
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { neutrality_count }
+		}
+		
+	
+	}
+	
+	culture_minister = {
+		mao_dun = {
+			picture = GFX_idea_mao_dun
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { millprop }
+		}
+		
+		lu_dini = {
+			picture = GFX_idea_lu_dini
+			allowed = {
+				original_tag = "PRC"
+			}
+			available = {
+			}	
+			
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { antiwarprop }
+		}
+	
+	}
+}

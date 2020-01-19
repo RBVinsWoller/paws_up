@@ -1,0 +1,30 @@
+
+state={
+	id=229
+	name="STATE_229"
+	manpower = 4883867
+	
+	state_category = metropolis
+	
+	resources={
+		oil=130
+		steel=6
+	}
+
+	history={
+		victory_points = {
+			7661 1 
+		}
+										owner = AZR
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 2
+		}	
+		add_core_of = AZR
+		
+	}
+
+	provinces={
+		1536 1539 4477 4614 7495 7661 11704 12434
+	}
+}

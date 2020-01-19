@@ -1,0 +1,22 @@
+
+state={
+	id=837
+	name="STATE_837"
+	manpower = 135175
+	
+	state_category = large_town
+	
+
+	history={
+		victory_points = {
+			6997 1 
+		}
+														owner = AZR
+		        add_core_of = AZR
+		
+	}
+
+	provinces={
+		6997
+	}
+}

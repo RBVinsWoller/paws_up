@@ -1,0 +1,86 @@
+﻿capital = 446
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 20
+
+1939.1.1 = {
+
+    oob = "EGY_1939"
+
+	add_political_power = 100
+	
+	
+	set_technology = {
+	}
+}
+
+create_faction = Ligue
+add_to_faction = EGY
+add_to_faction = JOR
+add_to_faction = LEB
+add_to_faction = SYR
+add_to_faction = IRQ
+add_to_faction = SAU
+add_to_faction = YEM
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10 
+	fascism = 9
+	chucheism = 3
+	maoism = 2
+	trotskism = 7
+	titoism = 1
+	liberal = 5
+	neutrality = 50
+	communism = 13
+}
+
+create_country_leader = {
+	name = "Muhammad Naguib"
+	desc = ""
+	picture = "gfx/leaders/EGY/Portrait_Arabia_Generic_democratic1.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmed Husayn"
+	desc = ""
+	picture = "gfx/leaders/EGY/Portrait_Arabia_Generic_1.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Farouk I"
+	desc = ""
+	picture = "gfx/leaders/EGY/Farouk.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hosni al-Arabi"
+	desc = ""
+	picture = "gfx/leaders/EGY/Portrait_Arabia_Generic_navy_3.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=914
+	name="STATE_914"
+	manpower = 1239400
+	
+	state_category = large_town
+
+	history={
+					owner = UKR
+		        add_core_of = UKR
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			air_base = 1
+		}
+		
+	}
+
+	provinces={
+	11409 434 409 3452 3468 3403 9573 6451 6478
+	}
+}

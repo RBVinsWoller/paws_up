@@ -1,0 +1,1140 @@
+﻿
+###########################
+# Soviet Events
+###########################
+
+add_namespace = sov
+
+country_event = {
+	id = sov.1
+	title = sov.1.t
+	desc = sov.1.d
+	picture = GFX_report_event_001
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1946.1.2
+		date < 1949.10.9
+		OR = { 
+		has_government = communism 
+		has_government = maoism
+		has_government = chucheism
+		has_government = trotskism
+		}
+		SOV = {
+		owns_state = 328
+		owns_state = 714
+		owns_state = 716
+		owns_state = 717
+		owns_state = 761
+		
+		}
+    }
+	
+	option = {
+		name = sov.1.a
+		PRC = {
+			set_state_owner = 328
+			set_state_owner = 714
+			set_state_owner = 716
+			set_state_owner = 717
+			set_state_owner = 761
+		}
+		
+		PRC = {
+			set_state_controller = 328
+			set_state_controller = 714
+			set_state_controller = 716
+			set_state_controller = 717
+			set_state_controller = 761
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.113 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = sov.1.b
+		CHI = {
+			set_state_owner = 328
+			set_state_owner = 714
+			set_state_owner = 716
+			set_state_owner = 717
+			set_state_owner = 761
+		}
+		
+		CHI = {
+			set_state_controller = 328
+			set_state_controller = 714
+			set_state_controller = 716
+			set_state_controller = 717
+			set_state_controller = 761
+			
+		}
+		ai_chance = { factor = 0 }
+	}
+	
+	option = {
+		name = sov.1.c
+		SOV = {
+			set_state_owner = 328
+			set_state_owner = 714
+			set_state_owner = 716
+			set_state_owner = 717
+			set_state_owner = 761
+		}	
+		
+		SOV = {
+			set_state_controller = 328
+			set_state_controller = 714
+			set_state_controller = 716
+			set_state_controller = 717
+			set_state_controller = 761
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = sov.2
+	title = sov.2.t
+	desc = sov.2.d
+	picture = GFX_report_event_ace_died
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1949.10.6
+		OR = { 
+		has_government = communism 
+		has_government = maoism
+		has_government = chucheism
+		has_government = trotskism
+		} 
+		DDR = { exists = yes }
+		DDR = { puppet = yes }
+    }
+	
+	option = {
+		name = sov.2.a
+		DDR = {
+			drop_cosmetic_tag = yes
+			
+			create_country_leader = {
+				name = "Wilhelm Pieck"
+				desc = "POLITICS_WILHELM_PIECK_DESC"	 
+				picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
+				expire = "1960.9.25"
+				ideology = stalinism
+				traits = {
+				}
+			}
+		}
+		set_autonomy = { target = DDR autonomy_state = autonomy_free }
+		hidden_effect = { 
+			news_event = { id = news.2 } 
+		}
+		
+		ai_chance = { factor = 99 }
+	}
+
+}	
+	
+
+country_event = {
+	id = sov.3
+	title = sov.3.t
+	desc = sov.3.d
+	picture = GFX_report_event_ace_promoted
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1953.3.5
+		has_government = communism 
+    }
+	
+	option = {
+		name = sov.3.a
+		
+		kill_country_leader = yes
+		
+		create_country_leader = { 
+			name = "Georgy Malenkov" 
+			desc = "" 
+			picture = "gfx/leaders/SOV/Portrait_Melenkov.dds"
+			expire = "1953.9.7" 
+			ideology = stalinism
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.3 } 
+		}
+		
+	}
+}
+
+
+country_event = {
+	id = sov.4
+	title = sov.4.t
+	desc = sov.4.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = sov.4.a
+		
+		KND = {
+			set_cosmetic_tag = KND_49
+			create_country_leader = {
+				name = "Kim Il-sung"
+				desc = ""
+				picture = "gfx/leaders/KND/Portrait_Kim_knd.dds"
+				expire = "1994.7.8"
+				ideology = stalinism
+				traits = {
+					#
+				}
+			}
+			remove_ideas = SOVOP
+		}
+		set_autonomy = { target = KND autonomy_state = autonomy_free }
+		
+		hidden_effect = { 
+			news_event = { id = news.5 } 
+		}
+		
+		ai_chance = { factor = 98 }
+	}
+	
+	option = {
+		name = sov.4.b
+		
+		
+
+		KND = {
+			create_country_leader = {
+				name = "Kim Il-sung"
+				desc = ""
+				picture = "gfx/leaders/KND/Portrait_Kim_sov.dds"
+				expire = "1994.7.8"
+				ideology = stalinism
+				traits = {
+					#
+				}
+			}
+			set_cosmetic_tag = KND_50
+			
+		}
+		
+		set_autonomy = {
+			target = KND
+			autonomous_state = autonomy_souz_republic
+		}
+		ai_chance = { factor = 2 }
+	}
+}
+
+
+country_event = {
+	id = sov.5
+	title = sov.5.t
+	desc = sov.5.d
+	picture = GFX_report_event_albanian_king_zog
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1953.6.1
+		has_government = communism 
+    }
+	
+	option = {
+		name = sov.5.a
+		
+		create_country_leader = { 
+			name = "Nikita Khrushchev" 
+			desc = "" 
+			picture = "gfx/leaders/SOV/Portrait_Nikita_Khrushchev.dds"
+			expire = "1971.9.11" 
+			ideology = leninism
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.6 } 
+		}
+		ai_chance = { factor = 80 }
+		
+	}
+	
+	option = {
+		name = sov.5.b
+		
+		create_country_leader = { 
+			name = "Lavrentiy Beria" 
+			desc = "" 
+			picture = "gfx/leaders/SOV/Portrait_Beria.dds"
+			expire = "1964.10.14" 
+			ideology = stalinism
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.7 } 
+		}
+		
+		ai_chance = { factor = 20 }
+		
+	}
+}
+
+
+country_event = {
+	id = sov.6
+	title = sov.6.t
+	desc = sov.6.d
+	picture = GFX_report_event_albanian_king_zog
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1952.10.5
+		has_government = communism 
+    }
+	
+	option = {
+		name = sov.6.a
+		set_party_name = {
+		ideology = communism
+		long_name = KPSS
+		name = KPSS
+		}
+		ai_chance = { factor = 100 }
+		
+	}
+}
+
+
+country_event = {
+	id = sov.7
+	title = sov.7.t
+	desc = sov.7.d
+	picture = GFX_report_event_albanian_partisans
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1955.5.14
+		has_government = communism 
+    }
+	
+	option = {
+		name = sov.7.a
+		create_faction = "OVD"
+		add_to_faction = ALB
+		add_to_faction = BUL
+		add_to_faction = ROM
+		add_to_faction = HUN
+		add_to_faction = POL
+		add_to_faction = DDR
+		add_to_faction = CZE
+		ai_chance = { factor = 100 }
+		
+	}
+}
+
+country_event = {
+	id = sov.8
+	title = sov.8.t
+	desc = sov.8.d
+	picture = GFX_report_event_african_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1956.2.9
+		has_government = communism 
+    }
+	
+	option = {
+		name = sov.8.a
+		remove_ideas = Kult_lichnosti
+		
+		set_global_flag = siezd
+		hidden_effect = { 
+			news_event = { id = news.21 } 
+		}
+		
+		ai_chance = { factor = 50 }
+	}
+	
+	option = {
+		name = sov.8.b
+		
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {		#Украина требует независимость!
+	id = sov.9
+	title = sov.9.t
+	desc = sov.9.d
+	picture = GFX_report_event_czech_soldiers_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sov.9.a
+		
+		random_list = {
+			80 = {
+				UKR = {
+					country_event = { days = 3 id = ukr.2 }
+				}
+			}
+			20 = {
+				UKR = {
+					country_event = { days = 3 id = ukr.3 }
+				}
+			}
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.50 } 
+		}
+		
+		add_political_power = -75
+		ai_chance = { factor = 95 }
+	}
+	
+	option = {
+		name = sov.9.b
+		
+		random_list = {
+			40 = {
+				UKR = {
+					country_event = { days = 5 id = ukr.4 }
+				}
+			}
+			60 = {
+				UKR = {
+					country_event = { days = 5 id = ukr.5 }
+				}
+			}
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.51 } 
+		}
+		
+		add_political_power = -25
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = sov.9.c
+		
+		UKR = {
+			country_event = { days = 3 id = ukr.6 }
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {		#Передача Крыма УССР
+	id = sov.10
+	title = sov.10.t
+	desc = sov.10.d
+	picture = GFX_report_event_czech_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1954.1.15
+		has_government = communism 
+		has_country_leader = { name = "Nikita Khrushchev" }
+		UKR = { exists = yes }
+		SOV = {
+			owns_state = 137
+		}
+    }
+	
+	option = {
+		name = sov.10.a
+		
+		UKR = {
+			set_state_owner = 137
+		}
+		
+		UKR = {
+			set_state_controller = 137
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.58 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = sov.10.b
+	
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {		#Белорусь требует независимость!
+	id = sov.11
+	title = sov.11.t
+	desc = sov.11.d
+	picture = GFX_report_event_europe_funeral
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sov.11.a
+		
+		random_list = {
+			80 = {
+				BLR = {
+					country_event = { days = 3 id = blr.2 }
+				}
+			}
+			20 = {
+				BLR = {
+					country_event = { days = 3 id = blr.3 }
+				}
+			}
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.61 } 
+		}
+		
+		add_political_power = -75
+		ai_chance = { factor = 95 }
+	}
+	
+	option = {
+		name = sov.11.b
+		
+		random_list = {
+			40 = {
+				BLR = {
+					country_event = { days = 5 id = blr.4 }
+				}
+			}
+			60 = {
+				BLR = {
+					country_event = { days = 5 id = blr.5 }
+				}
+			}
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.62 } 
+		}
+		
+		add_political_power = -25
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = sov.11.c
+		
+		BLR = {
+			country_event = { days = 3 id = blr.6 }
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+
+country_event = {		#Россия требует независимость!
+	id = sov.12
+	title = sov.12.t
+	desc = sov.12.d
+	picture = GFX_report_event_fascist_militia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sov.12.a
+		
+		random_list = {
+			80 = {
+				RUS = {
+					country_event = { days = 3 id = rus.2 }
+				}
+			}
+			20 = {
+				RUS = {
+					country_event = { days = 3 id = rus.3 }
+				}
+			}
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.69 } 
+		}
+		
+		add_political_power = -75
+		ai_chance = { factor = 95 }
+	}
+	
+	option = {
+		name = sov.12.b
+		
+		random_list = {
+			40 = {
+				RUS = {
+					country_event = { days = 5 id = rus.4 }
+				}
+			}
+			60 = {
+				RUS = {
+					country_event = { days = 5 id = rus.5 }
+				}
+			}
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.70 } 
+		}
+		
+		add_political_power = -25
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = sov.12.c
+		
+		RUS = {
+			country_event = { days = 3 id = rus.6 }
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {		#Анексия КФССР!
+	id = sov.13
+	title = sov.13.t
+	desc = sov.13.d
+	picture = GFX_report_event_fascist_militia
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1956.7.2
+		OR = { 
+		has_government = communism 
+		has_government = maoism
+		has_government = chucheism
+		has_government = trotskism
+		}
+		KAR = {
+			owns_state = 215
+			owns_state = 216
+			owns_state = 146
+            owns_state = 147
+		}
+		FIN = { exists = yes }
+		NOT = { has_war_with = FIN }
+    }
+	
+	option = {
+		name = sov.13.a
+		annex_country = { target = KAR transfer_troops = yes }
+		SOV = {
+			set_state_owner = 215
+			set_state_owner = 216
+			set_state_owner = 146
+            set_state_owner = 147
+		}
+		
+		SOV = {
+			set_state_controller = 215
+			set_state_controller = 216
+			set_state_controller = 146
+            set_state_controller = 147
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.78 } 
+		}
+		
+		ai_chance = { factor = 60 }
+	}
+	
+	option = {
+		name = sov.13.b
+
+		FIN = {
+			add_opinion_modifier = { target = SOV modifier = SOV_sport_with_FIN }
+		}
+		
+		SOV = {
+			add_opinion_modifier = { target = FIN modifier = SOV_sport_with_FIN }
+		}
+		
+		ai_chance = { factor = 40 }
+	}
+	
+}
+
+country_event = {		#Расстрел Абакумова(Хрущев)!
+	id = sov.14
+	title = sov.14.t
+	desc = sov.14.d
+	picture = GFX_report_event_FDR_speech
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1954.12.6
+		has_government = communism 
+		has_country_leader = { name = "Nikita Khrushchev" }
+    }
+	
+	option = {
+		name = sov.14.a
+		
+		
+		hidden_effect = { 
+			news_event = { id = news.78 } 
+		}
+		
+		ai_chance = { factor = 60 }
+	}
+	
+	option = {
+		name = sov.14.b
+
+		
+		ai_chance = { factor = 40 }
+	}
+	
+}
+
+country_event = {		#Казахстан требует независимость!
+	id = sov.15
+	title = sov.15.t
+	desc = sov.15.d
+	picture = GFX_report_event_french_resistance_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sov.15.a
+		
+		random_list = {
+			80 = {
+				KAZ = {
+					country_event = { days = 3 id = kaz.2 }
+				}
+			}
+			20 = {
+				KAZ = {
+					country_event = { days = 3 id = kaz.3 }
+				}
+			}
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.84 } 
+		}
+		
+		add_political_power = -75
+		ai_chance = { factor = 95 }
+	}
+	
+	option = {
+		name = sov.15.b
+		
+		random_list = {
+			40 = {
+				KAZ = {
+					country_event = { days = 5 id = kaz.4 }
+				}
+			}
+			60 = {
+				KAZ = {
+					country_event = { days = 5 id = kaz.5 }
+				}
+			}
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.85 } 
+		}
+		
+		add_political_power = -25
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = sov.15.c
+		
+		KAZ = {
+			country_event = { days = 3 id = kaz.6 }
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {		#Инцидент у КПП "Чарли"!
+	id = sov.16
+	title = sov.16.t
+	desc = sov.16.d
+	picture = GFX_report_event_generic_army
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1961.10.9
+		has_government = communism
+		SOV = { exists = yes } 
+		USA = { exists = yes } 
+		WGR = { exists = yes }
+		DDR = { exists = yes }
+		BER = { exists = yes }
+		NOT = { has_war_with = USA }
+		USA = { 
+			has_government = democratic
+		}
+    }
+	
+	option = {
+		name = sov.16.a
+		
+		declare_war_on = {
+			target = USA
+			type = puppet_wargoal_focus
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.93 } 
+		}
+		
+		add_political_power = -100
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = sov.16.b
+		
+		USA = { country_event = { days = 3 id = usa.11 } }
+		
+		hidden_effect = { 
+			news_event = { id = news.94 } 
+		}
+		
+		add_political_power = -200
+		ai_chance = { factor = 95 }
+	}
+	
+}
+
+country_event = {		#Создание СЄВ
+	id = sov.17
+	title = sov.17.t
+	desc = sov.17.d
+	picture = GFX_report_event_generic_factory
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1949.1.6
+		date < 1949.10.9
+		has_government = communism
+		SOV = { exists = yes } 
+    }
+
+	
+	option = {
+		name = sov.17.a
+		
+		add_ideas = {
+			Sev
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.98 } 
+		}
+		set_country_flag = SEV_ON
+		
+		add_political_power = -100
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = sov.17.b
+		
+		
+		ai_chance = { factor = 0 }
+	}
+	
+}
+
+country_event = {		#Узбекистан требует независимость!
+	id = sov.18
+	title = sov.18.t
+	desc = sov.18.d
+	picture = GFX_report_event_generic_funeral
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sov.18.a
+		
+		random_list = {
+			80 = {
+				UZB = {
+					country_event = { days = 3 id = uzb.2 }
+				}
+			}
+			20 = {
+				UZB = {
+					country_event = { days = 3 id = uzb.3 }
+				}
+			}
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.105 } 
+		}
+		
+		add_political_power = -75
+		ai_chance = { factor = 95 }
+	}
+	
+	option = {
+		name = sov.18.b
+		
+		random_list = {
+			40 = {
+				UZB = {
+					country_event = { days = 5 id = uzb.4 }
+				}
+			}
+			60 = {
+				UZB = {
+					country_event = { days = 5 id = uzb.5 }
+				}
+			}
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.106 } 
+		}
+		
+		add_political_power = -25
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = sov.18.c
+		
+		UZB = {
+			country_event = { days = 3 id = uzb.6 }
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = sov.19
+	title = sov.19.t
+	desc = sov.19.d
+	picture = GFX_report_event_001
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1955.5.1
+		has_government = communism 
+		
+		PRC = { exists = yes } 
+		
+		NOT = { has_war_with = PRC }
+		
+		SOV = {
+			owns_state = 745
+		}
+    }
+	
+	option = {
+		name = sov.19.a
+		PRC = {
+			set_state_owner = 745
+		}
+		
+		PRC = {
+			set_state_controller = 745
+			add_state_claim = 745
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	
+	option = {
+		name = sov.19.b
+		SOV = {
+			set_state_owner = 745
+		}
+		
+		SOV = {
+			set_state_controller = 745
+		}
+		PRC = {
+			add_state_claim = 745
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {		#70-ти летие Сталина
+	id = sov.20
+	title = sov.20.t
+	desc = sov.20.d
+	picture = GFX_report_event_generic_rally2
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = SOV
+		date > 1949.12.10
+		has_government = communism 
+		has_country_leader = { name = "Joseph Stalin" }
+    }
+	
+	option = {
+		name = sov.20.a
+		
+		
+		hidden_effect = { 
+			news_event = { id = news.80 } 
+		}
+		
+		ai_chance = { factor = 60 }
+	}
+	
+}
+
+country_event = {		#Корея-самоправозгласила независимость!
+	id = sov.21
+	title = sov.21.t
+	desc = sov.21.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = sov.21.a
+		declare_war_on = {
+			target = KND
+			type = puppet_wargoal_focus
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.117 } 
+		}
+		set_autonomy = {
+			target = KND
+			autonomous_state = autonomy_free
+		}
+		ai_chance = { factor = 50 }
+	}
+	
+	option = {
+		name = sov.21.b
+		
+		set_autonomy = {
+			target = KND
+			autonomous_state = autonomy_free
+		}
+		ai_chance = { factor = 50 }
+	}
+	
+}
+
+country_event = {		#Советские корейцы!
+	id = sov.22
+	title = sov.22.t
+	desc = sov.22.d
+	picture = GFX_report_event_generic_usa_treaty
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = sov.22.a
+		remove_ideas = KND_vozvrat_koreycev
+		KND = {
+			country_event = { days = 3 id = knd.6 }
+		}
+		add_political_power = 100
+		ai_chance = { factor = 80 }
+	}
+	
+	option = {
+		name = sov.22.b
+		
+		add_political_power = -100
+		ai_chance = { factor = 20 }
+	}
+	
+}
+country_event = {		#Ким Ир Сен просит экономическую помощь
+	id = sov.23
+	title = sov.23.t
+	desc = sov.23.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = sov.23.a
+		add_ideas = SUPP_KOR_SOV
+		KND = {
+			country_event = { days = 3 id = knd.8 }
+		}
+		add_political_power = 50
+		ai_chance = { factor = 80 }
+	}
+	
+	option = {
+		name = sov.23.b
+		KND = {
+			country_event = { days = 3 id = knd.9 }
+		}
+		add_political_power = -100
+		ai_chance = { factor = 20 }
+	}
+	
+}

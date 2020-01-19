@@ -1,0 +1,608 @@
+﻿###########################
+# Chinese Events
+###########################
+
+add_namespace = prc
+
+
+country_event = { #Смерть Мао
+	id = prc.1
+	title = prc.1.t
+	desc = prc.1.d
+	picture = GFX_report_event_burma_road
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = PRC
+		date > 1976.9.2
+		has_government = communism
+    }
+	
+	option = {
+		name = prc.1.a
+		
+		kill_country_leader = yes
+		
+		remove_unit_leader = 1
+		
+		create_country_leader = { 
+			name = "Hua Guofeng" 
+			desc = "" 
+			picture = "gfx/leaders/CHI/Portrait_China_Hua Guofeng.dds"
+			expire = "2008.1.19" 
+			ideology = maoist
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.12 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+country_event = {	#Реакция КНР на 20 сьезд
+	id = prc.2
+	title = prc.2.t
+	desc = prc.2.d
+	picture = GFX_report_event_ANZAC_day
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = { 
+		tag = PRC
+		has_government = communism
+		has_global_flag = siezd
+		NOT = { has_war_with = SOV }
+		NOT = { has_war_with = USA }
+		SOV = { exists = yes } 
+		NOT = {
+			has_country_flag = STALON
+			has_country_flag = STALOF
+		}
+    }
+	
+	option = {
+		name = prc.2.a
+		set_country_flag = STALON
+		
+		PRC = {
+			add_opinion_modifier = { target = SOV modifier = SOV_sport_with_PRC }
+		}
+		
+		SOV = {
+			add_opinion_modifier = { target = PRC modifier = SOV_sport_with_PRC }
+		}
+		
+		create_faction = "PRC"
+		
+		remove_ideas = Economic_suport
+		
+		hidden_effect = { 
+			news_event = { id = news.26 } 
+		}
+		
+		ai_chance = { factor = 70 }
+	}
+	
+	option = {
+		name = prc.2.b
+		set_country_flag = STALON
+		declare_war_on = {
+			target = SOV
+			type = puppet_wargoal_focus
+		}
+		
+		create_faction = "PRC"
+		
+		remove_ideas = Economic_suport
+		
+		hidden_effect = { 
+			news_event = { id = news.27 } 
+		}
+		
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = prc.2.c
+		set_country_flag = STALOF
+		ai_chance = { factor = 25 }
+	}
+}
+	
+country_event = { #Большой Скачок
+	id = prc.3
+	title = prc.3.t
+	desc = prc.3.d
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = PRC
+		date > 1958.2.1
+		has_government = communism
+    }
+	
+	option = {
+		name = prc.3.a
+		
+		add_timed_idea = {
+			idea = Skachok
+			days = 700
+		}
+
+		hidden_effect = { 
+			news_event = { id = news.32 } 
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+	
+	option = {
+		name = prc.3.b
+		
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = { #Культурная революция
+	id = prc.4
+	title = prc.4.t
+	desc = prc.4.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = PRC
+		date > 1966.2.2
+		has_government = communism
+    }
+	
+	option = {
+		name = prc.4.a
+		
+		add_timed_idea = {
+			idea = Kult_revolution
+			days = 3650
+		}
+
+		hidden_effect = { 
+			news_event = { id = news.31 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = prc.4.b
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #Арест Пэн Дэхуая
+	id = prc.5
+	title = prc.5.t
+	desc = prc.5.d
+	picture = GFX_report_event_canada_army
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = PRC
+		date > 1966.12.1
+		has_government = communism
+    }
+	
+	option = {
+		name = prc.5.a
+		
+		remove_unit_leader = 2
+
+		hidden_effect = { 
+			news_event = { id = news.33 } 
+		}
+		
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = prc.4.b
+		
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = { #Смерть Линь Бао
+	id = prc.6
+	title = prc.6.t
+	desc = prc.6.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = PRC
+		date > 1971.9.11
+		has_government = communism
+    }
+	
+	option = {
+		name = prc.6.a
+		
+		remove_unit_leader = 3
+
+		hidden_effect = { 
+			news_event = { id = news.34 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { #Дракон на распутье
+	id = prc.7
+	title = prc.7.t
+	desc = prc.7.d
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = PRC
+		date > 1981.1.1
+		has_government = communism
+    }
+	
+	option = {
+		name = prc.7.a
+		
+		ai_chance = { factor = 15 }
+	}
+	
+	option = {
+		name = prc.7.b
+		
+		create_country_leader = { 
+			name = "Deng Xiaoping" 
+			desc = "" 
+			picture = "gfx/leaders/CHI/Portrait_China_Deng_Xiaoping.dds"
+			expire = "1997.1.19" 
+			ideology = maoist
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.37 } 
+		}
+		
+		ai_chance = { factor = 85 }
+	}
+}
+
+country_event = { #Правозглашение КНР
+	id = prc.8
+	title = prc.8.t
+	desc = prc.8.d
+	picture = GFX_report_event_canada_patriation
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = PRC
+		has_government = communism
+		PRC = { has_war_with = CHI }
+		PRC = {
+		owns_state = 618
+		owns_state = 617
+		owns_state = 619
+		owns_state = 287
+		owns_state = 616
+		owns_state = 283
+		owns_state = 325
+		owns_state = 621
+		owns_state = 622
+		owns_state = 605
+		owns_state = 603
+		owns_state = 599
+		owns_state = 594
+		owns_state = 592
+		owns_state = 591
+		owns_state = 615
+		owns_state = 607
+		owns_state = 620
+		owns_state = 602
+		owns_state = 593
+		owns_state = 606
+		owns_state = 600
+		owns_state = 595
+		owns_state = 596
+		owns_state = 613
+		owns_state = 598
+		owns_state = 597
+		owns_state = 614
+		owns_state = 608
+		owns_state = 609
+		owns_state = 611
+		owns_state = 612
+		owns_state = 610
+        owns_state = 874
+		owns_state = 749
+		owns_state = 750
+		owns_state = 748
+		owns_state = 744
+		owns_state = 747
+		owns_state = 751
+		owns_state = 752
+		owns_state = 753
+		owns_state = 754
+		owns_state = 755
+		owns_state = 756
+		owns_state = 760
+		owns_state = 759
+		}
+    }
+	
+	option = {
+		name = prc.8.a
+		set_capital = 608
+		PRC = { country_event = { days = 90 id = prc.9 } }
+		
+		PRC = { country_event = { days = 3 id = prc.11 } }
+		
+		hidden_effect = { 
+			news_event = { id = news.38 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+country_event = { #Анексия Тибета
+	id = prc.9
+	title = prc.9.t
+	desc = prc.9.d
+	picture = GFX_report_event_ast_paras
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = prc.9.a
+		
+		TIB = { country_event = { days = 1 id = tib.1 } }
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = prc.9.b
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+
+country_event = { #ТЕСТ
+	id = prc.10
+	title = prc.10.t
+	desc = prc.10.d
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = PRC
+		date > 2020.12.30
+		has_government = communism
+    }
+	
+	option = {
+		name = prc.10.a
+		
+		PRC = {
+			set_state_owner = 618
+			set_state_owner = 617
+			set_state_owner = 619
+			set_state_owner = 287
+			set_state_owner = 616
+			set_state_owner = 283
+			set_state_owner = 325
+			set_state_owner = 621
+			set_state_owner = 622
+			set_state_owner = 605
+			set_state_owner = 603
+			set_state_owner = 599
+			set_state_owner = 594
+			set_state_owner = 592
+			set_state_owner = 591
+			set_state_owner = 615
+			set_state_owner = 607
+			set_state_owner = 620
+			set_state_owner = 602
+			set_state_owner = 593
+			set_state_owner = 606
+			set_state_owner = 600
+			set_state_owner = 595
+			set_state_owner = 596
+			set_state_owner = 613
+			set_state_owner = 598
+			set_state_owner = 597
+			set_state_owner = 614
+			set_state_owner = 608
+			set_state_owner = 609
+			set_state_owner = 611
+			set_state_owner = 612
+			set_state_owner = 610
+            set_state_owner = 874
+			set_state_owner = 749
+			set_state_owner = 750
+			set_state_owner = 748
+			set_state_owner = 744
+			set_state_owner = 747
+			set_state_owner = 751
+			set_state_owner = 752
+			set_state_owner = 753
+			set_state_owner = 754
+			set_state_owner = 755
+			set_state_owner = 756
+			set_state_owner = 760
+			set_state_owner = 759
+		}
+		
+		PRC = {
+		}
+		
+		ai_chance = { factor = 15 }
+	}
+	
+	option = {
+		name = prc.10.b
+		
+		ai_chance = { factor = 85 }
+	}
+}
+
+country_event = { #Мирный Договор с Националистами 
+	id = prc.11
+	title = prc.11.t
+	desc = prc.11.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = prc.11.a
+		
+		white_peace = CHI
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = prc.11.b
+		
+		
+		ai_chance = { factor = 0 }
+	}
+	
+}
+
+country_event = { #Первая Пятилетка 
+	id = prc.12
+	title = prc.12.t
+	desc = prc.12.d
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = PRC
+		date > 1953.3.11
+		has_government = communism
+    }
+	
+	option = {
+		name = prc.12.a
+		
+		add_timed_idea = {
+			idea = Prom
+			days = 1826
+		}
+		
+		ai_chance = { factor = 40 }
+	}
+	
+	option = {
+		name = prc.12.b
+		
+		add_timed_idea = {
+			idea = NOAK
+			days = 1826
+		}
+		
+		ai_chance = { factor = 30 }
+	}
+	
+		option = {
+		name = prc.12.c
+		
+		add_timed_idea = {
+			idea = Nauka
+			days = 1826
+		}
+		
+		ai_chance = { factor = 20 }
+	}
+	
+	option = {
+		name = prc.12.e
+		
+		add_timed_idea = {
+			idea = Infrastukt
+			days = 1826
+		}
+		
+		ai_chance = { factor = 10 }
+	}
+	
+}
+
+
+
+country_event = { #Смерть Чжоу Эньлая
+	id = prc.27
+	title = prc.27.t
+	desc = prc.27.d
+	picture = GFX_report_event_fighters
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = PRC
+		date > 1976.1.3
+		has_government = communism
+    }
+	
+	option = {
+		name = prc.27.a
+		
+		hidden_effect = { 
+			news_event = { id = news.81 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { #Конституция 1954г
+	id = prc.28
+	title = prc.28.t
+	desc = prc.28.d
+	picture = GFX_report_event_finnish_letter
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = PRC
+		date > 1954.9.11
+		has_government = communism
+    }
+	
+	option = {
+		name = prc.28.a
+		
+		add_timed_idea = {
+			idea = PRCCONS
+			days = 1460
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+

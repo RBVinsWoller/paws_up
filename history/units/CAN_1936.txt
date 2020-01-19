@@ -1,0 +1,234 @@
+﻿division_template = {
+	name = "Infantry Div."				
+	division_names_group = ENG_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Modelled on Chinese divisions
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		
+		
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mountaineers"						
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Motorized" 			# Infanterie-Divisionen (mot)
+	division_names_group = ENG_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		jip = { x = 2 y = 0 }
+	    jip = { x = 2 y = 1 }
+		jip = { x = 2 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }			
+	}
+}
+
+division_template = {
+	name = "Tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = ENG_ARM_02
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        ptsausup_brigade = { x = 0 y = 0 }	
+	}
+}
+
+division_template = {
+	name = "Heavy tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = ENG_ARM_02
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {	
+		sausup_brigade = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	
+	
+	### Guard Brigades
+	
+	division = {
+		name = "1-a Infantry Division"
+		location = 4285
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "2-a Infantry Division"
+		location = 4285
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "3-a Infantry Division"
+		location = 4345
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "4-a Infantry Division"
+		location = 3775
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "5-a Infantry Division"
+		location = 3775
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "1-a Matorized Division"
+		location = 3778
+		division_template = "Motorized"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+}
+
+	air_wings = {
+	### Royal Canadian Air Force (RCAF)(CO: ) ###
+	276 = {																# Ontario
+		# RCAF Station Trenton (ONT)#
+		fighter_equipment_0 =  { owner = "CAN" amount = 24 }			# No. 3 Fighter Squadron -- Wapitis
+	} 
+} 
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_1 #СВТ
+		amount = 70000
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_2 #ППШ
+		amount = 100000
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1 #Грузовик ЗиС 5
+		amount = 1000
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = jip_equipment_1 #Грузовик ЗиС 5
+		amount = 2000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment_1 #Супорт еквип
+		amount = 400
+		producer = ENG
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipments_2 #ЗиС-3 Артилерия
+		amount = 1000
+		producer = ENG
+	}
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_2 #Чи-ха
+		amount = 200
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_2 #Шерман
+		amount = 50
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_3 #Чи-хе
+		amount = 50
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_1 #Ха-Го
+		amount = 300
+		producer = JAP
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_2 #М3
+		amount = 200
+		producer = ENG
+	}
+	
+	add_equipment_to_stockpile = {
+		type = SOV_light_tank_equipments_1 #М3
+		amount = 50
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = pt_sau_equipment_2 #M10 воврайн
+		amount = 50
+		producer = USA
+	}
+}

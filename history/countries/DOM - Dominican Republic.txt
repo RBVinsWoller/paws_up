@@ -1,0 +1,81 @@
+﻿capital = 319
+
+oob = "DOM_1936"
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 5
+
+1939.1.1 = {
+	
+	add_political_power = 1198
+	
+	oob = "DOM_1939"
+	set_technology = {
+	}
+}
+
+set_politics = {
+
+	ruling_party = fascism
+	last_election = "1934.5.16"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 20
+	fascism = 30
+	chucheism = 0
+	maoism = 0
+	trotskism = 25
+	titoism = 0
+	liberal = 15
+	neutrality = 5
+	communism = 5
+}
+
+create_country_leader = {
+	name = "Rafael Trujillo"
+	desc = "POLITICS_RAFAEL_TRUJILLO_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1934.5.16"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+    democratic = 20
+	fascism = 30
+	chucheism = 0
+	maoism = 0
+	trotskism = 25
+	titoism = 0
+	liberal = 15
+	neutrality = 5
+	communism = 5
+}
+
+	create_country_leader = {
+		name = "Jacinto Peynado"
+		desc = "POLITICS_JACINTO_PEYNADO_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			#
+		}
+	}
+}

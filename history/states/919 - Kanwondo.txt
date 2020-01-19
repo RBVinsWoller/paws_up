@@ -1,0 +1,37 @@
+state=
+{
+	id=919
+	name="STATE_919"
+	manpower = 1755950
+	
+	state_category = town
+	history=
+	{
+		owner = KOR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			dockyard = 1
+			11912 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			9936 4
+		}
+		
+		add_core_of = KOR
+		add_core_of = KND
+		
+		
+		1949.9.2 = {
+			owner = KOR
+			add_core_of = KOR
+			add_core_of = KND
+		}
+
+	}
+	provinces={
+	 10036 7021 9936 12011 4103 11912
+	}
+}

@@ -1,0 +1,46 @@
+﻿capital = 202 #Kiev
+
+oob = "UKR_1946"
+
+# Starting tech
+set_technology = {
+}
+set_cosmetic_tag = UKR_SOV
+set_politics = {
+	ruling_party = communism
+	last_election = "1946.1.1"
+	election_frequency = 108
+	elections_allowed = no
+}
+
+
+set_popularities = {
+    democratic = 5
+	fascism = 1
+	chucheism = 7
+	maoism = 5
+	trotskism = 11
+	communism = 55
+	liberal = 6
+	neutrality = 10
+}
+
+add_ideas = {
+Upa
+Soviet_Republic
+Kult_lichnosti
+Besprisorniye
+}
+create_country_leader = {
+	name = "Nikita Khrushchev"
+	desc = ""
+	picture = "gfx/leaders/UKR/Nikita_K.dds"
+	expire = "1953.3.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+
+
+

@@ -1,0 +1,32 @@
+state={
+	id=732
+	name="STATE_732" #Alma Alta
+	resources={
+		steel=48
+		chromium=44
+		tungsten=14
+		aluminium=32
+	}
+
+
+	state_category = large_city
+
+	history={
+				owner = KAZ
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			1591 3 
+		}
+
+	}
+
+	provinces={
+		 1840 4224 4651 4764 4845 7711 7795 7856 10146 10547 10550 10619 12529 13148 13149 13197
+	}
+	manpower=1699054
+}

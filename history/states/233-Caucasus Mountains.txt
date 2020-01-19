@@ -1,0 +1,23 @@
+
+state={
+	id=233
+	name="STATE_233"
+	manpower = 369900
+	state_category = rural
+	resources={
+		chromium=46
+	}
+
+	history={
+		owner = SOV
+		add_core_of = RUS
+                add_core_of = SOV
+		victory_points = {
+			9663 1 
+		}
+	}
+
+	provinces={
+		9663 
+	}
+}

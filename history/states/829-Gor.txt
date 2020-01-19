@@ -1,0 +1,23 @@
+
+state={
+	id=829
+	name="STATE_829" #Chaghcharan
+	manpower = 1090200
+	
+	state_category = rural
+
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 5
+		}
+		victory_points = {
+			1995 1 
+		}
+		add_core_of = AFG
+	}
+
+	provinces={
+		1995 10896 12788
+	}
+}

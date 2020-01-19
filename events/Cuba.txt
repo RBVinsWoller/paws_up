@@ -1,0 +1,144 @@
+﻿###########################
+# CUBA Events
+###########################
+
+add_namespace = cub
+
+country_event = {
+	id = cub.1
+	title = cub.1.t
+	desc = cub.1.d
+	picture = GFX_report_event_aid_pact
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = CUB
+		date > 1953.7.26
+		has_government = neutrality
+    }
+	
+	option = {
+		name = cub.1.a
+		
+		add_ideas = {
+			Jule_26
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.22 } 
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+
+	option = {
+		name = cub.1.b
+		
+		create_country_leader = { 
+			name = "Fidel Castro" 
+			desc = "" 
+			picture = "gfx/leaders/CUB/Castro.dds"
+			expire = "2016.11.25" 
+			ideology = leninism
+		}
+		
+		set_politics = {
+
+			parties = {
+				democratic = { 
+					popularity = 5
+				}
+
+				neutrality = {
+					popularity = 5
+				}
+			
+				communism = {
+					popularity = 90
+				}
+			}
+		
+			ruling_party = Communism
+			last_election = "1944.1.10"
+			election_frequency = 48  
+			elections_allowed = no
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.23 } 
+		}
+		
+		ai_chance = { factor = 10 }
+
+	}
+}
+	
+country_event = {
+	id = cub.2
+	title = cub.2.t
+	desc = cub.2.d
+	picture = GFX_report_event_aid_pact
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = CUB
+		date > 1959.12.25
+		has_government = neutrality
+    }
+	
+	option = {
+		name = cub.2.a
+		
+		create_country_leader = { 
+			name = "Fidel Castro" 
+			desc = "" 
+			picture = "gfx/leaders/CUB/Castro.dds"
+			expire = "2016.11.25" 
+			ideology = leninism
+		}
+		
+		set_politics = {
+
+			parties = {
+				democratic = { 
+					popularity = 0
+				}
+
+				neutrality = {
+					popularity = 0
+				}
+			
+				communism = {
+					popularity = 100
+				}
+			}
+		
+			ruling_party = Communism
+			last_election = "1944.1.10"
+			election_frequency = 48  
+			elections_allowed = no
+		}
+		
+		remove_ideas = Jule_26
+		
+		hidden_effect = { 
+			news_event = { id = news.24 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = cub.2.b
+		
+		remove_ideas = Jule_26
+		
+		hidden_effect = { 
+			news_event = { id = news.25 } 
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+}

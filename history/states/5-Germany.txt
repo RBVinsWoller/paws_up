@@ -1,0 +1,28 @@
+
+state={
+	id=5
+	name="STATE_5"
+	manpower = 1453062
+	state_category = large_city
+
+	history={
+		owner = POL
+		controller = POL
+
+		1939.1.1 = {
+			buildings = {
+				anti_air_building = 5
+                                                                arms_factory = 2
+			}
+		}
+		1949.1.1 = {
+		owner = POL
+		controller = POL
+			add_core_of = POL
+		}
+	}
+
+	provinces={
+		266 3351 3380 6375 6402 9327 9346 9372 9398 11245 11386 
+	}
+}

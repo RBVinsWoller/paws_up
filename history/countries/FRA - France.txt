@@ -1,0 +1,187 @@
+﻿capital = 16
+
+oob = "FRA_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+}
+
+1939.1.1 = {
+
+	add_political_power = 899
+
+	#adding ministers
+	add_ideas = {
+	}
+
+	oob = "FRA_1936"
+	set_technology = {
+		infantry_weapons_0 = 1
+		infantry_weapons_1 = 1
+		motorised_infantry = 1
+		jip_1 = 1
+		tech_mountaineers = 1
+		tech_support = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_field_hospital = 1
+		tank_1 = 1
+		tank_2 = 1
+		l_tank_1 = 1
+		l_tank_2 = 1
+		t_tank_1 = 1
+		t_tank_2 = 1
+		gw_artillery = 1
+		interwar_antiairs = 1
+		interwar_antitanks = 1
+		medrange_sp_aa1 = 1
+		shortrange_sp_aa1 = 1
+		sp_aa1 = 1
+		early_fighter = 1
+		fighter1 = 1
+		CAS1 = 1
+		transport1 = 1
+	}
+}
+
+1949.1.1 = { 
+    oob = "FRA_1949" 
+} 
+
+set_convoys = 300
+
+set_politics = {
+
+	ruling_party = democratic
+	last_election = "1944.6.3"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 45
+	fascism = 3
+	chucheism = 0
+	maoism = 5
+	trotskism = 7
+	titoism = 5
+	liberal = 15
+	neutrality = 10
+	communism = 10
+}
+
+add_ideas = {
+}
+
+
+create_country_leader = {
+	name = "Charles de Gaulle"
+	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Maurice Thorez"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "Portrait_France_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = 	stalinism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Philippe Pétain"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Portrait_France_Philippe_Petain.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Jean de Lattre de Tassigny"
+	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	traits = { trickster }
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Alphonse Juin"
+	picture = "Portrait_France_Alphonse_Juin.dds"
+	traits = { panzer_leader  }
+	skill = 4
+}
+
+create_field_marshal = {
+	name = "Maurice Gamelin"
+	picture = "Portrait_France_Maurice_Gamelin.dds"
+	traits = { defensive_doctrine old_guard }
+	skill = 2
+}
+
+create_field_marshal = {
+	name = "Maxime Weygand"
+	picture = "Portrait_France_Maxime_Weygand.dds"
+	traits = { defensive_doctrine old_guard }
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "Alphonse Georges"
+	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
+	traits = { defensive_doctrine old_guard }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Charles De Gaulle"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	traits = {  panzer_leader }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "François Darlan"
+		picture = "Portrait_France_Francois_Darlan.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Jean-Marie Charles Abrial"
+		picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Jean-Pierre Esteva"
+		picture = "Portrait_France_Jean-Pierre_Esteva.dds"
+	traits = { seawolf }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "René-Émile Godfroy"
+		picture = "Portrait_France_Rene-Emile_Godfroy.dds"
+	traits = { old_guard_navy spotter }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Jean de Laborde"
+	picture = "Portrait_France_Jean_de_Laborde.dds"
+	traits = {  }
+	skill = 1
+}

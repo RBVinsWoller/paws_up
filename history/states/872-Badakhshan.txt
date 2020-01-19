@@ -1,0 +1,27 @@
+state={
+	id=872
+	name="STATE_872" #Faizabad
+	manpower = 884700
+	
+	state_category = town
+	
+	resources={
+		tungsten=3
+	}
+	history={
+		owner = AFG
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2  
+		}
+		victory_points = {
+			12653 5 
+		}
+		add_core_of = AFG
+	}
+
+	provinces={
+		7519 12653
+	}
+}

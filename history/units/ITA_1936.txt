@@ -1,0 +1,403 @@
+﻿division_template = {
+	name = "Infantry Div."				
+	division_names_group = ITA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Modelled on Chinese divisions
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		
+		
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mountaineers"						
+	division_names_group = ITA_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Motorized" 			# Infanterie-Divisionen (mot)
+	division_names_group = ITA_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		jip = { x = 2 y = 0 }
+	    jip = { x = 2 y = 1 }
+		jip = { x = 2 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }			
+	}
+}
+
+division_template = {
+	name = "Tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = ITA_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        ptsausup_brigade = { x = 0 y = 0 }	
+	}
+}
+
+division_template = {
+	name = "Heavy tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = ITA_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {	
+		sausup_brigade = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	
+	
+	### Guard Brigades
+	
+	division = {
+		name = "1-a Infantry Division"
+		location = 11773
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "2-a Infantry Division"
+		location = 11773
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "3-a Infantry Division"
+		location = 10074
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "4-a Infantry Division"
+		location = 10074
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "5-a Infantry Division"
+		location = 4159
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "6-a Infantry Division"
+		location = 11837
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	
+	division = {
+		name = "7-a Infantry Division"
+		location = 11837
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "8-a Infantry Division"
+		location = 819
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "9-a Infantry Division"
+		location = 819
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "10-a Infantry Division"
+		location = 11584
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "11-a Infantry Division"
+		location = 11584
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "12-a Infantry Division"
+		location = 3780
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "13-a Infantry Division"
+		location = 3780
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "14-a Infantry Division"
+		location = 6780
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "15-a Infantry Division"
+		location = 6780
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "1-a Motorized Division"
+		location = 11751
+		division_template = "Motorized"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "2-a Motorized Division"
+		location = 11751
+		division_template = "Motorized"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "1-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 9904
+		division_template = "Tank division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "2-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 9904
+		division_template = "Tank division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "3-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 9904
+		division_template = "Tank division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "4-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 6608
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+}
+
+	air_wings = {
+	158 = { 																# Milan
+		### 1a Squadra Aerea (CO: Fougier) ###
+		fighter_equipment_0 = { owner = "ITA" amount = 84 }					# 2a Divisione 'Borea' -- CR.42 (REVISIT -- VARIANT)
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 123 }				# 4a Divisione Aerea 'Drago' -- BR.20
+						# 6a Divisione Aerea 'Falco' -- BR.20
+	}
+	115 = {																	# Sicily
+		### 2a Squadra Aerea -(CO: Lalli) ###
+		fighter_equipment_0 = { owner = "ITA" amount = 84 }					# 1a Divisione Aerea 'Aquila' -- CR.42 (REVISIT -- VARIANT)
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 136 }				# 3a Divisione Aerea 'Centauro' -- SM.79
+						# 11a Brigada Aerea 'Nibbio' -- SM.79
+	}
+	2 = {																	# Rome
+		### 3a Squadra Aerea (CO: Pelligrini) ###
+		fighter_equipment_1 = { owner = "ITA" amount = 96 }					# 8a Brigada Aerea 'Ibis' -- G.50
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 88 }				# 5a Divisione Aerea 'Eolo' -- SM.79
+	}
+
+	156 = {																	# Bari
+		fighter_equipment_0 = { owner = "ITA" amount = 54 }					# 9a/I. Divisione Aerea 'Leone' -- CR.32
+		tac_bomber_equipment_0 =  { owner = "ITA" amount = 24 }				# 9a/II. Divisione Aerea 'Leone' -- SM.79
+		nav_bomber_equipment_1 = { owner = "ITA" amount = 24 }				# 9a/III. Divisione Aerea 'Leone' -- CANT.Z.506B
+	}
+	114 = {																	# Sardinia
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 64 }				# 10a/I. Divisione Aerea 'Marte' -- SM.79
+		nav_bomber_equipment_1 = { owner = "ITA" amount = 24 }				# 10a/II. Divisione Aerea 'Marte' -- CANT.Z.506B
+	}
+	44 = {																	# Albania
+		fighter_equipment_0 =  { owner = "ITA" amount = 24 }				# CR.42 (REVISIT -- VARIANT)
+		tac_bomber_equipment_0 = { owner = "ITA" amount = 32 }				# 10a/II. Divisione Aerea 'Marte' -- CANT.Z.506B
+	}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_1 #СВТ
+		amount = 300000
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_2 #thompson
+		amount = 50000
+		producer = USA
+	}
+	
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1 #Грузовик ЗиС 5
+		amount = 1400
+		producer = ITA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = jip_equipment_1 #Грузовик ЗиС 5
+		amount = 300
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment_1 #Супорт еквип
+		amount = 1000
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipments_2 #ЗиС-3 Артилерия
+		amount = 2000
+		producer = ITA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_1 #D1
+		amount = 50
+		producer = ITA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_2 #D2
+		amount = 50
+		producer = ITA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_2 #Sherman
+		amount = 200
+		producer = WGR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_2 #Cromwell
+		amount = 100
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = heavy_tank_equipments_1 #B1
+		amount = 30
+		producer = ITA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_1 #pz3
+		amount = 300
+		producer = WGR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_2 #R40
+		amount = 100
+		producer = ITA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = pt_sau_equipment_2 #Wolvrine
+		amount = 300
+		producer = USA
+	}
+	
+}

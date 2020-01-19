@@ -1,0 +1,174 @@
+﻿###########################
+# Sev Events
+###########################
+
+add_namespace = sev
+
+
+country_event = {
+	id = sev.1
+	title = sev.1.t
+	desc = sev.1.d
+	picture = GFX_report_event_generic_factory
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		NOT = {
+			has_country_flag = SEV_ON
+			has_country_flag = SEV_OFF
+		}
+		has_government = communism
+		has_war = no	
+		SOV = { exists = yes }
+		SOV = { has_idea = Sev }
+		NOT = {
+			tag = PRC
+			tag = KND
+			tag = YUG
+		}
+	}
+	option = {
+	  name = sev.1.a
+		set_country_flag = SEV_ON
+		add_ideas = {
+			Sev
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {
+	  name = sev.1.b
+	  set_country_flag = SEV_OFF
+	  ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = sev.2
+	title = sev.2.t
+	desc = sev.2.d
+	picture = GFX_report_event_generic_factory
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		NOT = {
+			has_country_flag = SEV_OUT
+			has_government = communism
+		}
+		has_idea = Sev
+	}	
+	
+	option = {
+	  name = sev.2.a
+		clr_country_flag = SEV_ON
+		clr_country_flag = SEV_OFF
+		remove_ideas = Sev
+		set_country_flag = SEV_OUT
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = sev.3
+	title = sev.3.t
+	desc = sev.3.d
+	picture = GFX_report_event_generic_panzer_attack
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = { 
+
+		OR = {
+			tag = SPR
+			tag = POR
+			tag = FRA
+			tag = AUS
+			tag = SWI
+			tag = LUX
+			tag = FIN
+			tag = TUR 
+			tag = SWE
+			tag = NOR
+			tag = EST
+			tag = LAT
+			tag = LIT
+			tag = BLR
+			tag = UKR
+			tag = MOL
+			tag = ROM
+			tag = BUL
+			tag = GRE
+			tag = ALB
+			tag = ITA
+			tag = YUG
+			tag = DEN
+			tag = IRE
+			tag = ENG
+			tag = HOL
+			tag = BEL
+			tag = DDR
+			tag = WGR
+		
+		}
+		
+		NOT = {
+			has_country_flag = EC_ON
+			has_country_flag = EC_OFF
+		}
+		has_government = democratic
+		has_war = no	
+		BEL = { has_idea = Ec }
+	}
+	option = {
+	  name = sev.3.a
+		set_country_flag = EC_ON
+		add_ideas = {
+			Ec
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {
+	  name = sev.3.b
+	  set_country_flag = EC_OFF
+	  ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = sev.4
+	title = sev.4.t
+	desc = sev.4.d
+	picture = GFX_report_event_generic_panzer_attack
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		NOT = {
+			has_country_flag = EC_OUT
+			has_government = democratic
+		}
+		has_idea = Ec
+	}	
+	
+	option = {
+	  name = sev.4.a
+		clr_country_flag = EC_ON
+		clr_country_flag = EC_OFF
+		remove_ideas = Ec
+		set_country_flag = EC_OUT
+		ai_chance = { factor = 100 }
+	}
+}

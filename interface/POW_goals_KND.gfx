@@ -1,0 +1,391 @@
+spriteTypes = {	
+
+	#Промышленость КНДР
+	SpriteType = {
+	name = "GFX_goal_KND_factory_building"
+	texturefile = "gfx/interface/focus/goal_PRC_factory_building.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_KND_promise_1"
+	texturefile = "gfx/interface/focus/goal_PRC_promice_1.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_KND_promise_2"
+	texturefile = "gfx/interface/focus/goal_PRC_promice_2.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_KND_promise_3"
+	texturefile = "gfx/interface/focus/goal_PRC_promice_3.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_KND_promise_4"
+	texturefile = "gfx/interface/focus/goal_PRC_promice_4.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_KND_agriculture_1"
+	texturefile = "gfx/interface/focus/goal_PRC_agriculture_1.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_agriculture_2"
+	texturefile = "gfx/interface/focus/goal_PRC_agriculture_2.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_agriculture_3"
+	texturefile = "gfx/interface/focus/goal_PRC_agriculture_3.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_agriculture_4"
+	texturefile = "gfx/interface/focus/goal_PRC_agriculture_4.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_sience"
+	texturefile = "gfx/interface/focus/goal_PRC_sience.dds"			
+	}
+	#Красный путь КНДР
+	
+	SpriteType = {
+	name = "GFX_goal_KND_create_vnk_sk"
+	texturefile = "gfx/interface/focus/goal_KND_create_vnk_sk.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_KND_zapros_na_vozvrat_koreychev"
+	texturefile = "gfx/interface/focus/goal_KND_zapros_na_vozvrat_koreychev.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_edof"
+	texturefile = "gfx/interface/focus/goal_KND_edof.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_national_proiz"
+	texturefile = "gfx/interface/focus/goal_KND_national_proiz.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_zem_reforma"
+	texturefile = "gfx/interface/focus/goal_KND_zem_reforma.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_vybory_v_nar_komit"
+	texturefile = "gfx/interface/focus/goal_KND_vybory_v_nar_komit.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_podergka_komunistov"
+	texturefile = "gfx/interface/focus/goal_KND_podergka_komunistov.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_zapros_ekonom_pomochi_u_ussr"
+	texturefile = "gfx/interface/focus/goal_KND_zapros_ekonom_pomochi_u_ussr.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_chistka_fraktionerov"
+	texturefile = "gfx/interface/focus/goal_KND_chistka_fraktionerov.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_prodolgenie_fract_borotbi"
+	texturefile = "gfx/interface/focus/goal_KND_prodolgenie_fract_borotbi.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_podgotovka_proekta_konstitucii"
+	texturefile = "gfx/interface/focus/goal_KND_podgotovka_proekta_konstitucii.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_umenshenie_roli_tpk_sk"
+	texturefile = "gfx/interface/focus/goal_KND_umenshenie_roli_tpk_sk.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_ukreplenie_tpk_sk"
+	texturefile = "gfx/interface/focus/goal_KND_ukreplenie_tpk_sk.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_glav_role_of_democratic_party"
+	texturefile = "gfx/interface/focus/goal_KND_glav_role_of_democratic_party.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_form_of_kna"
+	texturefile = "gfx/interface/focus/goal_KND_form_of_kna.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_podgotovka_officer_staff"
+	texturefile = "gfx/interface/focus/goal_KND_podgotovka_officer_staff.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_ideology_of_army"
+	texturefile = "gfx/interface/focus/goal_KND_ideology_of_army.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_obrazov_kndr"
+	texturefile = "gfx/interface/focus/goal_KND_obrazov_kndr.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_upor_na_selo"
+	texturefile = "gfx/interface/focus/goal_KND_upor_na_selo.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_upor_na_prom"
+	texturefile = "gfx/interface/focus/goal_KND_upor_na_prom.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_mechaniz_selo"
+	texturefile = "gfx/interface/focus/goal_KND_mechaniz_selo.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_upor_na_manufaktur"
+	texturefile = "gfx/interface/focus/goal_KND_upor_na_manufaktur.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_upor_na_tyaj_prom"
+	texturefile = "gfx/interface/focus/goal_KND_upor_na_tyaj_prom.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_upor_na_lehk_prom"
+	texturefile = "gfx/interface/focus/goal_KND_upor_na_lehk_prom.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_vizit_in_moskov"
+	texturefile = "gfx/interface/focus/goal_KND_vizit_in_moskov.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_ukr_granici_s_yugom"
+	texturefile = "gfx/interface/focus/goal_KND_ukr_granici_s_yugom.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_liniya_partii"
+	texturefile = "gfx/interface/focus/goal_KND_liniya_partii.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_KND_neftyanoi"
+	texturefile = "gfx/interface/focus/goal_KND_neftyanoi.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_ottechestvenaya_voyna"
+	texturefile = "gfx/interface/focus/goal_KND_ottechestvenaya_voyna.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_zakupkatankov"
+	texturefile = "gfx/interface/focus/goal_KND_zakupkatankov.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_zakupkasamolet"
+	texturefile = "gfx/interface/focus/goal_KND_zakupkasamolet.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_infrastr_vvs"
+	texturefile = "gfx/interface/focus/goal_KND_infrastr_vvs.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_poslevoen_vost"
+	texturefile = "gfx/interface/focus/goal_KND_poslevoen_vost.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_planomer_kolect"
+	texturefile = "gfx/interface/focus/goal_PRC_mass_production.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_selo_commune"
+	texturefile = "gfx/interface/focus/goal_PRC_commune.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_industrializacia"
+	texturefile = "gfx/interface/focus/goal_KND_industrializacia.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_china_ingener"
+	texturefile = "gfx/interface/focus/goal_KND_china_ingener.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_sov_ingener"
+	texturefile = "gfx/interface/focus/goal_KND_sov_ingener.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_create_new_man"
+	texturefile = "gfx/interface/focus/goal_KND_create_new_man.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_national_tradition"
+	texturefile = "gfx/interface/focus/goal_KND_national_tradition.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_teology_state"
+	texturefile = "gfx/interface/focus/goal_KND_teology_state.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_svetskaya_state"
+	texturefile = "gfx/interface/focus/goal_KND_svetskaya_state.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_kult_revolution"
+	texturefile = "gfx/interface/focus/goal_KND_kult_revolution.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_ateist_state"
+	texturefile = "gfx/interface/focus/goal_PRC_deny_religion.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_propaganda_collectivism"
+	texturefile = "gfx/interface/focus/goal_KND_propaganda_collectivism.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_visit_in_europe"
+	texturefile = "gfx/interface/focus/goal_KND_visit_in_europe.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_vopros_melko_burj"
+	texturefile = "gfx/interface/focus/goal_KND_vopros_melko_burj.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_part_chistka"
+	texturefile = "gfx/interface/focus/goal_KND_part_chistka.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_part_pluralism"
+	texturefile = "gfx/interface/focus/goal_KND_part_pluralism.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_result_20_siesd_of_kpss"
+	texturefile = "gfx/interface/focus/goal_KND_result_20_siesd_of_kpss.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_odobrenie_kursa_ussr"
+	texturefile = "gfx/interface/focus/goal_KND_odobrenie_kursa_ussr.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_vstup_in_sev"
+	texturefile = "gfx/interface/focus/goal_KND_vstup_in_sev.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_vstup_in_ovd"
+	texturefile = "gfx/interface/focus/goal_KND_vstup_in_ovd.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_odobrenie_razv_kulta_lichnosti"
+	texturefile = "gfx/interface/focus/goal_KND_odobrenie_razv_kulta_lichnosti.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_vstup_sev"
+	texturefile = "gfx/interface/focus/goal_KND_vstup_in_sev.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_vstup_ovd"
+	texturefile = "gfx/interface/focus/goal_KND_vstup_in_sev.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_neutr_razv_kulta_lichnosti"
+	texturefile = "gfx/interface/focus/goal_KND_neutr_razv_kulta_lichnosti.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_nabl_sev"
+	texturefile = "gfx/interface/focus/goal_KND_nabl_sev.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_opora_na_sili"
+	texturefile = "gfx/interface/focus/goal_KND_opora_na_sili.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_sov_revizionism"
+	texturefile = "gfx/interface/focus/goal_KND_sov_revizionism.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_ukr_granici_s_sssr"
+	texturefile = "gfx/interface/focus/goal_KND_ukr_granici_s_sssr.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_union_with_china"
+	texturefile = "gfx/interface/focus/goal_KND_union_with_china.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_chystka_pro_soviet_politic"
+	texturefile = "gfx/interface/focus/goal_KND_chystka_pro_soviet_politic.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_borba_with_kontra"
+	texturefile = "gfx/interface/focus/goal_PRC_big_jump.dds"			
+	}
+	#Синий путь КНР
+	SpriteType = {
+	name = "GFX_goal_KND_burguaznoe_vliyanie"
+	texturefile = "gfx/interface/focus/goal_KND_burguaznoe_vliyanie.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_KND_burguaznaya_revolutia"
+	texturefile = "gfx/interface/focus/goal_KND_burguaznaya_revolutia.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_konsev"
+	texturefile = "gfx/interface/focus/goal_KND_konsev.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_liberal"
+	texturefile = "gfx/interface/focus/goal_KND_liberal.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_peregovory_s_ugom"
+	texturefile = "gfx/interface/focus/goal_KND_peregovory_s_ugom.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_korean_konfederation"
+	texturefile = "gfx/interface/focus/goal_KND_korean_konfederation.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_anex"
+	texturefile = "gfx/interface/focus/goal_KND_anex.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_deal_with_usa"
+	texturefile = "gfx/interface/focus/goal_KND_deal_with_usa.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_market_reform"
+	texturefile = "gfx/interface/focus/goal_KND_market_reform.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_nii_with_south"
+	texturefile = "gfx/interface/focus/goal_KND_nii_with_south.dds"			
+	}
+	
+	
+	#Черный путь КНР
+	SpriteType = {
+	name = "GFX_goal_KND_podem_imperator_power"
+	texturefile = "gfx/interface/focus/goal_KND_podem_imperator_power.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_KND_org_civil_war"
+	texturefile = "gfx/interface/focus/goal_KND_org_civil_war.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_imperator_army"
+	texturefile = "gfx/interface/focus/goal_KND_imperator_army.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_declare_war_rk"
+	texturefile = "gfx/interface/focus/goal_KND_declare_war_rk.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_ultimatum_rk"
+	texturefile = "gfx/interface/focus/goal_KND_ultimatum_rk.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_after_war_rebuild"
+	texturefile = "gfx/interface/focus/goal_KND_after_war_rebuild.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_pretenzii_na_daln_vostok"
+	texturefile = "gfx/interface/focus/goal_KND_pretenzii_na_daln_vostok.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_pretenzii_na_manchuriyu"
+	texturefile = "gfx/interface/focus/goal_KND_pretenzii_na_manchuriyu.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_KND_religion_peple"
+	texturefile = "gfx/interface/focus/goal_KND_religion_peple.dds"			
+	}
+	
+	
+	
+
+}

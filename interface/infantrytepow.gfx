@@ -1,0 +1,44 @@
+spriteTypes = { 	#Общее снаряжение
+	SpriteType = {
+		name = "GFX_im_infantry_2_medium"
+		texturefile = "gfx/interface/technologies/im_infantry_2.dds" 
+	}
+	
+	SpriteType = {
+		name = "GFX_im_infantry_3_medium"
+		texturefile = "gfx/interface/technologies/im_infantry_3.dds" 
+	}
+	
+	SpriteType = {
+		name = "GFX_im_infantry_4_medium"
+		texturefile = "gfx/interface/technologies/im_infantry_4.dds" 
+	}
+	
+	SpriteType = {
+		name = "GFX_im_infantry_5_medium"
+		texturefile = "gfx/interface/technologies/im_infantry_5.dds" 
+	}
+	
+	SpriteType = {
+		name = "GFX_im_infantry_6_medium"
+		texturefile = "gfx/interface/technologies/im_infantry_6.dds" 
+	}
+	
+	SpriteType = {
+		name = "GFX_im_infantry_7_medium"
+		texturefile = "gfx/interface/technologies/im_infantry_7.dds" 
+	}
+	
+	SpriteType = {
+		name = "GFX_im_infantry_8_medium"
+		texturefile = "gfx/interface/technologies/im_infantry_8.dds" 
+	}
+	
+	SpriteType = {
+		name = "GFX_im_infantry_9_medium"
+		texturefile = "gfx/interface/technologies/im_infantry_9.dds" 
+	}
+	
+	
+}	
+	

@@ -1,0 +1,25 @@
+
+state={
+	id=938
+	name="STATE_938"
+	manpower = 101988
+	
+	state_category = large_town
+
+	history={
+			owner = SOV
+		add_core_of = RUS
+                add_core_of = SOV
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			683 1
+		}
+	 
+	}
+
+	provinces={
+		683 11632
+	}
+}

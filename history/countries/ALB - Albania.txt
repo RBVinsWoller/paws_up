@@ -1,0 +1,93 @@
+﻿capital = 44
+
+OOB = "ALB_1936"
+
+set_technology = {
+	infantry_weapons_0 = 1
+	infantry_weapons_1 = 1
+	motorised_infantry = 1
+	jip_1 = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_field_hospital = 1
+	tank_1 = 1
+	tank_2 = 1
+	l_tank_1 = 1
+	l_tank_2 = 1
+	t_tank_1 = 1
+	t_tank_2 = 1
+	gw_artillery = 1
+	interwar_antiairs = 1
+	interwar_antitanks = 1
+	medrange_sp_aa1 = 1
+	shortrange_sp_aa1 = 1
+	sp_aa1 = 1
+	early_fighter = 1
+	fighter1 = 1
+	CAS1 = 1
+	transport1 = 1
+}
+add_ideas = {
+	local_country
+	centralization
+	mobilisation_army
+	oneparty_state
+	middle_level
+	comand_system
+	extensive_conscription
+	middle_level_rights
+	gos_press
+	control_borders
+	uni_schools
+	police_state
+	civilian_economy
+	state_own
+	closed_economy
+	gos_banks
+	neutral_economy
+	heavy_industry
+}
+set_politics = {
+
+	ruling_party = communism
+	last_election = "1945.9.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 5
+	fascism = 1
+	chucheism = 7
+	maoism = 5
+	trotskism = 11
+	communism = 55
+	liberal = 6
+	neutrality = 10
+}
+
+set_convoys = 5
+
+create_country_leader = {
+	name = "Enver Hoxha"
+	desc = ""
+	picture = "gfx/leaders/ALB/Portrait_Hoxha1946.dds"
+	expire = "1985.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Enver Hoxha"
+	desc = ""
+	picture = "gfx/leaders/ALB/Portrait_Hoxha1946.dds"
+	expire = "1985.1.1"
+	ideology = anti_revisionism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,92 @@
+KND_50 = {
+    color = rgb { 174 0 0 }
+	color_ui = rgb { 238 232 170 }
+}
+MAL_UK = {
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
+
+INS_HOL = {
+    color = rgb { 203 138 74 }
+    color_ui = rgb { 255 179 96 }
+}
+
+BLR_SOV = {
+    color = rgb { 156 0 0 }
+	color_ui = rgb { 156 0 0 }
+}
+
+UKR_SOV = {
+	color = rgb { 163 0 0 }
+	color_ui = rgb {  163 0 0 }
+}
+
+LIT_SOV = {
+    color = rgb { 174 0 0 }
+	color_ui = rgb { 174 0 0 }
+}
+
+LAT_SOV = {
+	color = rgb { 174 0 0 }
+	color_ui = rgb { 238 180 34 }
+}
+
+EST_SOV = {
+	color = rgb { 174 0 0 }
+	color_ui = rgb { 238 232 170 }
+}
+
+GEO_SOV = {
+     color = rgb { 181 0 0 }
+	color_ui = rgb { 224 255 255 }
+}
+
+ARM_SOV = {
+    color = rgb { 181 0 0 }
+	color_ui = rgb { 244 164 96 }
+}
+
+AZR_SOV = {
+	color = rgb { 181 0 0 }
+	color_ui = rgb { 205 170 125 }
+}
+
+KAZ_SOV = {
+	color = rgb { 197 0 0 }
+	color_ui = rgb { 121 205 205 }
+}
+
+TDG_SOV = {
+	color = rgb { 197 0 0 }
+	color_ui = rgb { 197 0 0 }
+}
+
+TRK_SOV = {
+	color = rgb { 197 0 0 }
+	color_ui = rgb { 197 0 0 }
+}
+
+KIR_SOV = {
+	color = rgb { 197 0 0 }
+	color_ui = rgb { 197 0 0 }
+}
+
+UZB_SOV = {
+	color = rgb { 197 0 0 }
+	color_ui = rgb { 197 0 0 }
+}
+
+MOL_SOV = {
+	color = rgb { 210 0 0 }
+	color_ui = rgb { 210 0 0 }
+}
+KAR_SOV = {
+	color = rgb { 145 0 0 }
+	color_ui = rgb { 145 0 0  }
+}
+
+RUS_SOV = {
+	color = rgb { 145 0 0 }
+	color_ui = rgb { 145 0 0 }
+}

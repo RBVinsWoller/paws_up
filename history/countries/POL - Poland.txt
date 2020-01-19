@@ -1,0 +1,194 @@
+﻿capital = 10
+
+oob = "POL_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+}
+
+1939.1.1 = {
+	
+
+	add_political_power = 1198
+
+	add_ideas = {
+	}
+
+	oob = "POL_1936"
+	set_technology = {
+		infantry_weapons_0 = 1
+		infantry_weapons_1 = 1
+		motorised_infantry = 1
+		jip_1 = 1
+		tech_mountaineers = 1
+		tech_support = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_field_hospital = 1
+		tank_1 = 1
+		tank_2 = 1
+		l_tank_1 = 1
+		l_tank_2 = 1
+		t_tank_1 = 1
+		t_tank_2 = 1
+		gw_artillery = 1
+		interwar_antiairs = 1
+		interwar_antitanks = 1
+		medrange_sp_aa1 = 1
+		shortrange_sp_aa1 = 1
+		sp_aa1 = 1
+		early_fighter = 1
+		fighter1 = 1
+		CAS1 = 1
+		transport1 = 1
+	}
+}
+
+give_military_access = SOV
+set_convoys = 10
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 18
+		}
+
+		fascism = {
+			popularity = 15
+		}
+		
+		communism = {
+			popularity = 2
+		}
+		
+		neutrality = { 
+			popularity = 65
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1935.9.8"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+1945.9.1 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1945.9.1"
+		election_frequency = 36
+		elections_allowed = no
+	}
+	
+	
+set_popularities = {
+    democratic = 10
+	fascism = 1
+	chucheism = 1
+	maoism = 1
+	trotskism = 30
+	communism = 30
+	liberal = 15
+	neutrality = 12
+}
+}
+
+create_country_leader = {
+	name = "Władysław Sikorski"
+	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ignacy Mościcki"
+	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
+	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Bolesław Bierut"
+	desc = ""
+	picture = "gfx/leaders/POL/Bierut.dds"
+	expire = "1956.3.12"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wincenty Witos"
+	desc = "POLITICS_WINCENTY_WITOS_DESC"
+	picture = "GFX_POL_wincenty_witos"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Bolesław Piasecki"
+	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
+	picture = "GFX_POL_boleslaw_piasecki"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Władysław Sikorski"
+	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "Władysław Bortnowski"
+	gfx = "GFX_POL_wladyslaw_bortnowski"
+	traits = {  thorough_planner }
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "Stanisław Kopański"
+	gfx = "GFX_POL_stanislav_kopanski"
+	traits = {  offensive_doctrine }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Władysław Anders"
+	gfx = "GFX_POL_wladislaw_anders"
+	traits = {  panzer_leader }
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Roman Abraham"
+	gfx = "GFX_POL_roman_abraham"
+	traits = {  }
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Wincenty Kowalski"
+	gfx = "GFX_POL_wincenty_kowalski"
+	traits = { trickster }
+	skill = 3
+}

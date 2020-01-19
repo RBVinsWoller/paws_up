@@ -1,0 +1,3575 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.1.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			} 
+		}
+	}
+	option = {
+		name = news.1.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.1.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news_event_002
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.2.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.2.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.2.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_003
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.3.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.3.b
+		trigger = { TAG = SOV }
+	}
+
+}
+
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_news_event_004
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.4.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.4.b
+		trigger = { TAG = SOV }
+	}
+
+}
+
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.d
+	picture = GFX_news_event_005
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.5.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+				TAG = ENG
+				TAG = FRA
+			}
+		}
+	}
+	option = {
+		name = news.5.b
+		trigger = { TAG = USA }
+		trigger = { TAG = FRA }
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = news.5.c
+		trigger = { TAG = SOV }
+	}
+}
+
+
+news_event = {
+	id = news.6
+	title = news.6.t
+	desc = news.6.d
+	picture = GFX_news_event_006
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.6.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.6.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.6.c
+		trigger = { TAG = USA }
+	}
+}
+
+
+news_event = {
+	id = news.7
+	title = news.7.t
+	desc = news.7.d
+	picture = GFX_news_event_008
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.7.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.7.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.7.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.8
+	title = news.8.t
+	desc = news.8.d
+	picture = GFX_news_event_009
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.8.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.8.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.8.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.9
+	title = news.9.t
+	desc = news.9.d
+	picture = GFX_news_event_011
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.9.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.9.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.9.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.10
+	title = news.10.t
+	desc = news.10.d
+	picture = GFX_news_event_012
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.10.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.10.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.10.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.11
+	title = news.11.t
+	desc = news.11.d
+	picture = GFX_news_event_016
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.11.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.11.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.11.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.12
+	title = news.12.t
+	desc = news.12.d
+	picture = GFX_news_event_017
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.12.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.12.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.12.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.13
+	title = news.13.t
+	desc = news.13.d
+	picture = GFX_news_event_018
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.13.a
+		trigger = {
+			NOT = {
+				TAG = PRC
+				TAG = CHI
+			}
+		}
+	}
+	option = {
+		name = news.13.b
+		trigger = { TAG = PRC }
+	}
+	option = {
+		name = news.13.c
+		trigger = { TAG = CHI }
+	}
+}
+
+news_event = {
+	id = news.14
+	title = news.14.t
+	desc = news.14.d
+	picture = GFX_news_event_016
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.14.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.14.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.14.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.15
+	title = news.15.t
+	desc = news.15.d
+	picture = GFX_news_event_016
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.15.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.15.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.15.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.16
+	title = news.16.t
+	desc = news.16.d
+	picture = GFX_news_event_019
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.16.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.16.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.16.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.17
+	title = news.17.t
+	desc = news.17.d
+	picture = GFX_news_event_020
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.17.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.17.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.17.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.18
+	title = news.18.t
+	desc = news.18.d
+	picture = GFX_news_event_021
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.18.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.18.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.18.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.19
+	title = news.19.t
+	desc = news.19.d
+	picture = GFX_news_event_023
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.19.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.19.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.19.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.20
+	title = news.20.t
+	desc = news.20.d
+	picture = GFX_news_event_024
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.20.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.20.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.20.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.21
+	title = news.21.t
+	desc = news.21.d
+	picture = GFX_news_event_025
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.21.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.21.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.21.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.22
+	title = news.22.t
+	desc = news.22.d
+	picture = GFX_news_event_026
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.22.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.22.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.22.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.23
+	title = news.23.t
+	desc = news.23.d
+	picture = GFX_news_event_028
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.23.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.23.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.23.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.24
+	title = news.24.t
+	desc = news.24.d
+	picture = GFX_news_event_028
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.24.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.24.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.24.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.25
+	title = news.25.t
+	desc = news.25.d
+	picture = GFX_news_event_026
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.25.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.25.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.25.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.26
+	title = news.26.t
+	desc = news.26.d
+	picture = GFX_news_event_029
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.26.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.26.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.26.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.27
+	title = news.27.t
+	desc = news.27.d
+	picture = GFX_news_event_032
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.27.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.27.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.27.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.28
+	title = news.28.t
+	desc = news.28.d
+	picture = GFX_news_event_033
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.28.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.28.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.28.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.29
+	title = news.29.t
+	desc = news.29.d
+	picture = GFX_news_event_033
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.29.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.29.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.29.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.30
+	title = news.30.t
+	desc = news.30.d
+	picture = GFX_news_event_034
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.30.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.30.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.30.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.31
+	title = news.31.t
+	desc = news.31.d
+	picture = GFX_news_event_038
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.31.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.31.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.31.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.32
+	title = news.32.t
+	desc = news.32.d
+	picture = GFX_news_event_029
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.32.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.32.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.32.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.33
+	title = news.33.t
+	desc = news.33.d
+	picture = GFX_news_event_039
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.33.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.33.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.33.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.34
+	title = news.34.t
+	desc = news.34.d
+	picture = GFX_news_event_040
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.34.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.34.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.34.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.35
+	title = news.35.t
+	desc = news.35.d
+	picture = GFX_news_event_041
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.35.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.35.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.35.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.36
+	title = news.36.t
+	desc = news.36.d
+	picture = GFX_news_event_042
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.36.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.36.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.36.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.37
+	title = news.37.t
+	desc = news.37.d
+	picture = GFX_news_event_046
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.37.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.37.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.37.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.38
+	title = news.38.t
+	desc = news.38.d
+	picture = GFX_news_event_047
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.38.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.38.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.38.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.39
+	title = news.39.t
+	desc = news.39.d
+	picture = GFX_news_event_048
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.39.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.39.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.39.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.40
+	title = news.40.t
+	desc = news.40.d
+	picture = GFX_news_event_050
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.40.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.40.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.40.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.41
+	title = news.41.t
+	desc = news.41.d
+	picture = GFX_news_event_051
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.41.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.41.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.41.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.42
+	title = news.42.t
+	desc = news.42.d
+	picture = GFX_news_event_052
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.42.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.42.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.42.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.43
+	title = news.43.t
+	desc = news.43.d
+	picture = GFX_news_event_053
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.43.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.43.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.43.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.44
+	title = news.44.t
+	desc = news.44.d
+	picture = GFX_news_event_054
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.44.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.44.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.44.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.45
+	title = news.45.t
+	desc = news.45.d
+	picture = GFX_news_event_056
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.45.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.45.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.45.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.46
+	title = news.46.t
+	desc = news.46.d
+	picture = GFX_news_event_057
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.46.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.46.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.46.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.47
+	title = news.47.t
+	desc = news.47.d
+	picture = GFX_news_event_057
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.47.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.47.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.47.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.48
+	title = news.48.t
+	desc = news.48.d
+	picture = GFX_news_event_016
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.48.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.48.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.48.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.49
+	title = news.49.t
+	desc = news.49.d
+	picture = GFX_news_event_016
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.49.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.49.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.49.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.50
+	title = news.50.t
+	desc = news.50.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.50.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.50.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.50.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.51
+	title = news.51.t
+	desc = news.51.d
+	picture = GFX_news_event_063
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.51.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.51.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.51.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.52
+	title = news.52.t
+	desc = news.52.d
+	picture = GFX_news_event_026
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.52.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.52.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.52.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.53
+	title = news.53.t
+	desc = news.53.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.53.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.53.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.53.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.54
+	title = news.54.t
+	desc = news.54.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.54.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.54.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.54.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.55
+	title = news.55.t
+	desc = news.55.d
+	picture = GFX_news_event_063
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.55.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.55.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.55.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.56
+	title = news.56.t
+	desc = news.56.d
+	picture = GFX_news_event_064
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.56.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.56.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.56.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.57
+	title = news.57.t
+	desc = news.57.d
+	picture = GFX_news_event_064
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.57.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.57.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.57.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.58
+	title = news.58.t
+	desc = news.58.d
+	picture = GFX_news_event_006
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.58.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.58.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.58.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.59
+	title = news.59.t
+	desc = news.59.d
+	picture = GFX_news_event_004
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.59.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.59.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.59.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.60
+	title = news.60.t
+	desc = news.60.d
+	picture = GFX_news_event_004
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.60.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.60.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.60.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.61
+	title = news.61.t
+	desc = news.61.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.61.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.61.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.61.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.62
+	title = news.62.t
+	desc = news.62.d
+	picture = GFX_news_event_063
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.62.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.62.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.62.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.
+	title = news.63.t
+	desc = news.63.d
+	picture = GFX_news_event_026
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.63.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.63.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.63.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.64
+	title = news.64.t
+	desc = news.64.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.64.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.64.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.64.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.65
+	title = news.65.t
+	desc = news.65.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.65.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.65.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.65.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.66
+	title = news.66.t
+	desc = news.66.d
+	picture = GFX_news_event_063
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.66.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.66.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.66.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.67
+	title = news.67.t
+	desc = news.67.d
+	picture = GFX_news_event_064
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.67.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.67.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.67.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.68
+	title = news.68.t
+	desc = news.68.d
+	picture = GFX_news_event_064
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.68.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.68.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.68.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.69
+	title = news.69.t
+	desc = news.69.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.69.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.69.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.69.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.70
+	title = news.70.t
+	desc = news.70.d
+	picture = GFX_news_event_063
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.70.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.70.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.70.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.71
+	title = news.71.t
+	desc = news.71.d
+	picture = GFX_news_event_026
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.71.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.71.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.71.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.72
+	title = news.72.t
+	desc = news.72.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.72.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.72.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.72.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.73
+	title = news.73.t
+	desc = news.73.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.73.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.73.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.73.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.74
+	title = news.74.t
+	desc = news.74.d
+	picture = GFX_news_event_063
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.74.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.74.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.74.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.75
+	title = news.75.t
+	desc = news.75.d
+	picture = GFX_news_event_064
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.75.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.75.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.75.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.76
+	title = news.76.t
+	desc = news.76.d
+	picture = GFX_news_event_064
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.76.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.76.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.76.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.77
+	title = news.77.t
+	desc = news.77.d
+	picture = GFX_news_event_067
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.77.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.77.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.77.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.78
+	title = news.78.t
+	desc = news.78.d
+	picture = GFX_news_event_069
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.78.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.78.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.78.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.79
+	title = news.79.t
+	desc = news.79.d
+	picture = GFX_news_event_019
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.79.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.79.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.79.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.80
+	title = news.80.t
+	desc = news.80.d
+	picture = GFX_news_event_070
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.80.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.80.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.80.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.81
+	title = news.81.t
+	desc = news.81.d
+	picture = GFX_news_event_072
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.81.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.81.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.81.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.82
+	title = news.82.t
+	desc = news.82.d
+	picture = GFX_news_event_073
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.82.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.82.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.82.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.83
+	title = news.83.t
+	desc = news.83.d
+	picture = GFX_news_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.83.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.83.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.83.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.84
+	title = news.84.t
+	desc = news.84.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.84.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.84.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.84.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.85
+	title = news.85.t
+	desc = news.85.d
+	picture = GFX_news_event_063
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.85.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.85.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.85.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.86
+	title = news.86.t
+	desc = news.86.d
+	picture = GFX_news_event_026
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.86.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.86.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.86.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.87
+	title = news.87.t
+	desc = news.87.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.87.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.87.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.87.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.88
+	title = news.88.t
+	desc = news.88.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.88.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.88.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.88.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.89
+	title = news.89.t
+	desc = news.89.d
+	picture = GFX_news_event_063
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.89.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.89.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.89.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.90
+	title = news.90.t
+	desc = news.90.d
+	picture = GFX_news_event_064
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.90.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.90.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.90.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.91
+	title = news.91.t
+	desc = news.91.d
+	picture = GFX_news_event_064
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.91.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.91.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.91.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.92
+	title = news.92.t
+	desc = news.92.d
+	picture = GFX_news_event_aid_pact
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1949.10.15
+		SOV = { 
+			has_government = communism
+		}
+		USA = { 
+			has_government = democratic
+		}
+		DDR = { 
+			has_government = communism
+		}
+		SOV = { exists = yes } 
+		USA = { exists = yes }
+		DDR = { exists = yes } 
+		WGR = { exists = yes }
+		BER = { exists = yes }
+	}
+	option = {
+		name = news.92.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.92.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.92.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.93
+	title = news.93.t
+	desc = news.93.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.93.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.93.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.93.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.94
+	title = news.94.t
+	desc = news.94.d
+	picture = GFX_news_event_aid_pact
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.94.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.94.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.94.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.95
+	title = news.95.t
+	desc = news.95.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.95.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.95.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.95.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.96
+	title = news.96.t
+	desc = news.96.d
+	picture = GFX_news_event_aid_pact
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.96.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.96.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.96.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.97
+	title = news.97.t
+	desc = news.97.d
+	picture = GFX_news_event_airplane_factory
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.97.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.97.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.97.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.98
+	title = news.98.t
+	desc = news.98.d
+	picture = GFX_news_event_ANZAC_day
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.98.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.98.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.98.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.99
+	title = news.99.t
+	desc = news.99.d
+	picture = GFX_news_event_026
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.99.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.99.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.99.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.100
+	title = news.100.t
+	desc = news.100.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.100.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.100.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.101
+	title = news.101.t
+	desc = news.101.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.101.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.101.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.101.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.102
+	title = news.102.t
+	desc = news.102.d
+	picture = GFX_news_event_063
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.102.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.102.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.102.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.103
+	title = news.103.t
+	desc = news.103.d
+	picture = GFX_news_event_064
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.103.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.103.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.103.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.104
+	title = news.104.t
+	desc = news.104.d
+	picture = GFX_news_event_064
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.104.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.104.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.104.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.105
+	title = news.105.t
+	desc = news.105.d
+	picture = GFX_news_event_061
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.105.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.105.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.105.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.106
+	title = news.106.t
+	desc = news.106.d
+	picture = GFX_news_event_063
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.106.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.106.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.106.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.107
+	title = news.107.t
+	desc = news.107.d
+	picture = GFX_news_event_ast_army
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.107.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.107.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.107.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.108
+	title = news.108.t
+	desc = news.108.d
+	picture = GFX_news_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.108.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.108.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.108.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.109
+	title = news.109.t
+	desc = news.109.d
+	picture = GFX_news_event_ast_paras
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.109.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.109.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.109.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.110
+	title = news.110.t
+	desc = news.110.d
+	picture = GFX_news_event_004
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.110.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.110.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.110.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.111
+	title = news.111.t
+	desc = news.111.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.111.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.111.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.111.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.112
+	title = news.112.t
+	desc = news.112.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.112.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.112.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.112.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.113
+	title = news.113.t
+	desc = news.113.d
+	picture = GFX_news_event_ast_parliament_house
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.113.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.113.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.113.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.114
+	title = news.114.t
+	desc = news.114.d
+	picture = GFX_news_event_004
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.114.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.114.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.114.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.115
+	title = news.115.t
+	desc = news.115.d
+	picture = GFX_news_event_004
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.115.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.115.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.115.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.116
+	title = news.116.t
+	desc = news.116.d
+	picture = GFX_news_event_ast_planning
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.116.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.116.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.116.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.117
+	title = news.117.t
+	desc = news.117.d
+	picture = GFX_news_event_ast_transfer_singapore
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = news.117.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.117.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.117.c
+		trigger = { TAG = USA }
+	}
+}
+
+news_event = {
+	id = news.118
+	title = news.118.t
+	desc = news.118.d
+	picture = GFX_news_event_ast_troops_landing
+	
+	fire_only_once = yes
+	
+	major = yes
+	trigger = { 
+		has_completed_focus = KND_create_vnk_sk
+    }
+	option = {
+		name = news.118.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+				TAG = KND
+			}
+		}
+	}
+	option = {
+		name = news.118.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.118.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news.118.e
+		trigger = { TAG = KND }
+	}
+}
+news_event = {
+	id = news.119
+	title = news.119.t
+	desc = news.119.d
+	picture = GFX_news_event_bose
+	
+	is_triggered_only = yes
+	
+	major = yes
+	option = {
+		name = news.119.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+				TAG = KND
+			}
+		}
+	}
+	option = {
+		name = news.119.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.119.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news.119.e
+		trigger = { TAG = KND }
+	}
+}
+news_event = {
+	id = news.120
+	title = news.120.t
+	desc = news.120.d
+	picture = GFX_news_event_bose_meeting
+	
+	is_triggered_only = yes
+	
+	major = yes
+	option = {
+		name = news.120.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+				TAG = KND
+			}
+		}
+	}
+	option = {
+		name = news.120.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.120.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news.120.e
+		trigger = { TAG = KND }
+	}
+}
+news_event = {
+	id = news.121
+	title = news.121.t
+	desc = news.121.d
+	picture = GFX_news_event_canada_army
+	
+	is_triggered_only = yes
+	
+	major = yes
+	option = {
+		name = news.121.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+				TAG = KND
+			}
+		}
+	}
+	option = {
+		name = news.121.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.121.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news.121.e
+		trigger = { TAG = KND }
+	}
+}
+news_event = {
+	id = news.122
+	title = news.122.t
+	desc = news.122.d
+	picture = GFX_news_event_canada_army
+	
+	is_triggered_only = yes
+	
+	major = yes
+	option = {
+		name = news.122.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = USA
+				TAG = KND
+			}
+		}
+	}
+	option = {
+		name = news.122.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = news.122.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = news.122.e
+		trigger = { TAG = KND }
+	}
+}

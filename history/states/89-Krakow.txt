@@ -1,0 +1,25 @@
+state={
+	id=89
+	name="STATE_89" # Ivano-Frankivsk
+	manpower = 1423500
+	resources={
+		aluminium=8
+		oil=12
+	}
+	
+	state_category = town
+	
+	history={
+					owner = UKR
+		        add_core_of = UKR
+		buildings = {
+			infrastructure = 5
+			air_base = 1
+
+		}
+	}
+
+	provinces={
+		3743 9425 11411 11550 
+	}
+}

@@ -1,0 +1,46 @@
+﻿capital = 216 #Kiev
+
+oob = "UKR_1946"
+
+# Starting tech
+set_technology = {
+}
+set_cosmetic_tag = KAR_SOV
+set_politics = {
+
+	ruling_party = communism
+	last_election = "1946.1.1"
+	election_frequency = 108
+	elections_allowed = no
+}
+
+
+set_popularities = {
+    democratic = 5
+	fascism = 1
+	chucheism = 7
+	maoism = 5
+	trotskism = 11
+	communism = 55
+	liberal = 6
+	neutrality = 10
+}
+
+
+add_ideas = {
+Soviet_Republic
+Kult_lichnosti
+Besprisorniye
+FINI
+}
+
+create_country_leader = {
+	name = "Ivan Senkin"
+	desc = ""
+	picture = "gfx/leaders/KAR/Ivan Senkin.dds"
+	expire = "1991.11.30"
+	ideology = marxism
+	traits = {
+		#
+	}
+}

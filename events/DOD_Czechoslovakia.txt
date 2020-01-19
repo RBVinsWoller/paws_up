@@ -1,0 +1,23 @@
+﻿add_namespace = cze
+
+country_event = {
+	id = cze.1
+	title = cze.1.t
+	desc = cze.1.d
+	picture = GFX_report_event_chinese_soldiers_01
+	
+	fire_only_once = yes
+	
+	option = {
+		name = cze.1.a
+		
+		ai_chance = { factor = 60 }
+	}
+
+	option = {
+		name = cze.1.b
+		
+		ai_chance = { factor = 40 }
+	} 
+	
+} 

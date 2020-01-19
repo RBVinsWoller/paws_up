@@ -1,0 +1,27 @@
+state={
+	id=924
+	name="STATE_924"
+	state_category = city 
+	resources={
+		chromium=22.000
+	}
+	history={
+				owner = KAZ
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 5
+
+		}
+		victory_points = {
+			10630 10
+		}
+		
+
+	}
+
+	provinces={
+		1287 1879 4670 4685 7317 7708 10202 10235 10630 12616
+	}
+	manpower=943745
+	buildings_max_level_factor=1.000
+}

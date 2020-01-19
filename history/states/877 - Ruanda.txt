@@ -1,0 +1,36 @@
+state={
+	id=877
+	name="STATE_877"
+	
+	state_category = town
+
+	history={
+		add_core_of = VIN
+		owner = VIN
+		victory_points = {
+			4401 3 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 3
+			air_base = 2
+			4401 = {
+				naval_base = 4
+
+			}
+
+		}
+		
+		1949.9.2 = {
+			owner = VIN
+			add_core_of = VIN
+		}
+
+	}
+
+	provinces={
+		7303 1423 1396 10261 4401 12232 7238 7347
+	}
+	manpower=4229078
+}

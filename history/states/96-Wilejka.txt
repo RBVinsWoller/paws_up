@@ -1,0 +1,21 @@
+state={
+	id=96
+	name="STATE_96"
+	manpower = 398386
+
+	resources={
+		rubber=5
+		chromium=15
+	}
+	
+	state_category = large_town
+
+	history={
+				owner = BLR
+		        add_core_of = BLR
+	}
+
+	provinces={
+	   6413 
+	}
+}

@@ -1,0 +1,31 @@
+﻿###########################
+# Bulgarian Events
+###########################
+
+add_namespace = bul
+
+country_event = {
+	id = bul.1
+	title = bul.1.t
+	desc = bul.1.d
+	picture = GFX_report_event_chinese_japanese_handshake
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = BUL
+		date > 1946.9.2
+		date < 1949.10.9
+		has_government = communism 
+    }
+	
+	option = {
+		name = bul.1.a
+		
+		hidden_effect = { 
+			news_event = { id = news.18 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+

@@ -1,0 +1,26 @@
+
+state={
+	id=825
+	name="STATE_825" #Khorog
+
+	state_category = large_town
+
+	history={
+					owner = TDG
+		add_core_of = TDG
+		victory_points = {
+			8027 3 
+		}
+		buildings = {
+			infrastructure = 5
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		8027 10417
+	}
+	manpower=160900
+}

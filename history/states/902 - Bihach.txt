@@ -1,0 +1,23 @@
+state={
+	id=902
+	name="STATE_902" 
+	manpower = 216493
+	
+	state_category = rural
+	
+	history=
+	{
+		victory_points = {
+			13229 1
+		}
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+		}
+		add_core_of = YUG
+	}
+	provinces={
+		9586 3985 6957 13229
+	}
+}

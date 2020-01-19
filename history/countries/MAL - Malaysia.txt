@@ -1,0 +1,64 @@
+﻿capital = 336 #Kuala Lumpur
+
+oob = "MAL_1936"
+
+set_research_slots = 3
+
+# Starting tech
+# clone of UK
+set_technology = {
+}
+
+set_politics = {
+	ruling_party = centrism
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+} 
+
+set_popularities = {
+    democratic = 15
+	fascism = 5
+	chucheism = 1
+	maoism = 21
+	trotskism = 9
+	communism = 9
+	liberal = 15
+	neutrality = 25
+}
+
+create_country_leader = {
+	name = "Onn Jaafar"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Lai Teck"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+	expire = "1953.3.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ibrahim Hj Yaacob" #this guy supported Japanese during the war, and was imprisoned for it, could be made fascist?
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+	expire = "1953.3.1"
+	ideology = moderatism
+	traits = {
+		
+	}
+}
+
+
+

@@ -1,0 +1,106 @@
+﻿capital = 100 #Iceland
+
+oob = "ICE_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+}
+
+set_technology = {
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "ICE_1939"
+	set_technology = {
+	}
+}
+
+set_convoys = 30
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 45
+	fascism = 8
+	chucheism = 0
+	maoism = 5
+	trotskism = 5
+	communism = 7
+	liberal = 5
+	neutrality = 5
+	titoism = 20
+}
+
+1939.1.1 = {
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+} 
+
+set_popularities = {
+    democratic = 45
+	fascism = 8
+	chucheism = 0
+	maoism = 5
+	trotskism = 5
+	communism = 7
+	liberal = 5
+	neutrality = 5
+	titoism = 20
+}
+}
+
+create_country_leader = {
+	name = "Sveinn Björnsson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Johannes Valurson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Haraldur Gudmunsson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Einar Olgeirsson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}

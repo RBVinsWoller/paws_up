@@ -1,0 +1,34 @@
+state={
+	id=621
+	name="STATE_621" # Suiyuan
+	manpower = 2083700
+	
+	state_category = pastoral
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		
+		1945.9.2 = {
+			owner = CHI
+			add_core_of = CHI
+			add_core_of = PRC
+		}
+		1949.9.2 = {
+			owner = PRC
+			add_core_of = CHI
+			add_core_of = PRC
+		}
+		
+		
+	}
+
+	provinces={
+	 2087 4525 7048 7158 7631 10424 10629 12331 12403 12609 12880 
+	}
+}

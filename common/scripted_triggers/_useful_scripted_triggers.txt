@@ -1,0 +1,30 @@
+# this is a check to see if a major has at least 50 factories
+# which means it's not just a faction leader (which anyone can be)
+has_same_government_as_ROOT = {
+	OR = {
+		AND = {
+			has_government = democratic
+			ROOT = { has_government = democratic }
+		}
+		AND = {
+			has_government = communism
+			ROOT = { has_government = communism }
+		}
+		AND = {
+			has_government = maoism
+			ROOT = { has_government = maoism }
+		}
+		AND = {
+			has_government = trotskism
+			ROOT = { has_government = trotskism }
+		}
+		AND = {
+			has_government = chucheism
+			ROOT = { has_government = chucheism }
+		}
+		AND = {
+			has_government = fascism
+			ROOT = { has_government = fascism }
+		}
+	}
+}

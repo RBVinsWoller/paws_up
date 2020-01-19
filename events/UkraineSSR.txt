@@ -1,0 +1,227 @@
+﻿
+add_namespace = ukr
+
+country_event = {
+	id = ukr.1
+	title = ukr.1.t
+	desc = ukr.1.d
+	picture = GFX_report_event_czech_soldiers_02
+	
+	fire_only_once = no
+	
+	mean_time_to_happen = {
+		days = 80
+	}
+	
+	trigger = { 
+		tag = UKR
+		has_government = communism 
+		communism < 0.45
+		SOV = { exists = yes }
+		is_subject_of = SOV
+    }
+	
+	option = {
+		name = ukr.1.a
+		
+		SOV = {
+			country_event = { days = 1 id = sov.9 }
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.52 } 
+		}
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = ukr.2
+	title = ukr.2.t
+	desc = ukr.2.d
+	picture = GFX_report_event_dead_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukr.2.a
+		
+			set_politics = {
+
+				parties = {
+					democratic = { 
+						popularity = 5
+					}
+					
+					communism = {
+						popularity = 95
+					}		
+				}
+				ruling_party = communism
+				last_election = "1946.1.1"
+				election_frequency = 108
+				elections_allowed = no
+			}
+			
+		hidden_effect = { 
+			news_event = { id = news.53 } 
+		}
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = ukr.3
+	title = ukr.3.t
+	desc = ukr.3.d
+	picture = GFX_report_event_degaulle_churchill
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukr.3.a
+		
+		hidden_effect = {
+			start_civil_war = {
+				ideology = democratic
+				size = 0.8
+			}
+			random_other_country = {
+				limit = {
+					original_tag = UKR
+					has_government = democratic
+				}
+				
+				drop_cosmetic_tag = yes
+				
+				set_equipment_fraction = 0.8
+			}
+			
+			set_equipment_fraction = 0.2
+		
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.54 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = ukr.4
+	title = ukr.4.t
+	desc = ukr.4.d
+	picture = GFX_report_event_dead_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukr.4.a
+		
+		set_politics = {
+
+			parties = {
+				democratic = { 
+					popularity = 5
+				}
+				
+				communism = {
+					popularity = 95
+				}		
+			}
+			ruling_party = communism
+			last_election = "1946.1.1"
+			election_frequency = 108
+			elections_allowed = no
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.55 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = ukr.5
+	title = ukr.5.t
+	desc = ukr.5.d
+	picture = GFX_report_event_degaulle_inspect_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukr.5.a
+		
+		set_politics = {
+
+			parties = {
+				democratic = { 
+					popularity = 95
+				}
+				
+				communism = {
+					popularity = 5
+				}		
+			}
+			ruling_party = democratic
+			last_election = "1946.1.1"
+			election_frequency = 108
+			elections_allowed = no
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.56 } 
+		}
+		
+		set_autonomy = { target = UKR autonomy_state = autonomy_free  }
+		
+		drop_cosmetic_tag = yes
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = ukr.6
+	title = ukr.6.t
+	desc = ukr.6.d
+	picture = GFX_report_event_degaulle_inspect_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ukr.6.a
+		
+		set_politics = {
+
+			parties = {
+				democratic = { 
+					popularity = 95
+				}
+				
+				communism = {
+					popularity = 5
+				}		
+			}
+			ruling_party = democratic
+			last_election = "1946.1.1"
+			election_frequency = 108
+			elections_allowed = no
+		}
+		
+		drop_cosmetic_tag = yes
+		
+		set_autonomy = { target = UKR autonomy_state = autonomy_free }
+		
+		hidden_effect = { 
+			news_event = { id = news.57 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}

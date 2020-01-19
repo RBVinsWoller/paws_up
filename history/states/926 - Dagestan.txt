@@ -1,0 +1,27 @@
+
+state={
+	id=926
+	name="STATE_926"
+	manpower = 874549
+	
+	state_category = city
+	resources={
+		chromium=20
+	}
+
+	history={
+			owner = SOV
+		add_core_of = RUS
+                add_core_of = SOV
+		victory_points = {
+			3668 5 
+		}
+		buildings = {
+			infrastructure = 5
+		}
+	}
+
+	provinces={
+		3668
+	}
+}

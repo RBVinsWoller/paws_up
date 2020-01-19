@@ -1,0 +1,25 @@
+
+state={
+	id=104
+	name="STATE_104"
+	manpower = 1574423
+	
+	
+	state_category = large_town
+	
+	resources={
+		aluminium=10
+	}
+
+	history={
+		owner = YUG
+		victory_points = {
+			11899 5 
+		}
+		add_core_of = YUG
+	}
+
+	provinces={
+		6799 9922 11572 11872 11899
+    }
+}

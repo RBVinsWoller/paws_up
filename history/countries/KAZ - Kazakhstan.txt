@@ -1,0 +1,47 @@
+﻿capital = 586 #Almaty
+
+oob = "KAZ_1946"
+
+# Starting tech
+set_technology = {
+}
+set_cosmetic_tag = KAZ_SOV
+set_politics = {
+
+	ruling_party = communism
+	last_election = "1946.1.1"
+	election_frequency = 108
+	elections_allowed = no
+}
+
+
+set_popularities = {
+    democratic = 5
+	fascism = 1
+	chucheism = 7
+	maoism = 5
+	trotskism = 11
+	communism = 55
+	liberal = 6
+	neutrality = 10
+}
+
+add_ideas = {
+Soviet_Republic
+Kult_lichnosti
+}
+
+create_country_leader = {
+	name = "Zhumabay Shayakhmetov"
+	desc = ""
+	picture = "gfx/leaders/KAZ/Zhumabay Shayakhmetov.dds"
+	expire = "1966.10.17"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+
+
+

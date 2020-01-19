@@ -1,0 +1,402 @@
+﻿division_template = {
+	name = "Infantry Div."				
+	division_names_group = DDR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Modelled on Chinese divisions
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		
+		
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mountaineers"						
+	division_names_group = DDR_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Motorized" 			# Infanterie-Divisionen (mot)
+	division_names_group = DDR_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		jip = { x = 2 y = 0 }
+	    jip = { x = 2 y = 1 }
+		jip = { x = 2 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+		anti_tankrpgsup_brigade = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = DDR_ARM_02
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        ptsausup_brigade = { x = 0 y = 0 }	
+	}
+}
+
+division_template = {
+	name = "Heavy tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = DDR_ARM_02
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {	
+		sausup_brigade = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	
+	
+	### Guard Brigades
+	division = {
+		name = "1-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 3535
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "2-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 3535
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "3-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 514
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	
+	division = {
+		name = "4-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 514
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "5-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 514
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "6-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 321
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "7-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 321
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "1-a motorized Division"
+		location = 6524
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "2-a motorized Division"
+		location = 6524
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "3-a motorized Division"
+		location = 6524
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "1-a Infantry Division"
+		location = 11505
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "2-a Infantry Division"
+		location = 11505
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "3-a Infantry Division"
+		location = 11505
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "4-a Infantry Division"
+		location = 3500
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "5-a Infantry Division"
+		location = 3500
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "6-a Infantry Division"
+		location = 3500
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "7-a Infantry Division"
+		location = 9294
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "8-a Infantry Division"
+		location = 9294
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "9-a Infantry Division"
+		location = 9294
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "10-a Infantry Division"
+		location = 9294
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_0 #M1903
+		amount = 50000
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_1 #M1 Grand
+		amount = 50000
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_2 #M1 thompson
+		amount = 100000
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_1 #PZ 3
+		amount = 200
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_2 #PZ 4
+		amount = 800
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_3 #Panter
+		amount = 150
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_1 #PZ 2
+		amount = 200
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_2 #PZ 38t
+		amount = 600
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_3 #puma
+		amount = 20
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = heavy_tank_equipments_3 #Tiger 1
+		amount = 125
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = heavy_tank_equipments_4 #Tiger 2
+		amount = 40
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = pt_sau_equipment_1 #StuG 3
+		amount = 800
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = pt_sau_equipment_2 #StuG 4
+		amount = 50
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = pt_sau_equipment_3 #Jagpanter
+		amount = 25
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = sau_equipment_2 #M7
+		amount = 700
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1 #Грузовик Опель Блиц
+		amount = 1000
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = jip_equipment_1 #Джип
+		amount = 1000
+		producer = DDR
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment_1 #Супорт еквип
+		amount = 10000
+		producer = DDR
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipments_1 # Артилерия
+		amount = 1000
+		producer = DDR
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipments_2 # Артилерия
+		amount = 6000
+		producer = DDR
+	}
+	
+}

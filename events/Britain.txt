@@ -1,0 +1,310 @@
+﻿add_namespace = britain 
+
+country_event = {
+	id = britain.1
+	title = britain.1.t
+	desc = britain.1.d
+	picture = GFX_report_event_generic_research_lab
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = ENG
+		date > 1946.11.28
+		date < 1949.10.9
+		WGR = { exists = yes }
+		ENG = {
+		owns_state = 51
+		owns_state = 57
+		owns_state = 56
+		owns_state = 59
+		owns_state = 58
+		
+		}
+    }
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = britain.1.a
+		WGR = {
+			set_state_owner = 51
+			set_state_owner = 57
+			set_state_owner = 56
+			set_state_owner = 59
+			set_state_owner = 58
+			set_cosmetic_tag = WGR_47
+			create_country_leader = {
+				name = "Lucius D. Clay"
+				desc = ""
+				picture = "gfx/leaders/GER/Portrait_Germany_Luciuse.dds"
+				expire = "1970.1.1"
+				ideology = conservatism
+				traits = {
+				}
+			}	
+		}	
+		
+		
+		WGR = {
+			set_state_controller = 51
+			set_state_controller = 57
+			set_state_controller = 56
+			set_state_controller = 59
+			set_state_controller = 58
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.114 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = britain.2
+	title = britain.2.t
+	desc = britain.2.d
+	picture = GFX_report_event_chamberlain
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = ENG
+		date > 1946.3.2
+		date < 1949.10.9
+    }
+	
+	option = {
+		name = britain.2.a
+		
+		hidden_effect = { 
+			news_event = { id = news.1 } 
+		}
+
+		ai_chance = { factor = 100 }
+		
+	}
+}
+
+country_event = {
+	id = britain.3
+	title = britain.3.t
+	desc = britain.3.d
+	picture = GFX_report_event_destroyers
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = ENG
+		date > 1947.8.10
+		date < 1949.10.9
+		
+		ENG = {
+		owns_state = 423
+		owns_state = 425
+		owns_state = 424
+		owns_state = 429
+		owns_state = 427
+		owns_state = 426
+		owns_state = 444
+		owns_state = 445
+		owns_state = 442
+		owns_state = 443
+		owns_state = 440
+		owns_state = 441
+		owns_state = 428
+		owns_state = 433
+		owns_state = 439
+		owns_state = 437
+		owns_state = 438
+		owns_state = 436
+		owns_state = 435
+		owns_state = 431
+		owns_state = 430
+		owns_state = 432
+		owns_state = 434
+		}
+    }
+	
+	option = {
+		name = britain.3.a
+		RAJ = {
+			set_state_owner = 423
+			set_state_owner = 425
+			set_state_owner = 424
+			set_state_owner = 429
+			set_state_owner = 427
+			set_state_owner = 426
+			set_state_owner = 428
+			set_state_owner = 433
+			set_state_owner = 439
+			set_state_owner = 441
+			set_state_owner = 437
+			set_state_owner = 438
+			set_state_owner = 436
+			set_state_owner = 435
+			set_state_owner = 431
+			set_state_owner = 432
+			set_state_owner = 434
+		}
+		
+		RAJ = {
+			set_state_controller = 423
+			set_state_controller = 425
+			set_state_controller = 424
+			set_state_controller = 429
+			set_state_controller = 427
+			set_state_controller = 426
+			set_state_controller = 428
+			set_state_controller = 433
+			set_state_controller = 439
+			set_state_controller = 441
+			set_state_controller = 437
+			set_state_controller = 438
+			set_state_controller = 436
+			set_state_controller = 435
+			set_state_controller = 431
+			set_state_controller = 432
+			set_state_controller = 434
+		}
+		
+		PAK = {
+			set_state_owner = 444
+			set_state_owner = 445
+			set_state_owner = 442
+			set_state_owner = 443
+			set_state_owner = 440
+			set_state_owner = 430
+            set_state_owner = 787
+		}
+		
+		PAK = {
+			set_state_controller = 444
+			set_state_controller = 445
+			set_state_controller = 442
+			set_state_controller = 443
+			set_state_controller = 440
+			set_state_controller = 430
+            set_state_controller = 787
+
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.59 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = britain.3.b
+		
+		
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = britain.4
+	title = britain.4.t
+	desc = britain.4.d
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = ENG
+		date > 1948.1.1
+		date < 1949.10.9
+		
+		ENG = {
+		owns_state = 640
+		owns_state = 288
+		}
+    }
+	
+	option = {
+		name = britain.4.a
+		BIR = {
+			set_state_owner = 640
+			set_state_owner = 288
+		}
+		
+		BIR = {
+			set_state_controller = 640
+			set_state_controller = 288
+		}
+		
+		declare_war_on = {
+			target = BIR
+			type = puppet_wargoal_focus
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.60 } 
+		}
+		ai_chance = { factor = 30 }
+	}
+
+	option = {
+		name = britain.4.b
+		
+		BIR = {
+			set_state_owner = 640
+			set_state_owner = 288
+		}
+		
+		BIR = {
+			set_state_controller = 640
+			set_state_controller = 288
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.60 } 
+		}
+		
+		ai_chance = { factor = 70 }
+	}
+}
+
+country_event = {
+	id = britain.5
+	title = britain.5.t
+	desc = britain.5.d
+	picture = GFX_report_event_generic_riot
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = ENG
+		date > 1948.5.10
+		date < 1949.10.9
+		
+		ENG = {
+		owns_state = 454
+		owns_state = 948
+		}
+    }
+	
+	option = {
+		name = britain.5.a
+		ISR = {
+			set_state_owner = 454
+			set_state_owner = 948
+		}
+		
+		ISR = {
+			set_state_controller = 454
+			set_state_controller = 948
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.116 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+
+}

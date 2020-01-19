@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_generic_love_of_peple_head_western_european_2d"
+		texturefile = "gfx/interface/ideas/generic/ideology_leaders/idea_generic_socialist_europe.dds"
+	}
+}

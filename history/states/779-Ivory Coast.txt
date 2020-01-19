@@ -1,0 +1,32 @@
+
+state={
+	id=779
+	name="STATE_779" # Ivory Coast
+	manpower = 200734
+	
+	state_category = pastoral
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 2
+			12040 = {
+				naval_base = 5	
+			}
+		}
+		add_core_of = KOR
+		add_core_of = KND
+		
+		1949.9.2 = {
+			owner = KOR
+			add_core_of = KOR
+			add_core_of = KND
+		}
+
+	}
+
+	provinces={
+		12040
+	}
+}

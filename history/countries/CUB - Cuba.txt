@@ -1,0 +1,78 @@
+﻿capital = 315
+
+oob = "CUB_1936"
+
+# Starting tech
+set_technology = {
+}
+set_country_flag = monroe_doctrine
+
+set_convoys = 20
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "CUB_1939"
+	set_technology = {
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.10"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 20
+	fascism = 5
+	chucheism = 0
+	maoism = 0
+	trotskism = 5
+	titoism = 0
+	liberal = 15
+	neutrality = 30
+	communism = 25
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1944.1.10"
+		election_frequency = 48  
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+    democratic = 20
+	fascism = 5
+	chucheism = 0
+	maoism = 0
+	trotskism = 5
+	titoism = 0
+	liberal = 15
+	neutrality = 30
+	communism = 25
+}
+
+	create_country_leader = {
+		name = "Fulgencio Batista"
+		desc = "POLITICS_FEDERICO_LAREDO_BRU_DESC"
+		picture = "gfx/leaders/CUB/Portrait_Fulgencio Batista.dds"
+		expire = "1973.1.1"
+		ideology = oligarchism
+		traits = {
+			#
+		}
+	}
+	
+	create_country_leader = { 
+		name = "Fidel Castro" 
+		desc = "" 
+		picture = "gfx/leaders/CUB/Castro.dds"
+		expire = "2016.11.25" 
+		ideology = leninism
+	}
+}

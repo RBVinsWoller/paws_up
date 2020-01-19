@@ -1,0 +1,27 @@
+
+state={
+	id=577 # Surgut
+	manpower = 29299
+	name="STATE_577"
+	resources={
+		oil=8
+	}
+
+	state_category = rural
+
+	history={
+		owner = SOV
+		add_core_of = RUS
+                add_core_of = SOV
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+                                                arms_factory = 1
+		}
+
+	}
+
+	provinces={
+		1726 1768 1784 1856 4730 4771 4817 7685 7781 7837 7882 10533 10561 10663 10692 12514 12542 12574 12639 12672
+	}
+}

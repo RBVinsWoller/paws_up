@@ -1,0 +1,26 @@
+state={
+	id=813
+	name="STATE_813" #Przhevalsk
+	
+	state_category = city
+
+	history={
+								owner = KIR
+		add_core_of = KIR
+		buildings = {
+			infrastructure = 5
+
+		}
+		victory_points = {
+			4768 1
+		}
+		
+
+	}
+
+
+	provinces={
+		1675 1825 4391 4768 5062 12511 13147
+	}
+	manpower=651710
+}

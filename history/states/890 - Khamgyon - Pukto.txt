@@ -1,0 +1,35 @@
+
+state={
+	id=890
+	name="STATE_890"
+	manpower = 874200
+	state_category = town
+	resources={
+		steel=20
+		tungsten=52
+	}
+
+	history={
+		owner = KND
+		buildings = {
+			infrastructure = 3
+		}
+		
+		victory_points = {
+			6822 4
+		}	
+
+		add_core_of = KND
+		add_core_of = KOR
+		
+		1949.9.2 = {
+			owner = KND
+			add_core_of = KND
+			add_core_of = KOR
+		}
+	}
+
+	provinces={
+		6944 898 3860 6822 959
+	}
+}

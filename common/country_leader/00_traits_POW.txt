@@ -1,0 +1,424 @@
+ leader_traits = {
+	love = {
+		random = no
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	byntar_commi = {
+		random = no
+		communism_drift = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	byntar_mao = {
+		random = no
+		maoism_drift = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	byntar_trotskiy = {
+		random = no
+		trotskism_drift = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	byntar_chuche = {
+		random = no
+		chucheism_drift = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	byntar_capitala = {
+		random = no
+		democratic_drift = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	byntar_natii = {
+		random = no
+		fascism_drift = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    traditional_ruler = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	idea_men  = {
+		random = no
+		opinion_gain_monthly_same_ideology_factor = 1.0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	###черты министров
+	    administrator = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		political_activist = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		podhalim = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		visokomernyy = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		diplomat = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+			burokrat = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		korruptioner = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		independence = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		obayatelny = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		ostorogny = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		patriot = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		populist = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	###основные показатели
+	#defence_minister
+	organizovanuy = {
+		random = no
+		army_org_factor = 0.05
+		experience_gain_army = 0.02
+		army_morale_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Storonik_avia = {
+		random = no
+		experience_gain_air = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nastavnik = {
+		random = no
+		experience_gain_army = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fast_war = {
+		random = no
+		army_speed_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Peace_maker = {
+		random = no
+		war_support_factor = -0.05
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	War_maker = {
+		random = no
+		war_support_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	####
+	###building_minister
+	jestkiy = {
+		random = no
+		stability_factor = 0.05
+		political_power_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	myakiy = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	agentura = {
+		random = no
+		drift_defence_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	militarityzat = {
+		random = no
+		war_support_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		subjects_builder = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	####economic_minister
+		market_redormator = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	stabilizat = {
+		random = no
+		stability_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	plan_redormator = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		economic_redormator = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+			economic_conservator = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+				economic_reaktioner = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#####diplomacy_minister
+		neutrality_count = {
+		random = no
+		trade_opinion_factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	works_horse = {
+		random = no
+		political_power_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	storonnik_frindUSSR = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ideolog_comrad = {
+		random = no
+		opinion_gain_monthly_same_ideology_factor = 1.0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jawk = {
+		random = no
+		justify_war_goal_time = -0.20
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		communist_man = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		fascist_man = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		democraty_man = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		powerfinder_man = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	###culture_minister
+	millprop = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	antiwarprop = {
+		random = no
+		war_support_factor = -0.05
+		stability_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		propagand_advisor = {
+		random = no
+		drift_defence_factor = 0.05 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+			national_proletariy_culture_advisor = {
+		random = no
+		 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

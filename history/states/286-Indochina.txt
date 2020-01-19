@@ -1,0 +1,31 @@
+state={
+	id=286
+	name="STATE_286"
+	resources={
+		rubber=94.000
+	}
+
+	history={
+		add_core_of = VIN
+		owner = VIN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		
+		1949.9.2 = {
+			owner = VIN
+			add_core_of = VIN
+		}
+
+	}
+
+	provinces={
+		1248 1300 1328 4255 4334 4363 4379 7229 7380 10137 10180 10309 
+	}
+	manpower=2245000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

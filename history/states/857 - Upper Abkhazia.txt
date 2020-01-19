@@ -1,0 +1,24 @@
+
+state={
+	id=857
+	name="STATE_857"
+	manpower = 2250
+	
+	state_category = pastoral
+
+	history={
+											owner = GEO
+		        add_core_of = GEO
+		victory_points = {
+			9626 1
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		9626
+	}
+}

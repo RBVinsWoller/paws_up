@@ -1,0 +1,48 @@
+﻿
+###########################
+# Tibet Events
+###########################
+
+add_namespace = tib
+
+country_event = {
+	id = tib.1
+	title = tib.1.t
+	desc = tib.1.d
+	picture = GFX_report_event_ast_paras
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tib.1.a
+		
+		declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.39} 
+		}
+		
+		ai_chance = { factor = 50 }
+	}
+	
+	option = {
+		name = tib.1.b
+		
+		hidden_effect = { 
+			news_event = { id = news.40 } 
+		}
+		
+		PRC = {
+			set_state_owner = 322
+		}
+		
+		PRC = {
+			set_state_controller = 322
+		}
+		
+		ai_chance = { factor = 50 }
+	}
+

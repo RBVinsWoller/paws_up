@@ -1,0 +1,21 @@
+state={
+	id=589
+	name="STATE_589"
+	
+	state_category = city 
+
+	history={
+				owner = KAZ
+		add_core_of = KAZ
+			buildings = {
+			infrastructure = 5
+		}
+
+	}
+
+	provinces={
+		1668 1749 1818 4674 4867 7784 10218 10290 10610 10653 10680 12564 12635 12662 13151
+	}
+	manpower=839976
+	buildings_max_level_factor=1.000
+}

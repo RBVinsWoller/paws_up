@@ -1,0 +1,77 @@
+﻿capital = 554
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 5
+
+1939.1.1 = {
+
+    oob = "SYR_1946"
+
+	add_political_power = 100
+	
+	set_technology = {
+	}
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 10 
+	fascism = 9
+	chucheism = 3
+	maoism = 2
+	trotskism = 7
+	titoism = 1
+	liberal = 5
+	neutrality = 50
+	communism = 13
+}
+
+create_country_leader = {
+	name = "Hashim al-Atassi"
+	desc = ""
+	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_navy_1.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Antun Saadeh"
+	desc = ""
+	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_3.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Shukri al-Quwatli"
+	desc = ""
+	picture = "gfx/leaders/SYR/Shukri.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Khalid Bakdash"
+	desc = ""
+	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_communism1.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
+}

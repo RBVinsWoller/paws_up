@@ -1,0 +1,193 @@
+﻿capital = 55
+
+# Starting tech
+set_technology = {
+}
+
+
+add_ideas = {
+}
+
+
+set_research_slots = 4
+set_convoys = 50
+
+1945.1.1 = {
+
+	add_political_power = 100
+	create_country_leader = {
+		name = "Lucius D. Clay"
+		desc = ""
+		picture = "gfx/leaders/GER/Portrait_Germany_Lucius.dds"
+		expire = "1970.1.1"
+		ideology = conservatism
+		traits = {
+		}
+	}
+	oob = "WGR_1946"
+	#BUILDINGS
+	set_cosmetic_tag = WGR_46
+
+	set_technology = {
+		infantry_weapons_0 = 1
+		infantry_weapons_1 = 1
+		infantry_weapons_2 = 1
+		tech_special_forces = 1
+		marines = 1
+		paratroopers = 1
+		tech_mountaineers = 1
+		im_infantry_2 = 1
+		motorised_infantry = 1
+		motorized_2 = 1
+		jip_1 = 1
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_field_hospital = 1
+		tech_maintenance_company = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		tank_1 = 1
+		tank_2 = 1
+		tank_3 = 1
+		l_tank_1 = 1
+		l_tank_2 = 1
+		l_tank_3 = 1
+		t_tank_1 = 1
+		t_tank_2 = 1
+		t_tank_3 = 1
+		t_tank_4 = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antitanks = 1
+		antitanks1 = 1
+		medrange_sp_aa1 = 1
+		medrange_sp_aa2 = 1
+		shortrange_sp_aa1 = 1
+		shortrange_sp_aa2 = 1
+		shortrange_sp_aa3 = 1
+		sp_aa1 = 1
+		sp_aa2 = 1
+		interwar_antiairs = 1
+		antiairs1 = 1
+		early_fighter = 1
+		fighter1 = 1
+		fighter2 = 1
+		fighter3 = 1
+		CAS1 = 1
+		CAS2 = 1
+		CAS3 = 1
+		CAS4 = 1
+		naval_bomber1 = 1
+		naval_bomber2 = 1
+		naval_bomber3 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		tactical_bomber2 = 1
+		heavy_fighter1 = 1
+		heavy_fighter2 = 1
+		heavy_fighter3 = 1
+		strategic_bomber1 = 1
+		strategic_bomber2 = 1
+		transport1 = 1
+		transport2 = 1
+		rocket_engines = 1
+		improved_rocket_engines = 1
+		jet_engines = 1
+	}
+}
+
+1949.1.1 = {
+
+	add_political_power = 100
+	
+	create_country_leader = {
+		name = "Konrad Adenauer"
+		desc = "POLITICS_KONRAD_ADENAUER_DESC"
+		picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+		}
+	}
+	set_capital = 51
+	#BUILDINGS
+	drop_cosmetic_tag = yes
+
+	set_technology = {
+	}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1946.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+
+
+set_popularities = {
+    democratic = 31
+	fascism = 20
+	chucheism = 0
+	maoism = 0
+	trotskism = 5
+	titoism = 5
+	liberal = 19
+	neutrality = 0
+	communism = 20
+}
+}
+
+add_ideas = {
+}
+
+give_military_access = ENG
+give_military_access = FRA
+
+create_country_leader = {
+	name = "Klaus Klauser"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+	}
+}
+
+
+#
+#create_country_leader = {
+#	name = "William Trieck"
+#	desc = "POLITICS_WILHELM_PIECK_DESC"
+#	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
+#	expire = "1965.1.1"
+#	ideology = stalinism
+#	traits = {
+#	}
+#}
+
+#create_country_leader = {
+#	name = "Otto Wels"
+#	desc = "POLITICS_OTTO_WELS_DESC"
+#	picture = "Portrait_Germany_Adolf_Hitler.dds"
+#	expire = "1939.1.16"
+#	ideology = socialism
+#	traits = {
+#		exiled
+#		union_man
+#	}
+#}
+#
+#create_country_leader = {
+#	name = "Ernst Thälmann"
+#	desc = "POLITICS_ERNST_THALMANN_DESC"
+#	picture = "Portrait_Germany_Adolf_Hitler.dds"
+#	expire = "1956.1.1"
+#	ideology = stalinism
+#	traits = {
+#		assassination_survivor
+#		stalins_puppet
+#		political_prisoner
+#	}
+#}

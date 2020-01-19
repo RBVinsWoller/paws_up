@@ -1,0 +1,24 @@
+state = 
+{
+	id=163
+	name="STATE_163" #Krajna
+	manpower = 255478
+	
+	state_category = town
+	
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2	
+		}					
+			add_core_of = YUG				
+			add_core_of = CRO
+		victory_points = {
+			6672 3 
+		}
+	} 
+	provinces={	
+		984 3596 3654 3974 6611 6672 
+	}
+}

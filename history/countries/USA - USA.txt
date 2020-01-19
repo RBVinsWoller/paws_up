@@ -1,0 +1,387 @@
+﻿capital = 361
+
+oob = "USA_1936"
+
+set_research_slots = 4
+
+# Starting tech
+set_technology = {
+		infantry_weapons_0 = 1
+	infantry_weapons_1 = 1
+	infantry_weapons_2 = 1
+	tech_special_forces = 1
+	marines = 1
+	paratroopers = 1
+	tech_mountaineers = 1
+	im_infantry_2 = 1
+	motorised_infantry = 1
+	motorized_2 = 1
+	jip_1 = 1
+	btr_1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_field_hospital = 1
+	tech_maintenance_company = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	tank_1 = 1
+	tank_2 = 1
+	tank_3 = 1
+	l_tank_1 = 1
+	l_tank_2 = 1
+	l_tank_3 = 1
+	t_tank_1 = 1
+	t_tank_2 = 1
+	t_tank_3 = 1
+	t_tank_4 = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antitanks = 1
+	antitanks1 = 1
+	medrange_sp_aa1 = 1
+	medrange_sp_aa2 = 1
+	shortrange_sp_aa1 = 1
+	shortrange_sp_aa2 = 1
+	shortrange_sp_aa3 = 1
+	sp_aa1 = 1
+	sp_aa2 = 1
+	interwar_antiairs = 1
+	antiairs1 = 1
+	rpg1 = 1
+	early_fighter = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	CAS1 = 1
+	CAS2 = 1
+	CAS3 = 1
+	CAS4 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	naval_bomber3 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	tactical_bomber2 = 1
+	heavy_fighter1 = 1
+	heavy_fighter2 = 1
+	heavy_fighter3 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1
+	transport1 = 1
+	transport2 = 1
+	rocket_engines = 1
+	improved_rocket_engines = 1
+	jet_engines = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+    set_autonomy = {
+		target = KOR
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = WGR
+		autonomous_state = autonomy_puppet
+	}
+}
+give_guarantee = CAN
+
+1939.1.1 = {
+
+	add_political_power = 100
+	
+	#adding ministers
+	add_ideas = {
+	}
+
+	oob = "USA_1936"
+	set_technology = {
+	}
+}
+
+
+
+
+set_convoys = 400
+
+set_politics = {
+
+	ruling_party = democratic
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 25
+	fascism = 5
+	chucheism = 0
+	maoism = 0
+	trotskism = 15
+	titoism = 5
+	liberal = 40
+	neutrality = 0
+	communism = 10
+}
+
+
+1939.1.1 = {
+set_politics = {
+	ruling_party = liberal
+	last_election = "1936.11.3"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+
+set_popularities = {
+    democratic = 25
+	fascism = 5
+	chucheism = 0
+	maoism = 0
+	trotskism = 15
+	titoism = 5
+	liberal = 40
+	neutrality = 0
+	communism = 10 
+}
+}
+
+add_ideas = {
+ Svoboda
+}
+
+create_country_leader = {
+	name = "Harry S. Truman"
+	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	picture = "Portrait_USA_Harry_Truman.dds"
+	expire = "1953.1.20"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "William Dudley Pelley"
+	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+	picture = "Portrait_USA_William_Dudley_Pelley.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Earl Browder"
+	desc = "POLITICS_EARL_BROWDER_DESC"
+	picture = "Portrait_USA_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+
+create_corps_commander = {
+	name = "Omar Bradley"
+		picture = "Portrait_USA_Omar_Bradley.dds"
+	traits = {  trait_engineer  }
+	skill = 5
+
+}
+
+create_field_marshal = {
+	name = "Dwight D. Eisenhower"
+		picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+	traits = { logistics_wizard offensive_doctrine }
+	skill = 5
+
+}
+
+create_corps_commander = {
+	name = "Geoffrey Keyes"
+		picture = "Portrait_USA_Geoffrey_Keyes.dds"
+	traits = { panzer_leader }
+	skill = 2
+
+}
+
+create_corps_commander = {
+	name = "Lucian Truscott"
+		picture = "Portrait_USA_Lucian_Truscott.dds"
+	traits = { trait_engineer  }
+	skill = 3
+
+}
+
+create_corps_commander = {
+	name = "Mark Clark"
+		picture = "Portrait_USA_Mark_W_Clark.dds"
+	traits = {  }
+	skill = 4
+
+}
+
+create_field_marshal = {
+	name = "Douglas MacArthur"
+	id = 57
+		picture = "Portrait_USA_Douglas_MacArthur.dds"
+	traits = { defensive_doctrine offensive_doctrine  }
+	skill = 4
+
+}
+
+create_corps_commander = {
+	name = "Walter Krueger"
+		picture = "Portrait_USA_Walter_Krueger.dds"
+	traits = {  }
+	skill = 3
+
+}
+
+create_corps_commander = {
+	name = "Lloyd Fredendall"
+		picture = "Portrait_USA_Lloyd_Fredendall.dds"
+	traits = {  }
+	skill = 2
+
+}
+
+
+create_corps_commander = {
+	name = "Jonathan Wainwright"
+		picture = "Portrait_USA_Jonathan_Wainwright.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Russell Hartle"
+		picture = "Portrait_USA_Russell_P_Hartle.dds"
+	traits = {  }
+	skill = 1
+	rank = 1
+}
+
+create_corps_commander = {
+	name = "Leonard Gerow"
+	picture = "Portrait_USA_Leonard_T_Gerow.dds"
+	traits = {  }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Edward Brooks"
+		picture = "Portrait_USA_Edward_Brooks.dds"
+	traits = { panzer_leader }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Clarence Huebner"
+		picture = "Portrait_USA_Clarence_Huebner.dds"
+	traits = {  }
+	skill = 2
+}
+
+
+create_corps_commander = {
+	name = "William Simpson"
+		picture = "Portrait_USA_William_Hood_Simpson.dds"
+	traits = {  }
+	skill = 3
+	
+}
+
+create_corps_commander = {
+	name = "J. Lawton Collins"
+		picture = "Portrait_USA_Lawton_Collins.dds"
+	traits = {  trickster }
+	skill = 3
+	
+}
+
+create_corps_commander = {
+	name = "Courtney Hodges"
+		picture = "Portrait_USA_Cortney_Hodges.dds"
+	traits = {  panzer_leader }
+	skill = 4
+
+}
+
+create_corps_commander = {
+	name = "Joseph Stilwell"
+		picture = "Portrait_USA_Joseph_Stilwell.dds"
+	traits = {  }
+	skill = 1 
+}
+
+create_corps_commander = {
+	name = "Oscar Griswold"
+		picture = "Portrait_USA_Oscar_Griswold.dds"
+	traits = {   }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Ernest King"
+		picture = "Portrait_USA_Earnest_King.dds"
+	traits = { blockade_runner superior_tactician }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "Chester W. Nimitz"
+		picture = "Portrait_USA_Chester_W_Nimitz.dds"
+	traits = { superior_tactician spotter }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "William Halsey, Jr."
+		picture = "Portrait_USA_William_Halsey_Jr.dds"
+	traits = { superior_tactician spotter }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Frank Jack Fletcher"
+		picture = "Portrait_USA_Frank_Jack_Fletcher.dds"
+	traits = { superior_tactician spotter }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Raymond A. Spruance"
+		picture = "Portrait_USA_Raymond_A_Spruance.dds"
+	traits = { superior_tactician }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Harold Rainsford Stark"
+		picture = "Portrait_USA_Harold_Rainsford_Stark.dds"
+	traits = { blockade_runner spotter }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Arleigh Burke"
+		picture = "Portrait_USA_Arleigh_Burke.dds"
+	traits = { old_guard_navy superior_tactician }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Charles M. Cooke, Jr."
+		picture = "Portrait_USA_Charles_M_Cooke.dds"
+	traits = {  }
+	skill = 2
+}

@@ -1,0 +1,19 @@
+state={
+	id=911
+	name="STATE_911"
+	manpower = 303822
+	
+	state_category = large_town
+	
+	history={
+				owner = BLR
+		        add_core_of = BLR
+		victory_points = {
+			3309 1
+		}
+	}
+
+	provinces={
+	   318 3281 3309 6359 9359 3393 3366
+	}
+}

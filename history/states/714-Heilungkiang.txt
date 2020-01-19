@@ -1,0 +1,34 @@
+state={
+	id=714
+	name="STATE_714"
+	manpower = 5694191
+	
+	state_category = pastoral
+
+	history={
+		owner = SOV
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		
+		1945.9.2 = {
+			owner = SOV
+			add_core_of = CHI
+			add_core_of = PRC
+		}
+		1949.9.2 = {
+			owner = PRC
+			add_core_of = CHI
+			add_core_of = PRC
+		}
+
+	}
+
+	provinces={
+		1502 1545 1588 1645 1693 1732 1847 4506 4592 4649 4809 4876 7526 7582 7613 7767 7832 7848 7873 7894 7897 10368 10379 10675 10698 12485 12548 12618
+	}
+}

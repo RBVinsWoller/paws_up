@@ -1,0 +1,87 @@
+ideas = {
+
+	mobilization_laws = { 
+		law = yes
+
+		disarmed_nation = {
+			cost = 100
+			removal_cost = -1
+			level = 7
+			
+			available = {
+				has_idea = mobilisation_army
+				has_idea = half_army
+			}
+
+			modifier = {
+				conscription = 0.005
+				stability_factor = -0.005
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		volunteer_only = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 6
+			
+			available = {
+				NOT = {
+					has_idea = mobilisation_army
+					has_idea = half_army
+				}
+			}
+
+			modifier = {
+				conscription = 0.02
+				stability_factor = -0.02
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		limited_conscription = {
+			cost = 200
+			removal_cost = -1
+			level = 5
+
+			available = {
+				NOT = {
+					has_idea = contrakt_army
+				}
+			}
+
+			modifier = {
+				conscription = 0.03
+				stability_factor = -0.03
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		extensive_conscription = {
+			
+			available = {
+				NOT = {
+					has_idea = contrakt_army
+					has_idea = half_army
+				}
+			}
+			
+			cost = 300
+			removal_cost = -1
+			level = 4
+			
+			modifier = {
+				conscription = 0.05
+				stability_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

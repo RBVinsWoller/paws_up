@@ -1,0 +1,48 @@
+﻿capital = 873 #Baku
+
+oob = "RUS_1946"
+
+
+# Starting tech
+set_technology = {
+}
+set_cosmetic_tag = RUS_SOV
+add_ideas = {
+autonomy_country
+Soviet_Republic
+ROA
+}
+set_politics = {
+
+	ruling_party = communism
+	last_election = "1946.1.1"
+	election_frequency = 108
+	elections_allowed = no
+}
+
+
+set_popularities = {
+    democratic = 5
+	fascism = 1
+	chucheism = 7
+	maoism = 5
+	trotskism = 11
+	communism = 55
+	liberal = 6
+	neutrality = 10
+}
+
+create_country_leader = {
+	name = "Andrei Zhdanov"
+	desc = ""
+	picture = "gfx/leaders/RUS/Portrait_Andrei Zhdanov.dds"
+	expire = "1948.8.31"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+
+
+

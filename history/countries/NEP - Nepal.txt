@@ -1,0 +1,91 @@
+﻿capital = 323
+
+oob = "NEP_1936"
+
+# Starting tech
+set_technology = {
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "NEP_1936"
+	set_technology = {
+		infantry_weapons_0 = 1
+		tech_special_forces = 1
+		marines = 1
+		paratroopers = 1
+		tech_mountaineers = 1
+		motorised_infantry = 1
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_field_hospital = 1
+		tech_maintenance_company = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		gw_artillery = 1
+		interwar_antitanks = 1
+		early_fighter = 1
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 5
+	fascism = 17
+	chucheism = 0
+	maoism = 25
+	trotskism = 0
+	titoism = 0
+	liberal = 5
+	neutrality = 43
+	communism = 5
+}
+
+create_country_leader = {
+	name = "Juddha Rana"
+	desc = "POLITICS_JUDDHA_RANA_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+		}
+		
+		neutrality = { 
+			popularity = 100
+		}
+	}
+	
+	ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}

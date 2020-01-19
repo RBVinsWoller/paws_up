@@ -1,0 +1,27 @@
+state={
+	id=897
+	name="STATE_897"
+	manpower = 1235992
+	
+	state_category = megalopolis
+	resources={
+		steel=28
+	}
+
+	history={
+		owner = BER
+		victory_points = {
+			6521 50
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 10
+		}
+	}
+
+	provinces={
+		6521
+	}
+}

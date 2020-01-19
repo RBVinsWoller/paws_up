@@ -1,0 +1,113 @@
+﻿capital = 671 #Hanoi
+
+oob = "VIN_1946"
+
+set_research_slots = 3
+
+# Starting tech
+# clone of France
+set_technology = {
+		infantry_weapons_0 = 1
+		infantry_weapons_1 = 1
+		tech_special_forces = 1
+		marines = 1
+		paratroopers = 1
+		tech_mountaineers = 1
+		motorised_infantry = 1
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_field_hospital = 1
+		tech_maintenance_company = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		tank_1 = 1
+		l_tank_1 = 1
+		t_tank_1 = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antitanks = 1
+		medrange_sp_aa1 = 1
+		shortrange_sp_aa1 = 1
+		sp_aa1 = 1
+		interwar_antiairs = 1
+		antiairs1 = 1
+		early_fighter = 1
+		fighter1 = 1
+		rocket_engines = 1
+		improved_rocket_engines = 1
+		jet_engines = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1945.9.2"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 5
+	fascism = 1
+	chucheism = 7
+	maoism = 5
+	trotskism = 11
+	communism = 55
+	liberal = 6
+	neutrality = 10
+}
+
+
+add_ideas = {
+viet_parizan
+}
+
+#NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
+
+create_country_leader = {
+	name = "Phan Bội Châu" 
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology 
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ho Chí Minh" 
+	desc = ""
+	picture = "gfx/leaders/VIN/Portrait_Vietnam_HoChiMin.dds"
+	expire = "1990.3.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ngô Đình Diệm"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Nguyễn Tường Tam"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+	expire = "1953.3.1"
+	ideology = moderatism
+	traits = {
+		
+	}
+}
+
+
+

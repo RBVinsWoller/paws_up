@@ -1,0 +1,925 @@
+focus_tree = {
+	id = comchina
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRC
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 3000 }
+	focus = {
+		id = PRC_political_effort
+		icon = GFX_goal_PRC_political_effort
+		cost = 10
+		x = 9
+		y = 0
+        
+		completion_reward = {
+		    add_stability = 0.15
+			add_war_support = 0.15
+			add_command_power = 100
+			add_political_power = 700
+		} 
+	}
+	focus = {
+		id = PRC_factory_building
+		icon = GFX_goal_PRC_factory_building
+		cost = 10
+		x = 31
+		y = 0
+
+	}
+	focus = {
+		id = PRC_way_democracy
+		icon = GFX_goal_PRC_way_democracy
+		cost = 10
+		prerequisite = {
+			focus = PRC_political_effort
+		}
+		mutually_exclusive = {
+			focus = PRC_we_can_all
+			focus = PRC_once_nation
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = PRC_freedoms_people
+		icon = GFX_goal_PRC_freedoms_people
+		cost = 10
+		prerequisite = {
+			focus = PRC_way_democracy
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = PRC_live_level
+		icon = GFX_goal_PRC_live_level
+		cost = 10
+		prerequisite = {
+			focus = PRC_freedoms_people
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = PRC_reunaited
+		icon = GFX_goal_PRC_reunaited
+		cost = 10
+		prerequisite = {
+			focus = PRC_freedoms_people
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = PRC_little_business
+		icon = GFX_goal_PRC_little_business
+		cost = 10
+		prerequisite = {
+			focus = PRC_live_level
+		}
+		mutually_exclusive = {
+			focus = PRC_big_business
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = PRC_war_with_tibet
+		icon = GFX_goal_PRC_war_with_tibet
+		cost = 10
+		prerequisite = {
+			focus = PRC_little_business
+		}
+		mutually_exclusive = {
+			focus = PRC_union_with_tibet
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = PRC_union_with_tibet
+		icon = GFX_goal_PRC_union_with_tibet
+		cost = 10
+		prerequisite = {
+			focus = PRC_little_business
+		}
+		mutually_exclusive = {
+			focus = PRC_war_with_tibet
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = PRC_big_business
+		icon = GFX_goal_PRC_big_business
+		cost = 10
+		prerequisite = {
+			focus = PRC_live_level
+		}
+		mutually_exclusive = {
+			focus = PRC_little_business
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = PRC_we_can_all
+		icon = GFX_goal_PRC_we_can_all
+		cost = 10
+		prerequisite = {
+			focus = PRC_political_effort
+		}
+		mutually_exclusive = {
+			focus = PRC_way_democracy
+			focus = PRC_once_nation
+		}
+		available = { 
+		    is_puppet = no
+			PRC = { NOT = {has_war_with = CHI} }
+		} 
+		x = 9
+		y = 1
+        
+		completion_reward = {
+		    add_popularity = {
+                ideology = maoism
+                popularity = +0.3
+            }
+			
+			add_popularity = {
+                ideology = neutrality
+                popularity = -0.1
+            }
+		}
+	}
+	focus = {
+		id = PRC_supp_korea
+		icon = GFX_goal_PRC_supp_korea
+		cost = 10
+		prerequisite = {
+			focus = PRC_we_can_all
+		}
+		x = 8
+		y = 2
+		
+		completion_reward = {
+		    diplomatic_relation = {
+                country = KND
+                relation = guarantee
+                active = yes
+            }
+			
+			diplomatic_relation = {
+                country = KND
+                relation = military_access
+                active = yes
+            }
+			
+			diplomatic_relation = {
+                country = KND
+                relation = non_aggression_pact
+                active = yes
+            }
+			
+			add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = PRC_first_fiveyear
+		icon = GFX_goal_PRC_first_fiveyear
+		cost = 10
+		prerequisite = {
+			focus = PRC_we_can_all
+		}
+		x = 9
+		y = 3
+		
+		completion_reward = { 
+		    add_stability = 0.3
+			add_war_support = -0.4 
+		}
+
+	}
+	focus = {
+		id = PRC_red_flag_course
+		icon = GFX_goal_PRC_red_flag_course
+		cost = 10
+		prerequisite = {
+			focus = PRC_first_fiveyear
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = PRC_fiveyrar_enlai
+		icon = GFX_goal_PRC_fiveyrar_enlai
+		cost = 10
+		prerequisite = {
+			focus = PRC_red_flag_course
+		}
+		mutually_exclusive = {
+			focus = PRC_big_jump
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = PRC_save_religion
+		icon = GFX_goal_PRC_save_religion
+		cost = 10
+		prerequisite = {
+			focus = PRC_we_can_all
+		}
+		mutually_exclusive = {
+			focus = PRC_deny_religion
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = PRC_deny_religion
+		icon = GFX_goal_PRC_deny_religion
+		cost = 10
+		prerequisite = {
+			focus = PRC_we_can_all
+		}
+		mutually_exclusive = {
+			focus = PRC_save_religion
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = PRC_invite_soviet_specialists
+		icon = GFX_goal_PRC_invite_soviet_specialists
+		cost = 10
+		prerequisite = {
+			focus = PRC_we_can_all
+		}
+		mutually_exclusive = {
+			focus = PRC_we_are_specialists
+		}
+		x = 14
+		y = 2
+		
+		completion_reward = {
+		    declare_war_on = {
+                target = TIB
+                type = annex_everything
+            }
+		} 
+
+	}
+	focus = {
+		id = PRC_we_are_specialists
+		icon = GFX_goal_PRC_we_are_specialists
+		cost = 10
+		prerequisite = {
+			focus = PRC_we_can_all
+		}
+		mutually_exclusive = {
+			focus = PRC_invite_soviet_specialists
+		}
+		x = 17
+		y = 2
+		
+		completion_reward = {
+		    annex_country = {
+                target = TIB
+                transfer_troops = yes
+            }
+		} 
+
+	}
+	focus = {
+		id = PRC_promise_organization
+		icon = GFX_goal_PRC_promise_organization
+		cost = 10
+		prerequisite = {
+			focus = PRC_invite_soviet_specialists
+			focus = PRC_we_are_specialists
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = PRC_collectivization
+		icon = GFX_goal_PRC_collectivization
+		cost = 10
+		prerequisite = {
+			focus = PRC_promise_organization
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = PRC_vstuplenievovd
+		icon = GFX_goal_PRC_vstuplenievovd
+		cost = 10
+		prerequisite = {
+			focus = PRC_promise_organization
+		}
+		mutually_exclusive = {
+			focus = PRC_collectivization
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = PRC_raspr_hoz_prod
+		icon = GFX_goal_PRC_raspr_hoz_prod
+		cost = 10
+		prerequisite = {
+			focus = PRC_promise_organization
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = PRC_allow_person_cult
+		icon = GFX_goal_PRC_allow_person_cult
+		cost = 10
+		prerequisite = {
+			focus = PRC_raspr_hoz_prod
+			focus = PRC_collectivization
+			focus = PRC_vstuplenievovd
+		}
+		mutually_exclusive = {
+			focus = PRC_deny_person_cult
+		}
+		x = 17
+		y = 5
+		
+		completion_reward = { 
+		    diplomatic_relation = {
+                country = NEP
+                relation = guarantee
+                active = yes
+            }
+		} 
+
+	}
+	focus = {
+		id = PRC_deny_person_cult
+		icon = GFX_goal_PRC_deny_person_cult
+		cost = 10
+		prerequisite = {
+			focus = PRC_raspr_hoz_prod
+			focus = PRC_collectivization
+			focus = PRC_vstuplenievovd
+		}
+		mutually_exclusive = {
+			focus = PRC_allow_person_cult
+		}
+		x = 14
+		y = 5
+		
+		completion_reward = {
+		    declare_war_on = {
+                target = NEP
+                type = annex_everything
+            }
+		} 
+
+	}
+	focus = {
+		id = PRC_absolute_totalitarism
+		icon = GFX_goal_PRC_absolute_totalitarism
+		cost = 10
+		prerequisite = {
+			focus = PRC_allow_person_cult
+			focus = PRC_deny_person_cult
+		}
+		mutually_exclusive = {
+			focus = PRC_flower_and_school
+		}
+		x = 17
+		y = 6
+		
+		completion_reward = { 
+		    diplomatic_relation = {
+                country = BHU
+                relation = guarantee
+                active = yes
+            }
+        }
+	}
+	focus = {
+		id = PRC_once_nation
+		icon = GFX_goal_PRC_once_nation
+		cost = 10
+		prerequisite = {
+			focus = PRC_political_effort
+		}
+		mutually_exclusive = {
+			focus = PRC_way_democracy
+			focus = PRC_we_can_all
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = PRC_other_repression
+		icon = GFX_goal_PRC_other_repression
+		cost = 10
+		prerequisite = {
+			focus = PRC_once_nation
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = PRC_quing
+		icon = GFX_goal_PRC_quing
+		cost = 10
+		prerequisite = {
+			focus = PRC_other_repression
+		}
+		mutually_exclusive = {
+			focus = PRC_fascist_china
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = PRC_fascist_china
+		icon = GFX_goal_PRC_fascist_china
+		cost = 10
+		prerequisite = {
+			focus = PRC_other_repression
+		}
+		mutually_exclusive = {
+			focus = PRC_quing
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = PRC_require_vladivostok
+		icon = GFX_goal_PRC_require_vladivostok
+		cost = 10
+		prerequisite = {
+			focus = PRC_quing
+			focus = PRC_fascist_china
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = PRC_vladivostok_nationalisation
+		icon = GFX_goal_PRC_vladivostok_nationalisation
+		cost = 10
+		prerequisite = {
+			focus = PRC_require_vladivostok
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = PRC_claim_vladivostok
+		icon = GFX_goal_PRC_claim_vladivostok
+		cost = 10
+		prerequisite = {
+			focus = PRC_vladivostok_nationalisation
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = PRC_war_with_taiwan
+		icon = GFX_goal_PRC_war_with_taiwan
+		cost = 10
+		prerequisite = {
+			focus = PRC_vladivostok_nationalisation
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = PRC_war_with_tibets
+		icon = GFX_goal_PRC_war_with_tibets
+		cost = 10
+		prerequisite = {
+			focus = PRC_vladivostok_nationalisation
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = PRC_perevorot_v_mongolii
+		icon = GFX_goal_PRC_perevorot_v_mongolii
+		cost = 10
+		prerequisite = {
+			focus = PRC_claim_vladivostok
+			focus = PRC_war_with_taiwan
+			focus = PRC_war_with_tibets
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = PRC_promise_1
+		icon = GFX_goal_PRC_promise_1
+		cost = 10
+		prerequisite = {
+			focus = PRC_factory_building
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = PRC_promise_2
+		icon = GFX_goal_PRC_promise_2
+		cost = 10
+		prerequisite = {
+			focus = PRC_promise_1
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = PRC_promise_3
+		icon = GFX_goal_PRC_promise_3
+		cost = 10
+		prerequisite = {
+			focus = PRC_promise_2
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = PRC_promise_4
+		icon = GFX_goal_PRC_promise_4
+		cost = 10
+		prerequisite = {
+			focus = PRC_promise_3
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = PRC_big_jump
+		icon = GFX_goal_PRC_big_jump
+		cost = 10
+		prerequisite = {
+			focus = PRC_red_flag_course
+		}
+		mutually_exclusive = {
+			focus = PRC_fiveyrar_enlai
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = PRC_flower_and_school
+		icon = GFX_goal_PRC_flower_and_school
+		cost = 10
+		prerequisite = {
+			focus = PRC_deny_person_cult
+			focus = PRC_allow_person_cult
+		}
+		mutually_exclusive = {
+			focus = PRC_absolute_totalitarism
+		}
+		x = 14
+		y = 6
+		
+		completion_reward = {
+		    declare_war_on = {
+                target = BHU
+                type = annex_everything
+            }
+		} 
+
+	}
+	focus = {
+		id = PRC_jail_to_criticians
+		icon = GFX_goal_PRC_jail_to_criticians
+		cost = 10
+		prerequisite = {
+			focus = PRC_flower_and_school
+			focus = PRC_absolute_totalitarism
+		}
+		mutually_exclusive = {
+			focus = PRC_concessions
+		}
+		x = 16
+		y = 7
+		
+		completion_reward = {
+		    add_stability = 0.2
+		} 
+
+	}
+	focus = {
+		id = PRC_concessions
+		icon = GFX_goal_PRC_concessions
+		cost = 10
+		prerequisite = {
+			focus = PRC_flower_and_school
+		}
+		mutually_exclusive = {
+			focus = PRC_jail_to_criticians
+		}
+		x = 14
+		y = 7 
+		
+		completion_reward = {
+		    add_war_support = 0.3
+		} 
+
+	}
+	focus = {
+		id = PRC_catch_overtake
+		icon = GFX_goal_PRC_catch_overtake
+		cost = 10
+		prerequisite = {
+			focus = PRC_concessions
+			focus = PRC_jail_to_criticians
+		}
+		mutually_exclusive = {
+			focus = PRC_balance_sphere
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = PRC_balance_sphere
+		icon = GFX_goal_PRC_balance_sphere
+		cost = 10
+		prerequisite = {
+			focus = PRC_concessions
+			focus = PRC_jail_to_criticians
+		}
+		mutually_exclusive = {
+			focus = PRC_catch_overtake
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = PRC_people_commune
+		icon = GFX_goal_PRC_people_commune
+		cost = 10
+		prerequisite = {
+			focus = PRC_big_jump
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = PRC_commune
+		icon = GFX_goal_PRC_commune
+		cost = 10
+		prerequisite = {
+			focus = PRC_people_commune
+		}
+		x = 11
+		y = 11
+
+	}
+	focus = {
+		id = PRC_mass_production
+		icon = GFX_goal_PRC_mass_production
+		cost = 10
+		prerequisite = {
+			focus = PRC_fiveyrar_enlai
+		}
+		x = 7
+		y = 10
+
+	}
+	focus = {
+		id = PRC_industializatia
+		icon = GFX_goal_PRC_industializatia
+		cost = 10
+		prerequisite = {
+			focus = PRC_mass_production
+		}
+		x = 7
+		y = 11
+
+	}
+	focus = {
+		id = PRC_vorobey_kill
+		icon = GFX_goal_PRC_vorobey_kill
+		cost = 10
+		prerequisite = {
+			focus = PRC_commune
+		}
+		mutually_exclusive = {
+			focus = PRC_save_ecologic_balance
+		}
+		x = 10
+		y = 12
+
+	}
+	focus = {
+		id = PRC_save_ecologic_balance
+		icon = GFX_goal_PRC_save_ecologic_balance
+		cost = 10
+		prerequisite = {
+			focus = PRC_commune
+		}
+		mutually_exclusive = {
+			focus = PRC_vorobey_kill
+		}
+		x = 12
+		y = 12
+
+	}
+	focus = {
+		id = PRC_fire_everywhere
+		icon = GFX_goal_PRC_fire_everywhere
+		cost = 10
+		prerequisite = {
+			focus = PRC_catch_overtake
+			id = PRC_balance_sphere
+		}
+		mutually_exclusive = {
+			focus = PRC_long_but_quality
+			focus = PRC_pro_sovetskiykurs_with_bao
+		}
+		x = 16
+		y = 9
+		
+		completion_reward = {
+		    add_popularity = {
+                ideology = maoism
+                popularity = +0.7
+            }
+			
+			set_politics = {
+                ruling_party = maoism
+            }
+		} 
+
+	}
+	focus = {
+		id = PRC_pro_sovetskiykurs_with_bao
+		icon = GFX_goal_PRC_pro_sovetskiykurs_with_bao
+		cost = 10
+		prerequisite = {
+			focus = PRC_catch_overtake
+			focus = PRC_balance_sphere
+		}
+		mutually_exclusive = {
+			focus = PRC_fire_everywhere
+			focus = PRC_long_but_quality
+		}
+		x = 18
+		y = 9
+		
+		completion_reward = {
+		    diplomatic_relation = {
+                country = SOV
+                relation = guarantee
+                active = yes
+            }
+			
+			diplomatic_relation = {
+                country = SOV
+                relation = military_access
+                active = yes
+            } 
+		} 
+
+	}
+	focus = {
+		id = PRC_long_but_quality
+		icon = GFX_goal_PRC_long_but_quality
+		cost = 10
+		prerequisite = {
+			focus = PRC_catch_overtake
+			focus = PRC_balance_sphere
+		}
+		mutually_exclusive = {
+			focus = PRC_fire_everywhere
+			focus = PRC_pro_sovetskiykurs_with_bao
+		}
+		x = 14
+		y = 9
+		
+		completion_reward = {
+		    diplomatic_relation = {
+                country = SOV
+                relation = guarantee
+                active = yes
+            }
+			
+			add_popularity = {
+                ideology = maoism
+                popularity = +0.7
+            }
+			
+			set_politics = {
+                ruling_party = maoism
+            }
+		} 
+
+	}
+	focus = {
+		id = PRC_socialism_save
+		icon = GFX_goal_PRC_socialism_save
+		cost = 10
+		prerequisite = {
+			focus = PRC_fire_everywhere
+		}
+		x = 16
+		y = 10
+        
+		completion_reward = {
+		    add_political_power = 500
+			add_threat = 15
+			annex_country = {
+                target = MON
+                transfer_troops = yes
+            } 
+			
+		} 
+	}
+	focus = {
+		id = PRC_agriculture_1
+		icon = GFX_goal_PRC_agriculture_1
+		cost = 10
+		prerequisite = {
+			focus = PRC_factory_building
+		}
+		x = 32
+		y = 1
+
+	}
+	focus = {
+		id = PRC_agriculture_2
+		icon = GFX_goal_PRC_agriculture_2
+		cost = 10
+		prerequisite = {
+			focus = PRC_agriculture_1
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = PRC_agriculture_3
+		icon = GFX_goal_PRC_agriculture_3
+		cost = 10
+		prerequisite = {
+			focus = PRC_agriculture_2
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = PRC_agriculture_4
+		icon = GFX_goal_PRC_agriculture_4
+		cost = 10
+		prerequisite = {
+			focus = PRC_agriculture_3
+		}
+		x = 32
+		y = 4
+
+	}
+}

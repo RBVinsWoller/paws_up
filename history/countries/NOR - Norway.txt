@@ -1,0 +1,120 @@
+﻿capital = 110
+
+oob = "NOR_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+}
+
+set_technology = {
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "NOR_1939"
+	set_technology = {
+	}
+}
+
+set_convoys = 80		# biggest merchant marine in the world
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.10.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 40
+	fascism = 5
+	chucheism = 0
+	maoism = 0
+	trotskism = 10
+	titoism = 5
+	liberal = 25
+	neutrality = 10
+	communism = 5
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1936.10.19"
+		election_frequency = 36
+		elections_allowed = yes
+	}
+	
+	set_popularities = {
+    democratic = 40
+	fascism = 5
+	chucheism = 0
+	maoism = 0
+	trotskism = 10
+	titoism = 5
+	liberal = 25
+	neutrality = 10
+	communism = 5
+}
+}
+
+create_country_leader = {
+	name = "Johan Nygaardsvold"
+	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
+	picture = "Portrait_Norway_Johan_Nygaardsvold.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vidkun Quisling"
+	desc = "POLITICS_VIDKUN_QUISLING_DESC"
+	picture = "Portrait_Norway_Vidkun_Quisling.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Johan Ludwig Mowinckel"
+	desc = "POLITICS_JOHAN_LUDWIG_MOWINCKEL_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Adam Egede-Nissen"
+	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Carl Gustav Fleischer"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {  trickster winter_specialist }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Elias Corneliussen"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = { spotter }
+	skill = 3
+}

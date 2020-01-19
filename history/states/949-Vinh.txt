@@ -1,0 +1,36 @@
+
+state={
+	id=949
+	name="STATE_949"
+	manpower = 2528000
+	
+	state_category = rural
+	
+	resources={
+		tungsten=10
+	}
+
+
+	history={
+		add_core_of = VIN
+		owner = VIN
+		victory_points = {
+			10016 1 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		
+		1949.9.2 = {
+			owner = VIN
+			add_core_of = VIN
+		}
+
+	}
+
+	provinces={
+		1302 7280 12297 4397 10016
+	}
+}

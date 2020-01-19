@@ -1,0 +1,390 @@
+﻿###########################
+# KNDR Events
+###########################
+
+add_namespace = knd
+
+country_event = {	#Коррейская Война
+	id = knd.1
+	title = knd.1.t
+	desc = knd.1.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = KND
+		date > 1950.6.23
+		KOR = { exists = yes }
+		NOT = { has_war_with = KOR }
+		has_war = no
+    }
+	
+	option = {
+		name = knd.1.a
+		
+		declare_war_on = {
+			target = KOR
+			type = annex_everything
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.9 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = knd.1.b
+		KOR = {
+			declare_war_on = {
+				target = KND
+				type = annex_everything
+			}
+		}	
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {	#принатие строны КНР СССР
+	id = knd.2
+	title = knd.2.t
+	desc = knd.2.d
+	picture = GFX_report_event_asian_politicians
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = KND
+		PRC = { has_war_with = SOV }
+		has_war = no
+    }
+	
+	option = {
+		name = knd.2.a
+		
+		declare_war_on = {
+			target = SOV
+			type = puppet_wargoal_focus
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.28 } 
+		}
+		
+		ai_chance = { factor = 70 }
+	}
+
+	option = {
+		name = knd.2.b
+		declare_war_on = {
+			target = PRC
+			type = puppet_wargoal_focus
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.29 } 
+		}
+		
+		ai_chance = { factor = 20 }
+	}
+	
+	option = {
+		name = knd.2.c
+		
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = {	#Смерть Ким Ир Сена
+	id = knd.3
+	title = knd.3.t
+	desc = knd.3.d
+	picture = GFX_report_event_fascists_posing
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = KND
+		date > 1994.7.2
+		has_country_leader = { name = "Kim Il-sung" }
+    }
+	
+	option = {
+		name = knd.3.a
+		
+		kill_country_leader = yes
+		
+		create_country_leader = { 
+			name = "Kim Jong-il" 
+			desc = "" 
+			picture = "gfx/leaders/KND/Portrait_Kim_Jong_il.dds"
+			expire = "2011.12.29" 
+			ideology = chuche
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.77 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+
+}
+
+country_event = {	#Анексия КНДР
+	id = knd.4
+	title = knd.4.t
+	desc = knd.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = KND
+		has_government = communism 
+		communism < 0.05
+		has_government = democratic
+		KOR = { exists = yes }
+    }
+	
+	option = {
+		name = knd.4.a
+		KOR = {
+			annex_country = { target = KND transfer_troops = yes }
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.111 } 
+		}
+		
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = knd.4.b
+		
+		
+		hidden_effect = { 
+			news_event = { id = news.112 } 
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+
+}
+
+country_event = {	#Запрос на создание КНДР
+	id = knd.5
+	title = knd.5.t
+	desc = knd.5.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = knd.5.a
+		create_country_leader = {
+			name = "Kim Il-sung"
+			desc = ""
+			picture = "gfx/leaders/KND/Portrait_Kim_knd.dds"
+			expire = "1994.7.8"
+			ideology = chuche
+			traits = {
+				#
+			}
+		}
+		
+		set_politics = {
+
+			parties = {
+				maoism = { 
+					popularity = 10
+				}
+				communism = { 
+					popularity = 10
+				}
+				chucheism = {
+					popularity = 80
+				}		
+			}
+			ruling_party = chucheism
+			last_election = "1946.1.1"
+			election_frequency = 108
+			elections_allowed = no
+		}
+		remove_ideas = SOVOP
+		set_cosmetic_tag = KND_49
+		hidden_effect = { 
+			news_event = { id = news.5 } 
+		}
+		set_autonomy = {
+			target = KND
+			autonomous_state = autonomy_free
+		}
+		
+		SOV = {
+			country_event = { days = 2 id = sov.21 }
+		}
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = knd.5.b
+		
+		SOV = {
+			country_event = { days = 2 id = sov.4 }
+		}
+		
+		
+		ai_chance = { factor = 90 }
+	}
+
+}
+country_event = {	#СССР согласились на наше предложение
+	id = knd.6
+	title = knd.6.t
+	desc = knd.6.d
+	picture = GFX_report_event_generic_usa_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = knd.6.a
+		add_ideas = KND_vozvrat_koreycev
+		ai_chance = { factor = 100 }
+	}
+
+}
+
+country_event = {	#СССР отвергли на наше предложение
+	id = knd.7
+	title = knd.7.t
+	desc = knd.7.d
+	picture = GFX_report_event_generic_usa_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = knd.7.a
+		add_political_power = -100
+		ai_chance = { factor = 100 }
+	}
+
+}
+country_event = {	#СССР приняли эконом помощь
+	id = knd.8
+	title = knd.8.t
+	desc = knd.8.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = knd.8.a
+		add_ideas = SUPP_KOR
+		ai_chance = { factor = 100 }
+	}
+
+}
+
+country_event = {	#СССР отверг эконом помощь
+	id = knd.9
+	title = knd.9.t
+	desc = knd.9.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = knd.9.a
+		add_political_power = -50
+		ai_chance = { factor = 100 }
+	}
+
+}
+country_event = {	#Покушение на Ким Ир Сена
+	id = knd.10
+	title = knd.10.t
+	desc = knd.10.d
+	picture = GFX_report_event_airplane_factory
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = KND
+		has_government = communism 
+		date > 1946.2.26
+		date < 1949.10.9
+    }
+	
+	option = {
+		name = knd.10.a
+		add_political_power = -50
+		hidden_effect = { 
+			news_event = { id = news.119 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+
+}
+country_event = {	#Чистка партии
+	id = knd.11
+	title = knd.11.t
+	desc = knd.11.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = knd.11.a
+		create_country_leader = {
+			name = "Choe Yong-gon"
+			desc = ""
+			picture = "gfx/leaders/KND/Portrait_Cho.dds"
+			expire = "1960.7.8"
+			ideology = demsoc
+			traits = {
+				#
+			}
+		}
+		add_political_power = -50
+		remove_ideas = FRACT_BOR
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = knd.11.b
+		hidden_effect = {
+			start_civil_war = {
+				ideology = titoism
+				size = 0.5
+			}
+			random_other_country = {
+				limit = {
+					original_tag = KND
+					has_government = titoism
+				}
+				set_equipment_fraction = 0.5
+			}
+		}
+		remove_ideas = FRACT_BOR
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {	#Создание КНА
+	id = knd.12
+	title = knd.12.t
+	desc = knd.12.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = knd.12.a
+		hidden_effect = { 
+			news_event = { id = news.120 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+}

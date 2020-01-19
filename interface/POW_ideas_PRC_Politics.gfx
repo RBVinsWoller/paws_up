@@ -1,0 +1,78 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_jove_enlay"
+		texturefile = "gfx/interface/Politics/idea_jove_enlay.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mao_zedonger"
+		texturefile = "gfx/interface/Politics/idea_mao_zedonger.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_dun_biu"
+		texturefile = "gfx/interface/Politics/idea_dun_biu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lu_shaoci"
+		texturefile = "gfx/interface/Politics/idea_lu_shaoci.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_zyan_cin"
+		texturefile = "gfx/interface/Politics/idea_zyan_cin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_chan_kaishi"
+		texturefile = "gfx/interface/Politics/idea_chan_kaishi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pen_dehuay"
+		texturefile = "gfx/interface/Politics/idea_pen_dehuay.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lin_bao"
+		texturefile = "gfx/interface/Politics/idea_lin_bao.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_e_zinin"
+		texturefile = "gfx/interface/Politics/idea_e_zinin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lo_juycin"
+		texturefile = "gfx/interface/Politics/idea_lo_juycin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_se_fuji"
+		texturefile = "gfx/interface/Politics/idea_se_fuji.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hua_gofen"
+		texturefile = "gfx/interface/Politics/idea_hua_gofen.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bo_ibo"
+		texturefile = "gfx/interface/Politics/idea_bo_ibo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_den_siaping"
+		texturefile = "gfx/interface/Politics/idea_den_siaping.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_li_sanyang"
+		texturefile = "gfx/interface/Politics/idea_li_sanyang.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_chen_i"
+		texturefile = "gfx/interface/Politics/idea_chen_i.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_czi_pengfey"
+		texturefile = "gfx/interface/Politics/idea_czi_pengfey.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mao_dun"
+		texturefile = "gfx/interface/Politics/idea_mao_dun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lu_dini"
+		texturefile = "gfx/interface/Politics/idea_lu_dini.dds"
+	}

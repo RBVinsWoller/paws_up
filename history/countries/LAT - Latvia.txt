@@ -1,0 +1,44 @@
+﻿capital = 12
+
+oob = "LAT_1946"
+
+add_ideas = {
+Lesniye_bratya
+Soviet_Republic
+Kult_lichnosti
+Besprisorniye
+}
+
+set_technology = {
+}
+set_cosmetic_tag = LAT_SOV
+set_politics = {
+
+	ruling_party = communism
+	last_election = "1946.1.1"
+	election_frequency = 108
+	elections_allowed = no
+}
+
+
+set_popularities = {
+    democratic = 5
+	fascism = 1
+	chucheism = 7
+	maoism = 5
+	trotskism = 11
+	communism = 55
+	liberal = 6
+	neutrality = 10
+}
+
+create_country_leader = {
+	name = "Jan Eduardovich Kalnberzin"
+	desc = ""
+	picture = "gfx/leaders/LLE/Jan Eduardovich Kalnberzin.dds"
+	expire = "1986.2.4"
+	ideology = marxism
+	traits = {
+		#
+	}
+}

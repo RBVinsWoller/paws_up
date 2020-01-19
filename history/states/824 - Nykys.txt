@@ -1,0 +1,20 @@
+state={
+	id=824
+	name="STATE_824"
+	manpower =2071520
+	
+	
+	state_category = large_city
+
+	history={
+				owner = UZB
+		add_core_of = UZB
+		victory_points = {
+			1614 5 
+		}
+	}
+
+	provinces={
+		4488 4618 1576 1614 1479
+	}
+}

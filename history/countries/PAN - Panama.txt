@@ -1,0 +1,70 @@
+﻿capital = 304
+
+oob = "PAN_1936"
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 10
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "PAN_1939"
+	set_technology = {
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.6.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 45
+	fascism = 3
+	chucheism = 0
+	maoism = 5
+	trotskism = 7
+	titoism = 5
+	liberal = 15
+	neutrality = 10
+	communism = 10
+}
+
+create_country_leader = {
+	name = "Roberto Francisco Chiari"
+	desc = ""
+	picture = "gfx/leaders/PAN/Portrait_RobertoFranciscoChiari.dds"
+	expire = "1990.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1936.6.7"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	
+	set_popularities = {
+    democratic = 45
+	fascism = 3
+	chucheism = 0
+	maoism = 5
+	trotskism = 7
+	titoism = 5
+	liberal = 15
+	neutrality = 10
+	communism = 10
+}
+
+}

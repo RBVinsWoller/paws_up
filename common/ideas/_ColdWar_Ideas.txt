@@ -1,0 +1,1274 @@
+ideas = {
+country = {
+
+		Postwar_reconstruction = {
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = VOST
+			
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		
+		Kult_lichnosti = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Kult
+			
+			modifier = {
+				drift_defence_factor = 0.3
+				political_power_cost = 1
+			}
+			
+			
+		}
+		
+		Jule_26 = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			picture = Jule
+			
+			modifier = {
+				political_power_cost = 1.45
+				communism_drift = 0.01
+			}
+			
+			
+		}
+		
+		Economic_suport = {
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Economic_suport
+			
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		
+		Stena = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Stena
+			
+			modifier = {
+				drift_defence_factor = 0.5
+			}
+			
+			
+		}
+		
+		Kult_revolution = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Kult_revolution
+			
+			modifier = {
+				drift_defence_factor = 0.9
+				political_power_cost = 1.10
+				
+			}
+			
+		}
+		
+		Skachok = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Skachok
+			
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				conscription_factor = -0.5
+			}
+			
+		}
+		
+		viet_parizan = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = viet_parizan
+			
+			modifier = {
+				army_defence_factor = 0.3
+				drift_defence_factor = 0.5
+			}
+			
+		}
+		
+		Infrastukt = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Infrastukt
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.8
+			}
+			
+		}
+		
+		Nauka = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Nauka
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+			
+		}
+		
+		NOAK = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = NOAK
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+			}
+			
+		}
+		
+		Prom = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Prom
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+			}
+			
+		}
+		
+		RKKA = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = RKKA
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+			}
+			
+		}
+		
+		Stasi = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Stasi
+			
+			modifier = {
+				drift_defence_factor = 0.4
+			}
+			
+		}
+		
+		Rodina = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Rodina
+			
+			modifier = {
+				drift_defence_factor = 0.4
+			}
+			
+		}
+		
+		Svoboda = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			picture = Svoboda
+			
+			modifier = {
+				drift_defence_factor = 0.4
+			}
+			
+		}
+		
+		Pobeg = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Pobeg
+			
+			modifier = {
+				production_speed_buildings_factor = -0.20
+				production_speed_arms_factory_factor = -0.20
+				research_speed_factor = -0.1
+				MONTHLY_POPULATION = -0.2
+			}
+			
+		}
+		
+		Nazi = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+				has_government = fascism
+			}
+
+			picture = Nazi
+			
+			modifier = {
+				fascism_drift = 0.10
+			}
+			
+		}
+		
+		Upa = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Upa
+			
+			modifier = {
+				production_speed_buildings_factor = -0.3
+			}
+			
+		}
+		
+		Sev = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Sev
+			
+			modifier = {
+				drift_defence_factor = 0.2
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				research_speed_factor = 0.03
+			}
+			
+		}
+		
+		Ec = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			picture = Ec
+			
+			modifier = {
+				drift_defence_factor = 0.2
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				research_speed_factor = 0.03
+			}
+			
+		}
+		
+		PRCCONS = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = PRCCONS
+			
+			modifier = {
+				drift_defence_factor = 0.2
+				stability_factor = 0.15
+				war_support_factor = 0.2
+			}
+			
+		}
+		
+		SOVOP = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Economic_suport
+			
+			modifier = {
+				political_power_cost = 0.7
+			}
+			
+		}
+		
+		USAOP = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			picture = Svoboda
+			
+			modifier = {
+				political_power_cost = 0.7
+			}
+			
+		}
+		
+		KND_vozvrat_koreycev = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = KND_vozvrat_koreycev
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+			
+		}
+		EDOF = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = EDOF
+			
+			modifier = {
+				drift_defence_factor = 0.4
+				political_power_cost = -0.5
+			}
+			
+		}
+		FRACT_BOR = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = FRACT_BOR
+			
+			modifier = {
+				drift_defence_factor = -0.4
+				political_power_cost = 0.2
+				stability_factor = -0.3
+			}
+			
+		}
+		SUPP_KOR_SOV = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SUPP_KOR
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.03
+				production_speed_industrial_complex_factor = -0.03
+			}
+			
+		}
+		SUPP_KOR = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SUPP_KOR
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+			
+		}
+		SUPP_KOM = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SUPP_KOM
+			
+			modifier = {
+				communism_drift = 0.01
+				chucheism_drift = 0.01
+			}
+			
+		}
+		SUPP_FRACT = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SUPP_FRACT
+			
+			modifier = {
+				communism_drift = -0.03
+				chucheism_drift = -0.03
+				titoism_drift = 0.03
+			}
+			
+		}
+		SUPP_TPK = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SUPP_TPK
+			
+			modifier = {
+				communism_drift = 0.03
+				chucheism_drift = 0.04
+				titoism_drift = -0.03
+			}
+			
+		}
+		
+		Oficer_army = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Oficer_army
+			
+			modifier = {
+				army_org_Factor = 0.05
+				planning_speed = 0.25
+			}
+			
+		}
+		
+		ideology_army = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = ideology_army
+			
+			modifier = {
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			
+		}
+		china_ingeneer = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = china_ingeneer
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.02
+			}
+			
+		}
+		soviet_ingeneer = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = soviet_ingeneer
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.02
+				production_speed_industrial_complex_factor = 0.02
+			}
+			
+		}
+		new_man = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = new_man
+			
+			modifier = {
+				stability_factor = 0.2
+			}
+			
+		}
+		ateist = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = ateist
+			
+			modifier = {
+				stability_factor = 0.2
+			}
+			
+		}
+		teology = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = teology
+			
+			modifier = {
+				war_support_factor = 0.3
+			}
+			
+		}
+		svetskiy = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = svetskiy
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.15
+			}
+			
+		}
+		imperator = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = imperator
+			
+			modifier = {
+				fascism_drift = 0.07
+			}
+			
+		}
+		Leninism_fiction = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Leninism
+			
+			modifier = {
+				communism_drift = 0.10
+				political_power_cost = 0.65
+				war_support_factor = 0.2
+				stability_factor = 0.05
+				
+			}
+			
+		}
+		
+		Maoism_fiction = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = maoism
+			}
+
+			picture = Maoism_fiction
+			
+			modifier = {
+				maoism_drift = 0.10
+				political_power_cost = 1
+				war_support_factor = 0.35
+				drift_defence_factor = 0.15
+				
+			}
+			
+		}
+		
+		EC_communism = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+				has_government = titoism 
+				has_government = trotskism
+			}
+
+			picture = EC_communism
+			
+			modifier = {
+				communism_drift = 0.10
+				titoism_drift = 0.05
+				trotskism_drift = 0.07
+				political_power_cost = 1
+				war_support_factor = -0.25
+				stability_factor = 0.10
+				drift_defence_factor = 0.20
+				
+			}
+			
+		}
+		
+		Fascism_fiction = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			picture = Mussolini
+			
+			modifier = {
+				fascism_drift = 0.10
+				political_power_cost = 0.5
+				war_support_factor = 0.4
+				stability_factor = -0.5
+				
+			}
+			
+		}
+		
+		Lesniye_bratya = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Upa
+			
+			modifier = {
+				production_speed_buildings_factor = -0.3
+				war_support_factor = -0.30
+				stability_factor = -0.35
+				fascism_drift = 0.02
+			}
+			
+		}
+		
+		Soviet_Republic = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SOV_republic
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.15
+			}
+			
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		}
+		
+		Proletarii = {
+			
+			allowed = {
+				always = no 
+			}
+
+			picture = Proletarii
+			
+			modifier = {
+				communism_drift = 0.01
+				stability_factor = -0.15
+			}
+			
+			cancel = { has government = communism }
+			
+		}
+		
+		Free_France = {
+			
+			allowed = {
+				always = no 
+			}
+
+			picture = FRA_free
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				
+			}
+			
+			cancel = { has government = fascism }
+			cancel = { has government = communism }
+			cancel = { has government = titoism }
+			cancel = { has government = trotskism }
+			cancel = { has government = maoism }
+			cancel = { has government = chucheism }
+			cancel = { has puppet }
+			
+		}
+
+		Thelman = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Thelman
+			
+			modifier = {
+				war_support_factor = 0.15
+			}
+			
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		}
+		
+		Soviet_after_war = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Soviet_after_war
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				stability_factor = -0.3
+				political_power_cost = 0.5
+				war_support_factor = -0.2
+			}
+			cancel = { has puppet }
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		}
+		
+		Berias_fiction = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Beria
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = -1
+			}
+			cancel = { has puppet }
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		}
+		
+		International = { 
+		    allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Soviet_star
+			
+			modifier = {
+				political_power_cost = -1
+			}
+			cancel = { has puppet }
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		}
+		
+		Besprisorniye = { 
+		    allowed = {
+				always = no 
+			}
+
+			picture = Besprisorniye
+			
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.2
+				war_support_factor = -0.15
+			}
+			cancel = { has puppet }
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		}
+		
+		New_funcioners = { 
+		    allowed = {
+				always = no 
+			}
+
+			picture = New_funcioners
+			
+			modifier = {
+				political_power_cost = -0.1
+				war_support_factor = -0.1
+				stability_factor = 0.05
+				trotskism_drift = 0.05
+			}
+			cancel = { has_government = fascism }
+			
+		}
+		
+		Soviet_democracy = { 
+		    allowed = {
+				always = no 
+			}
+
+			picture = SOV_democracy
+			
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = -0.15
+				political_power_cost = -0.25
+				titoism_drift = 0.02
+			}
+			cancel = { has puppet }
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		} 
+		
+		Soviety_deputatov = { 
+		    allowed = {
+				always = no 
+			}
+
+			picture = SOviet_Deputatov
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				political_power_cost = -0.5 
+				stability_factor = 0.05 
+				titoism_drift = 0.05
+			}
+			cancel = { has puppet }
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		} 
+		
+		FINI = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Upa
+			
+			modifier = {
+				production_speed_buildings_factor = -0.3
+				war_support_factor = -0.20
+				stability_factor = -0.35
+				fascism_drift = 0.02
+			}
+			
+		}
+		
+		Nepmen = { 
+		    allowed = {
+				always = no 
+			}
+
+			picture = Syndi
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.15
+				political_power_cost = -0.25
+			}
+			cancel = { has puppet }
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		} 
+		
+		Syndi = { 
+		    allowed = {
+				always = no 
+			}
+
+			picture = Syndi
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = 0.25
+				communism_drift = 0.05
+				titoism_drift = 0.02
+			}
+			cancel = { has puppet }
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		} 
+		
+		ROA = {
+			
+			allowed = {
+				always = no 
+			}
+
+			picture = Upa
+			
+			modifier = {
+				production_speed_buildings_factor = -0.3
+				war_support_factor = -0.20
+				stability_factor = -0.35
+				fascism_drift = 0.02
+			}
+			
+		}
+		
+		White_Caucase = {
+			
+			allowed = {
+				always = no 
+			}
+
+			picture = Upa
+			
+			modifier = {
+				production_speed_buildings_factor = -0.3
+				war_support_factor = -0.20
+				stability_factor = -0.35
+				fascism_drift = 0.02
+			}
+			
+		}
+		
+		European_socialism = { 
+		    allowed = {
+				always = no 
+			}
+
+			picture = EC_communism
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = 0.25
+				communism_drift = 0.05
+				titoism_drift = 0.02
+			}
+			cancel = { has puppet }
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		} 
+		
+		class_battle = { 
+		    allowed = {
+				always = no 
+			}
+
+			picture = Class_battle
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_cost = 0.3
+				communism_drift = 0.05
+				liberal_drift = 0.04
+				democratic_drift = 0.04
+				defense_bonus_against = -0.1
+			}
+			cancel = { has puppet }
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		} 
+		
+		CZE_anunited = {
+			
+			allowed = {
+				always = no 
+			}
+
+			picture = CZE_anunited
+			
+			modifier = {
+				production_speed_buildings_factor = -0.3
+				stability_factor = -0.15
+			}
+			
+		}
+		
+		CZE_unite = {
+			
+			allowed = {
+				always = no 
+			}
+
+			picture = CZE_unite
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				communism_drift = 0.05
+				titoism_drift = 0.05
+				stability_factor = 0.05
+			}
+			
+		}
+	}	

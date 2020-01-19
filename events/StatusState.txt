@@ -1,0 +1,333 @@
+﻿###########################
+# Sev Events
+###########################
+
+add_namespace = sst
+
+
+country_event = {
+	id = sst.1
+	title = sst.1.t
+	desc = sst.1.d
+	picture = GFX_report_event_generic_ruins
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		has_idea = gegemon	
+		OR = {
+			num_of_factories < 100
+			has_army_manpower = { size < 1000000 }
+			is_subject = yes
+		}
+	}
+	option = {
+	  name = sst.1.a
+		add_ideas = {
+			regional_country
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = sst.2
+	title = sst.2.t
+	desc = sst.2.d
+	picture = GFX_report_event_generic_ruins
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		has_idea = regional_country	
+		OR = {
+			num_of_factories < 60
+			has_army_manpower = { size < 500000 }
+			is_subject = yes
+		}
+	}
+	option = {
+	  name = sst.2.a
+		add_ideas = {
+			local_country
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = sst.3
+	title = sst.3.t
+	desc = sst.3.d
+	picture = GFX_report_event_generic_ruins
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		has_idea = local_country	
+		OR = {
+			is_subject = yes
+		}
+	}
+	option = {
+	  name = sst.3.a
+		add_ideas = {
+			autonomy_country
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = sst.4
+	title = sst.4.t
+	desc = sst.4.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		has_idea = autonomy_country	
+		OR = {
+			is_subject = no
+		}
+	}
+	option = {
+	  name = sst.4.a
+		add_ideas = {
+			local_country
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = sst.5
+	title = sst.5.t
+	desc = sst.5.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		has_idea = local_country	
+		is_subject = no
+		num_of_factories > 60
+		has_army_manpower = { size > 500000 }
+	}
+	option = {
+	  name = sst.5.a
+		add_ideas = {
+			regional_country
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = sst.6
+	title = sst.6.t
+	desc = sst.6.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		has_idea = regional_country	
+		is_subject = no
+		num_of_factories > 100
+		has_army_manpower = { size > 1000000 }
+	}
+	option = {
+	  name = sst.6.a
+		add_ideas = {
+			gegemon
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = sst.7
+	title = sst.7.t
+	desc = sst.7.d
+	picture = GFX_report_event_degaulle_churchill
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		has_idea = contrakt_army	
+		OR = {
+			has_government = communism
+			has_government = maoism
+			has_government = chucheism
+			has_government = trotskism
+		}
+	}
+	option = {
+	  name = sst.7.a
+		add_ideas = {
+			half_army
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = sst.8
+	title = sst.8.t
+	desc = sst.8.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {	
+		has_idea = oneparty_state
+		OR = {
+			has_government = democratic
+			has_government = neutrality
+		}
+	}
+	option = {
+	  name = sst.8.a
+		add_ideas = {
+			half-president_republic
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = sst.9
+	title = sst.9.t
+	desc = sst.9.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {	
+		OR = {
+			has_government = fascism
+		}
+		has_idea = half-president_republic	
+	}
+	option = {
+	  name = sst.9.a
+		add_ideas = {
+			oneparty_state
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = sst.10
+	title = sst.10.t
+	desc = sst.10.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {	
+		OR = {
+			has_government = fascism
+		}
+		has_idea = parlament_republic	
+	}
+	option = {
+	  name = sst.10.a
+		add_ideas = {
+			oneparty_state
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = sst.11
+	title = sst.11.t
+	desc = sst.11.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {	
+		OR = {
+			has_government = communism
+			has_government = maoism
+			has_government = chucheism
+			has_government = trotskism
+			has_government = fascism
+		}
+		has_idea = parlament_monarchy	
+	}
+	option = {
+	  name = sst.11.a
+		add_ideas = {
+			oneparty_state
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = sst.12
+	title = sst.12.t
+	desc = sst.12.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {	
+		OR = {
+			has_government = communism
+			has_government = maoism
+			has_government = chucheism
+			has_government = trotskism
+			has_government = democratic
+		}
+		has_idea = monarchy	
+	}
+	option = {
+	  name = sst.12.a
+		add_ideas = {
+			oneparty_state
+		}
+		ai_chance = { factor = 100 }
+	}
+}

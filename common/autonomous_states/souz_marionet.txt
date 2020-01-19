@@ -1,0 +1,39 @@
+autonomy_state = {
+	id = autonomy_souz_marionet
+	
+	min_freedom_level = 0.80
+	
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+	}
+	
+	modifier = {
+		can_master_build_for_us = 1
+	}
+	
+	ai_subject_wants_higher = {
+		factor = 0.0
+	}
+	
+	ai_overlord_wants_lower = {
+		factor = 1.0
+	}
+
+	ai_overlord_wants_garrison = {
+		always = no
+	}
+
+	allowed = {
+	is_subject_of = SOV
+		has_dlc = "Together for Victory"
+	}
+	
+	can_take_level = {
+	}
+
+	can_lose_level = {
+	NOT = {
+	is_subject_of = SOV
+	}
+}

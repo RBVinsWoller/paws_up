@@ -1,0 +1,21 @@
+
+state={
+	id=904
+	name="STATE_904"
+	manpower =  217068
+	
+	state_category = large_town
+
+	history={
+				owner = BLR
+		        add_core_of = BLR
+		
+		victory_points = {
+			9341 5
+		}
+	}
+
+	provinces={
+		233 358 9341 
+	}
+}

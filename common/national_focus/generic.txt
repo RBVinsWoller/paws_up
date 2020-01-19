@@ -1,0 +1,1261 @@
+focus_tree = {
+	id = generic_focus
+	
+	country = {
+		factor = 3
+	}
+	modifier = {
+		add = 10
+	}
+
+	
+	default = yes
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	focus = {
+		id = End_of_Great_war
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 0
+		cost = 10
+
+		completion_reward = {
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+		focus = {
+		id = new_plan
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = End_of_Great_war
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+		    add_timed_idea = {
+	            idea = Infrastukt
+	            days = 720
+            } 
+		} 
+		available = { 
+		} 
+	}
+	
+	
+	focus = {
+		id = new_workers
+		icon = GFX_goal_unknown
+		cost = 10
+		mutually_exclusive = { 
+		    focus = new_engeniers
+		}
+		prerequisite = {
+			focus = new_plan
+		}
+		x = 15
+		y = 2
+		completion_reward = {
+		    add_timed_idea = {
+	            idea = Prom
+	            days = 720
+            }
+			
+			add_political_power = 150
+		} 
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = new_engeniers
+		icon = GFX_goal_unknown
+		cost = 10
+		mutually_exclusive = { 
+		    focus = new_workers
+		}
+		prerequisite = {
+			focus = new_plan
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+		    add_timed_idea = {
+	            idea = Nauka
+	            days = 720
+            }
+			
+			add_political_power = 150
+		} 
+		available = { 
+		} 
+	} 
+	
+	focus = {
+		id = we_can_do_it
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = new_engeniers
+			focus = new_workers
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+		    add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 2.0
+				uses = 1
+				category = industry
+			} 
+			
+			add_political_power = 300
+		} 
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = factory_1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = we_can_do_it
+		}
+		x = 14
+		y = 4
+		completion_reward = {
+		    add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		} 
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = factory_2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = factory_1
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+		    add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}	
+		} 
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = factory_3
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = factory_2
+		}
+		x = 14
+		y = 6
+		completion_reward = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 9
+				instant_build = yes
+			}
+		} 
+		available = { 
+		} 
+	}
+	
+	
+	focus = {
+		id = military_foctories_1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = we_can_do_it
+		}
+		x = 18
+		y = 4
+		completion_reward = {
+		    add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+		} 
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = military_foctories_2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = military_foctories_1
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+		    add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+		} 
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = military_foctories_3
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = military_foctories_2
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+		    add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+		} 
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = Political_orientation
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = End_of_Great_war
+		}
+		
+		x = 4
+		y = 1
+		cost = 10
+
+		completion_reward = {
+		    add_political_power = 200
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = left_orientation
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = Political_orientation
+		}
+		
+		mutually_exclusive = { 
+		    focus = right_orientation
+		}
+		
+		x = 2
+		y = 2
+		cost = 10
+
+		completion_reward = {
+		    add_stability = -0.1
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = left_populist-on_the_fabric
+		icon = GFX_goal_generic_allies_build_infantry
+		mutually_exclusive = { 
+		    focus = left_marxism
+			focus = nazbol
+		}
+		prerequisite = {
+			focus = left_orientation
+		}	
+		x = -1
+		y = 3
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = trotskism 
+				popularity = 0.05
+			}
+			
+			add_ideas = { 
+			    Proletarii
+			} 
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = left_new_public_group
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = left_populist-on_the_fabric
+		}	
+		x = -1
+		y = 4
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = trotskism 
+				popularity = 0.1
+			}
+			
+			add_political_power = 150
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = trotskists_politics
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = left_new_public_group
+		}	
+		x = -1
+		y = 5
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = trotskism 
+				popularity = 0.1
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = new_funcioner_of_trotskism
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = trotskists_politics
+		}	
+		x = -1
+		y = 6
+		cost = 10
+
+		completion_reward = {
+		    add_war_support = -0.05
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = new_funcioner_of_trotskism_1
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = trotskists_politics
+		}	
+		x = -1
+		y = 7
+		cost = 10
+
+		completion_reward = {
+		    add_stability = -0.05
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = new_party_of_trotskism
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = new_funcioner_of_trotskism_1
+		}	
+		x = -1
+		y = 8
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = trotskism 
+				popularity = 0.05
+			}
+			
+			add_political_power = -100
+		} 
+		
+		available_if_capitulated = yes
+	}
+
+    focus = {
+		id = new_followers
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = new_party_of_trotskism
+		}	
+		x = -1
+		y = 9
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = trotskism 
+				popularity = 0.05
+			}
+			
+			add_war_support = -0.1
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = great_revolution_of_trotskism
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = new_followers
+		}	
+		x = -1
+		y = 10
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = trotskism 
+				popularity = 0.15
+			}
+			
+			remove_ideas = Proletarii
+		} 
+		
+		set_politics = { 
+		    ruling_party = trotskism
+		} 
+		
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = left_marxism
+		icon = GFX_goal_generic_allies_build_infantry
+		mutually_exclusive = { 
+		    focus = left_popilust-on_the_fabric
+			focus = nazbol
+		}
+		prerequisite = {
+			focus = left_orientation
+		}	
+		x = 1
+		y = 3
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = communism 
+				popularity = 0.1
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = left_intelligence
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = left_marxism
+		}	
+		x = 1
+		y = 4
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = communism 
+				popularity = 0.05
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = left_workers
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = left_intelligence
+		}	
+		x = 1
+		y = 5
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = communism 
+				popularity = 0.1
+			}
+			
+			add_ideas = { 
+			    Proletarii 
+			} 
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = left_kruzki
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = left_workers
+		}	
+		x = 1
+		y = 6
+		cost = 10
+
+		completion_reward = {
+		    add_stability = 0.05
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = left_marxist_propagand
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = left_kruzki
+		}	
+		x = 1
+		y = 7
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = communism 
+				popularity = 0.05
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = left_marxist_party
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = left_marxist_propagand
+		}	
+		x = 1
+		y = 8
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = communism 
+				popularity = 0.1
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = unite_workers
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = left_marxist_party
+		}	
+		x = 1
+		y = 9
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = communism 
+				popularity = 0.1
+			}
+			
+			remove_ideas = Proletarii
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = proletarii_obyedinyaites
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = unite_workers
+		}	
+		x = 1
+		y = 10
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = communism 
+				popularity = 0.1
+			}
+			
+			add_ideas = { 
+			    International
+			} 
+			
+			set_politics = { 
+			    ruling_party = communism 
+			} 
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = nazbol
+		icon = GFX_goal_generic_allies_build_infantry
+		mutually_exclusive = { 
+		    focus = left_popilust-on_the_fabric
+			focus = left_marxism
+		}
+		prerequisite = {
+			focus = left_orientation
+		}	
+		x = 3
+		y = 3
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = chucheism
+				popularity = 0.1
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = nazbol_workers
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = nazbol
+		}	
+		x = 3
+		y = 4
+		cost = 10
+
+		completion_reward = {
+		    add_political_power = 100
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = nazbol_party
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = nazbol_workers
+		}	
+		x = 3
+		y = 5
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = chucheism
+				popularity = 0.05
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = nazbol_military_formers
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = nazbol_party
+		}	
+		x = 3
+		y = 6
+		cost = 10
+
+		completion_reward = {
+		    add_stability = -0.05
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = nazbol_partizans
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {
+			focus = nazbol_military_formers
+		}	
+		x = 3
+		y = 7
+		cost = 10
+
+		completion_reward = {
+		    add_war_support = -0.25
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = nazbol_manifest
+		prerequisite = {
+			focus = nazbol_partizans
+		}	
+		x = 3
+		y = 8
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = chucheism
+				popularity = 0.05
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = nazbol_unite_radicals
+		prerequisite = {
+			focus = nazbol_manifest
+		}	
+		x = 3
+		y = 9
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = chucheism
+				popularity = 0.1
+			}
+			
+			add_stability = -0.05
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = nazbol_take_all
+		prerequisite = {
+			focus = nazbol_unite_radicals
+		}	
+		x = 3
+		y = 10
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = chucheism
+				popularity = 0.15
+			}
+			
+			set_politics = { 
+			    ruling_party = chucheism
+			} 
+			
+			add_war_support = 0.15
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = right_orientation
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = Political_orientation
+		}
+		
+		mutually_exclusive = { 
+		    focus = left_orientation
+		}
+		
+		x = 6
+		y = 2
+		cost = 10
+
+		completion_reward = {
+		    add_political_power = 100
+		} 
+		
+		available_if_capitulated = yes
+	} 
+	
+	focus = {
+		id = right_democratic
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = right_orientation
+		}
+		
+		mutually_exclusive = { 
+		    focus = right_centrism
+		}
+		
+		x = 6
+		y = 3
+		cost = 10
+
+		completion_reward = {
+		    add_stability = 0.1
+			political_power = 150
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	
+	focus = {
+		id = right_conservatives
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = right_democratic
+		}
+		
+		mutually_exclusive = { 
+		    focus = right_liberals
+		}
+		
+		x = 5
+		y = 4
+		cost = 10
+
+		completion_reward = {
+		    set_politics = { 
+			    ruling_party = democratic 
+			} 
+			
+			add_popularity = { 
+			    ideology = democratic 
+				popularity = 0.25
+			} 
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = old_way
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = right_conservatives
+		}
+		
+		x = 5
+		y = 5
+		cost = 10
+
+		completion_reward = {
+		    add_war_support = 0.05 
+			add_stability = -0.05
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = political_destabilisation
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = old_way
+		}
+		
+		x = 5
+		y = 6
+		cost = 10
+
+		completion_reward = {
+		    add_political_power = -300
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = arrest_political_left
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = political_destabilisation
+		}
+		
+		x = 5
+		y = 7
+		cost = 10
+
+		completion_reward = {
+		    add_stability = -0.1
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = arrest_frofsous
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = arrest_political_left
+		}
+		
+		x = 5
+		y = 8
+		cost = 10
+
+		completion_reward = {
+		    add_war_support = -0.1
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = capitalism_support
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = arrest_frofsous
+		}
+		
+		x = 5
+		y = 9
+		cost = 10
+
+		completion_reward = {
+		    add_ideas = { 
+			    Svoboda 
+			} 
+			
+			add_stability = 0.1 
+			
+			add_war_support = 0.1
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	
+	focus = {
+		id = right_liberals
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = right_democratic
+		}
+		mutually_exclusive = { 
+		    focus = right_conservatives
+		}
+		x = 7
+		y = 4
+		cost = 10
+
+		completion_reward = {
+		set_politics = {
+            ruling_party = liberal
+        }
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = liberal_politic
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = right_liberals
+		}
+		x = 7
+		y = 5
+		cost = 10
+
+		completion_reward = { 
+		    add_popularity = { 
+			    ideology = liberal
+				popularity = 0.1
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = liberal_revolution
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = liberal_politic
+		}
+		x = 7
+		y = 6
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = liberal
+				popularity = 0.15
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = arrest_left_revolutioner
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = liberal_revolution
+		}
+		x = 7
+		y = 7
+		cost = 10
+
+		completion_reward = {
+		    add_popularity = { 
+			    ideology = communism
+				popularity = -0.15
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = american_liberalism
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = arrest_left_revolutioner
+		}
+		mutually_exclusive = { 
+		    focus = neoliberal_nazi
+		}
+		x = 7
+		y = 8
+		cost = 10
+
+		completion_reward = {
+		    add_stability = -0.05 
+			
+			add_popularity = { 
+			    ideology = liberal
+				popularity = 0.15
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = american_help
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = american_liberalism
+		}
+		x = 7
+		y = 9
+		cost = 10
+
+		completion_reward = {
+		    add_ideas = { 
+			    Svoboda 
+			} 
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = neoliberal_nazi
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = arrest_left_revolutioner
+		}
+		mutually_exclusive = { 
+		    focus = american_liberalism
+		}
+		x = 9
+		y = 8
+		cost = 10
+
+		completion_reward = {
+		    add_stability = -0.1 
+			
+			add_popularity = { 
+			    ideology = fascism
+				popularity = 0.4
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = far_right_help
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = neoliberal_nazi
+		}
+		x = 9
+		y = 9
+		cost = 10
+
+		completion_reward = {
+		    add_ideas = { 
+			    Nazi 
+			} 
+			
+			add_political_power = 150 
+			
+			add_stability = -0.1 
+			
+			add_threat = 5
+			
+			set_politics = { 
+			    ruling_party = fascism 
+			} 
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	
+	
+	focus = {
+		id = right_centrism
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = right_orientation
+		}
+		
+		mutually_exclusive = { 
+		    focus = right_democratic
+		}
+		
+		x = 9
+		y = 3
+		cost = 10
+
+		completion_reward = {
+		     add_popularity = { 
+			    ideology = neutrality
+				popularity = 0.25
+			}
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = united_nations
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = right_centrism
+		}
+		x = 9
+		y = 4
+		cost = 10
+
+		completion_reward = {
+		add_stability = 0.15
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = centrist_propagand
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = united_nations
+		}
+		x = 9
+		y = 5
+		cost = 10
+
+		completion_reward = {
+		add_war_support = 0.15
+		} 
+		
+		available_if_capitulated = yes
+	}
+	
+	focus = {
+		id = unite_left_and_rigt
+		icon = GFX_goal_generic_allies_build_infantry
+		
+		prerequisite = {
+			focus = centrist_propagand
+		}
+		x = 9
+		y = 6
+		cost = 10
+
+		completion_reward = {
+		set_politics = {
+            ruling_party = neutrality
+        }
+		
+		add_popularity = {
+		    ideology = neutrality
+			popularity = 0.15
+		} 
+		
+		add_stability = 0.1 
+		} 
+		
+		available_if_capitulated = yes
+	}
+
+}

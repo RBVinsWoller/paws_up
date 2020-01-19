@@ -1,0 +1,74 @@
+﻿capital = 267
+
+oob = "AFG_1936"
+
+set_technology = {
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "AFG_1939"
+	set_technology = {
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10 
+	fascism = 9
+	chucheism = 3
+	maoism = 2
+	trotskism = 7
+	titoism = 1
+	liberal = 5
+	neutrality = 50
+	communism = 13
+}
+
+# Mohammad Hashim Khan (Prime Minister) other potential candidate
+create_country_leader = {
+	name = "Mohammed Zahir Shah"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+    democratic = 10 
+	fascism = 9
+	chucheism = 3
+	maoism = 2
+	trotskism = 7
+	titoism = 1
+	liberal = 5
+	neutrality = 50
+	communism = 13
+}
+}
+
+create_corps_commander = {
+	name = "Sardar Shah Wali Khan"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { desert_fox }
+	skill = 4
+}

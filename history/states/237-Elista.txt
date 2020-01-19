@@ -1,0 +1,23 @@
+
+state={
+	id=237
+	name="STATE_237"
+	manpower = 169741
+	
+	state_category = rural
+
+	history={
+		owner = SOV
+		add_core_of = RUS
+                add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+                                                arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		742 745 759 3726 3746 3774 6758 6760 6791 6794 9594 9720 9739 11566 11724 
+	}
+}

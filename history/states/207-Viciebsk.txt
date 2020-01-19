@@ -1,0 +1,21 @@
+
+state={
+	id=207
+	name="STATE_207"
+	manpower =  655247
+	
+	state_category = city
+
+	history={
+				owner = BLR
+		        add_core_of = BLR
+		
+		victory_points = {
+			11241 5
+		}
+	}
+
+	provinces={
+		323 9241 11220 11241 
+	}
+}

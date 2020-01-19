@@ -1,0 +1,21 @@
+
+state={
+	id=882
+	name="STATE_882" # French West Africa
+	manpower = 14844500
+	
+	state_category = rural
+
+	history={
+		owner = FRA
+                victory_points = { 8122 2 }
+		buildings = {
+			infrastructure = 3
+		}
+                add_core_of = IVR
+	}
+
+	provinces={
+		10762 10803 8122 5013 8065 5070 
+	}
+}

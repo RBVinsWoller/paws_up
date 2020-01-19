@@ -1,0 +1,23 @@
+
+state={
+	id=861
+	name="STATE_861"
+	manpower = 750491
+	
+	state_category = city
+
+	history={
+		buildings = {
+			arms_factory = 1
+        }                             
+		victory_points = {
+			3658 2 
+		}
+														owner = GEO
+		        add_core_of = GEO
+		
+	}
+		provinces={
+			654 672 3656 3658 6674 
+		}
+}

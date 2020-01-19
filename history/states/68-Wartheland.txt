@@ -1,0 +1,37 @@
+
+state={
+	id=68
+	name="STATE_68"
+	manpower = 1250840
+	resources={
+		aluminium=24
+	}
+
+	state_category = city
+
+	history={
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 5
+			air_base = 3
+		}
+		owner = DDR
+		add_core_of = DDR
+		add_core_of = WGR
+		
+		1945.9.2 = {
+			owner = DDR
+			add_core_of = DDR
+			add_core_of = WGR
+		}
+		1949.9.2 = {
+			owner = DDR
+			add_core_of = DDR
+			add_core_of = WGR
+		}
+	}
+
+	provinces={
+		478 9496 11415 
+	}
+}

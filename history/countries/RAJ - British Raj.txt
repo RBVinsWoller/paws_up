@@ -1,0 +1,94 @@
+﻿capital = 439
+
+oob = "RAJ_1936"
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 20
+
+1939.1.1 = {#placeholder same tech as ENG
+	#generic focuses
+
+	add_political_power = 1198
+	oob = "RAJ_1939"
+
+	add_ideas = {
+	}
+
+	
+	set_technology = {
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1945.11.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 14
+	fascism = 1
+	chucheism = 6 
+	maoism = 14
+	trotskism = 4
+	titoism = 1
+	liberal = 14
+	neutrality = 36
+	communism = 10
+}
+
+create_country_leader = {
+	name = "Jawaharlal Nehru"
+	desc = "POLITICS_LORD_LINLITHGOW_DESC"
+	picture = "gfx/leaders/IND/Portrait_Jawaharlal Nehru.dds"
+	expire = "1964.6.5"
+	ideology = centrism
+	traits = {
+		
+	}
+}
+
+# REVISIT Unclear if appropriate for this ideology
+create_country_leader = {
+	name = "V. D. Savarkar"
+	desc = "POLITICS_VD_SAVARKAR_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_navy_3.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Jawaharlal Nehru"
+	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
+	picture = "gfx/leaders/IND/Portrait_Jawaharlal Nehru.dds"
+	expire = "1964.6.5"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Jawaharlal Nehru"
+	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
+	picture = "gfx/leaders/IND/Portrait_Jawaharlal Nehru.dds"
+	expire = "1964.6.5"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Edward Quinan"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = { logistics_wizard  }
+	skill = 2
+}

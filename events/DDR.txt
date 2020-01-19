@@ -1,0 +1,161 @@
+﻿###########################
+# DDR Events
+###########################
+
+add_namespace = ddr
+
+country_event = {
+	id = ddr.1
+	title = ddr.1.t
+	desc = ddr.1.d
+	picture = GFX_report_event_chinese_soldiers_01
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = DDR
+		date > 1961.8.13
+		has_government = communism
+		SOV = { exists = yes } 
+		USA = { exists = yes } 
+		WGR = { exists = yes }
+		BER = { exists = yes }
+    }
+	
+	option = {
+		name = ddr.1.a
+		add_ideas = {
+			Stena
+		}
+		set_country_flag = stena
+
+		hidden_effect = { 
+			news_event = { id = news.30 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = ddr.1.b
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {  #Ульбрихт
+	id = ddr.2
+	title = ddr.2.t
+	desc = ddr.2.d
+	picture = GFX_report_event_ast_army
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = DDR
+		date > 1960.9.4
+		has_government = communism
+    }
+	
+	option = {
+		name = ddr.2.a
+		
+		kill_country_leader = yes
+		
+		create_country_leader = { 
+			name = "Walter Ulbricht" 
+			desc = "" 
+			picture = "gfx/leaders/DDR/Portrait_Walter Ulbricht.dds"
+			expire = "1973.9.1" 
+			ideology = stalinism
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.35 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+
+}
+
+country_event = {    #Хонекер
+	id = ddr.3
+	title = ddr.3.t
+	desc = ddr.3.d
+	picture = GFX_report_event_ast_navy
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = DDR
+		date > 1971.5.1
+		has_government = communism
+    }
+	
+	option = {
+		name = ddr.3.a
+		
+		create_country_leader = { 
+			name = "Erich Honecker" 
+			desc = "" 
+			picture = "gfx/leaders/DDR/Portrait_Erich Honecker.dds"
+			expire = "1994.5.29" 
+			ideology = leninism
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.36 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+
+}
+
+country_event = {  #Штази
+	id = ddr.4
+	title = ddr.4.t
+	desc = ddr.4.d
+	picture = GFX_report_event_french_british_officers
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = DDR
+		date > 1950.1.4
+		has_government = communism
+    }
+	
+	option = {
+		name = ddr.4.a
+		add_ideas = {
+			Stasi
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = ddr.5
+	title = ddr.5.t
+	desc = ddr.5.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = DDR
+		date > 1953.12.3
+		has_government = communism
+		SOV = { exists = yes } 
+		USA = { exists = yes } 
+		WGR = { exists = yes }
+		BER = { exists = yes }
+    }
+	
+	option = {
+		name = ddr.5.a
+		add_ideas = {
+			Pobeg
+		}
+		ai_chance = { factor = 100 }
+	}
+}

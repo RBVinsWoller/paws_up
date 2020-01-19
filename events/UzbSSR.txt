@@ -1,0 +1,227 @@
+﻿
+add_namespace = uzb
+
+country_event = {
+	id = uzb.1
+	title = uzb.1.t
+	desc = uzb.1.d
+	picture = GFX_report_event_generic_funeral
+	
+	fire_only_once = no
+	
+	mean_time_to_happen = {
+		days = 80
+	}
+	
+	trigger = { 
+		tag = UZB
+		has_government = communism 
+		communism < 0.45
+		SOV = { exists = yes }
+		is_subject_of = SOV
+    }
+	
+	option = {
+		name = uzb.1.a
+		
+		SOV = {
+			country_event = { days = 1 id = sov.18 }
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.99 } 
+		}
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = uzb.2
+	title = uzb.2.t
+	desc = uzb.2.d
+	picture = GFX_report_event_dead_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uzb.2.a
+		
+			set_politics = {
+
+				parties = {
+					democratic = { 
+						popularity = 5
+					}
+					
+					communism = {
+						popularity = 95
+					}		
+				}
+				ruling_party = communism
+				last_election = "1946.1.1"
+				election_frequency = 108
+				elections_allowed = no
+			}
+			
+		hidden_effect = { 
+			news_event = { id = news.100 } 
+		}
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = uzb.3
+	title = uzb.3.t
+	desc = uzb.3.d
+	picture = GFX_report_event_degaulle_churchill
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uzb.3.a
+		
+		hidden_effect = {
+			start_civil_war = {
+				ideology = democratic
+				size = 0.8
+			}
+			random_other_country = {
+				limit = {
+					original_tag = UZB
+					has_government = democratic
+				}
+				
+				drop_cosmetic_tag = yes
+				
+				set_equipment_fraction = 0.8
+			}
+			
+			set_equipment_fraction = 0.2
+		
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.101 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = uzb.4
+	title = uzb.4.t
+	desc = uzb.4.d
+	picture = GFX_report_event_dead_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uzb.4.a
+		
+		set_politics = {
+
+			parties = {
+				democratic = { 
+					popularity = 5
+				}
+				
+				communism = {
+					popularity = 95
+				}		
+			}
+			ruling_party = communism
+			last_election = "1946.1.1"
+			election_frequency = 108
+			elections_allowed = no
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.102 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = uzb.5
+	title = uzb.5.t
+	desc = uzb.5.d
+	picture = GFX_report_event_generic_lend_lease
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uzb.5.a
+		
+		set_politics = {
+
+			parties = {
+				democratic = { 
+					popularity = 95
+				}
+				
+				communism = {
+					popularity = 5
+				}		
+			}
+			ruling_party = democratic
+			last_election = "1946.1.1"
+			election_frequency = 108
+			elections_allowed = no
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.103 } 
+		}
+		
+		set_autonomy = { target = UZB autonomy_state = autonomy_free  }
+		
+		drop_cosmetic_tag = yes
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = uzb.6
+	title = uzb.6.t
+	desc = uzb.6.d
+	picture = GFX_report_event_generic_lend_lease
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = uzb.6.a
+		
+		set_politics = {
+
+			parties = {
+				democratic = { 
+					popularity = 95
+				}
+				
+				communism = {
+					popularity = 5
+				}		
+			}
+			ruling_party = democratic
+			last_election = "1946.1.1"
+			election_frequency = 108
+			elections_allowed = no
+		}
+		
+		drop_cosmetic_tag = yes
+		
+		set_autonomy = { target = UZB autonomy_state = autonomy_free }
+		
+		hidden_effect = { 
+			news_event = { id = news.104 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}

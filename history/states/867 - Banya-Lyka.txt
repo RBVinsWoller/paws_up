@@ -1,0 +1,25 @@
+
+state={
+	id=867
+	name="STATE_867"
+	manpower = 1569332
+	
+	
+	state_category = town
+	
+	resources={
+		aluminium=10
+	}
+
+	history={
+		owner = YUG
+		victory_points = {
+			 6983 5 
+		}
+		add_core_of = YUG
+	}
+
+provinces={
+ 606 953 982 6619 6983 9588 9591 11574 11741 11845 
+	}
+}

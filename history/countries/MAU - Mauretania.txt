@@ -1,0 +1,33 @@
+﻿capital = 557
+
+set_technology = {
+}
+
+
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 10
+		}
+
+		fascism = {
+			popularity = 20
+		}
+
+		communism = {
+			popularity = 25
+			#banned = no #default is no
+		}
+
+		neutrality = {
+			popularity = 50
+		}
+	}
+
+	ruling_party = neutrality
+	last_election = "1991.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+

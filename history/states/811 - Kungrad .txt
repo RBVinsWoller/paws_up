@@ -1,0 +1,20 @@
+state={
+	id=811
+	name="STATE_811" #Kungrad
+	manpower =153000
+	
+	
+	state_category = large_town
+
+	history={
+				owner = UZB
+		add_core_of = UZB
+		victory_points = {
+			10395 5 
+		}
+	}
+
+	provinces={
+		1721 7541 10348 10395 12233 12383 12454
+	}
+}

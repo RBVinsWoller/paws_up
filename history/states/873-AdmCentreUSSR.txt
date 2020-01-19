@@ -1,0 +1,25 @@
+state={
+	id=873
+	name="STATE_873" #Moskva
+	manpower = 500000
+	
+	state_category = megalopolis
+	
+	resources={
+
+	}
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 10
+		}
+		victory_points = {
+			13230 10
+		}
+		add_core_of = RUS
+	}
+
+	provinces={
+		13230
+	}
+}

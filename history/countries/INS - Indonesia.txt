@@ -1,0 +1,73 @@
+﻿capital = 335 #Jakarta
+
+oob = "INS_1936"
+
+set_research_slots = 3
+
+set_technology = {
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 0
+	fascism = 0
+	chucheism = 0
+	maoism = 25
+	trotskism = 0
+	communism = 0
+	liberal = 5
+	neutrality = 70
+}
+
+create_country_leader = {
+	name = "Sukarno"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	expire = "1953.3.1"
+	ideology = socialism #Marhaenism his own unique mix of stuff
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Amir Sjarifuddin Harahap"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+	expire = "1953.3.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Suharto"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology # except for no connection to catholicism, this party perfectly fits into falangism 
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Sutan Sjahrir"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	expire = "1953.3.1"
+	ideology = moderatism
+	traits = {
+		
+	}
+}
+
+
+

@@ -1,0 +1,69 @@
+﻿capital = 312
+
+oob = "HON_1936"
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 10
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "HON_1939"
+	set_technology = {
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.10.28"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 45
+	fascism = 3
+	chucheism = 0
+	maoism = 5
+	trotskism = 7
+	titoism = 5
+	liberal = 15
+	neutrality = 10
+	communism = 10
+}
+
+create_country_leader = {
+	name = "Tiburcio Carías Andino"
+	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1936.3.28"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	
+	set_popularities = {
+    democratic = 45
+	fascism = 3
+	chucheism = 0
+	maoism = 5
+	trotskism = 7
+	titoism = 5
+	liberal = 15
+	neutrality = 10
+	communism = 10
+}
+}

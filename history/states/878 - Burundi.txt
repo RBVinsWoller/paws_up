@@ -1,0 +1,31 @@
+state={
+	id=878
+	name="STATE_878"
+	
+	state_category = rural
+
+	history={
+		add_core_of = VIN
+		owner = VIN
+		victory_points = {
+			12150 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		
+		1949.9.2 = {
+			owner = VIN
+			add_core_of = VIN
+		}
+
+	}
+
+	provinces={
+		10232 12176 12150 12204 7271 1605 1285 1400 12109 4405 10162
+	}
+	manpower=2229078
+}

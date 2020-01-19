@@ -1,0 +1,150 @@
+division_template = {
+	name = "Infantry Division"			# Represents organized Indian Infantry Divisions
+	division_names_group = PAK_INF_01
+										# Has older equipment, lower experience
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "District Garrison"			# Represents precursors to Indian Infantry Divisions (district divisions)
+	division_names_group = PAK_GAR_01
+										# Has older equipment, lower experience
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Mountains Brigade"				# Mountain Division
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		#name = "First Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1086
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	
+	division = {
+		#name = "Second Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4088
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		#name = "Mountains Brigade"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4206
+		division_template = "Mountains Brigade"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		#name = "Mountains Brigade"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1065
+		division_template = "Mountains Brigade"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		#name = "Mountains Brigade"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1015
+		division_template = "Mountains Brigade"	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+}
+
+air_wings = {
+	### Israel Air Force (RIrAF)
+	200 = {
+		CAS_equipment_1 =  { owner = "ENG"  amount = 40 }			# 1st Squadron -- Hawker Nisr, Northrup 8A-4
+		fighter_equipment_0 =  { owner = "ENG"  amount = 24 }		# 2nd Squadron -- Gladiator, Breda Ba.65
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ISR"
+		}
+		requested_factories = 1
+		progress = 0.86
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ISR"
+		}
+		requested_factories = 1
+		progress = 0.45
+		efficiency = 100
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_1 #Тип 24
+		amount = 50000
+		producer = ISR
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_1 #Тип 24
+		amount = 15200
+		producer = ENG
+	}
+} 

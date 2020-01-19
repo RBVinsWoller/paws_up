@@ -1,0 +1,33 @@
+state=
+{
+	id=524
+	name="STATE_524"
+	manpower = 6592537
+	
+	state_category = large_town
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 6
+		}
+		
+		victory_points = {
+			7214 75
+		}
+		
+		1949.9.2 = {
+			owner = CHI
+			add_core_of = PRC
+			add_core_of = CHI
+		}
+
+	}
+	provinces={
+		7214
+	}
+}

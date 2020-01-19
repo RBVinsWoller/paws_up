@@ -1,0 +1,27 @@
+state={
+	id=585
+	name="STATE_585"
+
+	history={
+				owner = UZB
+		add_core_of = UZB
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+                                                arms_factory = 1
+
+		}
+		victory_points = {
+			1459 1
+		}
+		
+
+	}
+	state_category = megalopolis
+
+	provinces={
+		1459 4629 7682 11687
+	}
+	manpower=6699970
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=203
+	name="STATE_203"
+	manpower = 1531500
+	
+	state_category = large_town
+
+	history={
+					owner = UKR
+		        add_core_of = UKR
+		buildings = {
+			infrastructure = 5
+			air_base = 4
+		}
+	}
+
+	provinces={
+		458 488 9451 9491 11424 11438 11454 11530 
+	}
+}

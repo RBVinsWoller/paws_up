@@ -1,0 +1,54 @@
+﻿capital = 288
+
+# Starting tech
+set_technology = {
+}
+
+1939.1.1 = {
+
+	oob = "BIR_1946"
+	set_technology = {
+	}
+}
+
+set_politics = {
+ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 5
+	fascism = 10
+	chucheism = 0
+	maoism = 25
+	trotskism = 0
+	titoism = 0
+	liberal = 10
+	neutrality = 40
+	communism = 10
+}
+
+create_country_leader = {
+	name = "Sao Shwe Thaik"
+	desc = "POLITICS_JIGME_WANGCHUCK_DESC"
+	picture = "gfx/leaders/BIR/MamertoUrriolagoitia.dds"
+	expire = "1962.11.5"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sao Shwe Thaik"
+	desc = "POLITICS_JIGME_WANGCHUCK_DESC"
+	picture = "gfx/leaders/BIR/MamertoUrriolagoitia.dds"
+	expire = "1962.11.5"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+

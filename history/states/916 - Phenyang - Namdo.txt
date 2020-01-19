@@ -1,0 +1,40 @@
+state=
+{
+	id=916
+	name="STATE_916"
+	manpower = 2513430
+	
+	state_category = town
+	history=
+	{
+		owner = KND
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 2
+			4052 = {
+				naval_base = 5
+			}
+			
+		}
+		
+		victory_points = {
+			4052 15
+		}
+
+		add_core_of = KOR
+		add_core_of = KND
+		
+		
+		1949.9.2 = {
+			owner = KND
+			add_core_of = KND
+			add_core_of = KOR
+		}
+
+	}
+	provinces={
+		10083 7171 4052 11770 9790 3912 978 
+	}
+}

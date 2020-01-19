@@ -1,0 +1,42 @@
+
+state={
+	id=4
+	name="STATE_4"
+	manpower = 2595983
+	resources={
+		oil=2
+	}
+	
+	state_category = large_city
+	
+	history={
+		owner = SOV
+		victory_points = {
+			11666 30.0 
+		}
+		victory_points = {
+			9648 5 
+		}
+		buildings = {
+			infrastructure = 7
+			air_base = 6
+		}
+		add_core_of = AUS
+
+		1945.9.1 = {
+			owner = SOV
+			add_core_of = AUS
+		}
+		1939.1.1 = {
+			buildings = {
+				anti_air_building = 5
+			                industrial_complex = 5
+			                arms_factory = 3
+			}
+		}
+	}
+
+	provinces={
+		704 732 3700 3718 6552 6690 6723 6739 9527 9661 11630 11651 11666 
+	}
+}

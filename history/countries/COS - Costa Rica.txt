@@ -1,0 +1,48 @@
+﻿capital = 316
+
+oob = "COS_1936"
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 10
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "COS_1939"
+	set_technology = {
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.2.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 45
+	fascism = 3
+	chucheism = 0
+	maoism = 5
+	trotskism = 7
+	titoism = 5
+	liberal = 15
+	neutrality = 10
+	communism = 10
+}
+
+create_country_leader = {
+	name = "Jose Figueres Ferrer"
+	desc = ""
+	picture = "gfx/leaders/COST/Portrait_FigueresFerrer.dds"
+	expire = "2000.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,103 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_miho_kalinin"
+		texturefile = "gfx/interface/Politics/idea_miho_kalinin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_nikolay_svernik"
+		texturefile = "gfx/interface/Politics/idea_nikolay_svernik.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kliment_voroshilovs"
+		texturefile = "gfx/interface/Politics/idea_kliment_voroshilovs.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_alexand_keren"
+		texturefile = "gfx/interface/Politics/idea_alexand_keren.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_georgii_malenkov"
+		texturefile = "gfx/interface/Politics/idea_georgii_malenkov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_niko_bulhanin"
+		texturefile = "gfx/interface/Politics/idea_niko_bulhanin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_georgiy_gukov"
+		texturefile = "gfx/interface/Politics/idea_georgiy_gukov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_jos_stalin"
+		texturefile = "gfx/interface/Politics/idea_jos_stalin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_vasiliy_stalin"
+		texturefile = "gfx/interface/Politics/idea_vasiliy_stalin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_alexandr_vasilevskiy"
+		texturefile = "gfx/interface/Politics/idea_alexandr_vasilevskiy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_andrey_grechko"
+		texturefile = "gfx/interface/Politics/idea_andrey_grechko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lavrentiy_beriya"
+		texturefile = "gfx/interface/Politics/idea_lavrentiy_beriya.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_viktor_abakumov"
+		texturefile = "gfx/interface/Politics/idea_viktor_abakumov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sergey_kruglov"
+		texturefile = "gfx/interface/Politics/idea_sergey_kruglov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_nikolay_schelokov"
+		texturefile = "gfx/interface/Politics/idea_nikolay_schelokov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_nikolay_voznisenkiy"
+		texturefile = "gfx/interface/Politics/idea_nikolay_voznisenkiy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_nikolay_baybakov"
+		texturefile = "gfx/interface/Politics/idea_nikolay_baybakov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_alex_kosigin"
+		texturefile = "gfx/interface/Politics/idea_alex_kosigin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kostya_gerasimov"
+		texturefile = "gfx/interface/Politics/idea_kostya_gerasimov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_vyach_molotov"
+		texturefile = "gfx/interface/Politics/idea_vyach_molotov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_andrey_vishinskiy"
+		texturefile = "gfx/interface/Politics/idea_andrey_vishinskiy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_dmitriy_shepilov"
+		texturefile = "gfx/interface/Politics/idea_dmitriy_shepilov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_andrey_gromiko"
+		texturefile = "gfx/interface/Politics/idea_andrey_gromiko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_miho_hrapchenko"
+		texturefile = "gfx/interface/Politics/idea_miho_hrapchenko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_katya_furceva"
+		texturefile = "gfx/interface/Politics/idea_katya_furceva.dds"
+	}

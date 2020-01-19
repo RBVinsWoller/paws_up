@@ -1,0 +1,811 @@
+technologies = {
+	
+	@1930 = 0
+	@1940 = 2
+	@1943 = 4
+	@1946 = 6
+	@1949 = 8
+	@1955 = 10
+	@1961 = 12
+	@1968 = 14
+	@1971 = 16
+	@1976 = 18
+	@1983 = 20
+	@1990 = 22
+
+	SOV_tank_1 = { #A-32
+
+		enable_equipments = {
+			SOV_medium_tank_equipments_1
+		}
+		
+		enable_subunits = {
+			medium_armor
+		}
+		
+		allow_branch ={ 
+			tag = SOV
+		}
+		
+		on_research_complete = {
+			limit = {
+				NOT = {	has_template_containing_unit = light_armor }
+				NOT = {	has_template_containing_unit = heavy_armor }
+				NOT = {	has_template_containing_unit = medium_armor }
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+	
+		path = {
+			leads_to_tech = SOV_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1930
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1930 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}	
+
+	SOV_tank_2 = { #T-34
+
+		enable_equipments = {
+			SOV_medium_tank_equipments_2 
+		}
+		
+		path = {
+			leads_to_tech = SOV_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1940
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1940 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}	
+	
+	
+
+	SOV_tank_3 = { #T-44
+
+		enable_equipments = {
+			SOV_medium_tank_equipments_3
+		}
+		
+		path = {
+			leads_to_tech = SOV_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1943
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1943 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	
+	
+	SOV_tank_4 = { #Т-54-1
+
+		enable_equipments = {
+			SOV_medium_tank_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = SOV_tank_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1945
+
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1946 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	
+	SOV_tank_5 = { #T-54-2
+
+		enable_equipments = {
+			SOV_medium_tank_equipment_5 
+		}
+		
+		path = {
+			leads_to_tech = SOV_tank_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1948
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1949 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	
+	SOV_tank_6 = { #T-54A
+
+		enable_equipments = {
+			SOV_medium_tank_equipment_6 
+		}
+		
+		path = {
+			leads_to_tech = SOV_tank_7 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1955
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1955 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	
+	SOV_tank_7 = { #T-62
+
+		enable_equipments = {
+			SOV_medium_tank_equipment_7 
+		}
+
+		path = {
+			leads_to_tech = SOV_tank_8
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1961
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1961 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	
+	SOV_tank_8 = { #T-64
+
+		enable_equipments = {
+			SOV_medium_tank_equipment_8 
+		}	
+		
+		path = {
+			leads_to_tech = SOV_tank_9
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1967
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1968 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	SOV_tank_9 = { #T-72
+
+		enable_equipments = {
+			SOV_medium_tank_equipment_9 
+		}	
+		
+		path = {
+			leads_to_tech = SOV_tank_10
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1971
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1971 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	
+	SOV_tank_10 = { #T-80
+
+		enable_equipments = {
+			SOV_medium_tank_equipment_10
+		}	
+		
+		path = {
+			leads_to_tech = SOV_tank_11
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1976
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1976 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	
+	SOV_tank_11 = { #T-80Y
+
+		enable_equipments = {
+			SOV_medium_tank_equipment_11
+		}	
+		
+		path = {
+			leads_to_tech = SOV_tank_12
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1983
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1983 }
+		}
+
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	SOV_tank_12 = { #T-90
+
+		enable_equipments = {
+			SOV_medium_tank_equipment_12
+		}	
+		
+		
+		research_cost = 2.5
+		start_year = 1990
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1990 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	SOV_l_tank_1 = { #Т-26
+
+		enable_equipments = {
+			SOV_light_tank_equipments_1
+		}	
+		
+		enable_subunits = {
+			light_armor
+		}
+		
+		allow_branch ={ 
+			tag = SOV
+		}
+		on_research_complete = {
+			limit = {
+				NOT = {	has_template_containing_unit = light_armor }
+				NOT = {	has_template_containing_unit = heavy_armor }
+				NOT = {	has_template_containing_unit = medium_armor }
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		path = {
+			leads_to_tech = SOV_l_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1930
+		
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	
+	SOV_l_tank_2 = { #Т-60
+
+		enable_equipments = {
+			SOV_light_tank_equipments_2
+		}	
+		
+		path = {
+			leads_to_tech = SOV_l_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	
+	SOV_l_tank_3 = { #Т-70
+
+		enable_equipments = {
+			SOV_light_tank_equipments_3
+		}	
+		
+		path = {
+			leads_to_tech = SOV_l_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1943
+		
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	
+	SOV_l_tank_4 = { #ПТ-76
+
+		enable_equipments = {
+			SOV_light_tank_equipments_4
+		}	
+		
+		path = {
+			leads_to_tech = SOV_l_tank_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1951
+		
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	
+	SOV_l_tank_5 = { #ПТ-85
+
+		enable_equipments = {
+			SOV_light_tank_equipments_5
+		}	
+		
+		path = {
+			leads_to_tech = SOV_l_tank_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1961
+		
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	
+	
+	
+
+	
+	SOV_t_tank_1 = { #T-35
+
+		enable_equipments = {
+			SOV_heavy_tank_equipments_1 
+		}
+		
+		enable_subunits = {
+			heavy_armor
+		}
+		
+		allow_branch ={ 
+			tag = SOV
+		}
+		on_research_complete = {
+			limit = {
+				NOT = {	has_template_containing_unit = light_armor }
+				NOT = {	has_template_containing_unit = heavy_armor }
+				NOT = {	has_template_containing_unit = medium_armor }
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		path = {
+			leads_to_tech = SOV_t_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1930
+		
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 0 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	
+	SOV_t_tank_2 = { #KV-1
+
+		enable_equipments = {
+			SOV_heavy_tank_equipments_2 
+		}
+		
+		path = {
+			leads_to_tech = SOV_t_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1940
+		
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	
+	SOV_t_tank_3 = { #IS-1
+
+		enable_equipments = {
+			SOV_heavy_tank_equipments_3 
+		}
+		
+		path = {
+			leads_to_tech = SOV_t_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1943
+		
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	SOV_t_tank_4 = { #IS-2
+
+		enable_equipments = {
+			SOV_heavy_tank_equipments_4 
+		}
+		
+		path = {
+			leads_to_tech = SOV_t_tank_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1944
+		
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 4 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	SOV_t_tank_5 = { #IS-3
+
+		enable_equipments = {
+			SOV_heavy_tank_equipments_5
+		}
+		
+		path = {
+			leads_to_tech = SOV_t_tank_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1946
+		
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 6 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	SOV_t_tank_6 = { #T-10
+
+		enable_equipments = {
+			SOV_heavy_tank_equipments_6
+		}
+		
+		path = {
+			leads_to_tech = SOV_t_tank_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1955
+		
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 10 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 2.5
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	
+}

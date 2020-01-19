@@ -1,0 +1,24 @@
+
+state={
+	id=820
+	name="STATE_820" # Nebit Doug
+	manpower = 553500
+	
+	state_category = city
+
+	history={
+				owner = TRK
+		add_core_of = TRK
+		buildings = {
+			infrastructure = 5
+		}
+		victory_points = {
+			1593 1
+		}
+		
+	}
+
+	provinces={
+		1593 4599 7477 7563 7635 10359 10406 12359
+	}
+}

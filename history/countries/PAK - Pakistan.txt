@@ -1,0 +1,100 @@
+﻿capital = 440
+
+oob = "PAK_1936"
+
+# Starting tech
+set_technology = {	
+}
+
+set_convoys = 20
+
+1939.1.1 = {#placeholder same tech as ENG
+	#generic focuses
+
+	add_political_power = 1198
+	oob = "PAK_1939"
+
+	add_ideas = {
+	}
+
+	
+	set_technology = {
+	}
+}
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 45
+	fascism = 3
+	chucheism = 0
+	maoism = 5
+	trotskism = 7
+	titoism = 5
+	liberal = 15
+	neutrality = 10
+	communism = 10
+}
+
+
+create_country_leader = {
+	name = "Qazi Muhammad Essa"
+	
+	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+	expire = "1960.1.1"
+	ideology = centrism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Muhammad Ali Jinnah"
+	
+	picture = "gfx/leaders/PAK/Portrait_Muhammad Ali Jinnah.dds"
+	expire = "1948.9.11"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Haji Mohammad Danesh"
+	
+	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
+	expire = "1960.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Muhammad Zia-ul-Haq"
+	portrait_path = "gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+	traits = {  }
+	skill = 2
+	
+}
+
+create_corps_commander = {
+	name = "Iftikhar Khan Janjua"
+	portrait_path = "gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic_2.dds"
+	traits = {  }
+	skill = 3
+	
+}
+create_corps_commander = {
+	name = "Akbar Khan"
+	portrait_path = "gfx/leaders/RAJ/Portrait_The_Raj_Army_Generic.dds"
+	traits = { trickster }
+	skill = 3
+	
+}

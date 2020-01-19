@@ -1,0 +1,418 @@
+﻿###########################
+# French Events
+###########################
+
+add_namespace = france
+
+country_event = {
+	id = france.1
+	title = france.1.t
+	desc = france.1.d
+	picture = GFX_report_event_generic_research_lab
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = FRA
+		date > 1948.6.1
+		date < 1949.10.9
+		has_government = democratic
+		WGR = { exists = yes }
+		FRA = {
+		owns_state = 50
+		owns_state = 42
+		owns_state = 899
+		
+		}
+    }
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = france.1.a
+		WGR = {
+			set_state_owner = 50
+			set_state_owner = 42
+			set_cosmetic_tag = WGR_48
+		}
+		
+		WGR = {
+			set_state_controller = 50
+			set_state_controller = 42
+		}
+		hidden_effect = { 
+			news_event = { id = news.115 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+
+}
+
+country_event = { #Ориольпрезидент1947
+	id = france.2
+	title = france.2.t
+	desc = france.2.d
+	picture = GFX_report_event_china_politicians_captured
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = FRA
+		date > 1947.1.7
+		date < 1949.10.9
+		has_government = democratic
+    }
+	
+	option = {
+		name = france.2.a
+		
+		create_country_leader = { 
+			name = "Vincent Auriol" 
+			desc = "" 
+			picture = "gfx/leaders/FRA/Portrait_France_Vincent_Auriol.dds"
+			expire = "1966.9.11" 
+			ideology = socialism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = Socialistpartyoffrance
+		name = Socialistpartyoffrance
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.16 } 
+		}
+		
+		ai_chance = { factor = 100 }
+		
+	}
+}
+
+country_event = { #Индокитайская война 1
+	id = france.3
+	title = france.3.t
+	desc = france.3.d
+	picture = GFX_report_event_canadian_artillery
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = FRA
+		VIN = { exists = yes }
+		NOT =  { has_war_with = VIN }
+		date > 1946.11.19
+		date < 1949.10.9
+		has_government = democratic
+    }
+	
+	option = {
+		name = france.3.a
+		
+		declare_war_on = {
+			target = VIN
+			type = annex_everything
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.41 } 
+		}
+		
+		ai_chance = { factor = 95 }
+		
+	}
+	
+	option = {
+		name = france.3.b
+		
+		
+		ai_chance = { factor = 5 }
+		
+	}
+}
+
+
+country_event = { #Женевские Соглашение
+	id = france.4
+	title = france.4.t
+	desc = france.4.d
+	picture = GFX_report_event_canadian_artillery
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = FRA
+		VIN = { exists = yes }
+		FRA =  { has_war_with = VIN }
+		date > 1954.7.17
+		has_government = democratic
+    }
+	
+	option = {
+		name = france.4.a
+		
+	}
+	
+	option = {
+		name = france.4.b
+		
+		
+		ai_chance = { factor = 5 }
+		
+	}
+}
+
+country_event = { #Ренепрезидент1954
+	id = france.5
+	title = france.5.t
+	desc = france.5.d
+	picture = GFX_report_event_china_politicians_captured
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = FRA
+		date > 1954.1.5
+		has_government = democratic
+    }
+	
+	option = {
+		name = france.5.a
+		
+		create_country_leader = { 
+			name = "Rene Coty" 
+			desc = "" 
+			picture = "gfx/leaders/FRA/Rene Coty.dds"
+			expire = "1962.9.11" 
+			ideology = conservatism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = democraticalliance
+		name = democraticalliance
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.79 } 
+		}
+		
+		ai_chance = { factor = 100 }
+		
+	}
+}
+
+country_event = { #Шарльпрезидент1959
+	id = france.6
+	title = france.6.t
+	desc = france.6.d
+	picture = GFX_report_event_china_politicians_captured
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = FRA
+		date > 1959.1.2
+		has_government = democratic
+    }
+	
+	option = {
+		name = france.6.a
+		
+		create_country_leader = { 
+			name = "Charles De Gaulle" 
+			desc = "" 
+			picture = "gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
+			expire = "1970.11.9" 
+			ideology = conservatism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = democraticalliance
+		name = democraticalliance
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.79 } 
+		}
+		
+		ai_chance = { factor = 100 }
+		
+	}
+}
+
+country_event = { #Помидупрезидент1959
+	id = france.7
+	title = france.7.t
+	desc = france.7.d
+	picture = GFX_report_event_china_politicians_captured
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = FRA
+		date > 1969.6.13
+		has_government = democratic
+    }
+	
+	option = {
+		name = france.7.a
+		
+		create_country_leader = { 
+			name = "Georges Pompidou" 
+			desc = "" 
+			picture = "gfx/leaders/FRA/Georges Pompidou.dds"
+			expire = "1974.11.9" 
+			ideology = conservatism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = democraticalliance
+		name = democraticalliance
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.79 } 
+		}
+		
+		ai_chance = { factor = 100 }
+		
+	}
+}
+
+country_event = { #Помидупрезидент1959
+	id = france.8
+	title = france.8.t
+	desc = france.8.d
+	picture = GFX_report_event_china_politicians_captured
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = FRA
+		date > 1974.4.20
+		has_government = democratic
+    }
+	
+	option = {
+		name = france.8.a
+		
+		create_country_leader = { 
+			name = "Valery Giscard dEstaing" 
+			desc = "" 
+			picture = "gfx/leaders/FRA/Valery Giscard dEstaing.dds"
+			expire = "2017.11.9" 
+			ideology = conservatism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = democraticalliance
+		name = democraticalliance
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.79 } 
+		}
+		
+		ai_chance = { factor = 100 }
+		
+	}
+}
+
+country_event = { #Помидупрезидент1959
+	id = france.9
+	title = france.9.t
+	desc = france.9.d
+	picture = GFX_report_event_china_politicians_captured
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = FRA
+		date > 1981.5.15
+		has_government = democratic
+    }
+	
+	option = {
+		name = france.9.a
+		
+		create_country_leader = { 
+			name = "Francois Mitterrand" 
+			desc = "" 
+			picture = "gfx/leaders/FRA/Francois Mitterrand.dds"
+			expire = "1996.11.9" 
+			ideology = conservatism
+		}
+		
+		set_party_name = {
+		ideology = democratic
+		long_name = democraticalliance
+		name = democraticalliance
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.79 } 
+		}
+		
+		ai_chance = { factor = 100 }
+		
+	}
+}
+
+country_event = {
+	id = france.10
+	title = france.10.t
+	desc = france.10.d
+	picture = GFX_report_event_airplane_crash
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = FRA
+		date > 1955.10.14
+		has_government = democratic
+		WGR = { exists = yes }
+		WGR = { 
+			has_government = democratic
+		}
+		
+		FRA = {
+		owns_state = 899
+		}
+    }
+	
+	
+	option = {
+		name = france.10.a
+		WGR = {
+			set_state_owner = 899
+		}
+		
+		WGR = {
+			set_state_controller = 899
+		}
+		hidden_effect = { 
+			news_event = { id = news.110 } 
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = france.10.b
+		FRA = {
+			set_state_owner = 899
+		}
+		
+		FRA = {
+			set_state_controller = 899
+		}
+		ai_chance = { factor = 0 }
+	}
+
+}
+

@@ -1,0 +1,23 @@
+
+state={
+	id=407
+	name="STATE_407"
+	manpower = 444607
+	
+	state_category = large_town
+
+	history={
+				owner = KAZ
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 5
+		}
+		victory_points = {
+			11537 1
+		}
+	}
+
+	provinces={
+		508 566 1290 3404 3502 9526 11510 11537
+	}
+}

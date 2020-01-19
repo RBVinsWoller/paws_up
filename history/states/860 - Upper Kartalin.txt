@@ -1,0 +1,24 @@
+
+state={
+	id=860
+	name="STATE_860"
+	manpower = 264633
+	
+	state_category = large_town
+
+	history={
+									owner = GEO
+		        add_core_of = GEO
+		victory_points = {
+			1530 1
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		1530
+	}
+}

@@ -1,0 +1,80 @@
+﻿capital = 303
+
+oob = "PRU_1936"
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 5
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "PRU_1939"
+	set_technology = {
+	}
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1931.10.11"
+	election_frequency = 96
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 3
+	fascism = 45
+	chucheism = 0
+	maoism = 5
+	trotskism = 7
+	titoism = 5
+	liberal = 15
+	neutrality = 10
+	communism = 10
+}
+
+create_country_leader = {
+	name = "Óscar Benavides"
+	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1931.10.11"
+		election_frequency = 96
+		elections_allowed = yes
+	}
+	
+	set_popularities = {
+    democratic = 45
+	fascism = 3
+	chucheism = 0
+	maoism = 5
+	trotskism = 7
+	titoism = 5
+	liberal = 15
+	neutrality = 10
+	communism = 10
+}
+
+	create_country_leader = {
+		name = "José Bustamante"
+		desc = "POLITICS_MANUEL_PRADO_UGARTECHE_DESC"
+		picture = "gfx/leaders/PRU/JoseBustamante.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			#
+		}
+	}
+}

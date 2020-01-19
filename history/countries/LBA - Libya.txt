@@ -1,0 +1,75 @@
+﻿capital = 448
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 20
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	set_technology = {
+	}
+}
+
+
+set_politics = {
+set_politics = {
+	ruling_party = centrism
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+} 
+
+set_popularities = {
+    democratic = 15
+	fascism = 5
+	chucheism = 1
+	maoism = 21
+	trotskism = 9
+	communism = 9
+	liberal = 15
+	neutrality = 25
+}
+
+create_country_leader = {
+	name = "Bashir es Sadawi"
+	desc = ""
+	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_democratic1.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ettore Bastico"
+	desc = ""
+	picture = "gfx/leaders/LBA/Portrait_Italy_Guiseppe_Fioravanzo.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Idris Senussi"
+	desc = ""
+	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_land_3.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hassan as-Senussi"
+	desc = ""
+	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_communism1.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
+}

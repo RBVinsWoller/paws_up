@@ -1,0 +1,27 @@
+state={
+	id=807
+	name="STATE_807" 
+	manpower = 540473
+	
+	state_category = large_town
+	
+	history={
+		owner = YUG
+		victory_points = {
+			11564 2 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			11564 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = YUG				
+		add_core_of = CRO
+	}
+	
+	provinces={
+   11564 591 11735
+	}
+}

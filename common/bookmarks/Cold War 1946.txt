@@ -1,0 +1,62 @@
+bookmarks = {
+	bookmark = {
+		name = "COLD_WAR_NAME"
+		desc = "COLD_WAR_DESC"
+		date = 1946.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "SOV"
+		default = yes
+		
+		"SOV"={
+			history = "SOV_COLDWAR_DESC"
+			ideology = communism
+			ideas = {
+			}
+		}
+		"USA"={
+			history = "USA_COLDWAR_DESC"
+			ideology = democratic
+			ideas = {
+			}
+		}
+		"PRC"={
+			history = "PRC_COLDWAR_DESC"
+			ideology = communism
+			ideas = {
+			}
+		}
+		"CHI"={
+			history = "CHI_COLDWAR_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+		}
+		"VIN"={
+			history = "VIN_COLDWAR_DESC"
+			ideology = communism
+			ideas={
+			}			
+		}
+		"FRA"={
+			history = "FRA_COLDWAR_DESC"
+			ideology = democratic
+			ideas={
+			}			
+		}
+		"ENG"={
+			history = "ENG_COLDWAR_DESC"
+			ideology = democratic
+			ideas = {
+			}
+		}
+
+		"---"={
+			history = "OTHER_COLDWAR_DESC"
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

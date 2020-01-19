@@ -1,0 +1,257 @@
+spriteTypes = {	
+
+	#Промышленость КНР
+	SpriteType = {
+	name = "GFX_goal_PRC_factory_building"
+	texturefile = "gfx/interface/focus/goal_PRC_factory_building.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_PRC_promise_1"
+	texturefile = "gfx/interface/focus/goal_PRC_promice_1.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_PRC_promise_2"
+	texturefile = "gfx/interface/focus/goal_PRC_promice_2.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_PRC_promise_3"
+	texturefile = "gfx/interface/focus/goal_PRC_promice_3.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_PRC_promise_4"
+	texturefile = "gfx/interface/focus/goal_PRC_promice_4.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_PRC_agriculture_1"
+	texturefile = "gfx/interface/focus/goal_PRC_agriculture_1.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_agriculture_2"
+	texturefile = "gfx/interface/focus/goal_PRC_agriculture_2.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_agriculture_3"
+	texturefile = "gfx/interface/focus/goal_PRC_agriculture_3.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_agriculture_4"
+	texturefile = "gfx/interface/focus/goal_PRC_agriculture_4.dds"			
+	}
+	#Красный путь КНР
+	
+	SpriteType = {
+	name = "GFX_goal_PRC_political_effort"
+	texturefile = "gfx/interface/focus/goal_PRC_political_effort.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_we_can_all"
+	texturefile = "gfx/interface/focus/goal_PRC_we_can_all.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_PRC_first_fiveyear"
+	texturefile = "gfx/interface/focus/goal_PRC_first_fiveyear.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_red_flag_course"
+	texturefile = "gfx/interface/focus/goal_PRC_red_flag_course.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_fiveyrar_enlai"
+	texturefile = "gfx/interface/focus/goal_PRC_fiveyrar_enlai.dds"			
+	}
+	SpriteType = {
+	name = "GFX_PRC_mass_production"
+	texturefile = "gfx/interface/focus/goal_PRC_mass_production.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_industializatia"
+	texturefile = "gfx/interface/focus/goal_PRC_industializatia.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_big_jump"
+	texturefile = "gfx/interface/focus/goal_PRC_big_jump.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_people_commune"
+	texturefile = "gfx/interface/focus/goal_PRC_people_commune.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_commune"
+	texturefile = "gfx/interface/focus/goal_PRC_commune.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_vorobey_kill"
+	texturefile = "gfx/interface/focus/goal_PRC_vorobey_kill.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_save_ecologic_balance"
+	texturefile = "gfx/interface/focus/goal_PRC_save_ecologic_balance.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_PRC_supp_korea"
+	texturefile = "gfx/interface/focus/goal_PRC_supp_korea.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_save_religion"
+	texturefile = "gfx/interface/focus/goal_PRC_save_religion.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_deny_religion"
+	texturefile = "gfx/interface/focus/goal_PRC_deny_religion.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_invite_soviet_specialists"
+	texturefile = "gfx/interface/focus/goal_PRC_invite_soviet_specialists.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_we_are_specialists"
+	texturefile = "gfx/interface/focus/goal_PRC_we_are_specialists.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_promise_organization"
+	texturefile = "gfx/interface/focus/goal_PRC_promise_organization.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_PRC_vstuplenievovd"
+	texturefile = "gfx/interface/focus/goal_PRC_vstuplenievovd.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_collectivization"
+	texturefile = "gfx/interface/focus/goal_PRC_collectivization.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_raspr_hoz_prod"
+	texturefile = "gfx/interface/focus/goal_PRC_raspr_hoz_prod.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_deny_person_cult"
+	texturefile = "gfx/interface/focus/goal_PRC_deny_person_cult.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_allow_person_cult"
+	texturefile = "gfx/interface/focus/goal_PRC_allow_person_cult.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_flower_and_school"
+	texturefile = "gfx/interface/focus/goal_PRC_flower_and_school.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_absolute_totalitarism"
+	texturefile = "gfx/interface/focus/goal_PRC_absolute_totalitarism.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_concessions"
+	texturefile = "gfx/interface/focus/goal_PRC_concessions.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_jail_to_criticians"
+	texturefile = "gfx/interface/focus/goal_PRC_jail_to_criticians.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_catch_overtake"
+	texturefile = "gfx/interface/focus/goal_PRC_catch_overtake.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_balance_sphere"
+	texturefile = "gfx/interface/focus/goal_PRC_balance_sphere.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_long_but_quality"
+	texturefile = "gfx/interface/focus/goal_PRC_long_but_quality.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_fire_everywhere"
+	texturefile = "gfx/interface/focus/goal_PRC_fire_everywhere.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_pro_sovetskiykurs_with_bao"
+	texturefile = "gfx/interface/focus/goal_PRC_pro_sovetskiykurs_with_bao.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_socialism_save"
+	texturefile = "gfx/interface/focus/goal_PRC_socialism_save.dds"			
+	}
+	
+	#Синий путь КНР
+	SpriteType = {
+	name = "GFX_goal_PRC_way_democracy"
+	texturefile = "gfx/interface/focus/goal_PRC_way_democracy.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_PRC_freedoms_people"
+	texturefile = "gfx/interface/focus/goal_PRC_freedoms_people.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_live_level"
+	texturefile = "gfx/interface/focus/goal_PRC_live_level.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_reunaited"
+	texturefile = "gfx/interface/focus/goal_PRC_reunaited.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_little_business"
+	texturefile = "gfx/interface/focus/goal_PRC_little_business.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_big_business"
+	texturefile = "gfx/interface/focus/goal_PRC_big_business.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_war_with_tibet"
+	texturefile = "gfx/interface/focus/goal_PRC_war_with_tibet.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_union_with_tibet"
+	texturefile = "gfx/interface/focus/goal_PRC_union_with_tibet.dds"			
+	}
+	#Черный путь КНР
+	SpriteType = {
+	name = "GFX_goal_PRC_once_nation"
+	texturefile = "gfx/interface/focus/goal_PRC_once_nation.dds"			
+	}
+	
+	
+	SpriteType = {
+	name = "GFX_goal_PRC_other_repression"
+	texturefile = "gfx/interface/focus/goal_PRC_other_repression.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_quing"
+	texturefile = "gfx/interface/focus/goal_PRC_quing.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_fascist_china"
+	texturefile = "gfx/interface/focus/goal_PRC_fascist_china.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_require_vladivostok"
+	texturefile = "gfx/interface/focus/goal_PRC_require_vladivostok.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_vladivostok_nationalisation"
+	texturefile = "gfx/interface/focus/goal_PRC_vladivostok_nationalisation.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_claim_vladivostok"
+	texturefile = "gfx/interface/focus/goal_PRC_claim_vladivostok.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_war_with_taiwan"
+	texturefile = "gfx/interface/focus/goal_PRC_war_with_taiwan.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_war_with_tibets"
+	texturefile = "gfx/interface/focus/goal_PRC_war_with_tibets.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_PRC_perevorot_v_mongolii"
+	texturefile = "gfx/interface/focus/goal_PRC_perevorot_v_mongolii.dds"			
+	}
+
+}

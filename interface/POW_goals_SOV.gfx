@@ -1,0 +1,6 @@
+spriteTypes = {	
+	SpriteType = {
+	name = "GFX_goal_SOV_after_war"
+	texturefile = "gfx/interface/focus/goal_SOV_after_war.dds"			
+	}
+}

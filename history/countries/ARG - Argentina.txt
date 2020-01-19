@@ -1,0 +1,122 @@
+﻿capital = 278
+
+oob = "ARG_1936"
+
+# Starting tech
+set_technology = {
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "ARG_1939"
+	set_technology = {
+	}
+}
+
+set_convoys = 120
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1931.11.8"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 10
+	fascism = 3
+	chucheism = 0
+	maoism = 5
+	trotskism = 7
+	titoism = 5
+	liberal = 15
+	neutrality = 45
+	communism = 10
+}
+
+create_country_leader = {
+	name = "Agustín Pedro Justo"
+	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
+	picture = "Portrait_Argentina_Agustin_Pedro_Justo.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+	ruling_party = democratic
+		last_election = "1937.9.5"
+		election_frequency = 108
+		elections_allowed = yes
+	}
+	
+	set_popularities = {
+    democratic = 45
+	fascism = 3
+	chucheism = 0
+	maoism = 5
+	trotskism = 7
+	titoism = 5
+	liberal = 15
+	neutrality = 10
+	communism = 10
+}
+
+create_country_leader = {
+		name = "Juan Domingo Perón"
+		desc = "POLITICS_ROBERTO_MARIA_ORTIZ_DESC"
+		picture = "gfx/leaders/ARG/JuanDomingoPeron.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			#
+		}
+}
+
+
+create_country_leader = {
+	name = "Nimo de Anquín"
+	desc = "POLITICS_NIMO_DE_ANQUIN_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fanny Jabcovsky"
+	desc = "POLITICS_FANNY_JABCOVSKY_DESC"
+	picture = "Portrait_Argentina_Fanny_Jabcovsky.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Arturo Rawson"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Juan Pistarini"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	traits = { urban_assault_specialist fortress_buster }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Alberto Teisaire"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+	traits = { blockade_runner }
+	skill = 3
+}

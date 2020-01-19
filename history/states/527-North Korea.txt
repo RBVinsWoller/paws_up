@@ -1,0 +1,32 @@
+
+state={
+	id=527
+	name="STATE_527"
+	manpower = 774200
+	state_category = town
+	resources={
+		steel=20
+		tungsten=52
+	}
+
+	history={
+		owner = KND
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}	
+
+		add_core_of = KND
+		add_core_of = KOR
+		
+		1949.9.2 = {
+			owner = KND
+			add_core_of = KND
+			add_core_of = KOR
+		}
+	}
+
+	provinces={
+	 6963 9795 11775 11828 11896
+	}
+}

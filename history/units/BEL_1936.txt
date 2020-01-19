@@ -1,0 +1,215 @@
+﻿division_template = {
+	name = "Infantry Div."				
+	division_names_group = BEL_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Modelled on Chinese divisions
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		
+		
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mountaineers"						
+	division_names_group = BEL_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Motorized" 			# Infanterie-Divisionen (mot)
+	division_names_group = BEL_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		jip = { x = 2 y = 0 }
+	    jip = { x = 2 y = 1 }
+		jip = { x = 2 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }			
+	}
+}
+
+division_template = {
+	name = "Tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = BEL_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        ptsausup_brigade = { x = 0 y = 0 }	
+	}
+}
+
+division_template = {
+	name = "Heavy tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = BEL_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {	
+		sausup_brigade = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	
+	
+	### Guard Brigades
+	
+	division = {
+		name = "1-a Infantry Division"
+		location = 6598
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "2-a Infantry Division"
+		location = 6598
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "3-a Infantry Division"
+		location = 11519
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "4-a Infantry Division"
+		location = 11519
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "5-a Infantry Division"
+		location = 516
+		division_template = "Infantry Div."
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "1-a Motorized Division"
+		location = 516
+		division_template = "Motorized"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "1-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 516
+		division_template = "Tank division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+	}	
+	
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_1 #СВТ
+		amount = 30000
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_0 #thompson
+		amount = 70000
+		producer = USA
+	}
+	
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1 #Грузовик ЗиС 5
+		amount = 200
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = jip_equipment_1 #Грузовик ЗиС 5
+		amount = 100
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment_1 #Супорт еквип
+		amount = 300
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipments_2 #ЗиС-3 Артилерия
+		amount = 400
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_2 #D2
+		amount = 100
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_2 #D2
+		amount = 100
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = pt_sau_equipment_2 #Wolvrine
+		amount = 30
+		producer = USA
+	}
+}

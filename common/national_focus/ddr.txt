@@ -1,0 +1,86 @@
+focus_tree = {
+
+	id = czechoslovakia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DDR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 3000 }
+	
+	focus = {
+		id = DDR_long_day
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 8
+		y = 0
+		completion_reward = {
+		} 
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = DDR_kill_nazi_commander
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DDR_long_day
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+		} 
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = DDR_arrest_all_nazi_soldger 
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DDR_long_day
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+		} 
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = DDR_arrest_all_nazi_soldger 
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DDR_arrest_all_nazi_soldger 
+			focus = DDR_kill_nazi_commander
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+		} 
+		available = { 
+		} 
+	}
+	
+	focus = {
+		id = DDR_timed_landtagi
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DDR_arrest_all_nazi_soldger  
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+		} 
+		available = { 
+		} 
+	}
+	

@@ -1,0 +1,40 @@
+
+state={
+	id=60
+	name="STATE_60"
+	manpower = 3005214
+	resources={
+		steel=20
+		chromium = 4
+		tungsten = 4
+	}
+	
+	state_category = large_city
+
+	history={
+		owner = DDR
+		victory_points = { 6524 5 }
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+            arms_factory = 2
+		}
+		add_core_of = DDR
+		add_core_of = WGR
+
+		1945.9.2 = {
+			owner = DDR
+			add_core_of = DDR
+			add_core_of = WGR
+		}
+		1949.9.2 = {
+			owner = DDR
+			add_core_of = DDR
+			add_core_of = WGR
+		}
+	}
+
+	provinces={
+		425 482 538 3500 3561 6501 6524 6582 9497 
+	}
+}

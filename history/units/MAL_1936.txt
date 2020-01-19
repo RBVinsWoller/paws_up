@@ -1,0 +1,126 @@
+﻿division_template = {
+	name = "Infantry Division"			# Represents organized Indian Infantry Divisions
+	division_names_group = RAJ_INF_01
+										# Has older equipment, lower experience
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "District Garrison"			# Represents precursors to Indian Infantry Divisions (district divisions)
+	division_names_group = RAJ_GAR_01
+										# Has older equipment, lower experience
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Colonial Garrison"			# Represents local militias, garrisons
+	division_names_group = RAJ_GAR_01
+										# Low experience, oldest equipment, mostly militias
+	regiments = {  
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Armoured Division"
+	division_names_group = RAJ_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division= {	# "Western District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 112
+		}
+		location = 12299
+		division_template = "District Garrison"			
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	### Northern Command (CO: Coleridge) ###
+	division= {	# "Peshawar District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location = 12299
+		division_template = "District Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	# "Kohat District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location = 10297
+		division_template = "District Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	# "Rawalpindi District"
+			division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
+	    location = 7329
+		division_template = "District Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	# "Lahore District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 104
+		}
+		location = 7371
+		division_template = "District Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	# "Waziristan District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 105
+		}
+		location = 1208
+		division_template = "District Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+} 

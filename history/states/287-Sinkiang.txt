@@ -1,0 +1,37 @@
+
+state={
+	id=287
+	name="STATE_287" # Taklamakan
+	manpower = 478000
+	
+	state_category = wasteland
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = SIK
+		buildings = {
+			infrastructure = 1
+
+		}
+		
+		1945.9.2 = {
+			owner = CHI
+			add_core_of = CHI
+			add_core_of = PRC
+			add_core_of = SIK
+		}
+		1949.9.2 = {
+			owner = PRC
+			add_core_of = CHI
+			add_core_of = PRC
+			add_core_of = SIK
+		}
+
+	}
+
+	provinces={
+	 4973 8042 8086 10885 10911 12864
+	}
+}

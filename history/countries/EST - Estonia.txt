@@ -1,0 +1,45 @@
+﻿capital = 13
+
+oob = "EST_1946"
+
+set_research_slots = 3
+
+add_ideas = {
+Lesniye_bratya
+Soviet_Republic
+Kult_lichnosti
+Besprisorniye
+}
+set_cosmetic_tag = EST_SOV
+set_technology = {
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1946.1.1"
+	election_frequency = 108
+	elections_allowed = no
+}
+
+
+set_popularities = {
+    democratic = 5
+	fascism = 1
+	chucheism = 7
+	maoism = 5
+	trotskism = 11
+	communism = 55
+	liberal = 6
+	neutrality = 10
+}
+
+create_country_leader = {
+	name = "Johannes Kabin"
+	desc = ""
+	picture = "gfx/leaders/LLE/Johannes Kabin.dds"
+	expire = "1999.10.25"
+	ideology = marxism
+	traits = {
+		#
+	}
+}

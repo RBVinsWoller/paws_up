@@ -1,0 +1,30 @@
+
+state={
+	id=232
+	name="STATE_232"
+	manpower = 1077854
+	
+	state_category = large_city
+	
+	resources={
+		oil=30
+	}
+
+	history={
+		owner = SOV
+		add_core_of = RUS
+                add_core_of = SOV
+		buildings = {
+			infrastructure = 4
+            air_base = 1
+		}
+		victory_points = {
+			3672 5 
+		}
+ 
+	}
+
+	provinces={
+		3672 13225 13226
+	}
+}

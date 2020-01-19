@@ -1,0 +1,23 @@
+
+state={
+	id=822
+	name="STATE_822" #Chardjou
+	manpower = 1421100
+	
+	state_category = large_city
+
+	history={
+				owner = TRK
+		add_core_of = TRK
+		buildings = {
+			infrastructure = 5
+		}
+		victory_points = {
+			7924 1
+		}
+	}
+
+	provinces={
+		756 1632 1649 4549 7924 9605 10742
+	}
+}

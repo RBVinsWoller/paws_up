@@ -1,0 +1,6 @@
+﻿###########################
+# Election Events
+###########################
+
+add_namespace = election
+

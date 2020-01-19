@@ -1,0 +1,1243 @@
+focus_tree = {
+	id = kndr
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KND
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 65 y = 6000 }
+	focus = {
+		id = KND_create_vnk_sk
+		icon = GFX_goal_KND_create_vnk_sk
+		cost = 10
+		x = 9
+		y = 0
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = KND_zapros_na_vozvrat_koreychev
+		icon = GFX_goal_KND_zapros_na_vozvrat_koreychev
+		cost = 10
+		x = 9
+		y = 1
+		prerequisite = {
+			focus = KND_create_vnk_sk
+		}
+		completion_reward = {
+			SOV = {
+				country_event = { days = 3 id = sov.22 }
+			}
+		}
+	}
+	focus = {
+		id = KND_edof
+		icon = GFX_goal_KND_edof
+		cost = 10
+		x = 9
+		y = 2
+		prerequisite = {
+			focus = KND_zapros_na_vozvrat_koreychev
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = EDOF
+		}
+
+	}
+	focus = {
+		id = KND_national_proiz
+		icon = GFX_goal_KND_national_proiz
+		cost = 10
+		x = 8
+		y = 3
+		prerequisite = {
+			focus = KND_edof
+		}
+		completion_reward = {
+			add_ideas = state_own
+			add_ideas = comand_system
+		}
+
+	}
+	focus = {
+		id = KND_zem_reforma
+		icon = GFX_goal_KND_zem_reforma
+		cost = 10
+		x = 10
+		y = 3
+		prerequisite = {
+			focus = KND_edof
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = KND_vybory_v_nar_komit
+		icon = GFX_goal_KND_vybory_v_nar_komit
+		cost = 10
+		x = 9
+		y = 4
+		prerequisite = {
+			focus = KND_zem_reforma
+		}
+		prerequisite = {
+			focus = KND_national_proiz
+		}
+		completion_reward = {
+			add_political_power = -100
+			add_ideas = FRACT_BOR
+		}
+	}
+	focus = {
+		id = KND_podergka_komunistov
+		icon = GFX_goal_KND_podergka_komunistov
+		cost = 10
+		x = 8
+		y = 5
+		prerequisite = {
+			focus = KND_vybory_v_nar_komit
+		}
+		completion_reward = {
+			KOR = {
+				add_timed_idea = {
+					idea = SUPP_KOM
+					days = 50
+				}             
+			}	
+		}
+		
+	}
+	focus = {
+		id = KND_zapros_ekonom_pomochi_u_ussr
+		icon = GFX_goal_KND_zapros_ekonom_pomochi_u_ussr
+		cost = 10
+		x = 10
+		y = 5
+		prerequisite = {
+			focus = KND_vybory_v_nar_komit
+		}
+		completion_reward = {
+			SOV = {
+				country_event = { days = 3 id = sov.23 }
+			}
+		}
+		
+	}
+	focus = {
+		id = KND_chistka_fraktionerov
+		icon = GFX_goal_KND_chistka_fraktionerov
+		cost = 10
+		x = 8
+		y = 6
+		prerequisite = {
+			focus = KND_podergka_komunistov
+		}
+		prerequisite = {
+			focus = KND_zapros_ekonom_pomochi_u_ussr
+		}
+		mutually_exclusive = {
+			focus = KND_prodolgenie_fract_borotbi
+		}
+		completion_reward = {
+			KND = {
+				country_event = { days = 3 id = knd.11 }
+			}
+		}
+	}
+	
+	focus = {
+		id = KND_prodolgenie_fract_borotbi
+		icon = GFX_goal_KND_prodolgenie_fract_borotbi
+		cost = 10
+		x = 10
+		y = 6
+		prerequisite = {
+			focus = KND_podergka_komunistov
+		}
+		prerequisite = {
+			focus = KND_zapros_ekonom_pomochi_u_ussr
+		}
+		mutually_exclusive = {
+			focus = KND_chistka_fraktionerov
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = KND_podgotovka_proekta_konstitucii
+		icon = GFX_goal_KND_podgotovka_proekta_konstitucii
+		cost = 10
+		x = 7
+		y = 7
+		prerequisite = {
+			focus = KND_chistka_fraktionerov
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = KND_umenshenie_roli_tpk_sk
+		icon = GFX_goal_KND_umenshenie_roli_tpk_sk
+		cost = 10
+		x = 11
+		y = 7
+		prerequisite = {
+			focus = KND_prodolgenie_fract_borotbi
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SUPP_FRACT
+				days = 30
+			}  
+		}
+	}
+	focus = {
+		id = KND_ukreplenie_tpk_sk
+		icon = GFX_goal_KND_ukreplenie_tpk_sk
+		cost = 10
+		x = 7
+		y = 8
+		prerequisite = {
+			focus = KND_podgotovka_proekta_konstitucii
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SUPP_TPK
+				days = 30
+			}  
+		}
+	}
+	focus = {
+		id = KND_glav_role_of_democratic_party
+		icon = GFX_goal_KND_glav_role_of_democratic_party
+		cost = 10
+		x = 11
+		y = 8
+		prerequisite = {
+			focus = KND_umenshenie_roli_tpk_sk
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = titoism
+			}
+			remove_ideas = FRACT_BOR
+		}
+	}
+	
+	focus = {
+		id = KND_form_of_kna
+		icon = GFX_goal_KND_form_of_kna
+		cost = 10
+		x = 9
+		y = 9
+		prerequisite = {
+			focus = KND_glav_role_of_democratic_party
+			focus = KND_ukreplenie_tpk_sk
+		}
+		completion_reward = {
+			KND = {
+				country_event = { days = 1 id = knd.12 }
+			}
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = KND_podgotovka_officer_staff
+		icon = GFX_goal_KND_podgotovka_officer_staff
+		cost = 10
+		x = 8
+		y = 10
+		mutually_exclusive = {
+			focus = KND_ideology_of_army
+		}
+		prerequisite = {
+			focus = KND_form_of_kna
+		}
+		completion_reward = {
+			add_ideas = Oficer_army
+		}
+	}
+	focus = {
+		id = KND_ideology_of_army
+		icon = GFX_goal_KND_ideology_of_army
+		cost = 10
+		x = 10
+		y = 10
+		mutually_exclusive = {
+			focus = KND_podgotovka_officer_staff
+		}
+		prerequisite = {
+			focus = KND_form_of_kna
+		}
+		completion_reward = {
+			add_ideas = ideology_army
+		}
+	}
+	focus = {
+		id = KND_obrazov_kndr
+		icon = GFX_goal_KND_obrazov_kndr
+		cost = 10
+		x = 9
+		y = 11
+		prerequisite = {
+			focus = KND_ideology_of_army
+			focus = KND_podgotovka_officer_staff
+		}
+		completion_reward = {
+			KND = {
+				country_event = { days = 1 id = knd.5 }
+			}
+		}
+	}
+	focus = {
+		id = KND_upor_na_selo
+		icon = GFX_goal_KND_upor_na_selo
+		cost = 10
+		x = 8
+		y = 12
+		mutually_exclusive = {
+			focus = KND_upor_na_prom
+		}
+		prerequisite = {
+			focus = KND_obrazov_kndr
+		}
+		completion_reward = {
+			add_ideas = agroculture_sector
+		}
+	}
+	focus = {
+		id = KND_upor_na_prom
+		icon = GFX_goal_KND_upor_na_prom
+		cost = 10
+		x = 10
+		y = 12
+		mutually_exclusive = {
+			focus = KND_upor_na_selo
+		}
+		prerequisite = {
+			focus = KND_obrazov_kndr
+		}
+		completion_reward = {
+			add_ideas = mixed_industry
+		}
+	}
+	focus = {
+		id = KND_mechaniz_selo
+		icon = GFX_goal_KND_mechaniz_selo
+		cost = 10
+		x = 6
+		y = 13
+		mutually_exclusive = {
+			focus = KND_upor_na_manufaktur
+		}
+		prerequisite = {
+			focus = KND_upor_na_selo
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = KND_upor_na_manufaktur
+		icon = GFX_goal_KND_upor_na_manufaktur
+		cost = 10
+		x = 8
+		y = 13
+		mutually_exclusive = {
+			focus = KND_mechaniz_selo
+		}
+		prerequisite = {
+			focus = KND_upor_na_selo
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = KND_upor_na_tyaj_prom
+		icon = GFX_goal_KND_upor_na_prom
+		cost = 10
+		x = 10
+		y = 13
+		mutually_exclusive = {
+			focus = KND_upor_na_lehk_prom
+		}
+		prerequisite = {
+			focus = KND_upor_na_prom
+		}
+		completion_reward = {
+			add_ideas = heavy_industry
+		}
+	}
+	focus = {
+		id = KND_upor_na_lehk_prom
+		icon = GFX_goal_KND_upor_na_lehk_prom
+		cost = 10
+		x = 12
+		y = 13
+		mutually_exclusive = {
+			focus = KND_upor_na_tyaj_prom
+		}
+		prerequisite = {
+			focus = KND_upor_na_prom
+		}
+		completion_reward = {
+			add_ideas = light_industry
+		}
+	}
+	focus = {
+		id = KND_vizit_in_moskov
+		icon = GFX_goal_KND_vizit_in_moskov
+		cost = 10
+		x = 9
+		y = 14
+		prerequisite = {
+			focus = KND_upor_na_lehk_prom
+			focus = KND_upor_na_tyaj_prom
+			focus = KND_upor_na_manufaktur
+			focus = KND_mechaniz_selo
+		}
+		completion_reward = {
+			give_guarantee = SOV
+			give_military_access = SOV
+		}
+	}
+	focus = {
+		id = KND_ukr_granici_s_yugom
+		icon = GFX_goal_KND_ukr_granici_s_yugom
+		cost = 10
+		x = 9
+		y = 15
+		prerequisite = {
+			focus = KND_vizit_in_moskov
+		}
+		completion_reward = {
+			893 = {
+				add_building_construction = {
+					type = bunker
+					province = 4107
+					level = 3
+				}
+				add_building_construction = {
+					type = bunker
+					province = 1003
+					level = 3
+				}
+				
+			}
+			870 = {
+				add_building_construction = {
+					type = bunker
+					province = 4004
+					level = 4
+				}
+				add_building_construction = {
+					type = bunker
+					province = 1148
+					level = 4
+				}
+				
+			}
+		}
+		
+	}
+	focus = {
+		id = KND_liniya_partii
+		icon = GFX_goal_KND_liniya_partii
+		cost = 10
+		x = 9
+		y = 16
+		mutually_exclusive = {
+			focus = KND_burguaznoe_vliyanie
+			focus = KND_podem_imperator_power
+		}
+		prerequisite = {
+			focus = KND_ukr_granici_s_yugom
+		}
+		completion_reward = {
+			add_political_power = 300
+		}
+	}
+	focus = {
+		id = KND_neftyanoi
+		icon = GFX_goal_KND_neftyanoi
+		cost = 10
+		x = 9
+		y = 17
+		prerequisite = {
+			focus = KND_liniya_partii
+		}
+		completion_reward = {
+			916 = {
+				add_building_construction = {
+					type = fuel_silo
+					province = 7171
+					level = 3
+				}
+				add_building_construction = {
+					type = fuel_silo
+					province = 11770
+					level = 3
+				}
+				
+			}
+		}
+	}
+	focus = {
+		id = KND_ottechestvenaya_voyna
+		icon = GFX_goal_KND_ottechestvenaya_voyna
+		cost = 10
+		x = 9
+		y = 18
+		prerequisite = {
+			focus = KND_neftyanoi
+		}
+		completion_reward = {
+			KND = {
+				country_event = { days = 1 id = knd.1 }
+			}
+		}
+	}
+	focus = {
+		id = KND_zakupkatankov
+		icon = GFX_goal_KND_zakupkatankov
+		cost = 10
+		x = 8
+		y = 19
+		prerequisite = {
+			focus = KND_ottechestvenaya_voyna
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = SOV_medium_tank_equipments_3 #persing
+				amount = 200
+				producer = SOV
+			}
+		}
+		
+	}
+	focus = {
+		id = KND_zakupkasamolet
+		icon = GFX_goal_KND_zakupkasamolet
+		cost = 10
+		x = 10
+		y = 19
+		prerequisite = {
+			focus = KND_ottechestvenaya_voyna
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_3 #persing
+				amount = 100
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = jet_fighter_equipment_1 #persing
+				amount = 100
+				producer = SOV
+			}
+		}
+		
+	}
+	focus = {
+		id = KND_infrastr_vvs
+		icon = GFX_goal_KND_infrastr_vvs
+		cost = 10
+		x = 9
+		y = 20
+		prerequisite = {
+			focus = KND_zakupkatankov
+			focus = KND_zakupkasamolet
+		}
+		completion_reward = {
+			917 = {
+				add_building_construction = {
+					type = air_base
+					province = 9918
+					level = 3
+				}
+				add_building_construction = {
+					type = air_base
+					province = 912
+					level = 10
+				}
+				
+			}
+		}
+	}
+	focus = {
+		id = KND_poslevoen_vost
+		icon = GFX_goal_KND_poslevoen_vost
+		cost = 10
+		x = 9
+		y = 21
+		prerequisite = {
+			focus = KND_infrastr_vvs
+		}
+		916 = {
+			add_building_construction = {
+				type = industrial_complex
+				province = 9790
+				level = 2
+			}
+			add_building_construction = {
+				type = industrial_complex
+				province = 4052
+				level = 2
+			}	
+		}
+	}
+	focus = {
+		id = KND_planomer_kolect
+		icon = GFX_goal_KND_planomer_kolect
+		cost = 10
+		x = 8
+		y = 22
+		mutually_exclusive = {
+			focus = KND_selo_commune
+		}
+		prerequisite = {
+			focus = KND_poslevoen_vost
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = KND_selo_commune
+		icon = GFX_goal_KND_selo_commune
+		cost = 10
+		x = 10
+		y = 22
+		mutually_exclusive = {
+			focus = KND_planomer_kolect
+		}
+		prerequisite = {
+			focus = KND_poslevoen_vost
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = KND_industrializacia
+		icon = GFX_goal_KND_industrializacia
+		cost = 10
+		x = 9
+		y = 23
+		prerequisite = {
+			focus = KND_selo_commune
+			focus = KND_planomer_kolect
+		}
+		916 = {
+			add_building_construction = {
+				type = industrial_complex
+				province = 9790
+				level = 2
+			}
+			add_building_construction = {
+				type = arms_factory
+				province = 4052
+				level = 2
+			}	
+		}
+	}
+	focus = {
+		id = KND_china_ingener
+		icon = GFX_goal_KND_china_ingener
+		cost = 10
+		x = 8
+		y = 24
+		prerequisite = {
+			focus = KND_industrializacia
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = china_ingeneer
+				days = 160
+			} 
+		}
+	}
+	focus = {
+		id = KND_sov_ingener
+		icon = GFX_goal_KND_sov_ingener
+		cost = 10
+		x = 10
+		y = 24
+		prerequisite = {
+			focus = KND_industrializacia
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = soviet_ingeneer
+				days = 160
+			}
+		}
+	}
+	focus = {
+		id = KND_create_new_man
+		icon = GFX_goal_KND_create_new_man
+		cost = 10
+		x = 9
+		y = 25
+		prerequisite = {
+			focus = KND_china_ingener
+		}
+		prerequisite = {
+			focus = KND_sov_ingener
+		}
+		completion_reward = {
+			add_ideas = new_man
+		}
+	}
+	focus = {
+		id = KND_national_tradition
+		icon = GFX_goal_KND_national_tradition
+		cost = 10
+		x = 8
+		y = 26
+		prerequisite = {
+			focus = KND_create_new_man
+		}
+		mutually_exclusive = {
+			focus = KND_kult_revolution
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = KND_teology_state
+		icon = GFX_goal_KND_teology_state
+		cost = 10
+		x = 6
+		y = 27
+		prerequisite = {
+			focus = KND_national_tradition
+		}
+		mutually_exclusive = {
+			focus = KND_svetskaya_state
+		}
+		completion_reward = {
+			add_ideas = teology
+		}
+	}
+	focus = {
+		id = KND_svetskaya_state
+		icon = GFX_goal_KND_svetskaya_state
+		cost = 10
+		x = 8
+		y = 27
+		prerequisite = {
+			focus = KND_national_tradition
+		}
+		mutually_exclusive = {
+			focus = KND_teology_state
+		}
+		completion_reward = {
+			add_ideas = svetskiy
+		}
+	}
+	focus = {
+		id = KND_kult_revolution
+		icon = GFX_goal_KND_kult_revolution
+		cost = 10
+		x = 10
+		y = 26
+		prerequisite = {
+			focus = KND_create_new_man
+		}
+		mutually_exclusive = {
+			focus = KND_national_tradition
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = KND_ateist_state
+		icon = GFX_goal_KND_ateist_state
+		cost = 10
+		x = 10
+		y = 27
+		prerequisite = {
+			focus = KND_kult_revolution
+		}
+		completion_reward = {
+			add_ideas = ateist
+		}
+	}
+	focus = {
+		id = KND_propaganda_collectivism
+		icon = GFX_goal_KND_propaganda_collectivism
+		cost = 10
+		x = 9
+		y = 28
+		prerequisite = {
+			focus = KND_ateist_state
+			focus = KND_svetskaya_state
+			focus = KND_teology_state
+		}
+	}
+	focus = {
+		id = KND_visit_in_europe
+		icon = GFX_goal_KND_propaganda_collectivism
+		cost = 10
+		x = 9
+		y = 29
+		prerequisite = {
+			focus = KND_propaganda_collectivism
+		}
+	}
+	
+	focus = {
+		id = KND_vopros_melko_burj
+		icon = GFX_goal_KND_vopros_melko_burj
+		cost = 10
+		x = 9
+		y = 30
+		prerequisite = {
+			focus = KND_visit_in_europe
+		}
+	}
+	
+	focus = {
+		id = KND_part_chistka
+		icon = GFX_goal_KND_part_chistka
+		cost = 10
+		x = 8
+		y = 31
+		prerequisite = {
+			focus = KND_vopros_melko_burj
+		}
+		mutually_exclusive = {
+			focus = KND_part_pluralism
+		}
+	}
+	focus = {
+		id = KND_part_pluralism
+		icon = GFX_goal_KND_part_pluralism
+		cost = 10
+		x = 10
+		y = 31
+		prerequisite = {
+			focus = KND_vopros_melko_burj
+		}
+		mutually_exclusive = {
+			focus = KND_part_chistka
+		}
+	}
+	focus = {
+		id = KND_result_20_siesd_of_kpss
+		icon = GFX_goal_KND_result_20_siesd_of_kpss
+		cost = 10
+		x = 9
+		y = 32
+		prerequisite = {
+			focus = KND_part_pluralism
+		}
+		prerequisite = {
+			focus = KND_part_chistka
+		}
+	}
+	focus = {
+		id = KND_odobrenie_kursa_ussr
+		icon = GFX_goal_KND_odobrenie_kursa_ussr
+		cost = 10
+		x = 7
+		y = 33
+		prerequisite = {
+			focus = KND_result_20_siesd_of_kpss
+		}
+		mutually_exclusive = {
+			focus = KND_sov_revizionism
+			focus = KND_neutr_razv_kulta_lichnosti
+			focus = KND_odobrenie_razv_kulta_lichnosti
+		}
+	}
+	focus = {
+		id = KND_vstup_in_sev
+		icon = GFX_goal_KND_vstup_in_sev
+		cost = 10
+		x = 7
+		y = 34
+		prerequisite = {
+			focus = KND_odobrenie_kursa_ussr
+		}
+	}
+	focus = {
+		id = KND_vstup_in_ovd
+		icon = GFX_goal_KND_vstup_in_ovd
+		cost = 10
+		x = 7
+		y = 35
+		prerequisite = {
+			focus = KND_vstup_in_sev
+		}
+	}
+	
+	focus = {
+		id = KND_odobrenie_razv_kulta_lichnosti
+		icon = GFX_goal_KND_odobrenie_razv_kulta_lichnosti
+		cost = 10
+		x = 10
+		y = 33
+		prerequisite = {
+			focus = KND_result_20_siesd_of_kpss
+		}
+		mutually_exclusive = {
+			focus = KND_sov_revizionism
+			focus = KND_neutr_razv_kulta_lichnosti
+			focus = KND_odobrenie_kursa_ussr
+		}
+	}
+	focus = {
+		id = KND_vstup_sev
+		icon = GFX_goal_KND_vstup_sev
+		cost = 10
+		x = 10
+		y = 34
+		prerequisite = {
+			focus = KND_odobrenie_razv_kulta_lichnosti
+		}
+	}
+	focus = {
+		id = KND_vstup_ovd
+		icon = GFX_goal_KND_vstup_ovd
+		cost = 10
+		x = 10
+		y = 35
+		prerequisite = {
+			focus = KND_vstup_sev
+		}
+	}
+	
+	focus = {
+		id = KND_neutr_razv_kulta_lichnosti
+		icon = GFX_goal_KND_neutr_razv_kulta_lichnosti
+		cost = 10
+		x = 12
+		y = 33
+		prerequisite = {
+			focus = KND_result_20_siesd_of_kpss
+		}
+		mutually_exclusive = {
+			focus = KND_sov_revizionism
+			focus = KND_odobrenie_razv_kulta_lichnosti
+			focus = KND_odobrenie_kursa_ussr
+		}
+	}
+	focus = {
+		id = KND_nabl_sev
+		icon = GFX_goal_KND_nabl_sev
+		cost = 10
+		x = 12
+		y = 34
+		prerequisite = {
+			focus = KND_neutr_razv_kulta_lichnosti
+		}
+	}
+	focus = {
+		id = KND_opora_na_sili
+		icon = GFX_goal_KND_opora_na_sili
+		cost = 10
+		x = 12
+		y = 35
+		prerequisite = {
+			focus = KND_nabl_sev
+		}
+	}
+	focus = {
+		id = KND_sov_revizionism
+		icon = GFX_goal_KND_sov_revizionism
+		cost = 10
+		x = 14
+		y = 33
+		prerequisite = {
+			focus = KND_result_20_siesd_of_kpss
+		}
+		mutually_exclusive = {
+			focus = KND_neutr_razv_kulta_lichnosti
+			focus = KND_odobrenie_razv_kulta_lichnosti
+			focus = KND_odobrenie_kursa_ussr
+		}
+	}
+	focus = {
+		id = KND_ukr_granici_s_sssr
+		icon = GFX_goal_KND_ukr_granici_s_sssr
+		cost = 10
+		x = 14
+		y = 34
+		prerequisite = {
+			focus = KND_sov_revizionism
+		}
+	}
+	focus = {
+		id = KND_union_with_china
+		icon = GFX_goal_KND_union_with_china
+		cost = 10
+		x = 16
+		y = 34
+		prerequisite = {
+			focus = KND_sov_revizionism
+		}
+	}
+	focus = {
+		id = KND_chystka_pro_soviet_politic
+		icon = GFX_goal_KND_chystka_pro_soviet_politic
+		cost = 10
+		x = 14
+		y = 35
+		prerequisite = {
+			focus = KND_ukr_granici_s_sssr
+		}
+	}
+	focus = {
+		id = KND_borba_with_kontra
+		icon = GFX_goal_KND_borba_with_kontra
+		cost = 10
+		x = 9
+		y = 36
+		prerequisite = {
+			focus = KND_chystka_pro_soviet_politic
+			focus = KND_opora_na_sili
+			focus = KND_vstup_in_ovd
+			focus = KND_vstup_ovd
+		}
+	}
+	focus = {
+		id = KND_podem_imperator_power
+		icon = GFX_goal_KND_podem_imperator_power
+		cost = 10
+		x = 15
+		y = 16
+		mutually_exclusive = {
+			focus = KND_liniya_partii
+			focus = KND_burguaznoe_vliyanie
+		}
+		prerequisite = {
+			focus = KND_ukr_granici_s_yugom
+		}
+		completion_reward = {
+			remove_ideas = all
+			add_ideas = imperator
+		}
+		
+	}
+	focus = {
+		id = KND_org_civil_war
+		icon = GFX_goal_KND_org_civil_war
+		cost = 10
+		x = 15
+		y = 17
+		prerequisite = {
+			focus = KND_podem_imperator_power
+		}
+	}
+	focus = {
+		id = KND_imperator_army
+		icon = GFX_goal_KND_imperator_army
+		cost = 10
+		x = 15
+		y = 18
+		prerequisite = {
+			focus = KND_org_civil_war
+		}
+	}
+	focus = {
+		id = KND_declare_war_rk
+		icon = GFX_goal_KND_declare_war_rk
+		cost = 10
+		x = 14
+		y = 19
+		mutually_exclusive = {
+			focus = KND_ultimatum_rk
+		}
+		prerequisite = {
+			focus = KND_imperator_army
+		}
+	}
+	focus = {
+		id = KND_ultimatum_rk
+		icon = GFX_goal_KND_ultimatum_rk
+		cost = 10
+		x = 16
+		y = 19
+		mutually_exclusive = {
+			focus = KND_declare_war_rk
+		}
+		prerequisite = {
+			focus = KND_imperator_army
+		}
+	}
+	focus = {
+		id = KND_after_war_rebuild
+		icon = GFX_goal_KND_after_war_rebuild
+		cost = 10
+		x = 15
+		y = 20
+		prerequisite = {
+			focus = KND_ultimatum_rk
+			focus = KND_declare_war_rk
+		}
+	}
+	focus = {
+		id = KND_pretenzii_na_daln_vostok
+		icon = GFX_goal_KND_pretenzii_na_daln_vostok
+		cost = 10
+		x = 16
+		y = 21
+		prerequisite = {
+			focus = KND_after_war_rebuild
+		}
+	}
+	focus = {
+		id = KND_pretenzii_na_manchuriyu
+		icon = GFX_goal_KND_pretenzii_na_manchuriyu
+		cost = 10
+		x = 14
+		y = 21
+		prerequisite = {
+			focus = KND_after_war_rebuild
+		}
+	}
+	focus = {
+		id = KND_religion_peple
+		icon = GFX_goal_KND_religion_peple
+		cost = 10
+		x = 15
+		y = 22
+		prerequisite = {
+			focus = KND_pretenzii_na_manchuriyu
+			focus = KND_pretenzii_na_daln_vostok
+		}
+	}
+	focus = {
+		id = KND_burguaznoe_vliyanie
+		icon = GFX_goal_KND_burguaznoe_vliyanie
+		cost = 10
+		x = 3
+		y = 16
+		mutually_exclusive = {
+			focus = KND_liniya_partii
+			focus = KND_podem_imperator_power
+		}
+		prerequisite = {
+			focus = KND_ukr_granici_s_yugom
+		}
+	}
+	focus = {
+		id = KND_burguaznaya_revolutia
+		icon = GFX_goal_KND_burguaznaya_revolutia
+		cost = 10
+		x = 3
+		y = 17
+		prerequisite = {
+			focus = KND_burguaznoe_vliyanie
+		}
+	}
+	focus = {
+		id = KND_konsev
+		icon = GFX_goal_KND_konsev
+		cost = 10
+		x = 2
+		y = 18
+		mutually_exclusive = {
+			focus = KND_liberal
+		}
+		prerequisite = {
+			focus = KND_burguaznaya_revolutia
+		}
+	}
+	focus = {
+		id = KND_liberal
+		icon = GFX_goal_KND_liberal
+		cost = 10
+		x = 4
+		y = 18
+		mutually_exclusive = {
+			focus = KND_liberal
+		}
+		prerequisite = {
+			focus = KND_burguaznaya_revolutia
+		}
+	}
+	focus = {
+		id = KND_peregovory_s_ugom
+		icon = GFX_goal_KND_peregovory_s_ugom
+		cost = 10
+		x = 3
+		y = 19
+		prerequisite = {
+			focus = KND_liberal
+			focus = KND_konsev
+		}
+	}
+	focus = {
+		id = KND_korean_konfederation
+		icon = GFX_goal_KND_korean_konfederation
+		cost = 10
+		x = 2
+		y = 20
+		mutually_exclusive = {
+			focus = KND_anex
+		}
+		prerequisite = {
+			focus = KND_peregovory_s_ugom
+		}
+	}
+	focus = {
+		id = KND_anex
+		icon = GFX_goal_KND_anex
+		cost = 10
+		x = 4
+		y = 20
+		mutually_exclusive = {
+			focus = KND_korean_konfederation
+		}
+		prerequisite = {
+			focus = KND_peregovory_s_ugom
+		}
+	}
+	focus = {
+		id = KND_deal_with_usa
+		icon = GFX_goal_KND_deal_with_usa
+		cost = 10
+		x = 2
+		y = 21
+
+		prerequisite = {
+			focus = KND_korean_konfederation
+		}
+	}
+	focus = {
+		id = KND_market_reform
+		icon = GFX_goal_KND_market_reform
+		cost = 10
+		x = 2
+		y = 22
+
+		prerequisite = {
+			focus = KND_deal_with_usa
+		}
+	}
+	focus = {
+		id = KND_nii_with_south
+		icon = GFX_goal_KND_nii_with_south
+		cost = 10
+		x = 2
+		y = 23
+
+		prerequisite = {
+			focus = KND_market_reform
+		}
+	}
+{

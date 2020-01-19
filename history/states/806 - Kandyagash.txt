@@ -1,0 +1,31 @@
+
+state={
+	id=806
+	name="STATE_806" #Kandyagash
+	manpower = 63667
+	
+	state_category = town
+	
+	resources={
+		chromium=20
+	}
+
+	history={
+				owner = KAZ
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+                                                arms_factory = 1
+
+		}
+		victory_points = {
+			10253 1
+		}
+		
+	}
+
+	provinces={
+		1220 1247 1314 1371 4227 4254 4376 4394 7337 7354 7370 7410 9528 10131 10164 10253 10264 11480 12108 12163 12179 12235 12254 12294 12474 13008
+	}
+}

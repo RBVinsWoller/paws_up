@@ -1,0 +1,27 @@
+state={
+	id=736
+	name="STATE_736"
+	
+	state_category = large_town
+
+	history={
+		owner = YUG
+		victory_points = {
+			11577 1 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1	
+		}
+		add_core_of = YUG				
+		add_core_of = SER
+
+		}
+
+
+	provinces={
+		9608 11577
+	}
+	manpower=180117
+	buildings_max_level_factor=1.000
+ }

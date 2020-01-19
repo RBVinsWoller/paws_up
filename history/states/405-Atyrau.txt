@@ -1,0 +1,32 @@
+
+state={
+	id=405
+	name="STATE_405" #Tashkent
+
+	state_category = large_city
+
+	resources={
+		chromium=46
+	}
+
+	history={
+					owner = TDG
+		add_core_of = TDG
+		victory_points = {
+			1384 10
+		}
+		buildings = {
+			infrastructure = 5
+			air_base = 1
+
+		}
+		
+
+
+	}
+
+	provinces={
+		1384 12250
+	}
+	manpower=1653284
+}

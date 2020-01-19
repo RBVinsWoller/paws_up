@@ -1,0 +1,139 @@
+﻿capital = 37
+
+oob = "DEN_1936"
+
+set_research_slots = 3
+
+set_technology = {
+}
+
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "DEN_1936"
+	set_technology = {
+		infantry_weapons_0 = 1
+		infantry_weapons_1 = 1
+		motorised_infantry = 1
+		jip_1 = 1
+		tech_mountaineers = 1
+		tech_support = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_field_hospital = 1
+		tank_1 = 1
+		tank_2 = 1
+		l_tank_1 = 1
+		l_tank_2 = 1
+		t_tank_1 = 1
+		t_tank_2 = 1
+		gw_artillery = 1
+		interwar_antiairs = 1
+		interwar_antitanks = 1
+		medrange_sp_aa1 = 1
+		shortrange_sp_aa1 = 1
+		sp_aa1 = 1
+		early_fighter = 1
+		fighter1 = 1
+		CAS1 = 1
+		transport1 = 1
+	}
+}
+
+
+set_politics = {
+
+	ruling_party = democratic
+	last_election = "1935.10.22"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 40
+	fascism = 5
+	chucheism = 0
+	maoism = 0
+	trotskism = 10
+	titoism = 5
+	liberal = 25
+	neutrality = 10
+	communism = 5
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1939.4.3"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	
+set_popularities = {
+    democratic = 40
+	fascism = 5
+	chucheism = 0
+	maoism = 0
+	trotskism = 10
+	titoism = 5
+	liberal = 25
+	neutrality = 10
+	communism = 5
+}
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Hans Hedtoft"
+	desc = ""
+	picture = "gfx/leaders/DEN/HansHedtoft.dds"
+	expire = "1955.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Frits Clausen"
+	desc = "POLITICS_FRITS_CLAUSEN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Aksel Larsen"
+	desc = "POLITICS_AKSEL_LARSEN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Peter Rochegune Munch"
+	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Wilhelm Wain Prior"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trickster }
+	skill = 3
+}

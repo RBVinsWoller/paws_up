@@ -1,0 +1,1183 @@
+﻿division_template = {
+	name = "Infantry Div."				
+	division_names_group = USA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Modelled on Chinese divisions
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		
+		
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mountaineers"						
+	division_names_group = USA_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Motorized" 			# Infanterie-Divisionen (mot)
+	division_names_group = USA_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		jip = { x = 2 y = 0 }
+	    jip = { x = 2 y = 1 }
+		jip = { x = 2 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+		anti_tankrpgsup_brigade = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mechanized" 			# Infanterie-Divisionen (mot)
+	division_names_group = USA_MOT_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	    mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		jip = { x = 2 y = 0 }
+	    jip = { x = 2 y = 1 }
+		jip = { x = 2 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }			
+	}
+}
+
+division_template = {
+	name = "Tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = USA_ARM_02
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        ptsausup_brigade = { x = 0 y = 0 }	
+	}
+}
+
+division_template = {
+	name = "Heavy tank division" 			# Infanterie-Divisionen (mot)
+	division_names_group = USA_ARM_02
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {	
+		sausup_brigade = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	
+	
+	### Guard Brigades
+	division = {
+		name = "1-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 3957
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "2-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 3957
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "3-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 3957
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "4-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 6732
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "5-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 6732
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "6-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 6732
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "7-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 9450
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "8-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 9450
+		division_template = "Heavy tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "9-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 7315
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "10-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 7315
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "11-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 688
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "12-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 688
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "13-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 6488
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "14-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 6488
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "15-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 692
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "16-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 692
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "17-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 4056
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "18-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 7125
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "19-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 10337
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "20-a tank division"
+		division_name = {
+			is_name_ordered = no
+			name_order = 1
+		}
+		location = 10337
+		division_template = "Tank division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "1-a mechanized Division"
+		location = 12782
+		division_template = "Mechanized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "2-a mechanized Division"
+		location = 12782
+		division_template = "Mechanized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "3-a mechanized Division"
+		location = 3957
+		division_template = "Mechanized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "4-a mechanized Division"
+		location = 3957
+		division_template = "Mechanized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "5-a mechanized Division"
+		location = 3878
+		division_template = "Mechanized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "6-a mechanized Division"
+		location = 3878
+		division_template = "Mechanized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "7-a mechanized Division"
+		location = 3878
+		division_template = "Mechanized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "8-a mechanized Division"
+		location = 12459
+		division_template = "Mechanized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "9-a mechanized Division"
+		location = 12459
+		division_template = "Mechanized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "10-a mechanized Division"
+		location = 11544
+		division_template = "Mechanized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "1-a motorized Division"
+		location = 11544
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "2-a motorized Division"
+		location = 11992
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "3-a motorized Division"
+		location = 11992
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "4-a motorized Division"
+		location = 6785
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "5-a motorized Division"
+		location = 9671
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "6-a motorized Division"
+		location = 10717
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "7-a motorized Division"
+		location = 10717
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "8-a motorized Division"
+		location = 9450
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "9-a motorized Division"
+		location = 9450
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "10-a motorized Division"
+		location = 9450
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "11-a motorized Division"
+		location = 12782
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "12-a motorized Division"
+		location = 12782
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "13-a motorized Division"
+		location = 12782
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "14-a motorized Division"
+		location = 564
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "15-a motorized Division"
+		location = 1440
+		division_template = "Motorized"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "1-a Infantry Division"
+		location = 853
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "2-a Infantry Division"
+		location = 9814
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "3-a Infantry Division"
+		location = 9814
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "4-a Infantry Division"
+		location = 9814
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "5-a Infantry Division"
+		location = 9713
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "6-a Infantry Division"
+		location = 9713
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "7-a Infantry Division"
+		location = 9713
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "8-a Infantry Division"
+		location = 12211
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "9-a Infantry Division"
+		location = 12211
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "10-a Infantry Division"
+		location = 7315
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "11-a Infantry Division"
+		location = 7315
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "12-a Infantry Division"
+		location = 7315
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "13-a Infantry Division"
+		location = 1690
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "14-a Infantry Division"
+		location = 1690
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "15-a Infantry Division"
+		location = 12586
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "16-a Infantry Division"
+		location = 12586
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "17-a Infantry Division"
+		location = 12586
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "18-a Infantry Division"
+		location = 6710
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "19-a Infantry Division"
+		location = 6890
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "20-a Infantry Division"
+		location = 6890
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "21-a Infantry Division"
+		location = 6890
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "22-a Infantry Division"
+		location = 6882
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "23-a Infantry Division"
+		location = 6882
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "24-a Infantry Division"
+		location = 6882
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "25-a Infantry Division"
+		location = 1572
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "26-a Infantry Division"
+		location = 1572
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "27-a Infantry Division"
+		location = 1572
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "28-a Infantry Division"
+		location = 1843
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "29-a Infantry Division"
+		location = 1843
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "30-a Infantry Division"
+		location = 7552
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "31-a Infantry Division"
+		location = 7552
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "32-a Infantry Division"
+		location = 7552
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "33-a Infantry Division"
+		location = 3960
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "34-a Infantry Division"
+		location = 3960
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "35-a Infantry Division"
+		location = 12384
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "36-a Infantry Division"
+		location = 12384
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "37-a Infantry Division"
+		location = 12384
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "38-a Infantry Division"
+		location = 7480
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "39-a Infantry Division"
+		location = 7480
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "40-a Infantry Division"
+		location = 7480
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "41-a Infantry Division"
+		location = 3474
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "42-a Infantry Division"
+		location = 3474
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "43-a Infantry Division"
+		location = 532
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "44-a Infantry Division"
+		location = 532
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "45-a Infantry Division"
+		location = 532
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "46-a Infantry Division"
+		location = 9517
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "47-a Infantry Division"
+		location = 9517
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "48-a Infantry Division"
+		location = 9517
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "49-a Infantry Division"
+		location = 11417
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "50-a Infantry Division"
+		location = 11417
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "51-a Infantry Division"
+		location = 11417
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "52-a Infantry Division"
+		location = 9936
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "53-a Infantry Division"
+		location = 9936
+		division_template = "Infantry Div."
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+}
+
+	air_wings = {
+	##### U.S. Army Air Force (USAAF) (CO: Emmo) #####
+	378 = {																# California
+		### 1st USAAF Wing (CO: Fickel) ###
+		fighter_equipment_1 =  { owner = "USA" amount = 72 }			# 20th Pursuit Group -- P-36As
+		strat_bomber_equipment_1 = { owner = "USA" amount = 36 }		# 7th Bombardment Group -- B-17s
+		tac_bomber_equipment_1 = { owner = "USA" amount = 48 }			# 17th Bombardment Group -- B-23s
+		tac_bomber_equipment_0 = { owner = "USA" amount = 36 }			# 19th Bombardment Group -- B-18s
+		### USN Patrol Wings ###
+		nav_bomber_equipment_1 =  { owner = "USA" amount = 36 }			# Naval Patrol Wing 1 -- PBY-1
+		cv_fighter_equipment_1 =  { owner = "USA" amount = 12 }			# 2nd/I Marine Air Wing -- F3F Grumman
+		cv_CAS_equipment_1 =  { owner = "USA" amount = 12 }				# 2nd/II Marine Air Wing -- SB2U Vindicator
+		cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 12 }		# 2nd/III Marine Air Wing -- TBD Devastator
+	}
+	362 = { 															# Virginia
+		### 2nd USAAF Wing (CO: Krogstad) ###
+		heavy_fighter_equipment_1 =  { owner = "USA" amount = 168 }		# 1st Pursuit Group -- P-35s
+				# 8th Pursuit Group -- P-35s
+		strat_bomber_equipment_1 = { owner = "USA" amount = 36 }		# 9th Bombardment Group -- B-17s
+		tac_bomber_equipment_0 = { owner = "USA" amount = 48 }			# 2nd Bombardment Group -- B-18s
+		### USN Patrol Wings ###
+		nav_bomber_equipment_1 =  { owner = "USA" amount = 36 }			# Naval Patrol Wing 5 -- PBY-1
+		cv_fighter_equipment_1 =  { owner = "USA" amount = 12 }			# 1st/I Marine Air Wing -- F3F Grumman
+		cv_CAS_equipment_1 =  { owner = "USA" amount = 12 }				# 1st/II Marine Air Wing -- SB2U Vindicator
+		cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 12 }		# 1st/II Marine Air Wing -- TBD Devastator
+	}
+	371 = { 															# Louisiana
+		### 3rd USAAF Wing (CO: Martin) ###
+		CAS_equipment_2 = { owner = "USA" amount = 63 }					# 3rd Attack Group -- A-20s
+	}
+
+	629 = { 															# Hawaii
+		### 18th Composite Wing (CO: Frank) ###
+		fighter_equipment_1 =  { owner = "USA" amount = 72 }			# 18th Pursuit Group -- P-36As
+		tac_bomber_equipment_0 = { owner = "USA" amount = 36 }			# 5th/I Composite Group -- B-18s
+		CAS_equipment_1 = { owner = "USA" amount = 21 }					# 5th/II Composite Group -- A-17s
+		### USN Patrol Wings ###
+		nav_bomber_equipment_1 =  { owner = "USA" amount = 36 }			# Naval Patrol Wing 2 -- PBY-1
+	}
+
+	685 = { 															# Canal Zone
+		### 19th Composite Wing (CO: Dargue) ###
+		fighter_equipment_0 =  { owner = "USA" amount = 48 }			# 16th Pursuit Group -- P-26As
+		tac_bomber_equipment_0 = { owner = "USA" amount = 36 }			# 6th/I Composite Group -- B-18s
+		CAS_equipment_1 = { owner = "USA" amount = 21 }					# 6th/II Composite Group -- A-17s
+		### USN Patrol Wings ###
+		nav_bomber_equipment_1 =  { owner = "USA" amount = 36 }			# Naval Patrol Wing 3 -- PBY-1
+	}
+
+#	327 = { 															# Luzon, PHI
+#		### Philippine Composite Wing (CO: ) ###
+#		fighter_equipment_0 =  { owner = "USA" amount = 72 }			# 4th/I Composite Group -- P-26As
+#		tac_bomber_equipment_0 = { owner = "USA" amount = 12 }			# 4th/II Composite Group -- B-18s
+#	}
+
+	386 = { 															# Washington (state)													
+		### USN Patrol Wings ###
+		nav_bomber_equipment_1 =  { owner = "USA" amount = 30 }			# Naval Patrol Wing 4 -- PBY-1
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_0 #M1903
+		amount = 700000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_1 #M1 Grand
+		amount = 1000000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = infantry_equipments_2 #M1 thompson
+		amount = 700000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_1 #m3 lee
+		amount = 2000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_2 #Шерман
+		amount = 4000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = medium_tank_equipments_3 #Шерман Джумбо
+		amount = 800
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_1 #m2
+		amount = 100
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_2 #М3
+		amount = 3500
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = heavy_tank_equipments_1 #T1
+		amount = 100
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = heavy_tank_equipments_2 #М6a1
+		amount = 1000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = heavy_tank_equipments_3 #persing
+		amount = 1000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = heavy_tank_equipments_4 #superpersing
+		amount = 100
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = light_tank_equipments_3 #М3
+		amount = 1000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = pt_sau_equipment_1 #M9
+		amount = 200
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = pt_sau_equipment_2 #M10 воврайн
+		amount = 3000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = pt_sau_equipment_3 #M18 хелкет
+		amount = 1000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = sau_equipment_2 #M7
+		amount = 1000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1 #Грузовик Омерики
+		amount = 100000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_2 #Грузовик Омерики
+		amount = 50000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = jip_equipment_1 #Джип
+		amount = 50000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = mechanized_equipments_1 #БТР
+		amount = 5000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = rpg_equipment_1 #Базука
+		amount = 20000
+		producer = USA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = support_equipment_1 #Супорт еквип
+		amount = 10000
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipments_1 # Артилерия
+		amount = 15000
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipments_2 # Артилерия
+		amount = 6000
+		producer = USA
+	}
+	
+}

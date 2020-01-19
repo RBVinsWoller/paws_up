@@ -1,0 +1,26 @@
+
+state={
+	id=805
+	name="STATE_805" #Arkalyk
+	manpower = 60232
+	
+	state_category = town
+
+	history={
+				owner = KAZ
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 5
+
+		}
+		victory_points = {
+			12266 1
+		}
+		
+
+	}
+
+	provinces={
+		1272 1331 4337 10295 12139 12170 12266
+	}
+}

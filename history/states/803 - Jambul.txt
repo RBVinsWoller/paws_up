@@ -1,0 +1,26 @@
+
+state={
+	id=803
+	name="STATE_803" #Jambul
+	manpower = 1048546
+	
+	state_category = large_city
+
+	history={
+				owner = KAZ
+		add_core_of = KAZ
+		victory_points = {
+			12640 1
+		}
+		buildings = {
+			infrastructure = 5
+		}
+		
+		
+
+	}
+
+	provinces={
+		4492 4773 10506 10603 12340 12385 12487 12640 12658
+	}
+}

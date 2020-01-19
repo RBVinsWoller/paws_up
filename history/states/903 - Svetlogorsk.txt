@@ -1,0 +1,24 @@
+
+state={
+	id=903
+	name="STATE_903" #Svetlogorsk
+	manpower = 313016
+
+	resources={
+		aluminium=10
+	}
+
+	state_category = large_town
+	history={
+
+				owner = BLR
+		        add_core_of = BLR
+		victory_points = {
+			3293 10
+		}
+	}
+
+	provinces={
+		215 3203 3293 6319 9554
+	}
+}

@@ -1,0 +1,107 @@
+﻿###########################
+# Polish Events
+###########################
+
+add_namespace = pol
+
+country_event = { #Гомулка пришел
+	id = pol.1
+	title = pol.1.t
+	desc = pol.1.d
+	picture = GFX_report_event_canadian_tank
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = POL
+		date > 1956.3.7
+		has_government = communism
+    }
+	
+	option = {
+		name = pol.1.a
+		
+		kill_country_leader = yes
+		
+		
+		create_country_leader = { 
+			name = "Władysław Gomułka" 
+			desc = "" 
+			picture = "gfx/leaders/POL/Portrait_Poland_Wladyslaw_Gomulka.dds"
+			expire = "1982.9.1" 
+			ideology = leninism
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.45 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { #Гомулка смещен
+	id = pol.2
+	title = pol.2.t
+	desc = pol.2.d
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = POL
+		date > 1970.12.17
+		has_government = communism
+    }
+	
+	option = {
+		name = pol.2.a
+				
+		create_country_leader = { 
+			name = "Edward Gierek" 
+			desc = "" 
+			picture = "gfx/leaders/POL/Portrait_Edward Gierek.dds"
+			expire = "2001.7.2" 
+			ideology = leninism
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.46 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { #Герек смещен
+	id = pol.3
+	title = pol.3.t
+	desc = pol.3.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = POL
+		date > 1980.9.1
+		has_government = communism
+    }
+	
+	option = {
+		name = pol.3.a
+				
+		create_country_leader = { 
+			name = "Stanisław Kania" 
+			desc = "" 
+			picture = "gfx/leaders/POL/Portrait_Stanisław Kania.dds"
+			expire = "2018.7.2" 
+			ideology = marxism
+		}
+		
+		hidden_effect = { 
+			news_event = { id = news.47 } 
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
