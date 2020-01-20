@@ -75,27 +75,87 @@ set_technology = {
 	jet_engines = 1
 }
 
+set_autonomy = {
+ target = KAR
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = LAT
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = LIT
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = UKR
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = MOL
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = AZR
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = GEO
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = ARM
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = RUS
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = MON
+ autonomous_state = autonomy_sov_puppet
+}
+set_autonomy = {
+ target = TDG
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = TRK
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = KIR
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = KYR
+ autonomous_state = autonomy_sov_puppet
+}
+set_autonomy = {
+ target = UZB
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = KAZ
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = KAZ
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = BLR
+ autonomous_state = autonomy_ssr
+}
+set_autonomy = {
+ target = KND
+ autonomous_state = autonomy_sov_puppet
+}
+set_autonomy = {
+ target = DDR
+ autonomous_state = autonomy_sov_puppet
+}
 
-puppet = KAR
-puppet = LAT
-puppet = LIT
-puppet = EST
-puppet = DDR
-puppet = KND
-puppet = UKR
-puppet = BLR
-puppet = MOL
-puppet = AZR
-puppet = GEO 
-puppet = ARM 
-puppet = KAZ
-puppet = UZB 
-puppet = KYR
-puppet = KIR
-puppet = TRK
-puppet = RUS
-puppet = TDG
-puppet = MON
 
 1949.1.1 = {
 

@@ -1,6 +1,6 @@
 ﻿l_russian:
-autonomy_souz_republic:0 "Союзная Республика"
-autonomy_souz_marionet:0 "Советская марионетка"
+autonomy_sov_puppet:0 "Территория СССР"
+autonomy_ssr:0 "Советская Республика"
 strana:0 "Государство"
 zakony:0 "Законодательство"
 economy_system:0 "Экономическое законодательство"
