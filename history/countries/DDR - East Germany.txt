@@ -7,7 +7,9 @@ set_technology = {
 set_cosmetic_tag = DDR_46
 
 add_ideas = {
-Thelman
+	Thelman
+	DDR_ocupation
+	DDR_landtags
 } 
 
 set_research_slots = 4

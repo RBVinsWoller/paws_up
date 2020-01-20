@@ -159,3 +159,62 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+country_event = {
+	id = ddr.6
+	title = ddr.6.t
+	desc = ddr.6.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = { 
+		tag = DDR
+		date > 1950.1.1
+		has_government = communism
+		DDR = { exists = yes } 
+		SOV = { exists = yes }
+    }
+	
+	option = {
+		name = ddr.6.a
+		drop_cosmetic_tag = yes
+		add_political_power = 300
+		remove_ideas = DDR_ocupation
+		add_ideas = DDR_ddr
+	}
+}
+
+country_event = {
+	id = ddr.7
+	title = ddr.7.t
+	desc = ddr.7.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = { 
+		tag = DDR
+		has_government = communism
+		DDR = { exists = yes }
+    }
+	
+	option = {
+		name = ddr.7.a
+		add_political_power = 50
+		complete_national_focus = DDR_marx
+		communism_drift = 0.10
+	}
+	option = {
+		name = ddr.7.b
+		add_political_power = 20
+		complete_national_focus = DDR_socdem
+		titoism_drift = 0.15
+	}
+	option = {
+		name = ddr.7.c
+		add_political_power = -20
+		complete_national_focus = DDR_natcom
+		chucheism_drift = 0.15
+	}
+}

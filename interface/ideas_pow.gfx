@@ -16,6 +16,11 @@ spriteTypes = {
 	}		
 	
 	spriteType = {
+		name = "GFX_idea_hol_the_fourth_ally"
+		texturefile = "gfx/interface/ideas/idea_hol_the_fourth_ally.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_generic_agrarian_society"
 		texturefile = "gfx/interface/ideas/idea_generic_agrarian_society.dds"
 	}	

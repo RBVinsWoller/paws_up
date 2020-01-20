@@ -1,6 +1,5 @@
 ideas = {
 country = {
-
 		Postwar_reconstruction = {
 			
 			allowed = {

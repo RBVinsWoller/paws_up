@@ -1,6 +1,5 @@
 focus_tree = {
-
-	id = czechoslovakia
+	id = ddr
 	country = {
 		factor = 0
 		modifier = {
@@ -9,78 +8,200 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 50 y = 3000 }
-	
 	focus = {
-		id = DDR_long_day
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 8
+		id = DDR_stop_be_zone
+		icon = GFX_goal_generic_demand_territory
+		cost = 1
+		x = 18
 		y = 0
 		completion_reward = {
+			country_event = {
+				id = ddr.6
+				days = 15
+			}
+			add_political_power = 50
 		} 
-		available = { 
+		available = {
+			date > 1949.1.1
+		}
+	}
+	focus = {
+		id = DDR_industry_path
+		icon = GFX_goal_generic_army_artillery
+		cost = 1
+		x = 3
+		y = 4
+		completion_reward = {
+			
 		} 
 	}
-	
 	focus = {
-		id = DDR_kill_nazi_commander
-		icon = GFX_goal_unknown
-		cost = 10
+		id = DDR_war_fabric_1
+		icon = GFX_goal_generic_construct_military
+		cost = 1
 		prerequisite = {
-			focus = DDR_long_day
+			focus = DDR_industry_path
 		}
-		x = 7
+		x = 0
+		y = 6
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		} 
+	}
+	focus = {
+		id = DDR_civ_fabric_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 1
+		prerequisite = {
+			focus = DDR_industry_path
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		} 
+	}
+	focus = {
+		id = DDR_ind_1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 1
+		prerequisite = {
+			focus = DDR_industry_path
+		}
+		x = 6
+		y = 6
+		completion_reward = {
+			add_offsite_building = {
+				type = infrastructure
+				level = 1
+			}
+		} 
+	}
+	focus = {
+		id = DDR_army_reform
+		icon = GFX_goal_rhineland
+		cost = 1
+		prerequisite = {
+			focus = DDR_stop_be_zone
+		}
+		x = 14
 		y = 1
 		completion_reward = {
-		} 
-		available = { 
+			add_ideas = {
+				DDR_work_army
+			}
 		} 
 	}
-	
 	focus = {
-		id = DDR_arrest_all_nazi_soldger 
-		icon = GFX_goal_unknown
-		cost = 10
+		id = DDR_ideology
+		icon = GFX_goal_support_communism
+		cost = 1
 		prerequisite = {
-			focus = DDR_long_day
+			focus = DDR_stop_be_zone
 		}
-		x = 9
+		x = 22
 		y = 1
 		completion_reward = {
-		} 
-		available = { 
+			
 		} 
 	}
-	
 	focus = {
-		id = DDR_arrest_all_nazi_soldger 
-		icon = GFX_goal_unknown
-		cost = 10
+		id = DDR_socdem
+		icon = GFX_goal_support_fourth_int
+		cost = 1
 		prerequisite = {
-			focus = DDR_arrest_all_nazi_soldger 
-			focus = DDR_kill_nazi_commander
+			focus = DDR_ideology
 		}
-		x = 8
+		mutually_exclusive = {
+			focus = DDR_natcom
+			focus = DDR_marx
+		}
+		x = 19
 		y = 2
-		completion_reward = {
-		} 
-		available = { 
-		} 
+
 	}
-	
 	focus = {
-		id = DDR_timed_landtagi
-		icon = GFX_goal_unknown
-		cost = 10
+		id = DDR_marx
+		icon = GFX_goal_support_fourth_int
+		cost = 1
 		prerequisite = {
-			focus = DDR_arrest_all_nazi_soldger  
+			focus = DDR_ideology
 		}
-		x = 8
-		y = 3
+		mutually_exclusive = {
+			focus = DDR_natcom
+			focus = DDR_socdem
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = DDR_war_fabric_2
+		icon = GFX_goal_generic_construct_military
+		cost = 1
+		prerequisite = {
+			focus = DDR_war_fabric_1
+		}
+		x = 0
+		y = 8
 		completion_reward = {
-		} 
-		available = { 
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
 		} 
 	}
-	
+	focus = {
+		id = DDR_civ_fabric_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 1
+		prerequisite = {
+			focus = DDR_civ_fabric_1
+		}
+		x = 3
+		y = 8
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		} 
+	}
+	focus = {
+		id = DDR_ind_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 1
+		prerequisite = {
+			focus = DDR_ind_1
+		}
+		x = 6
+		y = 8
+		completion_reward = {
+			add_offsite_building = {
+				type = infrastructure
+				level = 1
+			}
+		} 
+	}
+	focus = {
+		id = DDR_natcom
+		icon = GFX_goal_support_fourth_int
+		cost = 1
+		prerequisite = {
+			focus = DDR_ideology
+		}
+		mutually_exclusive = {
+			focus = DDR_marx
+			focus = DDR_socdem
+		}
+		x = 25
+		y = 2
+
+	}
+}

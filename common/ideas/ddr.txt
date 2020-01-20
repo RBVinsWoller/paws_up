@@ -1,0 +1,105 @@
+ideas = {
+	country = {
+		DDR_ocupation = {
+
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				has_autonomy_level = free
+			}
+			
+			removal_cost = -1
+
+			picture = GFX_idea_hol_the_fourth_ally
+			
+			modifier = {
+				stability_factor = -0.30
+				conscription = -0.90
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = 0,05
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = -0.2
+				production_speed_industrial_complex_factor = -0.2
+				justify_war_goal_time = +5.00
+			}
+		}
+		
+		DDR_work_army = {
+
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = GFX_idea_hol_the_fourth_ally
+			
+			modifier = {
+				mobilization_speed = 0.3
+			}
+		}
+		
+		DDR_landtags = {
+
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = idea_hol_the_fourth_ally
+			
+			modifier = {
+				stability_factor = -0.1
+				autonomy_gain = -0.5
+				
+			}
+		}
+		
+		DDR_ddr = {
+
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = idea_hol_the_fourth_ally
+			
+			modifier = {
+				stability_factor = -0.20
+				conscription = -0.20
+				industrial_capacity_factory = 0,05
+				production_factory_max_efficiency_factor = -0.1
+				justify_war_goal_time = +1.00
+			}
+		}
+	}
+}
