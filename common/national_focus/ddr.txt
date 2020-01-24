@@ -18,9 +18,10 @@ focus_tree = {
 			country_event = {
 				id = ddr.6
 				days = 15
+				random = 50
 			}
 			add_political_power = 50
-		} 
+		}
 		available = {
 			date > 1949.1.1
 		}
@@ -30,10 +31,10 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		cost = 1
 		x = 3
-		y = 4
+		y = 3
 		completion_reward = {
-			
-		} 
+			add_stability = 0.1
+		}
 	}
 	focus = {
 		id = DDR_war_fabric_1
@@ -43,13 +44,13 @@ focus_tree = {
 			focus = DDR_industry_path
 		}
 		x = 0
-		y = 6
+		y = 5
 		completion_reward = {
-			add_offsite_building = {
+			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 			}
-		} 
+		}
 	}
 	focus = {
 		id = DDR_civ_fabric_1
@@ -59,13 +60,13 @@ focus_tree = {
 			focus = DDR_industry_path
 		}
 		x = 3
-		y = 6
+		y = 5
 		completion_reward = {
-			add_offsite_building = {
+			add_building_construction = {
 				type = industrial_complex
-				level = 1
-			}
-		} 
+				level = 2
+			}		
+		}
 	}
 	focus = {
 		id = DDR_ind_1
@@ -75,13 +76,13 @@ focus_tree = {
 			focus = DDR_industry_path
 		}
 		x = 6
-		y = 6
+		y = 5
 		completion_reward = {
-			add_offsite_building = {
+			add_building_construction = {
 				type = infrastructure
-				level = 1
+				level = 5
 			}
-		} 
+		}
 	}
 	focus = {
 		id = DDR_army_reform
@@ -93,10 +94,15 @@ focus_tree = {
 		x = 14
 		y = 1
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
 			add_ideas = {
 				DDR_work_army
 			}
-		} 
+		}
 	}
 	focus = {
 		id = DDR_ideology
@@ -108,8 +114,12 @@ focus_tree = {
 		x = 22
 		y = 1
 		completion_reward = {
-			
-		} 
+			country_event = {
+				id = ddr.7
+				days = 15
+				random = 50
+			}
+		}
 	}
 	focus = {
 		id = DDR_socdem
@@ -124,7 +134,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 2
-
+		completion_reward = {
+			titoism_drift = 0.1
+		}
 	}
 	focus = {
 		id = DDR_marx
@@ -139,7 +151,9 @@ focus_tree = {
 		}
 		x = 22
 		y = 2
-
+		completion_reward = {
+			comunism_drift = 0.1
+		}
 	}
 	focus = {
 		id = DDR_war_fabric_2
@@ -149,13 +163,13 @@ focus_tree = {
 			focus = DDR_war_fabric_1
 		}
 		x = 0
-		y = 8
+		y = 7
 		completion_reward = {
-			add_offsite_building = {
+			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 			}
-		} 
+		}
 	}
 	focus = {
 		id = DDR_civ_fabric_2
@@ -165,13 +179,13 @@ focus_tree = {
 			focus = DDR_civ_fabric_1
 		}
 		x = 3
-		y = 8
+		y = 7
 		completion_reward = {
-			add_offsite_building = {
+			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 			}
-		} 
+		}
 	}
 	focus = {
 		id = DDR_ind_2
@@ -181,13 +195,13 @@ focus_tree = {
 			focus = DDR_ind_1
 		}
 		x = 6
-		y = 8
+		y = 7
 		completion_reward = {
-			add_offsite_building = {
+			add_building_construction = {
 				type = infrastructure
-				level = 1
+				level = 5
 			}
-		} 
+		}
 	}
 	focus = {
 		id = DDR_natcom
@@ -202,6 +216,8 @@ focus_tree = {
 		}
 		x = 25
 		y = 2
-
+		completion_reward = {
+			chucheism_drift = 0.1
+		}
 	}
 }
