@@ -203,18 +203,24 @@ country_event = {
 		name = ddr.7.a
 		add_political_power = 50
 		complete_national_focus = DDR_marx
-		communism_drift = 0.10
+		set_politics = {
+			ruling_party = communism
+		}
 	}
 	option = {
 		name = ddr.7.b
 		add_political_power = 20
 		complete_national_focus = DDR_socdem
-		titoism_drift = 0.15
+		set_politics = {
+			ruling_party = titoism
+		}
 	}
 	option = {
 		name = ddr.7.c
 		add_political_power = -20
 		complete_national_focus = DDR_natcom
-		chucheism_drift = 0.15
+		set_politics = {
+			ruling_party = chucheism
+		}
 	}
 }
