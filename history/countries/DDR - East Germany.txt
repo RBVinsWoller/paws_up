@@ -17,7 +17,7 @@ set_convoys = 50
 
 1939.1.1 = {
 
-	add_political_power = 1197
+	add_political_power = -1000
 	oob = "DDR_1946"
 	set_technology = {
 		infantry_weapons_0 = 1
