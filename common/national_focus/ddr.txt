@@ -11,120 +11,290 @@ focus_tree = {
 	focus = {
 		id = DDR_stop_be_zone
 		icon = GFX_goal_generic_demand_territory
-		cost = 1
+		cost = 10,00
 		x = 18
 		y = 0
-		completion_reward = {
-			country_event = {
-				id = ddr.6
-				days = 15
-				random = 50
-			}
-			add_political_power = 50
-		}
-		available = {
-			date > 1949.1.1
-		}
+			completion_reward = {
+					country_event = {
+							id = ddr.6
+							days = 15
+							random = 50
+						}
+					add_political_power = 50
+				}
+			available = {
+					date > 1949.1.1
+				}
+
 	}
 	focus = {
 		id = DDR_industry_path
 		icon = GFX_goal_generic_army_artillery
-		cost = 1
+		cost = 10,00
 		x = 3
 		y = 3
+			completion_reward = {
+					add_stability = 0.1
+				}
+		
+	}
+	focus = {
+		id = DDR_great_political_ban
+		icon = GFX_goal_unknown
+		cost = 15,00
+		x = 18
+		y = 3
+		prerequisite = {
+			focus = DDR_natcom
+		}
+	}
+	focus = {
+		id = DDR_black_front_quest
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 18
+		y = 4
+		prerequisite = {
+			focus = DDR_great_political_ban
+		}
+	}
+	focus = {
+		id = DDR_united_deutsch_workers
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 18
+		y = 5
+		prerequisite = {
+			focus = DDR_black_front_quest
+		}
+	}
+	focus = {
+		id = DDR_no_landtags
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 18
+		y = 6
+		prerequisite = {
+			focus = DDR_united_deutsch_workers
+		}
+	}
+	focus = {
+		id = DDR_again_germany
+		icon = GFX_goal_unknown
+		cost = 20,00
+		x = 18
+		y = 7
+		prerequisite = {
+			focus = DDR_no_landtags
+		}
+	}
+	focus = {
+		id = DDR_unity_agro_ind
+		icon = GFX_goal_unknown
+		cost = 17,00
+		x = 22
+		y = 3
+		prerequisite = {
+			focus = DDR_marx
+		}
 		completion_reward = {
-			add_stability = 0.1
+
+		}
+	}
+	focus = {
+		id = DDR_bolshewiki_gov
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 22
+		y = 4
+		prerequisite = {
+			focus = DDR_unity_agro_ind
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DDR_democracy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 22
+		y = 5
+		prerequisite = {
+			focus = DDR_bolshewiki_gov
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DDR_selfunderstandimg
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 22
+		y = 6
+		prerequisite = {
+			focus = DDR_democracy
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DDR_sovet_ddr
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 22
+		y = 7
+		prerequisite = {
+			focus = DDR_selfunderstandimg
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DDR_status_quo
+		icon = GFX_goal_unknown
+		cost = 17,00
+		x = 26
+		y = 3
+		prerequisite = {
+			focus = DDR_socdem
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DDR_support_workers_unions
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 26
+		y = 4
+		prerequisite = {
+			focus = DDR_status_quo
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DDR_socialism_in_one
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 26
+		y = 5
+		prerequisite = {
+			focus = DDR_support_workers_unions
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = DDR_autonomy
+		icon = GFX_goal_unknown
+		cost = 17,00
+		x = 26
+		y = 6
+		prerequisite = {
+			focus = DDR_socialism_in_one
+		}
+		completion_reward = {
+
 		}
 	}
 	focus = {
 		id = DDR_war_fabric_1
 		icon = GFX_goal_generic_construct_military
-		cost = 1
-		prerequisite = {
-			focus = DDR_industry_path
-		}
+		cost = 10,00
+		
 		x = 0
 		y = 5
-		completion_reward = {
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-			}
-		}
+			completion_reward = {
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+						}
+				}
+
 	}
 	focus = {
 		id = DDR_civ_fabric_1
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 1
+		cost = 10,00
 		prerequisite = {
 			focus = DDR_industry_path
 		}
 		x = 3
 		y = 5
-		completion_reward = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-			}		
-		}
+			completion_reward = {
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+				}
+
 	}
 	focus = {
 		id = DDR_ind_1
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 1
+		cost = 10,00
 		prerequisite = {
 			focus = DDR_industry_path
 		}
 		x = 6
 		y = 5
-		completion_reward = {
-			add_building_construction = {
-				type = infrastructure
-				level = 5
-			}
-		}
+			completion_reward = {
+					add_building_construction = {
+							type = infrastructure
+							level = 5
+						}
+				}
+
 	}
 	focus = {
 		id = DDR_army_reform
 		icon = GFX_goal_rhineland
-		cost = 1
+		cost = 10,00
 		prerequisite = {
 			focus = DDR_stop_be_zone
 		}
 		x = 14
 		y = 1
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = artillery
-			}
-			add_ideas = {
-				DDR_work_army
-			}
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = artillery
+						}
+					add_ideas = { DDR_work_army }
+				}
+
 	}
 	focus = {
 		id = DDR_ideology
 		icon = GFX_goal_support_communism
-		cost = 1
+		cost = 10,00
 		prerequisite = {
 			focus = DDR_stop_be_zone
 		}
 		x = 22
 		y = 1
-		completion_reward = {
-			country_event = {
-				id = ddr.7
-				days = 15
-				random = 50
-			}
-		}
+			completion_reward = {
+					country_event = {
+							id = ddr.7
+							days = 15
+							random = 50
+						}
+				}
+
 	}
 	focus = {
 		id = DDR_socdem
 		icon = GFX_goal_support_fourth_int
-		cost = 1
+		cost = 10,00
 		prerequisite = {
 			focus = DDR_ideology
 		}
@@ -132,101 +302,107 @@ focus_tree = {
 			focus = DDR_natcom
 			focus = DDR_marx
 		}
-		x = 19
+		x = 18
 		y = 2
-		completion_reward = {
-			titoism_drift = 0.1
-		}
-		available = {
-			always = no
-		}
+			completion_reward = {
+					titoism_drift = 0.1
+				}
+			available = {
+					always = no
+				}
+
 	}
 	focus = {
 		id = DDR_marx
 		icon = GFX_goal_support_fourth_int
-		cost = 1
+		cost = 10,00
 		prerequisite = {
 			focus = DDR_ideology
 		}
 		mutually_exclusive = {
-			focus = DDR_natcom
 			focus = DDR_socdem
+			focus = DDR_natcom
 		}
 		x = 22
 		y = 2
-		completion_reward = {
-			comunism_drift = 0.1
-		}
-		available = {
-			always = no
-		}
+			completion_reward = {
+					comunism_drift = 0.1
+				}
+			available = {
+					always = no
+				}
+
 	}
 	focus = {
 		id = DDR_war_fabric_2
 		icon = GFX_goal_generic_construct_military
-		cost = 1
+		cost = 10,00
 		prerequisite = {
 			focus = DDR_war_fabric_1
 		}
 		x = 0
 		y = 7
-		completion_reward = {
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-			}
-		}
+			completion_reward = {
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+						}
+				}
+
 	}
 	focus = {
 		id = DDR_civ_fabric_2
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 1
+		cost = 10,00
 		prerequisite = {
 			focus = DDR_civ_fabric_1
 		}
 		x = 3
 		y = 7
-		completion_reward = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-			}
-		}
+			completion_reward = {
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+				}
+
 	}
 	focus = {
 		id = DDR_ind_2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 1
+		cost = 10,00
 		prerequisite = {
 			focus = DDR_ind_1
 		}
 		x = 6
 		y = 7
-		completion_reward = {
-			add_building_construction = {
-				type = infrastructure
-				level = 5
-			}
-		}
+			completion_reward = {
+					add_building_construction = {
+							type = infrastructure
+							level = 5
+						}
+				}
+
 	}
 	focus = {
 		id = DDR_natcom
 		icon = GFX_goal_support_fourth_int
-		cost = 1
+		cost = 10,00
 		prerequisite = {
 			focus = DDR_ideology
 		}
 		mutually_exclusive = {
-			focus = DDR_marx
 			focus = DDR_socdem
+			focus = DDR_marx
 		}
-		x = 25
+		x = 26
 		y = 2
-		completion_reward = {
-			chucheism_drift = 0.1
-		}
-		available = {
-			always = no
-		}
+			completion_reward = {
+					chucheism_drift = 0.1
+				}
+			available = {
+					always = no
+				}
+
 	}
 }
