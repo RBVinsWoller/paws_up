@@ -101,5 +101,28 @@ ideas = {
 				justify_war_goal_time = +1.00
 			}
 		}
+		
+		ddr_unity = {
+
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = idea_hol_the_fourth_ally
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				mobilization_speed = 0.15
+			}
+		}
 	}
 }

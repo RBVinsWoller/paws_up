@@ -957,6 +957,48 @@ country = {
 			cancel = { has_government = liberal }
 			
 		}
+		DDR_new_germany = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Shtrasser
+			
+			modifier = {
+				war_support_factor = 0.10
+			}
+			
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		}
+		Shtrasser = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Shtrasser
+			
+			modifier = {
+				war_support_factor = 0.10
+			}
+			
+			cancel = { has_government = democratic }
+			cancel = { has_government = fascism }
+			cancel = { has_government = liberal }
+			
+		}
 		
 		Soviet_after_war = {
 			

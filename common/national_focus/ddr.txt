@@ -21,7 +21,7 @@ focus_tree = {
 							random = 50
 						}
 					add_political_power = 50
-				}
+			}
 			available = {
 					date > 1949.1.1
 				}
@@ -47,6 +47,12 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_natcom
 		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = chucheism
+			}
+			country_event = ddr.9
+		}
 	}
 	focus = {
 		id = DDR_black_front_quest
@@ -56,6 +62,9 @@ focus_tree = {
 		y = 4
 		prerequisite = {
 			focus = DDR_great_political_ban
+		}
+		completion_reward = {
+			country_event = ddr.10
 		}
 	}
 	focus = {
@@ -67,15 +76,42 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_black_front_quest
 		}
+		completion_reward = {
+			add_ideas = ddr_unity
+		}
 	}
 	focus = {
 		id = DDR_no_landtags
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 15,00
 		x = 18
 		y = 6
 		prerequisite = {
 			focus = DDR_united_deutsch_workers
+		}
+		completion_reward = {
+			remove_ideas = DDR_landtags
+			war_support_factor = 0.25
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
 		}
 	}
 	focus = {
@@ -87,6 +123,11 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_no_landtags
 		}
+		completion_reward = {
+			SOV = {
+				country_event = ddr.11
+			}
+		}
 	}
 	focus = {
 		id = DDR_unity_agro_ind
@@ -96,6 +137,9 @@ focus_tree = {
 		y = 3
 		prerequisite = {
 			focus = DDR_marx
+		}
+		completion_reward = {
+
 		}
 		completion_reward = {
 
@@ -209,7 +253,9 @@ focus_tree = {
 		id = DDR_war_fabric_1
 		icon = GFX_goal_generic_construct_military
 		cost = 10,00
-		
+		prerequisite = {
+			focus = DDR_industry_path
+		}
 		x = 0
 		y = 5
 			completion_reward = {
@@ -302,7 +348,7 @@ focus_tree = {
 			focus = DDR_natcom
 			focus = DDR_marx
 		}
-		x = 18
+		x = 26
 		y = 2
 			completion_reward = {
 					titoism_drift = 0.1
@@ -395,10 +441,13 @@ focus_tree = {
 			focus = DDR_socdem
 			focus = DDR_marx
 		}
-		x = 26
+		x = 18
 		y = 2
 			completion_reward = {
 					chucheism_drift = 0.1
+					SOV = {
+						country_event = ddr.8
+					}
 				}
 			available = {
 					always = no
