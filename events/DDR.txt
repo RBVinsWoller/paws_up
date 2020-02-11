@@ -168,13 +168,6 @@ country_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = { 
-		tag = DDR
-		date > 1950.1.1
-		has_government = communism
-		DDR = { exists = yes } 
-		SOV = { exists = yes }
-    }
 	
 	option = {
 		name = ddr.6.a
@@ -193,11 +186,6 @@ country_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = { 
-		tag = DDR
-		has_government = communism
-		DDR = { exists = yes }
-    }
 	
 	option = {
 		name = ddr.7.a
@@ -233,11 +221,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	trigger = { 
-		tag = SOV
-		SOV = { exists = yes } 
-		DDR = { exists = yes } 
-    }
+	is_triggered_only = yes
 	
 	option = {
 		name = ddr.8.a
@@ -268,10 +252,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	trigger = { 
-		tag = DDR
-		DDR = { exists = yes } 
-    }
+	is_triggered_only = yes
 	
 	option = {
 		name = ddr.9.a
@@ -304,10 +285,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	trigger = { 
-		tag = DDR
-		DDR = { exists = yes } 
-    }
+	is_triggered_only = yes
 	
 	option = {
 		name = ddr.10.a
@@ -341,27 +319,23 @@ country_event = {
 }
 
 country_event = {
-	id = ddr.9
-	title = ddr.9.t
-	desc = ddr.9.d
+	id = ddr.11
+	title = ddr.11.t
+	desc = ddr.11.d
 	picture = GFX_report_event_gathering_protest
 	
 	fire_only_once = yes
-	
-	trigger = { 
-		tag = DDR
-		DDR = { exists = yes } 
-    }
+	is_triggered_only = yes
 	
 	option = {
-		name = ddr.9.a
+		name = ddr.11.a
 		add_political_power = 300
 		ai_chance = { factor = 70 }
 		
 	}
 
 	option = {
-		name = ddr.9.b
+		name = ddr.11.b
 		add_threat = 5
 		ai_chance = { factor = 30 }
 		DDR = {
@@ -375,5 +349,57 @@ country_event = {
 			set_state_owner = 87
 			set_state_owner = 88
 		}
+	}
+}
+
+country_event = {
+	id = ddr.12
+	title = ddr.12.t
+	desc = ddr.12.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ddr.12.a
+		add_political_power = 100		
+	}
+}
+
+country_event = {
+	id = ddr.13
+	title = ddr.13.t
+	desc = ddr.13.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ddr.13.a
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 100000
+			target = DDR
+		}
+	}
+}
+
+country_event = {
+	id = ddr.13
+	title = ddr.13.t
+	desc = ddr.13.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ddr.13.a
+		add_political_power = 100
 	}
 }

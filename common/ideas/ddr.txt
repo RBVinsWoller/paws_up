@@ -124,5 +124,90 @@ ideas = {
 				mobilization_speed = 0.15
 			}
 		}
+		ddr_sovet = {
+
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = idea_hol_the_fourth_ally
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+		ddr_pioneria = {
+
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = idea_hol_the_fourth_ally
+			
+			modifier = {
+				mobilization_speed = 0.1
+			}
+		}
+		ddr_new_commie = {
+
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = idea_hol_the_fourth_ally
+			
+			modifier = {
+				communism_drift = 0.05
+				political_power_gain = -0.25
+			}
+		}
+		ddr_collective = {
+
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = idea_hol_the_fourth_ally
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
 	}
 }

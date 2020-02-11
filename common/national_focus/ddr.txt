@@ -23,7 +23,10 @@ focus_tree = {
 					add_political_power = 50
 			}
 			available = {
-					date > 1949.1.1
+					date > 1950.1.1
+					has_government = communism
+					DDR = { exists = yes } 
+					SOV = { exists = yes }
 				}
 
 	}
@@ -139,10 +142,23 @@ focus_tree = {
 			focus = DDR_marx
 		}
 		completion_reward = {
-
-		}
-		completion_reward = {
-
+			add_ideas = ddr_collective
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
 		}
 	}
 	focus = {
@@ -155,7 +171,11 @@ focus_tree = {
 			focus = DDR_unity_agro_ind
 		}
 		completion_reward = {
-
+			add_ideas = ddr_new_commie
+			add_opinion_modifier = {
+				target = SOV
+				modifer = ddr_bolsh
+			}
 		}
 	}
 	focus = {
@@ -181,7 +201,8 @@ focus_tree = {
 			focus = DDR_democracy
 		}
 		completion_reward = {
-
+			add_ideas = ddr_pioneria
+			country_event = ddr.14
 		}
 	}
 	focus = {
@@ -194,7 +215,7 @@ focus_tree = {
 			focus = DDR_selfunderstandimg
 		}
 		completion_reward = {
-
+			add_ideas = ddr_sovet
 		}
 	}
 	focus = {
@@ -373,6 +394,10 @@ focus_tree = {
 		y = 2
 			completion_reward = {
 					comunism_drift = 0.1
+					country_event = ddr.12
+					SOV = {
+						country_event = ddr.13
+					}
 				}
 			available = {
 					always = no
