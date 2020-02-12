@@ -1,0 +1,10 @@
+ddr_political = {
+	icon = generic_independence
+	allowed = {
+		tag = DDR
+
+	}
+	visible = {
+		always = no
+	}
+}

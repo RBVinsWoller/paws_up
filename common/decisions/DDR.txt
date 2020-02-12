@@ -1,0 +1,194 @@
+ddr_political = {
+
+	start_sepg = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			political_power_daily > 0.3
+			has_political_power > 50
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		complete_effect = {
+			add_political_power = 100
+			SOV = {
+				send_equipment = {
+					equipment = fighter
+					amount = 100000
+					target = DDR
+				}
+				send_equipment = {
+					equipment = artillery
+					amount = 100000
+					target = DDR
+				}
+			}
+			
+		}
+
+		modifier = {
+			political_power_cost = 0.25
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	bolshewism_gov = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 150
+		
+		available = {
+			has_government = communism
+			political_power_daily > 0.3
+			has_political_power > 50
+			has_completed_focus = DDR_bolshewiki_gov
+			has_decision = start_sepg
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		complete_effect = {
+			add_political_power = 50
+			create_unit = {
+				division = East Berlin Quard
+				division_template = East Berlin Quard
+				prioritize_location = 11505
+				start_experience_factor = 0.25 
+				start_equipment_factor = 1.0"
+				owner = DDR
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.25
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	nat_front_part1_liberty = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 200
+		
+		available = {
+			has_decision = bolshewism_gov
+			political_power_daily > 0.3
+			has_political_power > 50
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = DDR_democracy
+		}
+
+		complete_effect = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.25
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = -0.25
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.25
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.2
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	nat_front_part2_socialism = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 150
+		
+		available = {
+			political_power_daily > 0.3
+			has_political_power > 50
+			has_decision = nat_front_part1_liberty
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = DDR_democracy
+		}
+
+		complete_effect = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = chucheism
+				popularity = -0.25
+			}
+			add_popularity = {
+				ideology = maoism
+				popularity = -0.25
+			}
+			add_popularity = {
+				ideology = trotskism
+				popularity = -0.25
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.2
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	profunion = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 90
+		
+		available = {
+			political_power_daily > 0.2
+			has_political_power > 50
+			has_decision = nat_front_part1_liberty
+		}
+
+		visible = {
+			has_government = communism
+			has_completed_focus = DDR_selfunderstandimg
+		}
+
+		complete_effect = {
+			add_political_power = 150
+		}
+
+		modifier = {
+			political_power_cost = 0.1
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

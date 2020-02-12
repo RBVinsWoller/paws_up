@@ -188,7 +188,7 @@ focus_tree = {
 			focus = DDR_bolshewiki_gov
 		}
 		completion_reward = {
-
+			unlock_decision_category_tooltip = ddr_political
 		}
 	}
 	focus = {
