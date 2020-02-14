@@ -290,7 +290,7 @@ country_event = {
 	option = {
 		name = ddr.10.a
 		add_political_power = 100
-		ai_chance = { factor = 30 }
+		ai_chance = { factor = 20 }
 		remove_ideas = Thelman
 		add_ideas = DDR_new_germany
 	}
@@ -305,7 +305,7 @@ country_event = {
 	option = {
 		name = ddr.10.c
 		add_threat = 15
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 30 }
 		start_civil_war = {
 			ruling_party = fascism
 			ideology = fascism
@@ -401,7 +401,107 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ddr.13.a
+		name = ddr.14.a
 		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = ddr.15
+	title = ddr.15.t
+	desc = ddr.15.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ddr.15.a
+		add_political_power = -100
+		add_ideas = ddr_ussr_sanction
+	}
+}
+
+country_event = {
+	id = ddr.16
+	title = ddr.16.t
+	desc = ddr.16.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ddr.16.a
+		add_political_power = -100
+		add_ideas = ddr_concurate
+	}
+}
+
+country_event = {
+	id = ddr.17
+	title = ddr.17.t
+	desc = ddr.17.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ddr.17.a
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		add_stability = -0.1
+	}
+	
+	option = {
+		name = ddr.17.b
+		activate_decision = stop_sepg
+		add_political_power = -100
+		set_popularities = {
+			democratic = 20
+			chucheism = 5
+			socdem = 25
+			communism = 25
+			liberal = 15
+			neutrality = 10
+		}
+	}
+}
+
+
+country_event = {
+	id = ddr.18
+	title = ddr.18.t
+	desc = ddr.18.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ddr.18.a
+		add_autonomy_score = -15
+		add_stability = -0.05
+	}
+	
+	option = {
+		name = ddr.18.b
+		activate_decision = stop_sepg
+		add_political_power = -100
+		set_popularities = {
+			democratic = 20
+			chucheism = 5
+			socdem = 25
+			communism = 25
+			liberal = 15
+			neutrality = 10
+		}
 	}
 }

@@ -17,10 +17,15 @@ focus_tree = {
 			completion_reward = {
 					country_event = {
 							id = ddr.6
-							days = 15
+							days = 30
 							random = 50
 						}
 					add_political_power = 50
+					unlock_decision_category_tooltip = ddr_political
+					SOV = {
+						target = DDR
+						autonomy_state = sov_puppet
+					}
 			}
 			available = {
 					date > 1950.1.1
@@ -188,7 +193,7 @@ focus_tree = {
 			focus = DDR_bolshewiki_gov
 		}
 		completion_reward = {
-			unlock_decision_category_tooltip = ddr_political
+			
 		}
 	}
 	focus = {
@@ -216,6 +221,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = ddr_sovet
+			swap_ideas = {
+				remove_ideas = ddr_kazarmey_army
+				add_ideas = ddrnational_army
+			}
 		}
 	}
 	focus = {
@@ -228,7 +237,7 @@ focus_tree = {
 			focus = DDR_socdem
 		}
 		completion_reward = {
-
+			country_event = ddr.15
 		}
 	}
 	focus = {
@@ -241,7 +250,18 @@ focus_tree = {
 			focus = DDR_status_quo
 		}
 		completion_reward = {
-
+			add_ideas = ddr_country_free_workers
+			WGR = {
+				country_event = ddr.16
+				add_popularity = {
+					ideology = socdem
+					popularity = 0.15
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+			}
 		}
 	}
 	focus = {
@@ -254,7 +274,14 @@ focus_tree = {
 			focus = DDR_support_workers_unions
 		}
 		completion_reward = {
-
+			swap_ideas = {
+				remove_ideas = Thelman
+				add_ideas = ddr_german_revolution
+			}
+			swap_ideas = {
+				remove_ideas = ddr_kazarmey_army
+				add_ideas = ddr_proletar_army
+			}
 		}
 	}
 	focus = {
@@ -267,7 +294,16 @@ focus_tree = {
 			focus = DDR_socialism_in_one
 		}
 		completion_reward = {
-
+			add_ideas = ddr_federalization
+			IF = {
+				limit = {
+					socdem > 0.75
+				}
+				country_event = ddr.17
+			}
+			else = {
+				country_event = ddr.18
+			}
 		}
 	}
 	focus = {

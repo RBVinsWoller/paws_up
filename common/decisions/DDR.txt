@@ -12,7 +12,7 @@ ddr_political = {
 		}
 
 		visible = {
-			has_government = communism
+			always = yes
 		}
 
 		complete_effect = {
@@ -41,6 +41,34 @@ ddr_political = {
 		}
 	}
 	
+	stop_sepg = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 7
+		
+		available = {
+			has_political_power > 50
+		}
+
+		visible = {
+			has_decision = start_sepg
+		}
+
+		complete_effect = {
+			add_political_power = -50
+			add_stability = -0.1	
+		}
+
+		modifier = {
+			political_power_cost = 0.1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
 	bolshewism_gov = {
 
 		icon = eng_propaganda_campaigns
@@ -57,6 +85,10 @@ ddr_political = {
 
 		visible = {
 			has_government = communism
+			has_decision = start_sepg
+			NOT = {
+				has_decision = stop_sepg
+			}
 		}
 
 		complete_effect = {
@@ -94,7 +126,11 @@ ddr_political = {
 
 		visible = {
 			has_government = communism
+			has_decision = start_sepg
 			has_completed_focus = DDR_democracy
+			NOT = {
+				has_decision = stop_sepg
+			}
 		}
 
 		complete_effect = {
@@ -130,12 +166,13 @@ ddr_political = {
 		available = {
 			political_power_daily > 0.3
 			has_political_power > 50
-			has_decision = nat_front_part1_liberty
 		}
 
 		visible = {
-			has_government = communism
-			has_completed_focus = DDR_democracy
+			has_decision = start_sepg
+			NOT = {
+				has_decision = stop_sepg
+			}
 		}
 
 		complete_effect = {
@@ -175,7 +212,6 @@ ddr_political = {
 		}
 
 		visible = {
-			has_government = communism
 			has_completed_focus = DDR_selfunderstandimg
 		}
 
@@ -185,6 +221,66 @@ ddr_political = {
 
 		modifier = {
 			political_power_cost = 0.1
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+ddr_western_terrorism = {
+
+	plan_west_terrorism = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			political_power_daily > 0.2
+			has_political_power > 50
+		}
+
+		visible = {
+			has_government = socdem
+		}
+
+		complete_effect = {
+			add_political_power = 100	
+		}
+
+		modifier = {
+			political_power_cost = 0.1
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	RAF_support = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 100
+		
+		available = {
+			political_power_daily > 0.2
+			has_political_power > 50
+			has_decision = plan_west_terrorism
+		}
+
+		visible = {
+			has_government = socdem
+		}
+
+		complete_effect = {
+			add_political_power = 100	
+		}
+
+		modifier = {
+			political_power_cost = 0.2
 		}
 
 		ai_will_do = {

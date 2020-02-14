@@ -10,6 +10,7 @@ add_ideas = {
 	Thelman
 	DDR_ocupation
 	DDR_landtags
+	ddr_kazarmey_army
 } 
 
 set_research_slots = 4
@@ -106,10 +107,6 @@ set_popularities = {
 	communism = 55
 	liberal = 6
 	neutrality = 10
-}
-
-
-add_ideas = {
 }
 
 create_country_leader = {

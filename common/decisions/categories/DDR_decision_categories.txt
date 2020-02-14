@@ -8,3 +8,13 @@ ddr_political = {
 		always = no
 	}
 }
+ddr_western_terrorism = {
+	icon = generic_independence
+	allowed = {
+		tag = DDR
+
+	}
+	visible = {
+		always = no
+	}
+}
