@@ -173,8 +173,10 @@ country_event = {
 		name = ddr.6.a
 		drop_cosmetic_tag = yes
 		add_political_power = 300
-		remove_ideas = DDR_ocupation
-		add_ideas = DDR_ddr
+		swap_ideas = {
+			remove_ideas = DDR_ocupation
+			add_ideas = DDR_ddr
+		}
 	}
 }
 
@@ -258,22 +260,24 @@ country_event = {
 		name = ddr.9.a
 		add_political_power = -300
 		ai_chance = { factor = 70 }
-		set_popularities = {
-				chucheism = 75
-				marxism = 20
-				socdem = 5
-			}
+		add_popularity = {
+			ideology = chucheism
+			popularity = 0.25
+		}
 	}
 
 	option = {
 		name = ddr.9.b
 		add_threat = 5
 		ai_chance = { factor = 30 }
-		set_popularities = {
-				chucheism = 45
-				marxism = 28
-				socdem = 27
-			}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = titoism
+			popularity = 0.1
+		}
 	}
 }
 
@@ -466,7 +470,7 @@ country_event = {
 		set_popularities = {
 			democratic = 20
 			chucheism = 5
-			socdem = 25
+			titoism = 25
 			communism = 25
 			liberal = 15
 			neutrality = 10
@@ -498,7 +502,7 @@ country_event = {
 		set_popularities = {
 			democratic = 20
 			chucheism = 5
-			socdem = 25
+			titoism = 25
 			communism = 25
 			liberal = 15
 			neutrality = 10

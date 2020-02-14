@@ -243,7 +243,7 @@ ddr_western_terrorism = {
 		}
 
 		visible = {
-			has_government = socdem
+			always = no
 		}
 
 		complete_effect = {
