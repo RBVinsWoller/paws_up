@@ -26,9 +26,10 @@ focus_tree = {
 						target = DDR
 						autonomy_state = sov_puppet
 					}
+					set_rule = { can_create_factions = no }
 			}
 			available = {
-					date > 1950.1.1
+					date > 1949.1.1
 					has_government = communism
 					DDR = { exists = yes } 
 					SOV = { exists = yes }
@@ -102,23 +103,23 @@ focus_tree = {
 			war_support_factor = 0.25
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 			}
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 			}
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 			}
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 			}
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 			}
 		}
 	}
@@ -135,6 +136,7 @@ focus_tree = {
 			SOV = {
 				country_event = ddr.11
 			}
+			add_political_power = 150
 		}
 	}
 	focus = {
@@ -150,11 +152,11 @@ focus_tree = {
 			add_ideas = ddr_collective
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				}
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 			}
 			add_building_construction = {
 				type = arms_factory
@@ -181,6 +183,7 @@ focus_tree = {
 				target = SOV
 				modifer = ddr_bolsh
 			}
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -208,6 +211,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ddr_pioneria
 			country_event = ddr.14
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -224,6 +228,7 @@ focus_tree = {
 			swap_ideas = {
 				remove_ideas = ddr_kazarmey_army
 				add_ideas = ddrnational_army
+				add__war_support = 0.15
 			}
 		}
 	}
