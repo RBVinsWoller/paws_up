@@ -13,6 +13,7 @@ ddr_political = {
 
 		visible = {
 			always = yes
+			has_completed_focus = DDR_stop_be_zone
 		}
 
 		complete_effect = {

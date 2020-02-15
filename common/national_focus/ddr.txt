@@ -15,11 +15,7 @@ focus_tree = {
 		x = 18
 		y = 0
 			completion_reward = {
-					country_event = {
-							id = ddr.6
-							days = 30
-							random = 50
-						}
+					country_event = ddr.6
 					add_political_power = 50
 					unlock_decision_category_tooltip = ddr_political
 					SOV = {
@@ -29,7 +25,7 @@ focus_tree = {
 					set_rule = { can_create_factions = no }
 			}
 			available = {
-					date > 1949.1.1
+					date > 1940.1.1
 					has_government = communism
 					DDR = { exists = yes } 
 					SOV = { exists = yes }
