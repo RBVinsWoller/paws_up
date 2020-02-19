@@ -25,7 +25,7 @@ focus_tree = {
 					set_rule = { can_create_factions = no }
 			}
 			available = {
-					date > 1940.1.1
+					date > 1949.1.1
 					has_government = communism
 					DDR = { exists = yes } 
 					SOV = { exists = yes }
@@ -223,9 +223,9 @@ focus_tree = {
 			add_ideas = ddr_sovet
 			swap_ideas = {
 				remove_ideas = ddr_kazarmey_army
-				add_ideas = ddrnational_army
-				add__war_support = 0.15
+				add_ideas = ddr_national_army
 			}
+			add_war_support = 0.10
 		}
 	}
 	focus = {
@@ -275,14 +275,10 @@ focus_tree = {
 			focus = DDR_support_workers_unions
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_ideas = Thelman
-				add_ideas = ddr_german_revolution
-			}
-			swap_ideas = {
-				remove_ideas = ddr_kazarmey_army
-				add_ideas = ddr_proletar_army
-			}
+			remove_ideas = Thelman
+			add_ideas = ddr_german_revolution
+			remove_ideas = ddr_kazarmey_army
+			add_ideas = ddr_proletar_army
 		}
 	}
 	focus = {
