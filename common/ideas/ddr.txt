@@ -335,6 +335,7 @@ ideas = {
 			picture = idea_hol_the_fourth_ally
 			
 			modifier = {
+			        conscription = 0.15
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
 			}
