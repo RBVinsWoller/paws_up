@@ -20,7 +20,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.30
-				conscription = -0.90
+				conscription = -0.50
 				production_speed_buildings_factor = -0.2
 				industrial_capacity_factory = 0,05
 				production_factory_max_efficiency_factor = 0.1
