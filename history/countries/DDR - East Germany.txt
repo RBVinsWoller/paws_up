@@ -1,4 +1,4 @@
-﻿capital = 64
+capital = 64
 
 # Starting tech
 set_technology = {
@@ -90,6 +90,82 @@ set_convoys = 50
 	}
 }
 
+1949.09.11 = { 
+    oob = "DDR_1949"
+	set_technology = {
+		infantry_weapons_0 = 1
+		infantry_weapons_1 = 1
+		infantry_weapons_2 = 1
+		tech_special_forces = 1
+		marines = 1
+		paratroopers = 1
+		tech_mountaineers = 1
+		im_infantry_2 = 1
+		motorised_infantry = 1
+		motorized_2 = 1
+		jip_1 = 1
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_field_hospital = 1
+		tech_maintenance_company = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		tank_1 = 1
+		tank_2 = 1
+		tank_3 = 1
+		l_tank_1 = 1
+		l_tank_2 = 1
+		l_tank_3 = 1
+		t_tank_1 = 1
+		t_tank_2 = 1
+		t_tank_3 = 1
+		t_tank_4 = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antitanks = 1
+		antitanks1 = 1
+		medrange_sp_aa1 = 1
+		medrange_sp_aa2 = 1
+		shortrange_sp_aa1 = 1
+		shortrange_sp_aa2 = 1
+		shortrange_sp_aa3 = 1
+		sp_aa1 = 1
+		sp_aa2 = 1
+		interwar_antiairs = 1
+		antiairs1 = 1
+		early_fighter = 1
+		fighter1 = 1
+		fighter2 = 1
+		fighter3 = 1
+		CAS1 = 1
+		CAS2 = 1
+		CAS3 = 1
+		CAS4 = 1
+		naval_bomber1 = 1
+		naval_bomber2 = 1
+		naval_bomber3 = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
+		tactical_bomber2 = 1
+		heavy_fighter1 = 1
+		heavy_fighter2 = 1
+		heavy_fighter3 = 1
+		strategic_bomber1 = 1
+		strategic_bomber2 = 1
+		transport1 = 1
+		transport2 = 1
+		rocket_engines = 1
+		improved_rocket_engines = 1
+		jet_engines = 1
+	}
+	give_military_access = SOV
+	SOV = { 
+	    puppet = DDR
+	} 
+}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1945.9.1"
@@ -99,14 +175,13 @@ set_politics = {
 
 
 set_popularities = {
-    democratic = 5
-	fascism = 1
-	chucheism = 7
-	maoism = 5
-	trotskism = 11
-	communism = 55
-	liberal = 6
-	neutrality = 10
+    democratic = 10
+	titoism = 25
+	trotskism = 5
+	communism = 40
+	liberal = 5
+	neutrality = 5
+	chucheism = 10
 }
 
 create_country_leader = {
@@ -130,6 +205,27 @@ create_country_leader = {
 #	}
 #}
 #
+
+	create_country_leader = {
+		name = "Otto Grotewohl"
+		desc = "POLITICS_WILHELM_PIECK_DESC"	 
+		picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
+		expire = "1964.09.21"
+		ideology = demsoc
+		traits = {
+		}
+	}
+	
+	create_country_leader = {
+		name = "Lothar Bolz"
+		desc = "POLITICS_WILHELM_PIECK_DESC"	 
+		picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
+		expire = "1986.12.29"
+		ideology = nationalcom
+		traits = {
+		}
+	}
+
 1949.09.11 = {
 	create_country_leader = {
 		name = "Wilhelm Pieck"
@@ -141,6 +237,25 @@ create_country_leader = {
 		}
 	}
 	drop_cosmetic_tag = yes
+		create_country_leader = {
+		name = "Otto Grotewohl"
+		desc = "POLITICS_WILHELM_PIECK_DESC"	 
+		picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
+		expire = "1964.09.21"
+		ideology = demsoc
+		traits = {
+		}
+	}
+	
+	create_country_leader = {
+		name = "Lothar Bolz"
+		desc = "POLITICS_WILHELM_PIECK_DESC"	 
+		picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
+		expire = "1986.12.29"
+		ideology = nationalcom
+		traits = {
+		}
+	}
 }
 1945.1.1 = {
 	create_country_leader = {
@@ -156,31 +271,77 @@ create_country_leader = {
 	set_cosmetic_tag = DDR_46
 }
 
-1949.1.1 = { 
-give_military_access = SOV
-} 
+create_field_marshal = {
+	name = "Karl Hoffmann"
+		picture = "Portrait_Soviet_Kliment_Voroshilov.dds"
+	traits = { old_guard  }
+	skill = 2
+}
 
-#create_country_leader = {
-#	name = "Otto Wels"
-#	desc = "POLITICS_OTTO_WELS_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
-#	ideology = socialism
-#	traits = {
-#		exiled
-#		union_man
-#	}
-#}
-#
-#create_country_leader = {
-#	name = "Ernst Thälmann"
-#	desc = "POLITICS_ERNST_THALMANN_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1956.1.1"
-#	ideology = stalinism
-#	traits = {
-#		assassination_survivor
-#		stalins_puppet
-#		political_prisoner
-#	}
-#}
+create_field_marshal = {
+	name = "Friedrich Dickel"
+		picture = "Portrait_Soviet_Kliment_Voroshilov.dds"
+	traits = { old_guard  }
+	skill = 2
+}
+
+create_field_marshal = {
+	name = "Heinz Keßle"
+		picture = "Portrait_Soviet_Kliment_Voroshilov.dds"
+	traits = { old_guard  }
+	skill = 2
+}
+
+
+create_corps_commander = {
+	name = "Willi Stoph"
+		picture = "Portrait_Soviet_Leonid_Govorov.dds"
+	traits = {   }
+	skill = 3
+	
+}
+create_corps_commander = {
+	name = "Wolfgang Thonke"
+		picture = "Portrait_Soviet_Leonid_Govorov.dds"
+	traits = {   }
+	skill = 2
+	
+}
+create_corps_commander = {
+	name = "Klaus-Jürgen Baarß"
+		picture = "Portrait_Soviet_Leonid_Govorov.dds"
+	traits = {   }
+	skill = 1
+	
+}
+create_corps_commander = {
+	name = "Rolf Berger"
+		picture = "Portrait_Soviet_Leonid_Govorov.dds"
+	traits = {   }
+	skill = 1
+	
+}
+create_corps_commander = {
+	name = "Sigfrid Riedel"
+		picture = "Portrait_Soviet_Leonid_Govorov.dds"
+	traits = {   }
+	skill = 1
+	
+}
+
+create_corps_commander = {
+	name = "Vincenz Müller"
+		picture = "Portrait_Soviet_Leonid_Govorov.dds"
+	traits = {   }
+	skill = 1
+	
+}
+
+create_corps_commander = {
+	name = "Horst Skerra"
+		picture = "Portrait_Soviet_Leonid_Govorov.dds"
+	traits = {   }
+	skill = 1
+	
+}
+
