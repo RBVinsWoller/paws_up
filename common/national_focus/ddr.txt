@@ -146,6 +146,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = ddr_collective
+			
 			add_building_construction = {
 				type = industrial_complex
 				level = 2

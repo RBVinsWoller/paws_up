@@ -311,13 +311,13 @@ country_event = {
 		add_threat = 15
 		ai_chance = { factor = 30 }
 		start_civil_war = {
-			ruling_party = fascism
+			ruling_party = chucheism
 			ideology = fascism
 			size = 0.5
 			only_own_territory = yes
 			capital = 282
 			states = { 
-				59 60 61 65
+				60 68 65
 			}
 		}
 		
