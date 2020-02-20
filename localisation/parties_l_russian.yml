@@ -542,8 +542,18 @@
  Socialistpartyoffrance:0 "ФСРИ"
  democraticalliance_long:0 "Демократический Альянс"
  democraticalliance:0 "Демократический Альянс"
+ 
  DDR_communism_party:0 "СЕПГ"
  DDR_communism_party_long:0 "Социалистическая единая партия Германии"
+ DDR_democratic_party:0 "ХДСГ"
+ DDR_democratic_party_long:0 "Христианско-демократический союз Германии"
+ DDR_liberal_party:0 "ЛДПГ"
+ DDR_liberal_party_long:0 "Либерально-демократическая партия Германии"
+ DDR_neutrality_party:0 "ДКПГ"
+ DDR_neutrality_party_long:0 "Демократическая крестьянская партия Германии"
+ DDR_fascism_party:0 "НДПГ"
+ DDR_fascism_party_long:0 "Национально-демократическая партия Германии"
+ 
  PRC_communism_party:0 "КПК"
  PRC_communism_party_long:0 "Коммунистическая Партия Китая"
  ALB_communism_party:0 "АПТ"
