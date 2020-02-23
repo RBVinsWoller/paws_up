@@ -1,0 +1,30 @@
+focus_tree = {
+	id = TRK
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TRK
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 3000 }
+	
+	focus = {
+		id = TRK_after_the_war
+		icon = GFX_goal_SOV_after_war
+		cost = 10
+		x = 9
+		y = 0
+		completion_reward = {
+		    add_ideas = { 
+			    Soviet_after_war 
+			} 
+			set_rule = {
+                can_create_factions = no
+            }
+		} 
+		available = { 
+		} 
+	}
+	
