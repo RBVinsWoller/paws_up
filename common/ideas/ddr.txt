@@ -16,11 +16,11 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = GFX_idea_hol_the_fourth_ally
+			picture = ddr
 			
 			modifier = {
 				stability_factor = -0.30
-				conscription = -0.05
+				conscription = -0.50
 				production_speed_buildings_factor = -0.2
 				industrial_capacity_factory = 0,05
 				production_factory_max_efficiency_factor = 0.1
@@ -67,7 +67,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_hol_the_fourth_ally
+			picture = landtagi
 			
 			modifier = {
 				stability_factor = -0.1
@@ -91,7 +91,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_hol_the_fourth_ally
+			picture = ddr
 			
 			modifier = {
 				stability_factor = -0.20
@@ -288,7 +288,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_hol_the_fourth_ally
+			picture = kazarm_army
 			
 			modifier = {
 				attack_bonus_against = -0.2
