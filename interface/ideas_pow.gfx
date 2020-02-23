@@ -3431,5 +3431,21 @@ spriteTypes = {
 		name = "GFX_idea_war_economy"
 		texturefile = "gfx/interface/ideas/war_economy.dds"
 	}
+		spriteType = {
+		name = "GFX_idea_DDR_ocupation"
+		texturefile = "gfx/interface/ideas/ddr.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DDR_landtags"
+		texturefile = "gfx/interface/ideas/landtagi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ddr_kazarmey_army"
+		texturefile = "gfx/interface/ideas/kazarm_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DDR_ddr"
+		texturefile = "gfx/interface/ideas/ddr.dds"
+	}
 	
 }
