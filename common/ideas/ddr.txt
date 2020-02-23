@@ -30,6 +30,53 @@ ideas = {
 			}
 		}
 		
+		ddr_resources = {
+
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = GFX_idea_hol_the_fourth_ally
+			
+			modifier = {
+				local_resources_factor = 0.5
+			}
+		}
+		
+		ddr_nat_ind = {
+
+			allowed = {
+				original_tag = DDR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = GFX_idea_hol_the_fourth_ally
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				consumer_goods_factor = 0.2
+			}
+		}
+		
 		DDR_work_army = {
 
 			allowed = {

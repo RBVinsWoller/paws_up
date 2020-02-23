@@ -12,380 +12,51 @@ focus_tree = {
 		id = DDR_stop_be_zone
 		icon = GFX_goal_generic_demand_territory
 		cost = 10,00
-		x = 18
+		x = 11
 		y = 0
 			completion_reward = {
 					country_event = ddr.6
 					add_political_power = 50
 					unlock_decision_category_tooltip = ddr_political
 					SOV = {
-						target = DDR
-						autonomy_state = sov_puppet
-					}
-					set_rule = { can_create_factions = no }
-			}
+							target = DDR
+							autonomy_state = sov_puppet
+						}
+					set_rule = {
+							can_create_factions = no
+						}
+				}
 			available = {
 					date > 1949.1.1
 					has_government = communism
-					DDR = { exists = yes } 
-					SOV = { exists = yes }
+					DDR = {
+							exists = yes
+						}
+					SOV = {
+							exists = yes
+						}
 				}
 
 	}
 	focus = {
-		id = DDR_industry_path
-		icon = GFX_goal_generic_army_artillery
-		cost = 10,00
-		x = 3
-		y = 3
-			completion_reward = {
-					add_stability = 0.1
-				}
-		
-	}
-	focus = {
-		id = DDR_great_political_ban
+		id = DDR_let's_fix
 		icon = GFX_goal_unknown
-		cost = 15,00
-		x = 18
-		y = 3
-		prerequisite = {
-			focus = DDR_natcom
-		}
+		cost = 14,00
+		x = 25
+		y = 0
 		completion_reward = {
-			set_politics = {
-				ruling_party = chucheism
-			}
-			country_event = ddr.9
-		}
-	}
-	focus = {
-		id = DDR_black_front_quest
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 18
-		y = 4
-		prerequisite = {
-			focus = DDR_great_political_ban
-		}
-		completion_reward = {
-			country_event = ddr.10
-		}
-	}
-	focus = {
-		id = DDR_united_deutsch_workers
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 18
-		y = 5
-		prerequisite = {
-			focus = DDR_black_front_quest
-		}
-		completion_reward = {
-			add_ideas = ddr_unity
-		}
-	}
-	focus = {
-		id = DDR_no_landtags
-		icon = GFX_goal_unknown
-		cost = 15,00
-		x = 18
-		y = 6
-		prerequisite = {
-			focus = DDR_united_deutsch_workers
-		}
-		completion_reward = {
-			remove_ideas = DDR_landtags
-			war_support_factor = 0.25
 			add_building_construction = {
 				type = industrial_complex
 				level = 2
+				province = 11505
 			}
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-			}
-		}
-	}
-	focus = {
-		id = DDR_again_germany
-		icon = GFX_goal_unknown
-		cost = 20,00
-		x = 18
-		y = 7
-		prerequisite = {
-			focus = DDR_no_landtags
-		}
-		completion_reward = {
-			SOV = {
-				country_event = ddr.11
-			}
-			add_political_power = 150
-		}
-	}
-	focus = {
-		id = DDR_unity_agro_ind
-		icon = GFX_goal_unknown
-		cost = 17,00
-		x = 22
-		y = 3
-		prerequisite = {
-			focus = DDR_marx
-		}
-		completion_reward = {
-			add_ideas = ddr_collective
-			
-			swap_ideas = {
-                               remove_idea = market-comand_system
-                               add_idea = comand_system
-                        }
-			
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				}
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-			}
-			add_building_construction = {
-				type = arms_factory
 				level = 1
-				}
-			add_building_construction = {
-				type = arms_factory
-				level = 1
+				province = 11505
 			}
+			unlock_decision_category_tooltip = let's_fix_notre_ind
 		}
-	}
-	focus = {
-		id = DDR_bolshewiki_gov
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 22
-		y = 4
-		prerequisite = {
-			focus = DDR_unity_agro_ind
-		}
-		completion_reward = {
-			add_ideas = ddr_new_commie
-			add_opinion_modifier = {
-				target = SOV
-				modifer = ddr_bolsh
-			}
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = DDR_democracy
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 22
-		y = 5
-		prerequisite = {
-			focus = DDR_bolshewiki_gov
-		}
-		completion_reward = {
-			unlock_decision_tooltip = nat_front_part1_liberty
-		}
-	}
-	focus = {
-		id = DDR_selfunderstandimg
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 22
-		y = 6
-		prerequisite = {
-			focus = DDR_democracy
-		}
-		completion_reward = {
-			add_ideas = ddr_pioneria
-			country_event = ddr.14
-			add_stability = 0.1
-		}
-	}
-	focus = {
-		id = DDR_sovet_ddr
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 22
-		y = 7
-		prerequisite = {
-			focus = DDR_selfunderstandimg
-		}
-		completion_reward = {
-			add_ideas = ddr_sovet
-			swap_ideas = {
-				remove_ideas = ddr_kazarmey_army
-				add_ideas = ddr_national_army
-			}
-			add_war_support = 0.10
-		}
-	}
-	focus = {
-		id = DDR_status_quo
-		icon = GFX_goal_unknown
-		cost = 17,00
-		x = 26
-		y = 3
-		prerequisite = {
-			focus = DDR_socdem
-		}
-		completion_reward = {
-			country_event = ddr.15
-			add_popularity = {
-			    ideology = titoism
-			    popularity = 0.15
-			}
-		}
-	}
-	focus = {
-		id = DDR_support_workers_unions
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 26
-		y = 4
-		prerequisite = {
-			focus = DDR_status_quo
-		}
-		completion_reward = {
-			add_ideas = ddr_country_free_workers
-			WGR = {
-				country_event = ddr.16
-				add_popularity = {
-					ideology = socdem
-					popularity = 0.15
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = 0.10
-				}
-			}
-		}
-	}
-	focus = {
-		id = DDR_socialism_in_one
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 26
-		y = 5
-		prerequisite = {
-			focus = DDR_support_workers_unions
-		}
-		completion_reward = {
-		        swap_ideas = {
-			     remove_ideas = Thelman
-			     add_ideas = ddr_german_revolution
-			}
-			swap_ideas = {
-			     remove_ideas = ddr_kazarmey_army
-			     add_ideas = ddr_proletar_army
-			}
-		}
-	}
-	focus = {
-		id = DDR_autonomy
-		icon = GFX_goal_unknown
-		cost = 17,00
-		x = 26
-		y = 6
-		prerequisite = {
-			focus = DDR_socialism_in_one
-		}
-		completion_reward = {
-			add_ideas = ddr_federalization
-			IF = {
-				limit = {
-					socdem > 0.45
-				}
-				country_event = ddr.17
-			}
-			else = {
-				country_event = ddr.18
-			}
-		}
-	}
-	focus = {
-		id = DDR_war_fabric_1
-		icon = GFX_goal_generic_construct_military
-		cost = 10,00
-		prerequisite = {
-			focus = DDR_industry_path
-		}
-		x = 0
-		y = 5
-			completion_reward = {
-					add_building_construction = {
-							type = arms_factory
-							level = 2
-						}
-				}
-
-	}
-	focus = {
-		id = DDR_civ_fabric_1
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
-		prerequisite = {
-			focus = DDR_industry_path
-		}
-		x = 3
-		y = 5
-			completion_reward = {
-					add_building_construction = {
-							type = industrial_complex
-							level = 2
-						}
-				}
-
-	}
-	focus = {
-		id = DDR_ind_1
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10,00
-		prerequisite = {
-			focus = DDR_industry_path
-		}
-		x = 6
-		y = 5
-			completion_reward = {
-					add_building_construction = {
-							type = infrastructure
-							level = 5
-						}
-				}
-
-	}
-	focus = {
-		id = DDR_army_reform
-		icon = GFX_goal_rhineland
-		cost = 10,00
-		prerequisite = {
-			focus = DDR_stop_be_zone
-		}
-		x = 14
-		y = 1
-			completion_reward = {
-					add_tech_bonus = {
-							bonus = 0.5
-							uses = 1
-							category = artillery
-						}
-					add_ideas = { DDR_work_army }
-				}
-
 	}
 	focus = {
 		id = DDR_ideology
@@ -394,110 +65,13 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_stop_be_zone
 		}
-		x = 22
+		x = 11
 		y = 1
 			completion_reward = {
 					country_event = {
 							id = ddr.7
 							days = 15
 							random = 50
-						}
-				}
-
-	}
-	focus = {
-		id = DDR_socdem
-		icon = GFX_goal_support_fourth_int
-		cost = 10,00
-		prerequisite = {
-			focus = DDR_ideology
-		}
-		mutually_exclusive = {
-			focus = DDR_natcom
-			focus = DDR_marx
-		}
-		x = 26
-		y = 2
-			completion_reward = {
-					titoism_drift = 0.1
-				}
-			available = {
-					always = no
-				}
-
-	}
-	focus = {
-		id = DDR_marx
-		icon = GFX_goal_support_fourth_int
-		cost = 10,00
-		prerequisite = {
-			focus = DDR_ideology
-		}
-		mutually_exclusive = {
-			focus = DDR_socdem
-			focus = DDR_natcom
-		}
-		x = 22
-		y = 2
-			completion_reward = {
-					comunism_drift = 0.1
-					country_event = ddr.12
-					SOV = {
-						country_event = ddr.13
-					}
-				}
-			available = {
-					always = no
-				}
-
-	}
-	focus = {
-		id = DDR_war_fabric_2
-		icon = GFX_goal_generic_construct_military
-		cost = 10,00
-		prerequisite = {
-			focus = DDR_war_fabric_1
-		}
-		x = 0
-		y = 7
-			completion_reward = {
-					add_building_construction = {
-							type = arms_factory
-							level = 2
-						}
-				}
-
-	}
-	focus = {
-		id = DDR_civ_fabric_2
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
-		prerequisite = {
-			focus = DDR_civ_fabric_1
-		}
-		x = 3
-		y = 7
-			completion_reward = {
-					add_building_construction = {
-							type = industrial_complex
-							level = 2
-						}
-				}
-
-	}
-	focus = {
-		id = DDR_ind_2
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10,00
-		prerequisite = {
-			focus = DDR_ind_1
-		}
-		x = 6
-		y = 7
-			completion_reward = {
-					add_building_construction = {
-							type = infrastructure
-							level = 5
 						}
 				}
 
@@ -513,17 +87,607 @@ focus_tree = {
 			focus = DDR_socdem
 			focus = DDR_marx
 		}
-		x = 18
+		x = 7
 		y = 2
 			completion_reward = {
 					chucheism_drift = 0.1
 					SOV = {
-						country_event = ddr.8
-					}
+							country_event = ddr.8
+						}
 				}
 			available = {
 					always = no
 				}
 
+	}
+	focus = {
+		id = DDR_great_political_ban
+		icon = GFX_goal_unknown
+		cost = 15,00
+		prerequisite = {
+			focus = DDR_natcom
+		}
+		x = 7
+		y = 3
+			completion_reward = {
+					set_politics = {
+							ruling_party = chucheism
+						}
+					country_event = ddr.9
+				}
+
+	}
+	focus = {
+		id = DDR_black_front_quest
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_great_political_ban
+		}
+		x = 7
+		y = 4
+			completion_reward = {
+					country_event = ddr.10
+				}
+
+	}
+	focus = {
+		id = DDR_united_deutsch_workers
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_black_front_quest
+		}
+		x = 7
+		y = 5
+			completion_reward = {
+					add_ideas = ddr_unity
+				}
+
+	}
+	focus = {
+		id = DDR_no_landtags
+		icon = GFX_goal_unknown
+		cost = 15,00
+		prerequisite = {
+			focus = DDR_united_deutsch_workers
+		}
+		x = 7
+		y = 6
+			completion_reward = {
+					remove_ideas = DDR_landtags
+					war_support_factor = 0.25
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+				}
+
+	}
+	focus = {
+		id = DDR_marx
+		icon = GFX_goal_support_fourth_int
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_ideology
+		}
+		mutually_exclusive = {
+			focus = DDR_socdem
+			focus = DDR_natcom
+		}
+		x = 11
+		y = 2
+			completion_reward = {
+					comunism_drift = 0.1
+					country_event = ddr.12
+					SOV = {
+							country_event = ddr.13
+						}
+				}
+			available = {
+					always = no
+				}
+
+	}
+	focus = {
+		id = DDR_unity_agro_ind
+		icon = GFX_goal_unknown
+		cost = 17,00
+		prerequisite = {
+			focus = DDR_marx
+		}
+		x = 11
+		y = 3
+			completion_reward = {
+					add_ideas = ddr_collective
+					swap_ideas = {
+							remove_idea = market-comand_system
+							add_idea = comand_system
+						}
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+						}
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+						}
+				}
+
+	}
+	focus = {
+		id = DDR_bolshewiki_gov
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_unity_agro_ind
+		}
+		x = 11
+		y = 4
+			completion_reward = {
+					add_ideas = ddr_new_commie
+					add_opinion_modifier = {
+							target = SOV
+							modifer = ddr_bolsh
+						}
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = DDR_democracy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_bolshewiki_gov
+		}
+		x = 11
+		y = 5
+			completion_reward = {
+					unlock_decision_tooltip = nat_front_part1_liberty
+				}
+
+	}
+	focus = {
+		id = DDR_selfunderstandimg
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_democracy
+		}
+		x = 11
+		y = 6
+			completion_reward = {
+					add_ideas = ddr_pioneria
+					country_event = ddr.14
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = DDR_socdem
+		icon = GFX_goal_support_fourth_int
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_ideology
+		}
+		mutually_exclusive = {
+			focus = DDR_natcom
+			focus = DDR_marx
+		}
+		x = 15
+		y = 2
+			completion_reward = {
+					titoism_drift = 0.1
+				}
+			available = {
+					always = no
+				}
+
+	}
+	focus = {
+		id = DDR_status_quo
+		icon = GFX_goal_unknown
+		cost = 17,00
+		prerequisite = {
+			focus = DDR_socdem
+		}
+		x = 15
+		y = 3
+			completion_reward = {
+					country_event = ddr.15
+					add_popularity = {
+							ideology = titoism
+							popularity = 0.15
+						}
+				}
+
+	}
+	focus = {
+		id = DDR_support_workers_unions
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_status_quo
+		}
+		x = 15
+		y = 4
+			completion_reward = {
+					add_ideas = ddr_country_free_workers
+					WGR = {
+							country_event = ddr.16
+							add_popularity = {
+									ideology = socdem
+									popularity = 0.15
+								}
+							add_popularity = {
+									ideology = communism
+									popularity = 0.10
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = DDR_socialism_in_one
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_support_workers_unions
+		}
+		x = 15
+		y = 5
+			completion_reward = {
+					swap_ideas = {
+							remove_ideas = Thelman
+							add_ideas = ddr_german_revolution
+						}
+					swap_ideas = {
+							remove_ideas = ddr_kazarmey_army
+							add_ideas = ddr_proletar_army
+						}
+				}
+
+	}
+	focus = {
+		id = DDR_autonomy
+		icon = GFX_goal_unknown
+		cost = 17,00
+		prerequisite = {
+			focus = DDR_socialism_in_one
+		}
+		x = 15
+		y = 6
+			completion_reward = {
+					add_ideas = ddr_federalization
+					IF = {
+							limit = {
+									socdem > 0.45
+								}
+							country_event = ddr.17
+						}
+					else = {
+							country_event = ddr.18
+						}
+				}
+
+	}
+	focus = {
+		id = DDR_nationalize
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_let's_fix
+		}
+		x = 25
+		y = 1
+		completion_reward = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+			add_building_construction = {
+				type = arms_factory 
+				level = 2
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 3
+			}
+		}
+	}
+	focus = {
+		id = DDR_automobile
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_nationalize
+		}
+		x = 21
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.55
+				uses = 2
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = DDR_audi_horch
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_automobile
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+	focus = {
+		id = DDR_special_machines
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_nationalize
+		}
+		x = 25
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = construction_tech
+			}
+		}
+	}
+	focus = {
+		id = DDR_volkseigener_betrieb
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_automobile
+		}
+		prerequisite = {
+			focus = DDR_special_machines
+		}
+		x = 23
+		y = 4
+		completion_reward = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	}
+	focus = {
+		id = DDR_electronic
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_special_machines
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = DDR_united_national_ind
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_electronic
+		}
+		x = 25
+		y = 6
+		completion_reward = {
+			add_ideas = ddr_nat_ind
+		}
+	}
+	focus = {
+		id = DDR_diggery_ind
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_nationalize
+		}
+		x = 29
+		y = 2
+		completion_reward = {
+			add_ideas = ddr_resources
+		}
+	}
+	focus = {
+		id = DDR_karl_cayc
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_special_machines
+		}
+		prerequisite = {
+			focus = DDR_diggery_ind
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 60
+
+		}
+	}
+	focus = {
+		id = DDR_again_germany
+		icon = GFX_goal_unknown
+		cost = 20,00
+		prerequisite = {
+			focus = DDR_no_landtags
+		}
+		x = 7
+		y = 7
+			completion_reward = {
+					SOV = {
+							country_event = ddr.11
+						}
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = DDR_sovet_ddr
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_selfunderstandimg
+		}
+		x = 11
+		y = 7
+			completion_reward = {
+					add_ideas = ddr_sovet
+					swap_ideas = {
+							remove_ideas = ddr_kazarmey_army
+							add_ideas = ddr_national_army
+						}
+					add_war_support = 0.10
+				}
+
+	}
+	focus = {
+		id = DDR_chemical_ind
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_diggery_ind
+		}
+		x = 30
+		y = 3
+		completion_reward = {
+			add_resource = {
+				type = rubber
+				amount = 10
+				state = 951
+			}
+		}
+	}
+	focus = {
+		id = DDR_sea
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_united_national_ind
+		}
+		x = 21
+		y = 7
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.55
+				uses = 2
+				category = naval_equipment
+			}
+		}
+	}
+	focus = {
+		id = DDR_plane
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_united_national_ind
+		}
+		x = 25
+		y = 7
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.55
+				uses = 2
+				category = strategic_destruction_tree
+			}
+		}
+	}
+	focus = {
+		id = DDR_hard
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = DDR_united_national_ind
+		}
+		x = 29
+		y = 7
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.55
+				uses = 2
+				category = tanketka_tech
+			}
+		}
 	}
 }

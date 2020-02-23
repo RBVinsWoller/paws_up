@@ -16,3 +16,12 @@ ddr_western_terrorism = {
 		always = no
 	}
 }
+let's_fix_notre_ind = {
+	icon = generic_independence
+	allowed = {
+		tag = DDR
+	}
+	visible = {
+		has_completed_focus = DDR_nationalize
+	}
+}

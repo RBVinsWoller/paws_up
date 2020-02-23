@@ -173,10 +173,8 @@ country_event = {
 		name = ddr.6.a
 		drop_cosmetic_tag = yes
 		add_political_power = 300
-		swap_ideas = {
-			remove_ideas = DDR_ocupation
-			add_ideas = DDR_ddr
-		}
+		remove_ideas = DDR_ocupation
+		add_ideas = DDR_ddr
 	}
 }
 

@@ -289,3 +289,32 @@ ddr_western_terrorism = {
 		}
 	}
 }
+let's_fix_notre_ind = {
+	start_fixing = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 30
+		
+		available = {
+			political_power_daily > 0.3
+			has_political_power > 50
+		}
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_political_power = 100
+		}
+
+		modifier = {
+			political_power_cost = 0.25
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
