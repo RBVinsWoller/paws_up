@@ -43,9 +43,31 @@ add_ideas = {
 CZE_anunited 
 } 
 
-1949.1.1 = { 
+1946.1.1 = { 
+
 set_politics = {
 	ruling_party = liberal
+	last_election = "1945.9.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10
+	fascism = 15
+	chucheism = 0
+	maoism = 5
+	trotskism = 5
+	communism = 20
+	liberal = 30
+	neutrality = 0
+	titoism = 15
+}
+}
+
+1949.1.1 = { 
+set_politics = {
+	ruling_party = communism
 	last_election = "1945.9.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -65,17 +87,6 @@ set_popularities = {
 }
 } 
 
-set_popularities = {
-    democratic = 10
-	fascism = 15
-	chucheism = 0
-	maoism = 5
-	trotskism = 5
-	communism = 20
-	liberal = 30
-	neutrality = 0
-	titoism = 15
-}
 give_military_access = SOV
 
 create_country_leader = {
