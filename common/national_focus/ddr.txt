@@ -147,6 +147,11 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ddr_collective
 			
+			swap_ideas = {
+                               remove_idea = market-comand_system
+                               add_idea = comand_system
+                        }
+			
 			add_building_construction = {
 				type = industrial_complex
 				level = 2
@@ -276,10 +281,14 @@ focus_tree = {
 			focus = DDR_support_workers_unions
 		}
 		completion_reward = {
-			remove_ideas = Thelman
-			add_ideas = ddr_german_revolution
-			remove_ideas = ddr_kazarmey_army
-			add_ideas = ddr_proletar_army
+		        swap_ideas = {
+			     remove_ideas = Thelman
+			     add_ideas = ddr_german_revolution
+			}
+			swap_ideas = {
+			     remove_ideas = ddr_kazarmey_army
+			     add_ideas = ddr_proletar_army
+			}
 		}
 	}
 	focus = {
@@ -295,7 +304,7 @@ focus_tree = {
 			add_ideas = ddr_federalization
 			IF = {
 				limit = {
-					socdem > 0.75
+					socdem > 0.45
 				}
 				country_event = ddr.17
 			}
