@@ -245,6 +245,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = ddr.15
+			add_popularity = {
+			    ideology = titoism
+			    popularity = 0.15
+			}
 		}
 	}
 	focus = {
