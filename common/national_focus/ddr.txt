@@ -651,7 +651,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.55
-				uses = 2
+				uses = 1
 				category = naval_equipment
 			}
 		}
@@ -668,7 +668,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.55
-				uses = 2
+				uses = 1
 				category = strategic_destruction_tree
 			}
 		}
@@ -685,7 +685,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.55
-				uses = 2
+				uses = 1
 				category = tanketka_tech
 			}
 		}
