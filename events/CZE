@@ -1,1 +1,33 @@
+﻿###########################
+# CZE Events
+###########################
 
+add_namespace = cze
+
+country_event = {  #Смерть Готвальда
+	id = cze.1
+	title = cze.1.t
+	desc = cze.1.d
+	picture = GFX_report_event_french_british_officers
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = CZE
+		date > 1954.1.5
+		has_government = communism
+    }
+	
+	option = {
+		name = cze.1.a
+		ai_chance = { factor = 30 } #Победа Рудольфа Сланцкого - независимого коммуниста
+	}
+  option = {
+		name = cze.1.b
+		ai_chance = { factor = 45 } #Победа Антонина Новотного
+	}
+  option = {
+		name = cze.1.c
+		ai_chance = { factor = 25 } #Победа секретаря Дубчека
+	}
+}
