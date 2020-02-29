@@ -206,26 +206,6 @@ create_country_leader = {
 #}
 #
 
-	create_country_leader = {
-		name = "Otto Grotewohl"
-		desc = "POLITICS_WILHELM_PIECK_DESC"	 
-		picture = gfx/leaders/DDR/Otto_Grotewohl.dds
-		expire = "1964.09.21"
-		ideology = demsoc
-		traits = {
-		}
-	}
-	
-	create_country_leader = {
-		name = "Lothar Bolz"
-		desc = "POLITICS_WILHELM_PIECK_DESC"	 
-		picture = gfx/leaders/DDR/Lothar_Bolz.dds
-		expire = "1986.12.29"
-		ideology = nationalcom
-		traits = {
-		}
-	}
-
 1949.09.11 = {
 	create_country_leader = {
 		name = "Wilhelm Pieck"
@@ -240,7 +220,7 @@ create_country_leader = {
 		create_country_leader = {
 		name = "Otto Grotewohl"
 		desc = "POLITICS_WILHELM_PIECK_DESC"	 
-		picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
+		picture = gfx/leaders/DDR/Otto_Grotewohl.dds
 		expire = "1964.09.21"
 		ideology = demsoc
 		traits = {
@@ -250,7 +230,7 @@ create_country_leader = {
 	create_country_leader = {
 		name = "Lothar Bolz"
 		desc = "POLITICS_WILHELM_PIECK_DESC"	 
-		picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
+		picture = gfx/leaders/DDR/Lothar_Bolz.dds
 		expire = "1986.12.29"
 		ideology = nationalcom
 		traits = {
