@@ -14,20 +14,37 @@ country_event = {  #Смерть Готвальда
 	
 	trigger = { 
 		tag = CZE
-		date > 1954.1.5
+		date = 1953.3.14
 		has_government = communism
     }
 	
-	option = {
+    option = {
 		name = cze.1.a
-		ai_chance = { factor = 30 } #Победа Рудольфа Сланцкого - независимого коммуниста
+		ai_chance = { factor = 65 } #Победа Антонина Новотного
+		
+		create_country_leader = { 
+			name = "Antonín Novotný" 
+			desc = "" 
+			picture = ""
+			expire = "1975.1.28" 
+			ideology = marxism
+		}
 	}
-  option = {
+    option = {
 		name = cze.1.b
-		ai_chance = { factor = 45 } #Победа Антонина Новотного
-	}
-  option = {
-		name = cze.1.c
-		ai_chance = { factor = 25 } #Победа секретаря Дубчека
+		ai_chance = { factor = 35 } #Победа секретаря Дубчека
+		
+		complete_national_focus = CZE_libertarian_left_victory
+		
+		set_politics = {
+			ruling_party = titoism
+		}
+		create_country_leader = { 
+			name = "Alexander Dubček" 
+			desc = "" 
+			picture = ""
+			expire = "1992.10.7" 
+			ideology = tito
+		}
 	}
 }
