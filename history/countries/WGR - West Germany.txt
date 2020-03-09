@@ -14,6 +14,26 @@ set_convoys = 50
 
 1945.1.1 = {
 
+set_politics = {
+	ruling_party = democratic
+	last_election = "1946.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+set_popularities = {
+    democratic = 31
+	fascism = 20
+	chucheism = 0
+	maoism = 0
+	trotskism = 5
+	titoism = 5
+	liberal = 19
+	neutrality = 0
+	communism = 20
+}
+
+
 	add_political_power = 100
 	create_country_leader = {
 		name = "Lucius D. Clay"
