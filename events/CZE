@@ -1,0 +1,86 @@
+add_namespace = cze
+
+country_event = {  #Смерть Готвальда
+	id = cze.1
+	title = cze.1.t
+	desc = cze.1.d
+	picture = GFX_report_event_french_british_officers
+	
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = CZE
+		date = 1953.3.14
+		has_government = communism
+    }
+	
+    option = {
+		name = cze.1.a
+		ai_chance = { factor = 65 } #Победа Антонина Новотного
+		
+		complete_national_focus = CZE_independent_left_victory
+		
+		create_country_leader = { 
+			name = "Antonín Novotný" 
+			desc = "" 
+			picture = ""
+			expire = "1975.1.28" 
+			ideology = marxism
+		}
+	}
+    option = {
+		name = cze.1.b
+		ai_chance = { factor = 35 } #Победа секретаря Дубчека
+		
+		complete_national_focus = CZE_libertarian_left_victory
+		
+		set_politics = {
+			ruling_party = titoism
+		}
+		create_country_leader = { 
+			name = "Alexander Dubček" 
+			desc = "" 
+			picture = ""
+			expire = "1992.10.7" 
+			ideology = tito
+		}
+	}
+}
+
+country_event = {  #Длиный день
+	id = cze.2
+	title = cze.2.t
+	desc = cze.2.d
+	picture = GFX_report_event_french_british_officers
+	
+	fire_only_once = yes
+	
+	trigger = { 
+    }
+	
+    option = {
+		name = cze.long.day.a
+		ai_chance = { factor = 100 } 
+	}
+}
+
+country_event = {  #Необычная ситуация
+	id = cze.3
+	title = cze.3.t
+	desc = cze.3.d
+	picture = GFX_report_event_french_british_officers
+	
+	fire_only_once = yes
+	
+	trigger = { 
+    }
+	
+    option = {
+		name = cze.3.a
+		ai_chance = { factor = 100 }
+        add_popularity = { 
+			ideology = communism 
+		    popularity = 0.05
+		} 		
+	}
+}
