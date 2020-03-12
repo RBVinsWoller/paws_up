@@ -370,6 +370,11 @@ focus_tree = {
 							remove_ideas = ddr_kazarmey_army
 							add_ideas = ddr_proletar_army
 						}
+						
+					swap_ideas = {
+                                                        remove_idea = market-comand_system
+                                                        add_idea = comand_system
+                                        }
 				}
 
 	}
