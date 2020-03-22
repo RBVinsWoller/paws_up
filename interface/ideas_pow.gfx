@@ -3447,5 +3447,9 @@ spriteTypes = {
 		name = "GFX_idea_DDR_ddr"
 		texturefile = "gfx/interface/ideas/ddr.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_POL_terrorist"
+		texturefile = "gfx/interface/ideas/Upa.dds"
+	}
 	
 }
