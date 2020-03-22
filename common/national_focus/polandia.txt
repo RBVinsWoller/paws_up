@@ -14,7 +14,10 @@ focus_tree = {
 		cost = 10,00
 		x = 10
 		y = 0
-
+		completion_reward = {
+			country_event = pol.4
+			add_stability = -0.05
+		}
 	}
 	focus = {
 		id = POL_united_comparties_of_poland
@@ -25,10 +28,20 @@ focus_tree = {
 		}
 		x = 4
 		y = 5
-
+		completion_reward = {
+			country_event = pol.5
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}	
+			add_popularity = {
+				ideology = titoism
+				popularity = 0.05
+			}	
+		}
 	}
 	focus = {
-		id = POL_conservi_win
+		id = POL_conservi_win_BAN
 		icon = GFX_goal_unknown
 		cost = 10,00
 		mutually_exclusive = {
@@ -36,7 +49,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 5
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = POL_fabrique_national
@@ -47,7 +62,29 @@ focus_tree = {
 		}
 		x = 2
 		y = 6
-
+		completion_reward = {
+			country_event = pol.6
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 	focus = {
 		id = POL_war_national
@@ -58,7 +95,19 @@ focus_tree = {
 		}
 		x = 6
 		y = 6
-
+		completion_reward = {
+		country_event = pol.7
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 	focus = {
 		id = POL_soviet_help
@@ -72,7 +121,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 7
-
+		completion_reward = {
+			add_ideas = soviet_ingeneer
+		}
 	}
 	focus = {
 		id = POL_poland_people_republic
@@ -83,7 +134,10 @@ focus_tree = {
 		}
 		x = 4
 		y = 8
-
+		completion_reward = {
+			set_cosmetic_tag = polish_people_republic
+			country_event = pol.8
+		}
 	}
 	focus = {
 		id = POL_socialist_money
@@ -94,7 +148,9 @@ focus_tree = {
 		}
 		x = 2
 		y = 9
-
+		completion_reward = {
+			add_ideas = soul_la_revolution
+		}
 	}
 	focus = {
 		id = POL_socialist_education
@@ -105,7 +161,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 9
-
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = POL_unity_workers_3rd_sosloviya
@@ -119,7 +177,11 @@ focus_tree = {
 		}
 		x = 4
 		y = 10
-
+		completion_reward = {
+			add_ideas = unity_polsky
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = POL_die_pilsudstkoman
@@ -130,7 +192,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 1
-
+		completion_reward = {
+			country_event = pol.9
+		}
 	}
 	focus = {
 		id = POL_polska_strong_police
@@ -141,7 +205,13 @@ focus_tree = {
 		}
 		x = 6
 		y = 11
-
+		completion_reward = {
+			country_event = pol.9
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
 	}
 	focus = {
 		id = POL_kill_nazi
@@ -152,7 +222,17 @@ focus_tree = {
 		}
 		x = 10
 		y = 1
-
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -1
+			}
+			remove_ideas = POL_terrorist
+		}
 	}
 	focus = {
 		id = POL_crush_upa
@@ -163,7 +243,10 @@ focus_tree = {
 		}
 		x = 14
 		y = 1
-
+		completion_reward = {
+			remove_ideas = UPA
+			add_manpower = -7500
+		}
 	}
 	focus = {
 		id = POL_sov_man_trade
@@ -180,7 +263,9 @@ focus_tree = {
 		}
 		x = 7
 		y = 2
-
+		completion_reward = {
+			country_event = pol.10
+		}
 	}
 	focus = {
 		id = POL_jews_go_home
@@ -191,7 +276,9 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_economic_help_sov
@@ -208,7 +295,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 2
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_nazi_go_home
@@ -222,7 +311,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 3
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_elections
@@ -233,7 +324,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_war_prisoners_go_home
@@ -244,7 +337,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_soviet_trotsky_BAN
@@ -255,7 +350,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 6
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_america_awesome
@@ -269,7 +366,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 7
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_america_base_warsaw
@@ -280,7 +379,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 8
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_contrrevolution
@@ -291,7 +392,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 9
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_rokossovsky_kruta
@@ -305,7 +408,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 10
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_freakin_liberals
@@ -319,7 +424,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 10
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_trotsky_monument_BAN
@@ -330,7 +437,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 6
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_our_great_party
@@ -344,7 +453,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 7
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_antibolshevism
@@ -355,7 +466,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 8
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_polska_strong_army
@@ -366,7 +479,9 @@ focus_tree = {
 		}
 		x = 2
 		y = 11
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_war_science_ussr
@@ -380,7 +495,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 12
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = POL_rokossovsky_go_home
@@ -391,6 +508,8 @@ focus_tree = {
 		}
 		x = 19
 		y = 9
-
+		completion_reward = {
+		
+		}
 	}
 }

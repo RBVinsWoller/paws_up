@@ -105,3 +105,122 @@ country_event = { #Герек смещен
 		ai_chance = { factor = 100 }
 	}
 }
+
+country_event = {
+	id = pol.4
+	title = pol.4.t
+	desc = pol.4.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.4.a
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = pol.5
+	title = pol.5.t
+	desc = pol.5.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.4.a
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = pol.6
+	title = pol.6.t
+	desc = pol.6.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.6.a
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = pol.7
+	title = pol.7.t
+	desc = pol.7.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.7.a
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = pol.8
+	title = pol.8.t
+	desc = pol.8.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.8.a
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = pol.8
+	title = pol.8.t
+	desc = pol.8.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.8.a
+		ai_chance = { factor = 100 }
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+country_event = {
+	id = pol.9
+	title = pol.9.t
+	desc = pol.9.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.9.a
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = pol.10
+	title = pol.10.t
+	desc = pol.10.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.10.a
+		ai_chance = { factor = 100 }
+		add_timed_idea = {
+			idea = trade_man
+			days = 365
+		}
+	}
+}

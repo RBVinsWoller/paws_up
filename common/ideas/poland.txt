@@ -1,3 +1,88 @@
 ideas = {
+	country = {
+		soviet_ingeneer = {
 
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		soul_la_revolution = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				
+			}
+		}
+		unity_polsky = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		trade_man = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+	}
 }
