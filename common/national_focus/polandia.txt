@@ -1,0 +1,396 @@
+focus_tree = {
+	id = polandia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	focus = {
+		id = POL_long_day
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = POL_united_comparties_of_poland
+		icon = GFX_goal_unknown
+		cost = 10,00
+		mutually_exclusive = {
+			focus = POL_conservi_win
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = POL_conservi_win
+		icon = GFX_goal_unknown
+		cost = 10,00
+		mutually_exclusive = {
+			focus = POL_united_comparties_of_poland
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = POL_fabrique_national
+		icon = GFX_goal_unknown
+		cost = 11,00
+		prerequisite = {
+			focus = POL_united_comparties_of_poland
+		}
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = POL_war_national
+		icon = GFX_goal_unknown
+		cost = 13,00
+		prerequisite = {
+			focus = POL_united_comparties_of_poland
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = POL_soviet_help
+		icon = GFX_goal_unknown
+		cost = 9,00
+		prerequisite = {
+			focus = POL_fabrique_national
+		}
+		prerequisite = {
+			focus = POL_war_national
+		}
+		x = 4
+		y = 7
+
+	}
+	focus = {
+		id = POL_poland_people_republic
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_soviet_help
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = POL_socialist_money
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_poland_people_republic
+		}
+		x = 2
+		y = 9
+
+	}
+	focus = {
+		id = POL_socialist_education
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_poland_people_republic
+		}
+		x = 6
+		y = 9
+
+	}
+	focus = {
+		id = POL_unity_workers_3rd_sosloviya
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_socialist_money
+		}
+		prerequisite = {
+			focus = POL_socialist_education
+		}
+		x = 4
+		y = 10
+
+	}
+	focus = {
+		id = POL_die_pilsudstkoman
+		icon = GFX_goal_unknown
+		cost = 11,00
+		prerequisite = {
+			focus = POL_long_day
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = POL_polska_strong_police
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_unity_workers_3rd_sosloviya
+		}
+		x = 6
+		y = 11
+
+	}
+	focus = {
+		id = POL_kill_nazi
+		icon = GFX_goal_unknown
+		cost = 17,00
+		prerequisite = {
+			focus = POL_long_day
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = POL_crush_upa
+		icon = GFX_goal_unknown
+		cost = 17,00
+		prerequisite = {
+			focus = POL_long_day
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = POL_sov_man_trade
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_die_pilsudstkoman
+		}
+		prerequisite = {
+			focus = POL_kill_nazi
+		}
+		prerequisite = {
+			focus = POL_crush_upa
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = POL_jews_go_home
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = POL_sov_man_trade
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = POL_economic_help_sov
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_crush_upa
+		}
+		prerequisite = {
+			focus = POL_kill_nazi
+		}
+		prerequisite = {
+			focus = POL_die_pilsudstkoman
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = POL_nazi_go_home
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = POL_economic_help_sov
+		}
+		prerequisite = {
+			focus = POL_sov_man_trade
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = POL_elections
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_nazi_go_home
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = POL_war_prisoners_go_home
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = POL_economic_help_sov
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = POL_soviet_trotsky_BAN
+		icon = GFX_goal_unknown
+		cost = 7,00
+		prerequisite = {
+			focus = POL_conservi_win
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = POL_america_awesome
+		icon = GFX_goal_unknown
+		cost = 6,00
+		prerequisite = {
+			focus = POL_soviet_trotsky_BAN
+		}
+		mutually_exclusive = {
+			focus = POL_our_great_party
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = POL_america_base_warsaw
+		icon = GFX_goal_unknown
+		cost = 6,00
+		prerequisite = {
+			focus = POL_america_awesome
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = POL_contrrevolution
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = POL_america_base_warsaw
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = POL_rokossovsky_kruta
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_contrrevolution
+		}
+		mutually_exclusive = {
+			focus = POL_freakin_liberals
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = {
+		id = POL_freakin_liberals
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_contrrevolution
+		}
+		mutually_exclusive = {
+			focus = POL_rokossovsky_kruta
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = POL_trotsky_monument_BAN
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = POL_conservi_win
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = POL_our_great_party
+		icon = GFX_goal_unknown
+		cost = 9,00
+		prerequisite = {
+			focus = POL_trotsky_monument_BAN
+		}
+		mutually_exclusive = {
+			focus = POL_america_awesome
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = POL_antibolshevism
+		icon = GFX_goal_unknown
+		cost = 9,00
+		prerequisite = {
+			focus = POL_our_great_party
+		}
+		x = 18
+		y = 8
+
+	}
+	focus = {
+		id = POL_polska_strong_army
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_unity_workers_3rd_sosloviya
+		}
+		x = 2
+		y = 11
+
+	}
+	focus = {
+		id = POL_war_science_ussr
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = POL_polska_strong_police
+		}
+		prerequisite = {
+			focus = POL_polska_strong_army
+		}
+		x = 4
+		y = 12
+
+	}
+	focus = {
+		id = POL_rokossovsky_go_home
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = POL_antibolshevism
+		}
+		x = 19
+		y = 9
+
+	}
+}
