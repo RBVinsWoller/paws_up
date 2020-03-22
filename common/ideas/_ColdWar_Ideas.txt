@@ -1312,4 +1312,23 @@ country = {
 			}
 			
 		}
+		POL_terrorist = {
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Upa
+			
+			modifier = {
+				production_speed_buildings_factor = -0.3
+				MONTHLY_POPULATION = -0.05
+				stability_factor = -0.1
+			}
+			
+		}
 	}	
