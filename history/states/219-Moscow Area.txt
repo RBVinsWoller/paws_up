@@ -14,8 +14,17 @@ state={
 		owner = SOV
 		add_core_of = RUS
                 add_core_of = SOV
-				victory_points = {
+		victory_points = {
 			6380 50
+		} 
+		victory_points = {
+			301 10
+		}
+		victory_points = {
+			9348 12
+		} 
+		victory_points = {
+			6414 10
 		}
 		buildings = {
 		arms_factory = 2
