@@ -28,6 +28,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 5
+		available = {
+			always = no
+		}
 		completion_reward = {
 			country_event = pol.5
 			add_popularity = {
@@ -41,7 +44,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_conservi_win_BAN
+		id = POL_conservi_win
 		icon = GFX_goal_unknown
 		cost = 10,00
 		mutually_exclusive = {
@@ -49,8 +52,11 @@ focus_tree = {
 		}
 		x = 16
 		y = 5
+		available = {
+			always = no
+		}
 		completion_reward = {
-			
+			country_event = pol.11
 		}
 	}
 	focus = {
@@ -277,7 +283,8 @@ focus_tree = {
 		x = 7
 		y = 3
 		completion_reward = {
-		
+			add_stability = 0.1
+			country_event = pol.12
 		}
 	}
 	focus = {
@@ -296,7 +303,7 @@ focus_tree = {
 		x = 13
 		y = 2
 		completion_reward = {
-		
+			country_event = pol.13
 		}
 	}
 	focus = {
@@ -312,7 +319,7 @@ focus_tree = {
 		x = 10
 		y = 3
 		completion_reward = {
-		
+			country_event = pol.15
 		}
 	}
 	focus = {
@@ -322,10 +329,14 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_nazi_go_home
 		}
+		available = {
+			has_completed_focus = POL_economic_help_sov
+			has_completed_focus = POL_jews_go_home
+		}
 		x = 10
 		y = 4
 		completion_reward = {
-		
+			country_event = pol.14
 		}
 	}
 	focus = {
@@ -338,7 +349,7 @@ focus_tree = {
 		x = 13
 		y = 3
 		completion_reward = {
-		
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -351,7 +362,7 @@ focus_tree = {
 		x = 14
 		y = 6
 		completion_reward = {
-		
+			country_event = pol.16
 		}
 	}
 	focus = {
@@ -367,7 +378,7 @@ focus_tree = {
 		x = 15
 		y = 7
 		completion_reward = {
-		
+			
 		}
 	}
 	focus = {

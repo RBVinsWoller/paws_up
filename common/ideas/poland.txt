@@ -81,7 +81,70 @@ ideas = {
 			picture = pol
 			
 			modifier = {
-				conscription_factor = 0.1
+				MONTHLY_POPULATION = 0.1
+			}
+		}
+		ussr_sanction = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		economic_bloc = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		population_pol = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.1
 			}
 		}
 	}
