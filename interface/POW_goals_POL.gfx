@@ -1,0 +1,126 @@
+spriteTypes = {	
+	SpriteType = {
+	name = "goals_pamyatnik"
+	texturefile = "gfx/interface/focus/goals_pamyatnik.dds"			
+	}
+	SpriteType = {
+	name = "goals_liberals"
+	texturefile = "gfx/interface/focus/goals_liberals.dds"			
+	}
+	SpriteType = {
+	name = "goals_soviet_conservarors"
+	texturefile = "gfx/interface/focus/goals_soviet_conservarors.dds"			
+	}
+	SpriteType = {
+	name = "goals_antibolshevism"
+	texturefile = "gfx/interface/focus/goals_antibolshevism.dds"			
+	}
+	SpriteType = {
+	name = "goals_contrrevolution"
+	texturefile = "gfx/interface/focus/goals_contrrevolution.dds"			
+	}
+	SpriteType = {
+	name = "goals_party"
+	texturefile = "gfx/interface/focus/goals_party.dds"			
+	}
+	SpriteType = {
+	name = "goals_present"
+	texturefile = "gfx/interface/focus/goals_present.dds"			
+	}
+	SpriteType = {
+	name = "goals_american_help"
+	texturefile = "gfx/interface/focus/goals_american_help.dds"			
+	}
+	SpriteType = {
+	name = "goals_conservators_win"
+	texturefile = "gfx/interface/focus/goals_conservators_win.dds"			
+	}
+	SpriteType = {
+	name = "goals_soviet_support"
+	texturefile = "gfx/interface/focus/goals_soviet_support.dds"			
+	}
+	SpriteType = {
+	name = goals_civ_factories""
+	texturefile = "gfx/interface/focus/goals_civ_factories.dds"			
+	}
+	SpriteType = {
+	name = "goals_factory"
+	texturefile = "gfx/interface/focus/goals_factory.dds"			
+	}
+	SpriteType = {
+	name = "goals_poland_militia"
+	texturefile = "gfx/interface/focus/goals_poland_militia.dds"			
+	}
+	SpriteType = {
+	name = "goals_poland_army"
+	texturefile = "gfx/interface/focus/goals_poland_army.dds"			
+	}
+	SpriteType = {
+	name = "goals_united_workers"
+	texturefile = "gfx/interface/focus/goals_united_workers.dds"			
+	}
+	SpriteType = {
+	name = "goals_socialism_education"
+	texturefile = "gfx/interface/focus/goals_socialism_education.dds"			
+	}
+	SpriteType = {
+	name = "goals_socialist_cennosti"
+	texturefile = "gfx/interface/focus/goals_socialist_cennosti.dds"			
+	}
+	SpriteType = {
+	name = "goals_elections_anticommunism"
+	texturefile = "gfx/interface/focus/goals_elections_anticommunism.dds"			
+	}
+	SpriteType = {
+	name = "goals_elections_communism"
+	texturefile = "gfx/interface/focus/goals_elections_communism.dds"			
+	}
+	SpriteType = {
+	name = "goals_elections"
+	texturefile = "gfx/interface/focus/goals_elections.dds"			
+	}
+	SpriteType = {
+	name = "goals_germans"
+	texturefile = "gfx/interface/focus/goals_germans.dds"			
+	}
+	SpriteType = {
+	name = "gpals_nazi_arrest"
+	texturefile = "gfx/interface/focus/gpals_nazi_arrest.dds"			
+	}
+	SpriteType = {
+	name = "goals_jews"
+	texturefile = "gfx/interface/focus/goals_jews.dds"			
+	}
+	SpriteType = {
+	name = "goals_soviet_ukr"
+	texturefile = "gfx/interface/focus/goals_soviet_ukr.dds"			
+	}
+	SpriteType = {
+	name = "gpals_pilsidskiy"
+	texturefile = "gfx/interface/focus/gpals_pilsidskiy.dds"			
+	}
+	SpriteType = {
+	name = "goals_upa"
+	texturefile = "gfx/interface/focus/goals_upa.dds"			
+	}
+	SpriteType = {
+	name = "goals_help_from_ussr"
+	texturefile = "gfx/interface/focus/goals_help_from_ussr.dds"			
+	}
+	SpriteType = {
+	name = "goals_destroy_fascist"
+	texturefile = "gfx/interface/focus/goals_destroy_fascist.dds"			
+	}
+	SpriteType = {
+	name = "goals_POL_long_day"
+	texturefile = "gfx/interface/focus/goals_POL_long_day.dds"			
+	}
+	SpriteType = {
+	name = "Rokossovskiy_win"
+	texturefile = "gfx/interface/focus/Rokossovskiy_win.dds"			
+	}
+	SpriteType = {
+	name = "Rokossovskiy_arrest"
+	texturefile = "gfx/interface/focus/Rokossovskiy_arrest.dds"			
+	}
+}

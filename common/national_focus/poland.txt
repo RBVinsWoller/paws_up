@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = POL_long_day
-		icon = GFX_goal_unknown
+		icon = goals_POL_long_day
 		cost = 10,00
 		x = 10
 		y = 0
@@ -21,7 +21,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_united_comparties_of_poland
-		icon = GFX_goal_unknown
+		icon = goals_party
 		cost = 10,00
 		mutually_exclusive = {
 			focus = POL_conservi_win
@@ -45,7 +45,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_conservi_win
-		icon = GFX_goal_unknown
+		icon = goals_conservators_win
 		cost = 10,00
 		mutually_exclusive = {
 			focus = POL_united_comparties_of_poland
@@ -61,7 +61,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_fabrique_national
-		icon = GFX_goal_unknown
+		icon = goals_civ_factories
 		cost = 11,00
 		prerequisite = {
 			focus = POL_united_comparties_of_poland
@@ -94,7 +94,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_war_national
-		icon = GFX_goal_unknown
+		icon = goals_factory
 		cost = 13,00
 		prerequisite = {
 			focus = POL_united_comparties_of_poland
@@ -117,7 +117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_soviet_help
-		icon = GFX_goal_unknown
+		icon = goals_help_from_ussr
 		cost = 9,00
 		prerequisite = {
 			focus = POL_fabrique_national
@@ -133,7 +133,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_poland_people_republic
-		icon = GFX_goal_unknown
+		icon = goals_POL_long_day
 		cost = 10,00
 		prerequisite = {
 			focus = POL_soviet_help
@@ -147,7 +147,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_socialist_money
-		icon = GFX_goal_unknown
+		icon = goals_socialist_cennosti
 		cost = 10,00
 		prerequisite = {
 			focus = POL_poland_people_republic
@@ -160,7 +160,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_socialist_education
-		icon = GFX_goal_unknown
+		icon = goals_socialism_education
 		cost = 10,00
 		prerequisite = {
 			focus = POL_poland_people_republic
@@ -173,7 +173,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_unity_workers_3rd_sosloviya
-		icon = GFX_goal_unknown
+		icon = goals_united_workers
 		cost = 10,00
 		prerequisite = {
 			focus = POL_socialist_money
@@ -191,7 +191,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_die_pilsudstkoman
-		icon = GFX_goal_unknown
+		icon = gpals_pilsidskiy
 		cost = 11,00
 		prerequisite = {
 			focus = POL_long_day
@@ -204,7 +204,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_polska_strong_police
-		icon = GFX_goal_unknown
+		icon = goals_poland_militia
 		cost = 10,00
 		prerequisite = {
 			focus = POL_unity_workers_3rd_sosloviya
@@ -220,7 +220,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_kill_nazi
+		id = gpals_nazi_arrest
 		icon = GFX_goal_unknown
 		cost = 17,00
 		prerequisite = {
@@ -242,7 +242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_crush_upa
-		icon = GFX_goal_unknown
+		icon = goals_upa
 		cost = 17,00
 		prerequisite = {
 			focus = POL_long_day
@@ -256,7 +256,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_sov_man_trade
-		icon = GFX_goal_unknown
+		icon = goals_soviet_support
 		cost = 10,00
 		prerequisite = {
 			focus = POL_die_pilsudstkoman
@@ -275,7 +275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_jews_go_home
-		icon = GFX_goal_unknown
+		icon = goals_jews
 		cost = 5,00
 		prerequisite = {
 			focus = POL_sov_man_trade
@@ -288,7 +288,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_economic_help_sov
+		id = goals_help_from_ussr
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
@@ -308,7 +308,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_nazi_go_home
-		icon = GFX_goal_unknown
+		icon = goals_germans
 		cost = 5,00
 		prerequisite = {
 			focus = POL_economic_help_sov
@@ -324,7 +324,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_elections
-		icon = GFX_goal_unknown
+		icon = goals_elections
 		cost = 10,00
 		prerequisite = {
 			focus = POL_nazi_go_home
@@ -341,7 +341,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_war_prisoners_go_home
-		icon = GFX_goal_unknown
+		icon = goals_destroy_fascist
 		cost = 5,00
 		prerequisite = {
 			focus = POL_economic_help_sov
@@ -354,7 +354,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_soviet_trotsky_BAN
-		icon = GFX_goal_unknown
+		icon = goals_soviet_conservarors
 		cost = 7,00
 		prerequisite = {
 			focus = POL_conservi_win
@@ -367,7 +367,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_america_awesome
-		icon = GFX_goal_unknown
+		icon = goals_american_help
 		cost = 6,00
 		prerequisite = {
 			focus = POL_soviet_trotsky_BAN
@@ -383,7 +383,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_america_base_warsaw
-		icon = GFX_goal_unknown
+		icon = goals_american_help
 		cost = 6,00
 		prerequisite = {
 			focus = POL_america_awesome
@@ -396,7 +396,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_contrrevolution
-		icon = GFX_goal_unknown
+		icon = goals_contrrevolution
 		cost = 5,00
 		prerequisite = {
 			focus = POL_america_base_warsaw
@@ -409,7 +409,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_rokossovsky_kruta
-		icon = GFX_goal_unknown
+		icon = Rokossovskiy_arrest
 		cost = 10,00
 		prerequisite = {
 			focus = POL_contrrevolution
@@ -425,7 +425,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_freakin_liberals
-		icon = GFX_goal_unknown
+		icon = goals_liberals
 		cost = 10,00
 		prerequisite = {
 			focus = POL_contrrevolution
@@ -441,7 +441,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_trotsky_monument_BAN
-		icon = GFX_goal_unknown
+		icon = goals_pamyatnik
 		cost = 5,00
 		prerequisite = {
 			focus = POL_conservi_win
@@ -454,7 +454,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_our_great_party
-		icon = GFX_goal_unknown
+		icon = goals_party
 		cost = 9,00
 		prerequisite = {
 			focus = POL_trotsky_monument_BAN
@@ -470,7 +470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_antibolshevism
-		icon = GFX_goal_unknown
+		icon = goals_antibolshevism
 		cost = 9,00
 		prerequisite = {
 			focus = POL_our_great_party
@@ -483,7 +483,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_polska_strong_army
-		icon = GFX_goal_unknown
+		icon = goals_poland_army
 		cost = 10,00
 		prerequisite = {
 			focus = POL_unity_workers_3rd_sosloviya
@@ -496,7 +496,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_war_science_ussr
-		icon = GFX_goal_unknown
+		icon = goals_soviet_support
 		cost = 10,00
 		prerequisite = {
 			focus = POL_polska_strong_police
@@ -512,7 +512,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_rokossovsky_go_home
-		icon = GFX_goal_unknown
+		icon = Rokossovskiy_win
 		cost = 5,00
 		prerequisite = {
 			focus = POL_antibolshevism
