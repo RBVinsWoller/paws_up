@@ -324,3 +324,111 @@ country_event = {
 		add_stability = -0.15
 	}
 }
+country_event = {
+	id = pol.17
+	title = pol.17.t
+	desc = pol.17.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.17.a
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = pol.18
+	title = pol.18.t
+	desc = pol.18.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.18.a
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = comunism
+			popularity = -0.25
+		}	
+	}
+}
+country_event = {
+	id = pol.19
+	title = pol.19.t
+	desc = pol.19.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.19.a
+		ai_chance = { factor = 100 }
+		add_relation_modifier = {
+			target = USA
+			modifier = POL_USA_base
+		}
+	}
+}
+country_event = {
+	id = pol.20
+	title = pol.20.t
+	desc = pol.20.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.20.a
+		ai_chance = { factor = 50 }
+		complete_national_focus = POL_rokossovsky_kruta
+	}
+	option = {
+		name = pol.20.b
+		ai_chance = { factor = 50 }
+		complete_national_focus = POL_freakin_liberals
+	}
+}
+country_event = {
+	id = pol.21
+	title = pol.21.t
+	desc = pol.21.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.21.a
+		ai_chance = { factor = 100 }
+		add_tech_bonus = {
+				bonus = 0.55
+				uses = 3
+				category = armor
+			}
+	}
+}
+country_event = {
+	id = pol.22
+	title = pol.22.t
+	desc = pol.22.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.22.a
+		ai_chance = { factor = 100 }
+		add_tech_bonus = {
+				bonus = 0.55
+				uses = 3
+				category = armor
+			}
+	}
+}

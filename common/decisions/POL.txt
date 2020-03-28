@@ -1,0 +1,159 @@
+stability_regions = {
+	warsaw = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 130
+		
+		available = {
+			political_power_daily > 0.9
+			controls_state = 10
+		}
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = comunism
+				popularity = 0.05
+			}	
+		}
+
+		modifier = {
+			political_power_cost = 1
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	gdansk = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 130
+		
+		available = {
+			political_power_daily > 0.9
+			controls_state = 85
+		}
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = comunism
+				popularity = 0.05
+			}	
+		}
+
+		modifier = {
+			political_power_cost = 1
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	plotsk = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 130
+		
+		available = {
+			political_power_daily > 0.9
+			controls_state = 98
+		}
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = comunism
+				popularity = 0.05
+			}	
+		}
+
+		modifier = {
+			political_power_cost = 1
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	Lodz = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 130
+		
+		available = {
+			political_power_daily > 0.9
+			controls_state = 87
+		}
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = comunism
+				popularity = 0.05
+			}	
+		}
+
+		modifier = {
+			political_power_cost = 1
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	eastern_ukraine = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 130
+		
+		available = {
+			political_power_daily > 0.9
+			NOT = {
+				has_idea = UPA
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = comunism
+				popularity = 0.05
+			}
+		}
+
+		modifier = {
+			political_power_cost = 1
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

@@ -21,7 +21,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_united_comparties_of_poland
-		icon = goals_party
+		icon = goals_elections_communism
 		cost = 10,00
 		mutually_exclusive = {
 			focus = POL_conservi_win
@@ -45,7 +45,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_conservi_win
-		icon = goals_conservators_win
+		icon = goals_elections_anticommunism
 		cost = 10,00
 		mutually_exclusive = {
 			focus = POL_united_comparties_of_poland
@@ -220,8 +220,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = gpals_nazi_arrest
-		icon = GFX_goal_unknown
+		id = POL_kill_nazi
+		icon = gpals_nazi_arrest
 		cost = 17,00
 		prerequisite = {
 			focus = POL_long_day
@@ -288,8 +288,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = goals_help_from_ussr
-		icon = GFX_goal_unknown
+		id = POL_economic_help_sov
+		icon = goals_help_from_ussr
 		cost = 10,00
 		prerequisite = {
 			focus = POL_crush_upa
@@ -367,7 +367,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_america_awesome
-		icon = goals_american_help
+		icon = goals_present
 		cost = 6,00
 		prerequisite = {
 			focus = POL_soviet_trotsky_BAN
@@ -378,7 +378,9 @@ focus_tree = {
 		x = 15
 		y = 7
 		completion_reward = {
-			
+			add_ideas = chastny_banks
+			country_event = pol.17
+			country_event = pol.18
 		}
 	}
 	focus = {
@@ -391,7 +393,14 @@ focus_tree = {
 		x = 14
 		y = 8
 		completion_reward = {
-		
+			add_stability = -0.05
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			add_ideas = walkin_warriors
+			country_event = pol.19
 		}
 	}
 	focus = {
@@ -404,7 +413,7 @@ focus_tree = {
 		x = 13
 		y = 9
 		completion_reward = {
-		
+			country_event = pol.20
 		}
 	}
 	focus = {
@@ -420,7 +429,23 @@ focus_tree = {
 		x = 10
 		y = 10
 		completion_reward = {
+			set_party_name = { 
+				ideology = comunism 
+				long_name = new_pol_com_long
+				name = new_pol_com
+			}
+			create_country_leader = {
+				name = "Marchal Rokossovsky"
+				desc = "POLITICS_ROKOSSOVSKY_DESC"
+				picture = "Portrait_Rokossovsky.dds"
+				expire = "1965.1.1"
+				ideology = stalinism
+				traits = {
 		
+				}
+			}
+			load_focus_tree = rokossovsky_pol_focus
+			
 		}
 	}
 	focus = {
@@ -449,12 +474,13 @@ focus_tree = {
 		x = 18
 		y = 6
 		completion_reward = {
-		
+			add_ideas = pol_monuments
+			add_war_support = -0.1
 		}
 	}
 	focus = {
 		id = POL_our_great_party
-		icon = goals_party
+		icon = goals_socialist_cennosti
 		cost = 9,00
 		prerequisite = {
 			focus = POL_trotsky_monument_BAN
@@ -465,7 +491,7 @@ focus_tree = {
 		x = 17
 		y = 7
 		completion_reward = {
-		
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -478,7 +504,8 @@ focus_tree = {
 		x = 18
 		y = 8
 		completion_reward = {
-		
+			add_stability = -0.1
+			add_ideas = antibolsh
 		}
 	}
 	focus = {
@@ -491,7 +518,7 @@ focus_tree = {
 		x = 2
 		y = 11
 		completion_reward = {
-		
+			country_event = pol.21
 		}
 	}
 	focus = {
@@ -507,7 +534,21 @@ focus_tree = {
 		x = 4
 		y = 12
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 0.55
+				uses = 2
+				category = industry
+			}
+			add_tech_bonus = {
+				bonus = 0.55
+				uses = 2
+				category = tanketka_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.55
+				uses = 2
+				category = construction_tech
+			}
 		}
 	}
 	focus = {
@@ -520,7 +561,7 @@ focus_tree = {
 		x = 19
 		y = 9
 		completion_reward = {
-		
+			country_event = pol.22
 		}
 	}
 }

@@ -1,5 +1,47 @@
 ideas = {
 	country = {
+		pol_monuments = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				trotskism_drift = 0.1
+			}
+		}
+		antibolsh = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				communism_drift = -0.01
+			}
+		}
 		soviet_ingeneer = {
 
 			allowed = {
@@ -145,6 +187,27 @@ ideas = {
 			
 			modifier = {
 				MONTHLY_POPULATION = 0.1
+			}
+		}
+		walkin_warriors = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				conscription = 0.01
 			}
 		}
 	}

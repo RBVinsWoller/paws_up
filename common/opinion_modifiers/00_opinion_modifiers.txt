@@ -21,6 +21,9 @@ opinion_modifiers = {
 	unstable_alliance = {
 		value = -10
 	}
+	POL_USA_base = {
+		value = 10
+	}
 
 	holds_our_cores = {
 		value = -30

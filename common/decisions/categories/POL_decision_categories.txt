@@ -1,0 +1,9 @@
+stability_regions = {
+	icon = generic_independence
+	allowed = {
+		tag = POL
+	}
+	visible = {
+		has_completed_focus = POL_rokossovsky_kruta
+	}
+}
