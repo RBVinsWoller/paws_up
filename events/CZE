@@ -48,6 +48,9 @@ country_event = {  #Смерть Готвальда
 }
 
 country_event = {  #Длиный день
+    trigger = { 
+		tag = CZE 
+	} 
 	id = cze.2
 	title = cze.2.t
 	desc = cze.2.d
@@ -65,6 +68,9 @@ country_event = {  #Длиный день
 }
 
 country_event = {  #Необычная ситуация
+    trigger = { 
+		tag = CZE 
+	} 
 	id = cze.3
 	title = cze.3.t
 	desc = cze.3.d
