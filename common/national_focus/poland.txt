@@ -1,5 +1,5 @@
 focus_tree = {
-	id = polandia
+	id = poland
 	country = {
 		factor = 0
 		modifier = {
@@ -10,114 +10,119 @@ focus_tree = {
 	default = no
 	focus = {
 		id = POL_long_day
-		icon = goals_POL_long_day
+		icon = GFX_goals_main_pol
 		cost = 10,00
 		x = 10
 		y = 0
-		completion_reward = {
-			country_event = pol.4
-			add_stability = -0.05
-		}
+			completion_reward = {
+					country_event = pol.4
+					add_stability = -0.05
+				}
+
 	}
 	focus = {
 		id = POL_united_comparties_of_poland
-		icon = goals_elections_communism
+		icon = GFX_goals_elections_communism
 		cost = 10,00
 		mutually_exclusive = {
 			focus = POL_conservi_win
 		}
 		x = 4
 		y = 5
-		available = {
-			always = no
-		}
-		completion_reward = {
-			country_event = pol.5
-			add_popularity = {
-				ideology = communism
-				popularity = 0.15
-			}	
-			add_popularity = {
-				ideology = titoism
-				popularity = 0.05
-			}	
-		}
+			available = {
+					always = no
+				}
+			completion_reward = {
+					country_event = pol.5
+					add_popularity = {
+							ideology = communism
+							popularity = 0.15
+						}
+					add_popularity = {
+							ideology = titoism
+							popularity = 0.05
+						}
+				}
+
 	}
 	focus = {
 		id = POL_conservi_win
-		icon = goals_elections_anticommunism
+		icon = GFX_goals_elections_anticommunism
 		cost = 10,00
 		mutually_exclusive = {
 			focus = POL_united_comparties_of_poland
 		}
 		x = 16
 		y = 5
-		available = {
-			always = no
-		}
-		completion_reward = {
-			country_event = pol.11
-		}
+			available = {
+					always = no
+				}
+			completion_reward = {
+					country_event = pol.11
+				}
+
 	}
 	focus = {
 		id = POL_fabrique_national
-		icon = goals_civ_factories
+		icon = GFX_goals_civ_factories
 		cost = 11,00
 		prerequisite = {
 			focus = POL_united_comparties_of_poland
 		}
 		x = 2
 		y = 6
-		completion_reward = {
-			country_event = pol.6
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
+			completion_reward = {
+					country_event = pol.6
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+
 	}
 	focus = {
 		id = POL_war_national
-		icon = goals_factory
+		icon = GFX_goals_factory
 		cost = 13,00
 		prerequisite = {
 			focus = POL_united_comparties_of_poland
 		}
 		x = 6
 		y = 6
-		completion_reward = {
-		country_event = pol.7
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-		}
+			completion_reward = {
+					country_event = pol.7
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+				}
+
 	}
 	focus = {
 		id = POL_soviet_help
-		icon = goals_help_from_ussr
+		icon = GFX_goals_help_from_ussr
 		cost = 9,00
 		prerequisite = {
 			focus = POL_fabrique_national
@@ -127,53 +132,57 @@ focus_tree = {
 		}
 		x = 4
 		y = 7
-		completion_reward = {
-			add_ideas = soviet_ingeneer
-		}
+			completion_reward = {
+					add_ideas = soviet_ingeneer
+				}
+
 	}
 	focus = {
 		id = POL_poland_people_republic
-		icon = goals_POL_long_day
+		icon = GFX_goals_POL_long_day
 		cost = 10,00
 		prerequisite = {
 			focus = POL_soviet_help
 		}
 		x = 4
 		y = 8
-		completion_reward = {
-			set_cosmetic_tag = polish_people_republic
-			country_event = pol.8
-		}
+			completion_reward = {
+					set_cosmetic_tag = polish_people_republic
+					country_event = pol.8
+				}
+
 	}
 	focus = {
 		id = POL_socialist_money
-		icon = goals_socialist_cennosti
+		icon = GFX_goals_socialist_cennosti
 		cost = 10,00
 		prerequisite = {
 			focus = POL_poland_people_republic
 		}
 		x = 2
 		y = 9
-		completion_reward = {
-			add_ideas = soul_la_revolution
-		}
+			completion_reward = {
+					add_ideas = soul_la_revolution
+				}
+
 	}
 	focus = {
 		id = POL_socialist_education
-		icon = goals_socialism_education
+		icon = GFX_goals_socialism_education
 		cost = 10,00
 		prerequisite = {
 			focus = POL_poland_people_republic
 		}
 		x = 6
 		y = 9
-		completion_reward = {
-			add_research_slot = 1
-		}
+			completion_reward = {
+					add_research_slot = 1
+				}
+
 	}
 	focus = {
 		id = POL_unity_workers_3rd_sosloviya
-		icon = goals_united_workers
+		icon = GFX_goals_united_workers
 		cost = 10,00
 		prerequisite = {
 			focus = POL_socialist_money
@@ -183,80 +192,85 @@ focus_tree = {
 		}
 		x = 4
 		y = 10
-		completion_reward = {
-			add_ideas = unity_polsky
-			add_stability = 0.1
-			add_war_support = 0.1
-		}
+			completion_reward = {
+					add_ideas = unity_polsky
+					add_stability = 0.1
+					add_war_support = 0.1
+				}
+
 	}
 	focus = {
 		id = POL_die_pilsudstkoman
-		icon = gpals_pilsidskiy
+		icon = GFX_gpals_pilsidskiy
 		cost = 11,00
 		prerequisite = {
 			focus = POL_long_day
 		}
 		x = 6
 		y = 1
-		completion_reward = {
-			country_event = pol.9
-		}
+			completion_reward = {
+					country_event = pol.9
+				}
+
 	}
 	focus = {
 		id = POL_polska_strong_police
-		icon = goals_poland_militia
+		icon = GFX_goals_poland_militia
 		cost = 10,00
 		prerequisite = {
 			focus = POL_unity_workers_3rd_sosloviya
 		}
 		x = 6
 		y = 11
-		completion_reward = {
-			country_event = pol.9
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
-		}
+			completion_reward = {
+					country_event = pol.9
+					add_popularity = {
+							ideology = communism
+							popularity = 0.1
+						}
+				}
+
 	}
 	focus = {
 		id = POL_kill_nazi
-		icon = gpals_nazi_arrest
+		icon = GFX_gpals_nazi_arrest
 		cost = 17,00
 		prerequisite = {
 			focus = POL_long_day
 		}
 		x = 10
 		y = 1
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = -1
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = -1
-			}
-			remove_ideas = POL_terrorist
-		}
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = -1
+						}
+					add_popularity = {
+							ideology = neutrality
+							popularity = -1
+						}
+					remove_ideas = POL_terrorist
+				}
+
 	}
 	focus = {
 		id = POL_crush_upa
-		icon = goals_upa
+		icon = GFX_goals_upa
 		cost = 17,00
 		prerequisite = {
 			focus = POL_long_day
 		}
 		x = 14
 		y = 1
-		completion_reward = {
-			remove_ideas = UPA
-			add_manpower = -7500
-		}
+			completion_reward = {
+					remove_ideas = UPA
+					add_manpower = -7500
+				}
+
 	}
 	focus = {
 		id = POL_sov_man_trade
-		icon = goals_soviet_support
+		icon = GFX_goals_soviet_support
 		cost = 10,00
 		prerequisite = {
 			focus = POL_die_pilsudstkoman
@@ -269,27 +283,29 @@ focus_tree = {
 		}
 		x = 7
 		y = 2
-		completion_reward = {
-			country_event = pol.10
-		}
+			completion_reward = {
+					country_event = pol.10
+				}
+
 	}
 	focus = {
 		id = POL_jews_go_home
-		icon = goals_jews
+		icon = GFX_goals_jews
 		cost = 5,00
 		prerequisite = {
 			focus = POL_sov_man_trade
 		}
 		x = 7
 		y = 3
-		completion_reward = {
-			add_stability = 0.1
-			country_event = pol.12
-		}
+			completion_reward = {
+					add_stability = 0.1
+					country_event = pol.12
+				}
+
 	}
 	focus = {
 		id = POL_economic_help_sov
-		icon = goals_help_from_ussr
+		icon = GFX_goals_help_from_ussr
 		cost = 10,00
 		prerequisite = {
 			focus = POL_crush_upa
@@ -302,13 +318,14 @@ focus_tree = {
 		}
 		x = 13
 		y = 2
-		completion_reward = {
-			country_event = pol.13
-		}
+			completion_reward = {
+					country_event = pol.13
+				}
+
 	}
 	focus = {
 		id = POL_nazi_go_home
-		icon = goals_germans
+		icon = GFX_goals_germans
 		cost = 5,00
 		prerequisite = {
 			focus = POL_economic_help_sov
@@ -318,56 +335,81 @@ focus_tree = {
 		}
 		x = 10
 		y = 3
-		completion_reward = {
-			country_event = pol.15
-		}
+			completion_reward = {
+					country_event = pol.15
+				}
+
 	}
 	focus = {
 		id = POL_elections
-		icon = goals_elections
+		icon = GFX_goals_elections
 		cost = 10,00
 		prerequisite = {
 			focus = POL_nazi_go_home
 		}
-		available = {
-			has_completed_focus = POL_economic_help_sov
-			has_completed_focus = POL_jews_go_home
-		}
 		x = 10
 		y = 4
-		completion_reward = {
-			country_event = pol.14
+			available = {
+					has_completed_focus = POL_economic_help_sov
+					has_completed_focus = POL_jews_go_home
+				}
+			completion_reward = {
+					country_event = pol.14
+				}
+
+	}
+	focus = {
+		id = POL_preparation_pour_presidium
+		icon = GFX_goals_socialist_cennosti
+		cost = 10,00
+		prerequisite = {
+			focus = POL_war_national
 		}
+		prerequisite = {
+			focus = POL_fabrique_national
+		}
+		x = 10
+		y = 7
+			completion_reward = {
+					add_stability = 0.03
+					add_popularity = {
+							popularity = 0.05
+							ideology = communism
+						}
+				}
+
 	}
 	focus = {
 		id = POL_war_prisoners_go_home
-		icon = goals_destroy_fascist
+		icon = GFX_goals_destroy_fascist
 		cost = 5,00
 		prerequisite = {
 			focus = POL_economic_help_sov
 		}
 		x = 13
 		y = 3
-		completion_reward = {
-			add_war_support = 0.1
-		}
+			completion_reward = {
+					add_war_support = 0.1
+				}
+
 	}
 	focus = {
 		id = POL_soviet_trotsky_BAN
-		icon = goals_soviet_conservarors
+		icon = GFX_goals_soviet_conservarors
 		cost = 7,00
 		prerequisite = {
 			focus = POL_conservi_win
 		}
 		x = 14
 		y = 6
-		completion_reward = {
-			country_event = pol.16
-		}
+			completion_reward = {
+					country_event = pol.16
+				}
+
 	}
 	focus = {
 		id = POL_america_awesome
-		icon = goals_present
+		icon = GFX_goals_present
 		cost = 6,00
 		prerequisite = {
 			focus = POL_soviet_trotsky_BAN
@@ -377,80 +419,84 @@ focus_tree = {
 		}
 		x = 15
 		y = 7
-		completion_reward = {
-			add_ideas = chastny_banks
-			country_event = pol.17
-			country_event = pol.18
-		}
+			completion_reward = {
+					add_ideas = chastny_banks
+					country_event = pol.17
+					country_event = pol.18
+				}
+
 	}
 	focus = {
 		id = POL_america_base_warsaw
-		icon = goals_american_help
+		icon = GFX_goals_american_help
 		cost = 6,00
 		prerequisite = {
 			focus = POL_america_awesome
 		}
 		x = 14
 		y = 8
-		completion_reward = {
-			add_stability = -0.05
-			add_building_construction = {
-				type = infrastructure
-				level = 2
-				instant_build = yes
-			}
-			add_ideas = walkin_warriors
-			country_event = pol.19
-		}
+			completion_reward = {
+					add_stability = -0.05
+					add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					add_ideas = walkin_warriors
+					country_event = pol.19
+				}
+
 	}
 	focus = {
 		id = POL_contrrevolution
-		icon = goals_contrrevolution
+		icon = GFX_goals_contrrevolution
 		cost = 5,00
 		prerequisite = {
 			focus = POL_america_base_warsaw
 		}
 		x = 13
 		y = 9
-		completion_reward = {
-			country_event = pol.20
-		}
+			completion_reward = {
+					country_event = pol.20
+				}
+
 	}
 	focus = {
 		id = POL_rokossovsky_kruta
-		icon = Rokossovskiy_arrest
+		icon = GFX_Rokossovskiy_arrest
 		cost = 10,00
 		prerequisite = {
 			focus = POL_contrrevolution
+			focus = POL_preparation_pour_presidium
 		}
 		mutually_exclusive = {
 			focus = POL_freakin_liberals
 		}
 		x = 10
 		y = 10
-		completion_reward = {
-			set_party_name = { 
-				ideology = comunism 
-				long_name = new_pol_com_long
-				name = new_pol_com
-			}
-			create_country_leader = {
-				name = "Marchal Rokossovsky"
-				desc = "POLITICS_ROKOSSOVSKY_DESC"
-				picture = "Portrait_Rokossovsky.dds"
-				expire = "1965.1.1"
-				ideology = stalinism
-				traits = {
-		
+			completion_reward = {
+					set_party_name = {
+							ideology = comunism
+							long_name = new_pol_com_long
+							name = new_pol_com
+						}
+					create_country_leader = {
+							name = "Marshal Rokossovsky"
+							desc = "POLITICS_ROKOSSOVSKY_DESC"
+							picture = "Portrait_Rokossovsky.dds"
+							expire = "1965.1.1"
+							ideology = stalinism
+							traits = {
+
+}
+						}
+					load_focus_tree = rokossovsky_pol_focus
 				}
-			}
-			load_focus_tree = rokossovsky_pol_focus
-			
-		}
+
 	}
 	focus = {
 		id = POL_freakin_liberals
-		icon = goals_liberals
+		icon = GFX_goals_liberals
 		cost = 10,00
 		prerequisite = {
 			focus = POL_contrrevolution
@@ -460,27 +506,29 @@ focus_tree = {
 		}
 		x = 16
 		y = 10
-		completion_reward = {
-		
-		}
+			completion_reward = {
+
+}
+
 	}
 	focus = {
 		id = POL_trotsky_monument_BAN
-		icon = goals_pamyatnik
+		icon = GFX_goals_pamyatnik
 		cost = 5,00
 		prerequisite = {
 			focus = POL_conservi_win
 		}
 		x = 18
 		y = 6
-		completion_reward = {
-			add_ideas = pol_monuments
-			add_war_support = -0.1
-		}
+			completion_reward = {
+					add_ideas = pol_monuments
+					add_war_support = -0.1
+				}
+
 	}
 	focus = {
 		id = POL_our_great_party
-		icon = goals_socialist_cennosti
+		icon = GFX_goals_present
 		cost = 9,00
 		prerequisite = {
 			focus = POL_trotsky_monument_BAN
@@ -490,40 +538,43 @@ focus_tree = {
 		}
 		x = 17
 		y = 7
-		completion_reward = {
-			add_war_support = 0.05
-		}
+			completion_reward = {
+					add_war_support = 0.05
+				}
+
 	}
 	focus = {
 		id = POL_antibolshevism
-		icon = goals_antibolshevism
+		icon = GFX_goals_antibolshevism
 		cost = 9,00
 		prerequisite = {
 			focus = POL_our_great_party
 		}
 		x = 18
 		y = 8
-		completion_reward = {
-			add_stability = -0.1
-			add_ideas = antibolsh
-		}
+			completion_reward = {
+					add_stability = -0.1
+					add_ideas = antibolsh
+				}
+
 	}
 	focus = {
 		id = POL_polska_strong_army
-		icon = goals_poland_army
+		icon = GFX_goals_poland_army
 		cost = 10,00
 		prerequisite = {
 			focus = POL_unity_workers_3rd_sosloviya
 		}
 		x = 2
 		y = 11
-		completion_reward = {
-			country_event = pol.21
-		}
+			completion_reward = {
+					country_event = pol.21
+				}
+
 	}
 	focus = {
 		id = POL_war_science_ussr
-		icon = goals_soviet_support
+		icon = GFX_goals_soviet_support
 		cost = 10,00
 		prerequisite = {
 			focus = POL_polska_strong_police
@@ -533,35 +584,37 @@ focus_tree = {
 		}
 		x = 4
 		y = 12
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.55
-				uses = 2
-				category = industry
-			}
-			add_tech_bonus = {
-				bonus = 0.55
-				uses = 2
-				category = tanketka_tech
-			}
-			add_tech_bonus = {
-				bonus = 0.55
-				uses = 2
-				category = construction_tech
-			}
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.55
+							uses = 2
+							category = industry
+						}
+					add_tech_bonus = {
+							bonus = 0.55
+							uses = 2
+							category = tanketka_tech
+						}
+					add_tech_bonus = {
+							bonus = 0.55
+							uses = 2
+							category = construction_tech
+						}
+				}
+
 	}
 	focus = {
 		id = POL_rokossovsky_go_home
-		icon = Rokossovskiy_win
+		icon = GFX_Rokossovskiy_win
 		cost = 5,00
 		prerequisite = {
 			focus = POL_antibolshevism
 		}
 		x = 19
 		y = 9
-		completion_reward = {
-			country_event = pol.22
-		}
+			completion_reward = {
+					country_event = pol.22
+				}
+
 	}
 }

@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 50 y = 3000 }
 	focus = {
 		id = DDR_stop_be_zone
 		icon = GFX_goal_generic_demand_territory
