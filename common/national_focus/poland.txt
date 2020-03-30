@@ -223,7 +223,7 @@ focus_tree = {
 		x = 6
 		y = 11
 			completion_reward = {
-					country_event = pol.9
+					country_event = pol.23
 					add_popularity = {
 							ideology = communism
 							popularity = 0.1
@@ -508,9 +508,9 @@ focus_tree = {
 		y = 10
 			completion_reward = {
 
-}
+			}	
 
-	}
+	}			
 	focus = {
 		id = POL_trotsky_monument_BAN
 		icon = GFX_goals_pamyatnik
