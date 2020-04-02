@@ -458,6 +458,10 @@ focus_tree = {
 		y = 9
 			completion_reward = {
 					country_event = pol.20
+					add_popularity = {
+							ideology = liberal
+							popularity = 0.35
+						}
 				}
 
 	}
@@ -483,7 +487,7 @@ focus_tree = {
 					create_country_leader = {
 							name = "Marshal Rokossovsky"
 							desc = "POLITICS_ROKOSSOVSKY_DESC"
-							picture = "Portrait_Rokossovsky.dds"
+							picture = "Rokossovskiy.dds"
 							expire = "1965.1.1"
 							ideology = stalinism
 							traits = {
@@ -507,7 +511,9 @@ focus_tree = {
 		x = 16
 		y = 10
 			completion_reward = {
-
+				set_politics = {
+					ruling_party = liberal
+				}
 			}	
 
 	}			

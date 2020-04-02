@@ -127,4 +127,8 @@ spriteTypes = {
 	name = "GFX_goals_main_pol"
 	texturefile = "gfx/interface/focus/goals_main_pol.dds"			
 	}
+	SpriteType = {
+	name = "GFX_POL_Rokossovsky"
+	texturefile = "gfx\leaders\POL/Rokossovskiy.dds"			
+	}
 }

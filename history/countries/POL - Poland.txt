@@ -166,7 +166,13 @@ create_field_marshal = {
 	traits = {  thorough_planner }
 	skill = 3
 }
-
+create_field_marshal = {
+	id = 999
+	name = "Konstantin Rokossovsky"
+	gfx = "GFX_POL_Rokossovskyi"
+	traits = { thorough_planner }
+	skill = 4
+}
 create_field_marshal = {
 	name = "Stanisław Kopański"
 	gfx = "GFX_POL_stanislav_kopanski"

@@ -425,10 +425,6 @@ country_event = {
 	option = {
 		name = pol.22.a
 		ai_chance = { factor = 100 }
-		add_tech_bonus = {
-				bonus = 0.55
-				uses = 3
-				category = armor
-			}
+		remove_unit_leader = 999
 	}
 }
