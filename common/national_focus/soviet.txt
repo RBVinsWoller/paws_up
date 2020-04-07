@@ -913,6 +913,24 @@ focus_tree = {
 	} 
 	
 	focus = {
+		id = SOV_radical_communism
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SOV_War_Economic_politic
+			focus = SOV_Iron_Molotov
+			focus = SOV_Germany
+		}
+		x = 10
+		y = 9
+		completion_reward = {
+		    add_war_support = 0.10
+		} 
+		available = { 
+		} 
+	} 
+	
+	focus = {
 		id = SOV_unite_nations
 		icon = GFX_goal_unknown
 		cost = 10
@@ -1358,6 +1376,26 @@ focus_tree = {
 		} 
 	}
 	
+	focus = {
+		id = SOV_peace_socialism
+		icon = GFX_goal_unknown
+		cost = 12
+		prerequisite = {
+			focus = SOV_Workers_Syndicalism
+			focus = SOV_Demobilisation_economic
+			focus = SOV_piece_anticapiralist
+		}
+		x = 8
+		y = 9
+		completion_reward = {
+		} 
+		mutually_exclusive = { 
+		    focus = SOV_NEP_again
+			focus = SOV_Syndicalist_NEP
+		}
+		available = { 
+		} 
+	}
 	
 } 
 	
