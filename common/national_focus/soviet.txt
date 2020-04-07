@@ -1122,7 +1122,7 @@ focus_tree = {
                 remove_idea = Kult_lichnosti
                 add_idea = Soviety_deputatov
             } 
-			
+		hidden_effect = {
 			EST = { 
 			swap_ideas = {
                 remove_idea = Kult_lichnosti
@@ -1227,6 +1227,7 @@ focus_tree = {
                 add_idea = Soviety_deputatov
             }
 			}
+		} 
 		} 
 		available = { 
 		    ruling_party = communism
@@ -1356,5 +1357,7 @@ focus_tree = {
 		available = { 
 		} 
 	}
+	
+	
 } 
 	
