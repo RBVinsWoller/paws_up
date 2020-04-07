@@ -520,7 +520,7 @@ focus_tree = {
 		completion_reward = {
 		    add_popularity = { 
 			    ideology = fascism 
-				popularity = -0.15 
+				popularity = -1 
 			} 
 		} 
 		available = { 
