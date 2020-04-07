@@ -939,6 +939,8 @@ focus_tree = {
 			focus = SOV_anticapitalist_fiction
 			focus = SOV_Syndicalist_NEP
 			focus = SOV_NEP_again
+			focus = SOV_peace_socialism
+			focus = SOV_radical_communism
 		}
 		x = 9
 		y = 10
