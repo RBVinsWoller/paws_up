@@ -16,6 +16,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/focus/goals_rom.dds"			
 	}
 	SpriteType = {
+	name = "GFX_goals_pol"
+	texturefile = "gfx/interface/focus/goals_pol.dds"			
+	}
+	SpriteType = {
 	name = "GFX_goals_cze"
 	texturefile = "gfx/interface/focus/goals_cze.dds"			
 	}
@@ -118,6 +122,14 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goals_nigde_ne_skroetsya_vrag"
 	texturefile = "gfx/interface/focus/goals_nigde_ne_skroetsya_vrag.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_savody"
+	texturefile = "gfx/interface/focus/goals_savody.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_against_nazi_Caucase"
+	texturefile = "gfx/interface/focus/goals_against_nazi_Caucase.dds"			
 	}
 	SpriteType = {
 	name = "GFX_goals_against_nazi_North"
