@@ -30,7 +30,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_new_plan
-		icon = GFX_goal_unknown
+		icon = GFX_goals_unbracken_union
 		cost = 10
 		prerequisite = {
 			focus = SOV_after_the_war
@@ -58,7 +58,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_soldiers_demobilisation
-		icon = GFX_goal_unknown
+		icon = GFX_goals_demobilisation
 		cost = 10
 		prerequisite = {
 			focus = SOV_new_plan
@@ -73,7 +73,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_parad
-		icon = GFX_goal_unknown
+		icon = GFX_goals_parad
 		cost = 10
 		prerequisite = {
 			focus = SOV_new_plan
@@ -91,7 +91,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_new_workers
-		icon = GFX_goal_unknown
+		icon = GFX_goals_workers
 		cost = 10
 		mutually_exclusive = { 
 		    focus = SOV_new_engeniers
@@ -116,7 +116,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_new_engeniers
-		icon = GFX_goal_unknown
+		icon = GFX_goals_demobilisation_of_economic
 		cost = 10
 		mutually_exclusive = { 
 		    focus = SOV_new_workers
@@ -141,7 +141,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_we_can_do_it
-		icon = GFX_goal_unknown
+		icon = GFX_goals_program_Jdanov
 		cost = 10
 		prerequisite = {
 			focus = SOV_new_engeniers
@@ -165,7 +165,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_factory_1
-		icon = GFX_goal_unknown
+		icon = GFX_goals_fabrici
 		cost = 10
 		prerequisite = {
 			focus = SOV_we_can_do_it
@@ -201,7 +201,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_factory_2
-		icon = GFX_goal_unknown
+		icon = GFX_goals_fabrici
 		cost = 10
 		prerequisite = {
 			focus = SOV_factory_1
@@ -237,7 +237,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_factory_3
-		icon = GFX_goal_unknown
+		icon = GFX_goals_fabrici
 		cost = 10
 		prerequisite = {
 			focus = SOV_factory_2
@@ -281,7 +281,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_agroculture_1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PRC_agriculture_1
 		cost = 10
 		prerequisite = {
 			focus = SOV_we_can_do_it
@@ -326,7 +326,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_agroculture_2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PRC_agriculture_2
 		cost = 10
 		prerequisite = {
 			focus = SOV_agroculture_1
@@ -379,7 +379,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_agroculture_3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PRC_agriculture_3
 		cost = 10
 		prerequisite = {
 			focus = SOV_agroculture_2
@@ -399,7 +399,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_military_foctories_1
-		icon = GFX_goal_unknown
+		icon = GFX_goals_savody
 		cost = 10
 		prerequisite = {
 			focus = SOV_we_can_do_it
@@ -419,7 +419,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_military_foctories_2
-		icon = GFX_goal_unknown
+		icon = GFX_goals_savody
 		cost = 10
 		prerequisite = {
 			focus = SOV_military_foctories_1
@@ -439,7 +439,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_military_foctories_3
-		icon = GFX_goal_unknown
+		icon = GFX_goals_savody
 		cost = 10
 		prerequisite = {
 			focus = SOV_military_foctories_2
@@ -459,7 +459,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_new_ministerstva
-		icon = GFX_goal_unknown
+		icon = GFX_goals_new_burokrats
 		cost = 10
 		prerequisite = {
 			focus = SOV_after_the_war
@@ -475,7 +475,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_new_party_funcioner
-		icon = GFX_goal_unknown
+		icon = GFX_goals_premier
 		cost = 10
 		prerequisite = {
 			focus = SOV_after_the_war
@@ -494,7 +494,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_mother_russia
-		icon = GFX_goal_unknown
+		icon = GFX_goals_spcialist_rodina
 		cost = 10
 		prerequisite = {
 			focus = SOV_after_the_war
@@ -541,7 +541,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_white_enemies
-		icon = GFX_goal_unknown
+		icon = GFX_goals_nigde_ne_skroetsya_vrag
 		cost = 5
 		prerequisite = {
 			focus = SOV_new_ministerstva
@@ -560,7 +560,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_white_enemies_caucase
-		icon = GFX_goal_unknown
+		icon = GFX_goals_against_nazi_Caucase
 		cost = 12
 		prerequisite = {
 			focus = SOV_white_enemies
@@ -589,7 +589,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_white_enemies_central_russia
-		icon = GFX_goal_unknown
+		icon = GFX_goals_ROA
 		cost = 12
 		prerequisite = {
 			focus = SOV_white_enemies
@@ -597,10 +597,11 @@ focus_tree = {
 		x = 7
 		y = 3
 		completion_reward = {
-		    RUS = { 
-			    remove_idea = ROA
-				add_stability = 0.1
-			} 
+		    add_political_power = 450
+			add_popularity = { 
+			    ideology = communism
+				popularity = 0.05
+			}
 		} 
 		available = { 
 		} 
@@ -608,7 +609,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_white_enemies_baltical
-		icon = GFX_goal_unknown
+		icon = GFX_goals_against_nazi_North
 		cost = 12
 		prerequisite = {
 			focus = SOV_white_enemies
@@ -634,7 +635,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_white_enemies_europian_part
-		icon = GFX_goal_unknown
+		icon = GFX_goals_against_nazi_Europe
 		cost = 12
 		prerequisite = {
 			focus = SOV_white_enemies
@@ -652,7 +653,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_white_enemies_nort
-		icon = GFX_goal_unknown
+		icon = GFX_goals_against_nazi_North
 		cost = 10
 		prerequisite = {
 			focus = SOV_white_enemies
@@ -690,7 +691,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_ROA
-		icon = GFX_goal_unknown
+		icon = GFX_goals_ROA
 		cost = 15
 		prerequisite = {
 			focus = SOV_white_enemies_caucase
@@ -702,11 +703,11 @@ focus_tree = {
 		x = 11
 		y = 4
 		completion_reward = {
-		    add_political_powr = 450
-			add_popularity = { 
-			    ideology = communism
-				popularity = 0.05
-			}
+			RUS = { 
+			    remove_idea = ROA
+				add_stability = 0.1
+			} 
+		    
 		} 
 		available = { 
 		} 
@@ -714,7 +715,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_Beria_fiction
-		icon = GFX_goal_unknown
+		icon = GFX_goals_spcialist_rodina
 		cost = 10
 		prerequisite = {
 			focus = SOV_arrest_political_enemies
@@ -734,7 +735,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_Berias_program
-		icon = GFX_goal_unknown
+		icon = GFX_goals_spcialist_rodina
 		cost = 10
 		prerequisite = {
 			focus = SOV_Beria_fiction
@@ -759,7 +760,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_Generalissimus
-		icon = GFX_goal_unknown
+		icon = GFX_goals_demobilisation
 		cost = 10
 		prerequisite = {
 			focus = SOV_Berias_program
@@ -780,7 +781,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_Iron_Molotov
-		icon = GFX_goal_unknown
+		icon = GFX_goals_molotov
 		cost = 10
 		prerequisite = {
 			focus = SOV_Generalissimus
@@ -799,7 +800,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_War_Economic_politic
-		icon = GFX_goal_unknown
+		icon = GFX_goals_war_economic
 		cost = 10
 		prerequisite = {
 			focus = SOV_Generalissimus
@@ -820,7 +821,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_Germany
-		icon = GFX_goal_unknown
+		icon = GFX_goals_soviet_Germany
 		cost = 10
 		prerequisite = {
 			focus = SOV_Generalissimus
@@ -839,7 +840,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_anticapitalist_fiction
-		icon = GFX_goal_unknown
+		icon = GFX_goals_unite_proletaries
 		cost = 10
 		prerequisite = {
 			focus = SOV_War_Economic_politic
@@ -896,7 +897,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_new_propagand
-		icon = GFX_goal_unknown
+		icon = GFX_goals_propagand
 		cost = 10
 		prerequisite = {
 			focus = SOV_War_Economic_politic
@@ -914,7 +915,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_unite_nations
-		icon = GFX_goal_unknown
+		icon = GFX_goals_gernam_question
 		cost = 10
 		prerequisite = {
 			focus = SOV_new_propagand
@@ -934,7 +935,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_unite_Poland
-		icon = GFX_goal_unknown
+		icon = GFX_goals_pol
 		cost = 7
 		prerequisite = {
 			focus = SOV_unite_nations
@@ -955,7 +956,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_unite_Chech
-		icon = GFX_goal_unknown
+		icon = GFX_goals_cze
 		cost = 7
 		prerequisite = {
 			focus = SOV_unite_nations
@@ -976,7 +977,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_unite_Romania
-		icon = GFX_goal_unknown
+		icon = GFX_goals_rom
 		cost = 5
 		prerequisite = {
 			focus = SOV_unite_nations
@@ -997,7 +998,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_unite_Bulgarian
-		icon = GFX_goal_unknown
+		icon = GFX_goals_hun
 		cost = 5
 		prerequisite = {
 			focus = SOV_unite_nations
@@ -1039,7 +1040,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_unite_Deutch
-		icon = GFX_goal_unknown
+		icon = GFX_unkn
 		cost = 12
 		prerequisite = {
 			focus = SOV_unite_Poland
@@ -1082,7 +1083,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_Jdanovs_program
-		icon = GFX_goal_unknown
+		icon = GFX_goals_program_Jdanov
 		cost = 12
 		prerequisite = {
 			focus = SOV_Beria_fiction
@@ -1110,7 +1111,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_Premier-ministr
-		icon = GFX_goal_unknown
+		icon = GFX_goals_premier
 		cost = 15
 		prerequisite = {
 			focus = SOV_Jdanovs_program
@@ -1236,7 +1237,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_Workers_Syndicalism
-		icon = GFX_goal_unknown
+		icon = GFX_goals_syndicalists
 		cost = 15
 		prerequisite = {
 			focus = SOV_Premier-ministr
@@ -1260,7 +1261,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_Demobilisation_economic
-		icon = GFX_goal_unknown
+		icon = GFX_goals_demobilisation
 		cost = 15
 		prerequisite = {
 			focus = SOV_Premier-ministr
@@ -1279,7 +1280,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_piece_anticapiralist
-		icon = GFX_goal_unknown
+		icon = GFX_goals_unite_proletaries
 		cost = 12
 		prerequisite = {
 			focus = SOV_Premier-ministr
@@ -1299,7 +1300,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_NEP_again
-		icon = GFX_goal_unknown
+		icon = GFX_goals_nep
 		cost = 12
 		prerequisite = {
 			focus = SOV_Workers_Syndicalism
@@ -1332,7 +1333,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_Syndicalist_NEP
-		icon = GFX_goal_unknown
+		icon = GFX_goals_nep
 		cost = 12
 		prerequisite = {
 			focus = SOV_Workers_Syndicalism

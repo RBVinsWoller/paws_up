@@ -3,4 +3,148 @@ spriteTypes = {
 	name = "GFX_goal_SOV_after_war"
 	texturefile = "gfx/interface/focus/goal_SOV_after_war.dds"			
 	}
+	SpriteType = {
+	name = "GFX_goals_gernam_question"
+	texturefile = "gfx/interface/focus/goals_gernam_question.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_hun"
+	texturefile = "gfx/interface/focus/goals_hun.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_rom"
+	texturefile = "gfx/interface/focus/goals_rom.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_cze"
+	texturefile = "gfx/interface/focus/goals_cze.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_nep"
+	texturefile = "gfx/interface/focus/goals_nep.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_fabrici"
+	texturefile = "gfx/interface/focus/goals_fabrici.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_agroculture_1"
+	texturefile = "gfx/interface/focus/goals_agroculture_1.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_democracy_of_workers"
+	texturefile = "gfx/interface/focus/goals_democracy_of_workers.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_spcialist_rodina"
+	texturefile = "gfx/interface/focus/goals_spcialist_rodina.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_socialist_otechestvo"
+	texturefile = "gfx/interface/focus/goals_socialist_otechestvo.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_propagand"
+	texturefile = "gfx/interface/focus/goals_propagand.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_molotov"
+	texturefile = "gfx/interface/focus/goals_molotov.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_demobilisation_of_economic"
+	texturefile = "gfx/interface/focus/goals_demobilisation_of_economic.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_parad"
+	texturefile = "gfx/interface/focus/goals_parad.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_demobilisation"
+	texturefile = "gfx/interface/focus/goals_demobilisation.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_vosstante_is_pepla"
+	texturefile = "gfx/interface/focus/goals_vosstante_is_pepla.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_syndicalists"
+	texturefile = "gfx/interface/focus/goals_syndicalists.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_war_economic"
+	texturefile = "gfx/interface/focus/goals_war_economic.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_soviet_Germany"
+	texturefile = "gfx/interface/focus/goals_soviet_Germany.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_program_Jdanov"
+	texturefile = "gfx/interface/focus/goals_program_Jdanov.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_program_Malenkov"
+	texturefile = "gfx/interface/focus/goals_program_Malenkov.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_narodny_comissariat"
+	texturefile = "gfx/interface/focus/goals_narodny_comissariat.dds"			
+	}
+	SpriteType = {
+	name = "GFX_golas_soviet_help"
+	texturefile = "gfx/interface/focus/golas_soviet_help.dds"			
+	}
+	SpriteType = {
+	name = "GFX_golas_destroy_nazi_all"
+	texturefile = "gfx/interface/focus/golas_destroy_nazi_all.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_ROA"
+	texturefile = "gfx/interface/focus/goals_ROA.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_premier"
+	texturefile = "gfx/interface/focus/goals_premier.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_vozhd_of_the_people"
+	texturefile = "gfx/interface/focus/goals_vozhd_of_the_people.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_unite_proletaries"
+	texturefile = "gfx/interface/focus/goals_unite_proletaries.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_nigde_ne_skroetsya_vrag"
+	texturefile = "gfx/interface/focus/goals_nigde_ne_skroetsya_vrag.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_against_nazi_North"
+	texturefile = "gfx/interface/focus/goals_against_nazi_North.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_against_nazi_Europe"
+	texturefile = "gfx/interface/focus/goals_against_nazi_Europe.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_against_nazi_Russia"
+	texturefile = "gfx/interface/focus/goals_against_nazi_Russia.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_stavka_na_uchenih"
+	texturefile = "gfx/interface/focus/goals_stavka_na_uchenih.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_new_burokrats"
+	texturefile = "gfx/interface/focus/goals_new_burokrats.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_workers"
+	texturefile = "gfx/interface/focus/goals_workers.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goals_unbracken_union"
+	texturefile = "gfx/interface/focus/goals_unbracken_union.dds"			
+	}
 }
