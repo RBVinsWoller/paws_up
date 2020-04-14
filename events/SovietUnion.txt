@@ -1138,3 +1138,164 @@ country_event = {		#Ким Ир Сен просит экономическую �
 	}
 	
 }
+
+country_event = {
+	id = sov.24
+	title = sov.24.t
+	desc = sov.24.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sov.24.a
+		ai_chance = { factor = 100 }
+		add_ideas = army_victoria
+	}
+	
+}
+
+country_event = {
+	id = sov.25
+	title = sov.25.t
+	desc = sov.25.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sov.25.a
+		ai_chance = { factor = 25 }
+		complete_national_focus = SOV_tech_ussr
+	}
+	
+	option = {
+		name = sov.25.b
+		ai_chance = { factor = 25 }
+		complete_national_focus = SOV_air_ussr
+	}
+	
+	option = {
+		name = sov.25.c
+		ai_chance = { factor = 25 }
+		complete_national_focus = SOV_construction_ussr
+	}
+	
+	option = {
+		name = sov.25.e
+		ai_chance = { factor = 25 }
+		complete_national_focus = SOV_regunning_ussr
+	}
+	
+}
+country_event = {
+	id = sov.26
+	title = sov.26.t
+	desc = sov.26.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sov.26.a
+		ai_chance = { factor = 100 }
+		add_ideas = military_man
+	}
+	
+}
+country_event = {
+	id = sov.27
+	title = sov.27.t
+	desc = sov.27.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sov.27.a
+		ai_chance = { factor = 100 }
+		add_ideas = revolutanry_man
+	}
+	
+}
+country_event = {
+	id = sov.28
+	title = sov.28.t
+	desc = sov.28.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sov.28.a
+		ai_chance = { factor = 100 }
+	}
+	
+}
+country_event = {
+	id = sov.29
+	title = sov.29.t
+	desc = sov.29.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sov.29.a
+		ai_chance = { factor = 100 }
+		add_ideas = cult_army
+	}
+	
+}
+country_event = {
+	id = sov.30
+	title = sov.30.t
+	desc = sov.30.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sov.30.a
+		ai_chance = { factor = 100 }
+		add_ideas = cult_army
+	}
+	
+}
+country_event = {
+	id = sov.31
+	title = sov.31.t
+	desc = sov.31.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sov.31.a
+		ai_chance = { factor = 100 }
+		add_ideas = cult_revolution
+	}
+	
+}
+country_event = {
+	id = sov.32
+	title = sov.32.t
+	desc = sov.32.d
+	picture = GFX_report_event_airplane_factory
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sov.32.a
+		ai_chance = { factor = 50 }
+		complete_national_focus = SOV_everywhere_mech
+	}
+	
+	option = {
+		name = sov.32.a
+		ai_chance = { factor = 50 }
+		complete_national_focus = SOV_army_machine
+	}
+	
+}
+

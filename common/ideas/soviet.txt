@@ -1,4 +1,140 @@
 ideas = {
+	country = {
+		army_victoria = {
+		
+			allowed = {
+
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			
+			}
+			
+			removal_cost = -1
+
+			picture = 
+			
+			modifier = {
+				war_support_factor = 0.15
+				mobilization_speed = 0.02
+			}
+		}
+		
+		military_man = {
+		
+			allowed = {
+
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			
+			}
+			
+			removal_cost = -1
+
+			picture = 
+			
+			modifier = {
+				mobilization_speed = 0.03
+			}
+		}
+		
+		revolutanry_man = {
+		
+			allowed = {
+
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			
+			}
+			
+			removal_cost = -1
+
+			picture = 
+			
+			modifier = {
+				mobilization_speed = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		cult_army = {
+		
+			allowed = {
+
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			
+			}
+			
+			removal_cost = -1
+
+			picture = 
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		cult_revolution = {
+		
+			allowed = {
+
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			
+			}
+			
+			removal_cost = -1
+
+			picture = 
+			
+			modifier = {
+				MONTHLY_POPULATION = 0,1
+			}
+		}
+		
+		soviet_army = {
+		
+			allowed = {
+
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			
+			}
+			
+			removal_cost = -1
+
+			picture = 
+			
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.15
+			}
+		}
+	}
 	head_of_government = {
 		miho_kalinin = {
 			picture = GFX_idea_miho_kalinin

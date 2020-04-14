@@ -31,7 +31,9 @@ focus_tree = {
 		cost = 7,00
 		x = 32
 		y = 0
-
+		completion_reward = {
+			country_event = sov.24
+		}
 	}
 	focus = {
 		id = SOV_new_party_funcioner
@@ -621,7 +623,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 1
-
+		completion_reward = {
+		country_event = sov.32
+		}
 	}
 	focus = {
 		id = SOV_everywhere_mech
@@ -633,9 +637,18 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_army_machine
 		}
+		completion_reward = {
+			
+		}
 		x = 28
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.05
+				uses = 1
+				category = tanketka_tech
+			}
+		}
 	}
 	focus = {
 		id = SOV_army_machine
@@ -649,7 +662,13 @@ focus_tree = {
 		}
 		x = 36
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.05
+				uses = 1
+				category = cat_medium_armor
+			}
+		}
 	}
 	focus = {
 		id = SOV_quest_comand
@@ -661,7 +680,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 3
-
+		completion_reward = {
+			country_event = sov.25
+		}
 	}
 	focus = {
 		id = SOV_air_ussr
@@ -677,7 +698,13 @@ focus_tree = {
 		}
 		x = 26
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.05
+				uses = 1
+				category = light_air
+			}
+		}
 	}
 	focus = {
 		id = SOV_tech_ussr
@@ -693,7 +720,13 @@ focus_tree = {
 		}
 		x = 30
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.05
+				uses = 1
+				category = tanketka_tech
+			}
+		}
 	}
 	focus = {
 		id = SOV_construction_ussr
@@ -709,7 +742,13 @@ focus_tree = {
 		}
 		x = 34
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 1
+				category = construction_tech
+			}
+		}
 	}
 	focus = {
 		id = SOV_regunning_ussr
@@ -725,7 +764,13 @@ focus_tree = {
 		}
 		x = 38
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 1
+				category = armor
+			}
+		}
 	}
 	focus = {
 		id = SOV_man_military
@@ -742,7 +787,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 5
-
+		completion_reward = {
+			country_event = sov.26
+		}
 	}
 	focus = {
 		id = SOV_revolutonary_army
@@ -759,7 +806,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 5
-
+		completion_reward = {
+			country_event = sov.27
+		}
 	}
 	focus = {
 		id = SOV_reform_army
@@ -769,8 +818,11 @@ focus_tree = {
 			focus = SOV_man_military
 		}
 		x = 36
-		y = 6
-
+		y = 6	
+		completion_reward = {
+			country_event = sov.28
+			add_political_power = -120
+		}
 	}
 	focus = {
 		id = SOV_army_cult
@@ -781,7 +833,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 7
-
+		completion_reward = {
+			country_event = sov.29
+		}
 	}
 	focus = {
 		id = SOV_factory_2
@@ -1550,7 +1604,10 @@ focus_tree = {
 		}
 		x = 28
 		y = 6
-
+		completion_reward = {
+			country_event = sov.30
+			add_political_power = 350
+		}
 	}
 	focus = {
 		id = SOV_cult_people
@@ -1561,7 +1618,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 7
-
+		completion_reward = {
+			country_event = sov.31
+		}
 	}
 	focus = {
 		id = SOV_viva_army
@@ -1573,6 +1632,8 @@ focus_tree = {
 		}
 		x = 32
 		y = 8
-
+		completion_reward = {
+			add_ideas = soviet_army
+		}
 	}
 }
