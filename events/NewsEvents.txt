@@ -3573,3 +3573,18 @@ news_event = {
 		trigger = { TAG = KND }
 	}
 }
+
+news_event = {
+	id = news.123
+	title = news.123.t
+	desc = news.123.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1.a
+		
+	}
+
+}

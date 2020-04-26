@@ -494,9 +494,9 @@ focus_tree = {
 
 }
 						}
-					load_focus_tree = rokossovsky_pol_focus
+					load_focus_tree = pol_rok
 				}
-
+		
 	}
 	focus = {
 		id = POL_freakin_liberals

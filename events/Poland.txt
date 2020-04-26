@@ -428,3 +428,174 @@ country_event = {
 		remove_unit_leader = 999
 	}
 }
+
+country_event = {
+	id = pol.23
+	title = pol.23.t
+	desc = pol.23.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.23.a
+		ai_chance = { factor = 100 }
+		add_ideas = contrrev
+	}
+}
+
+country_event = {
+	id = pol.24
+	title = pol.24.t
+	desc = pol.24.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.24.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = pol.25
+	title = pol.25.t
+	desc = pol.25.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.25.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = pol.26
+	title = pol.26.t
+	desc = pol.26.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.26.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = pol.27
+	title = pol.27.t
+	desc = pol.27.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.27.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = pol.28
+	title = pol.28.t
+	desc = pol.28.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.28.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = pol.29
+	title = pol.29.t
+	desc = pol.29.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.29.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = pol.30
+	title = pol.30.t
+	desc = pol.30.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.30.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = pol.31
+	title = pol.31.t
+	desc = pol.31.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.31.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = pol.32
+	title = pol.32.t
+	desc = pol.32.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.32.a
+		ai_chance = { factor = 100 }
+		SOV = {
+			puppet = POL
+			give_guarantee = POL
+			give_military_access = POL
+	}
+}
+
+country_event = {
+	id = pol.33
+	title = pol.33.t
+	desc = pol.33.d
+	picture = GFX_report_event_czech_soldiers_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pol.33.a
+		ai_chance = { factor = 100 }
+
+	}
+}

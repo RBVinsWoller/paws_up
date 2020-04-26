@@ -24,7 +24,12 @@ opinion_modifiers = {
 	POL_USA_base = {
 		value = 10
 	}
-
+	pol_commie = {
+		value = 100
+	}
+	pol_commie2 = {
+		value = 25
+	}
 	holds_our_cores = {
 		value = -30
 	}

@@ -210,5 +210,156 @@ ideas = {
 				conscription = 0.01
 			}
 		}
+		soviet_help = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				
+			}
+		}
+		contrrev = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				
+			}
+		}
+		peoplerep = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				polit_power_factor = 0,5
+			}
+		}
+		worker_class = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			
+		genius_rok = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				conscription_factor = 0.04
+					planning_speed = 0.10
+			}
+		}
+		east_paris = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				stability_factor = 0.10
+				MONTHLY_POPULATION = 0.15
+			}
+		}
+		rodina = {
+
+			allowed = {
+				original_tag = POL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+
+			picture = pol
+			
+			modifier = {
+				stability_factor = 0.10
+				MONTHLY_POPULATION = 0.15
+			}
+		}
+		
 	}
 }
