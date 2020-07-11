@@ -144,10 +144,6 @@ set_autonomy = {
  autonomous_state = autonomy_ssr
 }
 set_autonomy = {
- target = KAZ
- autonomous_state = autonomy_ssr
-}
-set_autonomy = {
  target = BLR
  autonomous_state = autonomy_ssr
 }

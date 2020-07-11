@@ -1299,3 +1299,89 @@ country_event = {
 	
 }
 
+country_event = {
+	id = sov.33
+	title = sov.33.t
+	desc = sov.33.d
+	picture = GFX_report_event_airplane_factory
+	
+	fire_only_once = yes
+	option = {
+		name = sov.33.a
+		ai_chance = { factor = 0 }
+	}
+	trigger = {
+		tag = SOV
+		date > 1945.1.1
+	}
+	option = {
+		name = sov.32.a
+		ai_chance = { factor = 100 }
+		annex_country = {
+			target = KAR
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = LAT
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = LIT
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = UKR
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = MOL
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = AZR
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = GEO
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = ARM
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = EST
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = RUS
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = TDG
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = TRK
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = KIR
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = UZB
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = KAZ
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = BLR
+			transfer_troops = yes
+		}
+	}
+	
+}
+
